@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service für Alltag und Bürokratie in Deutschland</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header id="title-block-header">
+  <h1 class="title">Service für Alltag und Bürokratie in Deutschland</h1>
+  <p style="color: var(--muted); margin: 0;">Ein iOS-Produktkonzept — KI-gestützte Hilfe für Ausländer, die ihren Alltag und die Bürokratie in Deutschland bewältigen.</p>
+</header>
+
+<p>In einfacher Sprache verfasst, sodass ein kluger Teenager mit Programmierkenntnissen, aber ohne betriebswirtschaftlichen Hintergrund folgen kann. Fachbegriffe werden beim ersten Auftreten erklärt.</p>
+
+<hr />
+
+<h2 id="pitch">0. Der Pitch in zwei Minuten</h2>
+
+<p>Deutschland ist eines der reichsten Länder Europas und leidet unter einem chronischen Fachkräftemangel. Um das zu beheben, lässt es Ausländer einreisen, um zu arbeiten, zu studieren und sich ein Leben aufzubauen. Aber Deutschland ist berühmt für seine Bürokratie — Papierkram, der langsam ist, auf Deutsch, voller juristischer Fachbegriffe und unerbittlich, wenn man eine Frist verpasst.</p>
+
+<p>Jeder Neuankömmling stößt auf dieselbe Wand:</p>
+
+<ul>
+  <li>Ein Brief kommt mit der Post. Er ist auf Deutsch. Er sieht wichtig aus. Sie haben keine Ahnung, was darin steht.</li>
+  <li>Sie müssen ihre Adresse innerhalb von 14 Tagen anmelden („Anmeldung"), aber das Bürgeramt hat zwei Monate lang keine Termine frei.</li>
+  <li>Sie wollen ein Bankkonto eröffnen, aber die Bank verlangt die Anmeldung. Die Anmeldung verlangt eine Adresse. Die Adresse verlangt einen Mietvertrag. Der Mietvertrag verlangt einen Schufa-Score, den es noch nicht gibt, weil sie gerade erst angekommen sind.</li>
+  <li>Ein Arztbesuch erfordert eine Krankenversicherung. Die richtige auszuwählen ist ein 60-seitiger Vergleich, den sie nicht lesen können.</li>
+</ul>
+
+<p>Etwa 1,5 Millionen Menschen ziehen jedes Jahr nach Deutschland. Sie googeln nach Hilfe. Sie landen auf einer Handvoll Blogs (<a href="https://allaboutberlin.com">AllAboutBerlin</a>, <a href="https://www.simplegermany.com">SimpleGermany</a>), auf einer staatlich geförderten NGO-Seite (<a href="https://handbookgermany.de/en">Handbook Germany</a>) und auf dem offiziellen Portal (<a href="https://www.make-it-in-germany.com/en">Make-It-In-Germany</a>). Alles gut — aber keines davon ist ein Produkt, das einen durch den eigentlichen Papierkram begleitet, die Briefe scannt und sich die Fristen merkt.</p>
+
+<blockquote>
+  <p><strong>Die Chance:</strong> Dieses Produkt als fokussierte iOS-App bauen, mit einem einmaligen Preis, den Neuankömmlinge ohne Nachdenken aufbringen können — <strong>29,99 € einmalig, unbegrenzte Nutzung, kein Abo.</strong></p>
+  <p><strong>Warum jetzt:</strong> KI kann mittlerweile das Foto eines deutschen Behördenbriefes in 5 Sekunden in einfaches Englisch übersetzen. Vor zwei Jahren ging das noch nicht. Heute schon. Diese einzige Funktion ist der Türöffner.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="is-it-good">1. Ist die Idee überhaupt gut? Eine ehrliche Kritik</h2>
+
+<p><strong>Die kurze Antwort: ja, aber es ist schwieriger, als es aussieht.</strong></p>
+
+<p>Der Schmerz ist real, gut dokumentiert und ungestillt. Das lässt sich in fünf Minuten bestätigen:</p>
+
+<ul>
+  <li>Das Subreddit <a href="https://www.reddit.com/r/germany/">r/germany</a> ist im Grunde ein 24/7-Strom aus „Ich habe diesen Brief bekommen, was bedeutet er?" und „Wie mache ich X?"</li>
+  <li><a href="https://allaboutberlin.com">AllAboutBerlin</a> ist seit fast einem Jahrzehnt das De-facto-Handbuch für Berlin-Neuankömmlinge auf Englisch, weil ein Kanadier (Nicolas Bouliane) bessere Praxis-Anleitungen schreibt als die deutsche Regierung.</li>
+  <li>Das Bundesamt für Migration und Flüchtlinge (<a href="https://www.bamf.de">BAMF</a>) veröffentlicht eigene Forschungsberichte, in denen es einräumt, dass Neuankömmlinge mit grundlegenden Abläufen zu kämpfen haben.</li>
+  <li>Mehrere risikokapitalfinanzierte Start-ups existieren bereits in diesem Bereich — ein Marktsignal, dass hier Geld investiert wurde.</li>
+</ul>
+
+<p>Drei Dinge in der naiven Version dieser Idee müssen auf Fakten überprüft werden:</p>
+
+<p><strong>„Es ist ein Mehrmilliarden-Euro-Markt."</strong> Halbwahr. Wenn man alles Angrenzende zusammenzählt — Relocation-Services, Einwanderungsrecht, Steuersoftware, Expat-Versicherungen, Sprachschulen — über ganz Europa hinweg, sind es viele Milliarden. Aber „Bürokratie-Concierge" allein ist heute wahrscheinlich unter einer Milliarde wert. Der größte spezialisierte Player (<a href="https://localyze.com">Localyze</a>) hat insgesamt etwa 50 Millionen Dollar eingesammelt. Positioniert das also als „ein echtes, wachsendes, verteidigungsfähiges Geschäft in einem Mehrmilliarden-Umfeld", nicht als „das nächste 10-Milliarden-Start-up".</p>
+
+<p><strong>„KI plus menschliche Experten."</strong> Richtiges Modell. Reine KI ist hier gefährlich — es gab in den USA bereits Fälle, in denen Anwälte ChatGPT für Asylanträge nutzten und die KI gefälschte Aktenzeichen erfand, was echten Menschen geschadet hat. Reine Menschen skalieren nicht. KI erledigt die Massenarbeit; Menschen übernehmen die Randfälle.</p>
+
+<p><strong>„Wir geben keine Rechtsberatung."</strong> Gutes Bewusstsein, aber Deutschlands Regeln sind strenger, als die Leute denken. Das Rechtsdienstleistungsgesetz (RDG) definiert, was als Rechtsberatung gilt. Das Ausfüllen eines Visumantrags für jemanden nach Analyse seiner persönlichen Situation kann darunter fallen, selbst wenn man sich nicht Anwalt nennt. Siehe <em>regulatory-checklist-rdg-safe.md</em> für Details.</p>
+
+<p><strong>„Behördenbriefe übersetzen."</strong> Das ist die emotional kraftvollste Einzelfunktion im gesamten Produkt. Menschen zahlen heute zufälligen Fiverr-Übersetzern 20–50 € pro Brief. Sie werden absolut für eine schnellere, sicherere, unbegrenzte Version zahlen.</p>
+
+<h3>Was der ursprüngliche Pitch unterschätzt</h3>
+
+<ol>
+  <li><strong>Der Markt ist überfüllt, nicht leer.</strong> Localyze, <a href="https://expatrio.com">Expatrio</a>, <a href="https://feather-insurance.com">Feather</a>, <a href="https://taxfix.de">Taxfix</a>, <a href="https://expats.de">Expats.de</a>, Handbook Germany, Make-It-In-Germany, jede „Welcome"-Seite jeder deutschen Bank, plus Tausende Einwanderungsanwälte und Steuerberater. „Anders sein" ist keine Option.</li>
+  <li><strong>Vertrieb ist schwieriger als das Produkt.</strong> Neuankömmlinge haben keine Ahnung, dass eure Marke existiert. Direct-to-Consumer-Werbung ist teuer — „hohe CAC" (Customer Acquisition Cost, Kundenakquisitionskosten). Bei einem Einmalkauf von 29,99 € könnt ihr nicht 80 € pro Kunde ausgeben. Realistisches D2C-Drehbuch ist Content/SEO über mehr als 2 Jahre, plus Mundpropaganda in der Diaspora.</li>
+  <li><strong>Vertrauen ist eine riesige Hürde.</strong> Ausländer wurden in ihren Heimatländern oft von dubiosen „Visa-Beratern" abgezockt. Vertrauen aufzubauen dauert Jahre.</li>
+  <li><strong>Die Daten sind gefährlich.</strong> Reisepass-Scans, Aufenthaltstitel-Nummern, Gehaltsinformationen — unter der DSGVO sind einige davon „besondere Kategorien personenbezogener Daten" mit besonders strengen Regeln. Ein Datenleck zerstört das Geschäft.</li>
+  <li><strong>Regeln ändern sich jährlich.</strong> Die Gehaltsschwellen für die Blaue Karte steigen jedes Jahr. Die Chancenkarte existiert erst seit 2024. Jemand muss das Produkt aktuell halten — laufende Kosten.</li>
+</ol>
+
+<hr />
+
+<h2 id="competitors">2. Die Wettbewerbslandschaft</h2>
+
+<p>Drei Kategorien von Akteuren existieren bereits: unabhängige Content-Seiten, kostenlose Regierungs-/NGO-Portale und risikokapitalfinanzierte Start-ups.</p>
+
+<h3>Unabhängige Content-Seiten</h3>
+
+<p><strong><a href="https://allaboutberlin.com">AllAboutBerlin</a></strong> — Der Goldstandard. Betrieben von Nicolas Bouliane. Ein persönlicher Blog, der zum vertrauenswürdigsten Berlin-Neuankömmlings-Handbuch auf Englisch herangewachsen ist. Berühmter Freelancer-Steuerrechner. Eine Person, Berlin-fokussiert. Er wird kein SaaS bauen; ihr werdet ihn nicht überschreiben können. Potenzieller Partner, kein Konkurrent.</p>
+
+<p><strong><a href="https://www.simplegermany.com">SimpleGermany</a></strong> — Gegründet 2020 von Jen (Guatemala) und Yvonne (Deutschland). Stark auf YouTube vertreten, über 8 Millionen Aufrufe, etwa 4 Millionen jährliche Webseitenleser. Verkauft Premium-Kurse, Vorlagen, E-Books. Content-Marke, kein Produktunternehmen. Potenzieller Partner.</p>
+
+<p><strong>Reddit <a href="https://www.reddit.com/r/germany/">r/germany</a></strong> — etwa 600.000 Mitglieder. Die weltweit größte unmoderierte FAQ zum Leben in Deutschland. Dieselben Fragen wiederholen sich — jede sich wiederholende Frage ist eine Produktchance.</p>
+
+<h3>Kostenlose Regierungs- und NGO-Portale</h3>
+
+<p><strong><a href="https://handbookgermany.de/en">Handbook Germany</a></strong> — EU- und bundesgefördert, mehrsprachig (Arabisch, Farsi, Paschtu, Türkisch, Englisch, Französisch, Deutsch, Ukrainisch). Enzyklopädie, kein Assistent. Keine Personalisierung, keine Tools.</p>
+
+<p><strong><a href="https://www.make-it-in-germany.com/en">Make-It-In-Germany</a></strong> — Das offizielle Bundesportal für Fachkräfte, Studierende und Auszubildende. Autoritativ, aber langsam in der Aktualisierung und nicht personalisiert.</p>
+
+<p><strong><a href="https://www.bamf.de">BAMF</a></strong> — Die Behörde, die für Asyl, Integrationskurse und Staatsbürgerschaft zuständig ist. Autoritative Quelle, auf die ihr verlinkt, die ihr aber nicht ersetzt.</p>
+
+<h3>Risikokapitalfinanzierte Start-ups</h3>
+
+<p><strong><a href="https://localyze.com">Localyze</a></strong> — Hamburg, etwa 50 Mio. $ eingesammelt. Reines B2B, verkauft an Personalabteilungen. Kunden u. a. Delivery Hero und Personio. Stark bei Relocation-Workflows, schwach bei dem, was nach den ersten 30 Tagen passiert.</p>
+
+<p><strong><a href="https://expatrio.com">Expatrio</a></strong> — Berlin, etwa 200.000 Nutzer. Bündelt ein Sperrkonto, eine Krankenversicherung und ein deutsches Bankkonto. Etwa 5 €/Monat. Stark vor der Ankunft, schwach nach der Ankunft.</p>
+
+<p><strong><a href="https://www.fintiba.com">Fintiba</a></strong> — Frankfurt. Über 300.000 Studierende. Gleiche Nische wie Expatrio. Tiefer Burggraben bei chinesischen Studierenden.</p>
+
+<p><strong><a href="https://www.coracle.de">Coracle</a></strong> — Gleiche Nische, etwa 20.000 Studierende/Jahr. Mehrsprachig.</p>
+
+<p><strong><a href="https://feather-insurance.com">Feather</a></strong> — Berlin. Moderner, vertrauenswürdiger Versicherungsmakler für Expats. Nur Versicherungen.</p>
+
+<p><strong><a href="https://taxfix.de">Taxfix</a></strong> — Deutsche Steuererklärungs-App. 39,99 € im Self-Service, 99,99 € mit Experte. Die deutschsprachige Seite begrenzt die Reichweite in Fremdsprachen.</p>
+
+<p><strong><a href="https://expats.de">Expats.de</a></strong> — Berlin seit 2014. Bürokratie-Übersetzung, Checklisten. Über 35.000 Kunden. Weniger automatisiert.</p>
+
+<h3>Was diese Landkarte zeigt</h3>
+
+<p>Content-Seiten haben das Publikum, aber kein Produkt. Regierungsseiten haben Autorität, aber keine Tools. Jedes Start-up löst nur ein schmales Segment — Localyze für große Arbeitgeber, Expatrio/Fintiba/Coracle für Studierende vor der Ankunft, Feather für Versicherungen, Taxfix für Steuern.</p>
+
+<p><strong>Niemand hat bisher das gebaut, was mehrsprachige KI-Briefdekodierung mit End-to-End-Unterstützung für Neuankömmlinge über alle fünf Kundentypen hinweg kombiniert.</strong> Diese Lücke ist die Produktchance.</p>
+
+<hr />
+
+<h2 id="personas">3. Der Kunde: Fünf Personas</h2>
+
+<p>Das Produkt hilft fünf Arten von Menschen. Alle haben sich überlappende Probleme, aber Dringlichkeit und Zahlungsbereitschaft unterscheiden sich.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Persona</th>
+      <th>Schmerz vor der Ankunft</th>
+      <th>Schmerz nach der Ankunft</th>
+      <th>Passung zur Einmalzahlung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Tourist (Schengen-Visum)</strong></td>
+      <td>Wartezeiten auf Botschaftstermine (3–6 Monate in Lagos, Istanbul, Delhi, Teheran), Papierkram, Einladungsschreiben, Widersprüche</td>
+      <td>Kurzer Aufenthalt; meistens erledigt</td>
+      <td>29,99 € einmalig liegt im Impulskauf-Bereich</td>
+    </tr>
+    <tr>
+      <td><strong>Studierende</strong></td>
+      <td>uni-assist-Portal, Sperrkonto, Sprachtests, Studentenvisum</td>
+      <td>Anmeldung, Krankenversicherung, Arbeitszeitregeln, Visum nach dem Studium</td>
+      <td>29,99 € kauft 4–6 Jahre Hilfe — hervorragendes Preis-Leistungs-Verhältnis</td>
+    </tr>
+    <tr>
+      <td><strong>Arbeitnehmer / Freiberufler</strong></td>
+      <td>Auswahl des richtigen Visums (Blaue Karte vs. Fachkräftevisum vs. Chancenkarte), Anerkennung des Abschlusses, Arbeitgeber-Papierkram</td>
+      <td>Anmeldung, Steuer-ID, Krankenversicherung, Aufbau der Schufa, Anmeldung als Freiberufler</td>
+      <td>Persona mit den höchsten Einsätzen; 29,99 € sind im Verhältnis zu den Konsequenzen günstig</td>
+    </tr>
+    <tr>
+      <td><strong>Langzeitansässige</strong></td>
+      <td>(Bereits hier)</td>
+      <td>Niederlassungserlaubnis, Einbürgerung, Familiennachzug, Verlängerungen</td>
+      <td>29,99 € decken eine mehrjährige Reise bis zur Einbürgerung ab</td>
+    </tr>
+    <tr>
+      <td><strong>Familie, die zu einer ansässigen Person zieht</strong></td>
+      <td>A1-Deutsch, Einkommensnachweis, Unterkunft</td>
+      <td>Kita, Schule, Kindergeld, Elterngeld</td>
+      <td>Stressiger Moment, 29,99 € fallen kaum ins Gewicht</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Einige deutsche Begriffe, die in diesem Dokument durchgängig verwendet werden:</p>
+
+<ul>
+  <li><strong>Anmeldung</strong>: Die Anmeldung der Adresse bei der Stadt. Erforderlich innerhalb von 14 Tagen nach dem Einzug. Ohne sie bekommt man keine Steuer-ID, kann die meisten Bankkonten nicht eröffnen und keinen Handyvertrag abschließen. Der Generalschlüssel.</li>
+  <li><strong>Schufa</strong>: Deutschlands wichtigste Auskunftei zur Bonität. Vermieter und Banken verlangen eine „Schufa-Auskunft", bevor sie einem vertrauen.</li>
+  <li><strong>Kindergeld</strong>: Monatliche staatliche Geldleistung für jedes Kind (ca. 250 €/Monat).</li>
+  <li><strong>Elterngeld</strong>: Elternzeit-Geld — ersetzt etwa 67 % des Gehalts für bis zu 14 Monate nach der Geburt.</li>
+  <li><strong>Behörde</strong>: Staatliches Amt. <strong>Brief</strong>: Schreiben. Ein „Behörden-Brief" ist ein offizielles Schreiben von einer beliebigen Behörde.</li>
+</ul>
+
+<hr />
+
+<h2 id="legal">4. Die rechtliche Grenze (Kurzfassung)</h2>
+
+<p>Die Vollversion ist <em>regulatory-checklist-rdg-safe.md</em>. Die Schlagzeile:</p>
+
+<p>In Deutschland darf „Rechtsberatung" nur von zugelassenen Rechtsanwälten erbracht werden. „Steuerberatung" darf nur von zugelassenen Steuerberatern erbracht werden. Beide Regeln sind streng. Das Ausfüllen eines Visumantrags für jemanden nach Analyse seiner persönlichen Situation kann technisch als unzulässige Rechtsberatung gelten, mit Bußgeldern bis zu 5.000 € pro Verstoß.</p>
+
+<p><strong>Was sicher ist:</strong></p>
+
+<ul>
+  <li><strong>Information</strong>: „Hier sind die Kriterien für die Blaue Karte." (Sachlich, nicht personalisiert.)</li>
+  <li><strong>Übersetzung</strong>: Von Briefen und Dokumenten, mit einem Hinweis, dass es sich nicht um eine rechtliche Auslegung handelt.</li>
+  <li><strong>Organisation</strong>: Dokumententresor, Fristerinnerungen, Ablaufwarnungen.</li>
+  <li><strong>Tools zum Ausfüllen von Formularen</strong>: Der Nutzer gibt seine eigenen Daten ein, KI hilft, der Nutzer unterschreibt und reicht ein. Nie „wir reichen es für Sie ein."</li>
+  <li><strong>Prozessnavigation</strong>: „Schritt 1, Schritt 2, Schritt 3." Nicht „Sie sollten Option A wählen."</li>
+  <li><strong>Vermittlung</strong>: Den Nutzer für die eigentliche Beratung an einen echten Anwalt oder Steuerberater verweisen (auf nach V1 verschoben).</li>
+</ul>
+
+<p>Die Formulierung ist entscheidend. <em>„Sie sollten die Blaue Karte beantragen"</em> = unzulässig. <em>„Ihr Gehalt erreicht die Schwelle für die Blaue Karte. Hier sind die Kriterien. Um den besten Weg zu wählen, konsultieren Sie einen Einwanderungsanwalt."</em> = in Ordnung.</p>
+
+<p><strong>Drei Dinge, die vor dem Launch zu erledigen sind:</strong></p>
+
+<ol>
+  <li>Einen Anwalt beauftragen, der sich auf dieses Gebiet spezialisiert hat (<em>Berufsrecht</em> und <em>IT-Recht</em>), um die Formulierungen jeder Funktion zu prüfen.</li>
+  <li>Dateninfrastruktur so einrichten, dass alle personenbezogenen Daten ab Tag eins in der EU bleiben.</li>
+  <li>Einen klaren Hinweis aufbauen, der sagt „dies ist eine Information, keine Beratung — sprechen Sie mit einem zugelassenen Profi", ohne die Nutzer zu verschrecken.</li>
+</ol>
+
+<hr />
+
+<h2 id="strategy">5. Strategische Entscheidungen</h2>
+
+<p>Dies sind die übergeordneten Scope-Entscheidungen mit Begründung. Sie definieren, was V1 ist — und ebenso wichtig, was sie nicht ist.</p>
+
+<h3>Eine App, persona-bewusst. Nicht mehrere Apps.</h3>
+
+<p>Eine Aufteilung in separate Apps pro Persona (Tourist-App, Studenten-App, Arbeitnehmer-App) wurde erwogen und verworfen. Gründe:</p>
+
+<ul>
+  <li>Die Killer-Funktion (Behörden-Brief-Decoder) ist über alle Personas hinweg identisch.</li>
+  <li>Der natürliche Kundenlebenszyklus ist Studierender → Arbeitnehmer → Langzeitansässiger → Staatsbürger. Separate Apps verlieren den Nutzer bei jedem Übergang.</li>
+  <li>Kosten für Engineering, Compliance und Anwaltsprüfung verdoppeln sich pro App bei etwa 1× Wert.</li>
+  <li>Eine Marke, die über Jahre Vertrauen aufbaut, schlägt vier sub-skalierende Marken.</li>
+</ul>
+
+<p>Stattdessen: <strong>eine App, eine Onboarding-Frage („Was ist Ihre Situation in Deutschland?"), persona-spezifischer Home-Screen und Checkliste darunter</strong>. Der Nutzer kann die Persona jederzeit in den Einstellungen wechseln, ohne bisherigen Fortschritt zu verlieren.</p>
+
+<h3>Nur Ausländer. Keine gebürtigen Deutschen.</h3>
+
+<p>Eine Erweiterung auf „jeden in Deutschland, der Papierkram nervig findet" wurde erwogen und verworfen. Gründe:</p>
+
+<ul>
+  <li>Die emotionale Kraft des Decoders kommt daher, dass der Nutzer den Brief überhaupt nicht lesen kann. Deutsche können ihn lesen; sie haben nur keine Freude daran.</li>
+  <li>Der deutsche Markt für „Bürokratiehilfe" ist bereits gesättigt: Taxfix, Smartsteuer, Sevdesk, Kontist, Check24, Verivox, plus jede Bank-App und ELSTER selbst.</li>
+  <li>Deutsche zahlen kulturell nicht für „erkläre mir meinen Brief" — sie fragen die Familie oder nutzen die Verbraucherzentrale.</li>
+  <li>Zwei Zielgruppen anzusprechen verwässert Positionierung, Marketing und Onboarding.</li>
+</ul>
+
+<p>Ein kleiner Anteil gebürtiger Deutscher (junge Erstbezieher, zurückkehrende Auswanderer, digital überforderte Senioren) könnte die App trotzdem nutzen — sie dürfen, aber das Produkt wird nicht für sie neu gestaltet.</p>
+
+<h3>iOS zuerst. Android, WhatsApp, Telegram alle verschoben.</h3>
+
+<ul>
+  <li><strong>iOS zuerst</strong>, weil App-Store-Nutzer etwa den doppelten Umsatz pro Nutzer gegenüber Google Play haben und tendenziell höhere Einkommen aufweisen. Speziell für die Arbeitnehmer-Persona (Blaue Karte, über 60.000 €) ist das der richtige Kanal.</li>
+  <li><strong>Android, WhatsApp, Telegram sind auf die Zeit nach dem Launch verschoben.</strong> Der ehrliche Preis: Große Teile der türkischen, arabischen, vietnamesischen, russischen, ukrainischen und iranischen Diaspora nutzen primär WhatsApp oder Telegram und zahlen selten für iOS-Apps. Das sind die günstigsten Kanäle, die später hinzugefügt werden können, und die wichtigste Expansion nach V1.</li>
+</ul>
+
+<h3>Einmalig 29,99 €, unbegrenzt. Kein Abo, keine Stufen.</h3>
+
+<p>Ein Abo-Modell (monatliche Stufen 9/19/49 €) wurde erwogen und verworfen. Gründe:</p>
+
+<ul>
+  <li>Das Produkt wird gelegentlich, aber mit hohem Einsatz genutzt. Nutzer öffnen es, wenn ein Brief kommt, wenn sie umziehen, wenn eine Frist auftaucht — nicht täglich. Nach den chaotischen ersten 90 Tagen schauen Monatsnutzer auf den Kontoauszug und kündigen.</li>
+  <li>Abo-Müdigkeit ist in Deutschland ein echter Kündigungstreiber.</li>
+  <li>Ein einzelner Einmalpreis ist schneller zu liefern, einfacher zu vermarkten und wird in Ländern akzeptiert, in denen laufende Abos misstrauisch beäugt werden (Türkei, Iran).</li>
+</ul>
+
+<p><strong>29,99 € (vs. 9,99–14,99 €)</strong> wird gewählt, weil die KI-Inferenzkosten pro Nutzung (etwa 0,02–0,10 € pro Decoder-Aufruf) und die laufenden Wartungslasten (jährliche Gesetzesänderungen, Content-Updates, Anwaltsprüfungen) eine echte Marge brauchen. Nach Apples 30 %-Anteil bleiben etwa 21 € netto. Das finanziert das Geschäft; 9,99 € einmalig nicht.</p>
+
+<p>Der Preis verankert sich nach wie vor gut gegenüber der Alternative: Eine einzelne Fiverr-Übersetzung kostet einmalig 20–50 €. Lebenslang alles für 29,99 € ist ein offensichtlicher Deal.</p>
+
+<h3>B2B verschoben. Marktplätze verschoben. Termin-Monitoring verschoben.</h3>
+
+<p>Jedes ist tatsächlich wertvoll und vermutlich der richtige nächste Schritt, nachdem V1 sich bewährt hat. Aber:</p>
+
+<ul>
+  <li>B2B-Vertriebszyklen dauern 3–6 Monate. Falsch für ein MVP, das die Grundthese testet.</li>
+  <li>Marktplätze (Empfehlungen für Anwälte / Steuerberater / vereidigte Übersetzer) brauchen zuerst Nutzer.</li>
+  <li>Termin-Monitoring (Bürgeramt, Ausländerbehörde) ist fragil, schwer zu warten und operativ riskant.</li>
+</ul>
+
+<p>Siehe Abschnitt 11 für die Roadmap nach V1.</p>
+
+<hr />
+
+<h2 id="v1">6. Das V1-Produkt</h2>
+
+<p>Eine schlanke iOS-App, die in 8–10 Wochen erscheint. Ein Backend, eine Codebasis, persona-bewusste UX.</p>
+
+<h3>Gemeinsamer Kern (immer vorhanden)</h3>
+
+<p><strong>Behörden-Brief-Decoder.</strong> Die Anker-Funktion. Der Nutzer fotografiert einen beliebigen offiziellen Brief vom Finanzamt, von der Ausländerbehörde, der Krankenkasse, vom Jobcenter, vom Rundfunkbeitrag oder vom Bürgeramt. Ausgabe: Zusammenfassung in einfacher Sprache in der Sprache des Nutzers, was der Brief verlangt, Frist in den In-App-Kalender eingetragen, Schweregrad-Flag (Information / Handlung erforderlich / dringend / rechtlich), Vorschlag für eine Antwortvorlage und eine „Mit einem Anwalt sprechen"-Hinweisschaltfläche bei rechtlich folgenreichen Sachverhalten. <strong>Unbegrenzte Nutzung im Einmalkauf von 29,99 € enthalten.</strong> OCR läuft auf dem Gerät (Apple Vision); der Erklärungsschritt nutzt einen serverseitigen LLM-Aufruf.</p>
+
+<p><strong>Dokumententresor.</strong> Verschlüsselter Speicher für Reisepass, Aufenthaltstitel, Gesundheitskarte, Führerschein, Anerkennungsbescheinigungen für Abschlüsse, Versicherungspolicen, Verträge. Kategorisiert. Ablaufdatum pro Dokument. Push-Benachrichtigungen 60, 30, 7 Tage vor Ablauf. Gehostet in der EU (nicht verhandelbar). Export und Teilen als PDF.</p>
+
+<p><strong>Fristen-Kalender.</strong> Automatisch befüllt aus dekodierten Briefen, Checklistenpunkten und Tresor-Ablaufdaten. Manuelles Hinzufügen unterstützt. Push-Benachrichtigungen 14, 7, 1 Tag vorher. Als erledigt markieren.</p>
+
+<p><strong>Sprachen.</strong> Oberfläche und Decoder-Ausgabe in 8 Sprachen zum Launch: Englisch, Deutsch, Arabisch, Türkisch, Russisch, Ukrainisch, Farsi, Spanisch. Weitere Sprachen (Vietnamesisch, Chinesisch, Französisch, Hindi) nach dem Launch.</p>
+
+<p><strong>Onboarding.</strong> Drei Bildschirme: Sprachauswahl → Persona-Auswahl → Benachrichtigungs-Berechtigung. Die Persona-Auswahl ist die folgenreichste UX-Entscheidung — Home-Screen und aktive Checkliste ergeben sich daraus.</p>
+
+<p><strong>Einstellungen.</strong> Sprache ändern, Persona ändern (Fortschritt bleibt erhalten), Benachrichtigungseinstellungen, Tresor-Export, DSGVO-Steuerung, Kontakt/Support, Kauf wiederherstellen.</p>
+
+<h3>V1-Funktionsumfang pro Persona</h3>
+
+<p>Jede Persona-Checkliste sitzt auf dem gemeinsamen Kern auf. Die Punkte unten sind <em>zusätzlich</em> zu Decoder, Tresor und Kalender.</p>
+
+<h4>Tourist (Schengen-Visum)</h4>
+
+<ol>
+  <li><strong>Tool zur Entscheidung über die Visumpflicht.</strong> Eingaben: Staatsangehörigkeit + Zweck + Dauer + EU-Aufenthaltsstatus. Ausgabe: Visum erforderlich / visumfrei / bestimmter Visumtyp. Statischer Entscheidungsbaum.</li>
+  <li><strong>Botschafts-Dokumentencheckliste</strong> nach Visumtyp. Vorlage für Reiseroute, Hinweise zur Hotel-/Flugreservierung, Anforderungen an den Finanzierungsnachweis, Foto-Spezifikationen.</li>
+  <li><strong>Verpflichtungserklärung-Erklärer.</strong> Was die formelle Einladungserklärung ist, wann der deutsche Gastgeber sie unterschreiben muss, wohin er geht (seine örtliche Ausländerbehörde), wozu sie ihn verpflichtet.</li>
+  <li><strong>Reiseversicherungs-Vergleich</strong> (Hanse Merkur, ADAC, Allianz — muss die Mindestdeckung von 30.000 € erfüllen). Affiliate-Links.</li>
+  <li><strong>90-aus-180-Tage-Zähler.</strong> Der Nutzer gibt vergangene Reisedaten im Schengen-Raum ein; die App berechnet die verbleibenden Tage.</li>
+  <li><strong>Überlebenskit vor der Ankunft.</strong> SIM-Karten-Grundlagen, Deutschlandticket, Bargeld-vs.-Karte-Kultur, Sonntagsruhe-Regel, grundlegende Überlebensphrasen.</li>
+</ol>
+
+<h4>Studierende</h4>
+
+<ol>
+  <li><strong>Checkliste vor der Ankunft nach Staatsangehörigkeit</strong> (wichtigste Nicht-EU-Quellen zum Launch: Indien, China, Vietnam, Iran, Türkei, Nigeria). Beinhaltet uni-assist-Hinweise (Link, keine Integration), APS für die vier Länder, die es benötigen, Auswahl des Sprachtests.</li>
+  <li><strong>Sperrkonto-Vergleich.</strong> Fintiba vs. Expatrio vs. Coracle vs. Deutsche Bank. Aktueller Betrag (11.904 € für 2026). Affiliate-Anmelde-Links.</li>
+  <li><strong>Studentische Krankenversicherungen im Vergleich.</strong> TK, AOK, Barmer, DAK. Affiliate-Anmelde-Links.</li>
+  <li><strong>Anmeldung-Guide.</strong> Mit Arbeitnehmer-Persona geteilt. Stadt für Stadt für Berlin, München, Hamburg, Frankfurt, Köln — erforderliche Dokumente, was die Wohnungsgeberbestätigung ist, wer sie unterschreibt. Nur Information; Termin-Monitoring ist Post-V1.</li>
+  <li><strong>Arbeitsstunden-Tracker.</strong> Manuelle Eingabe von Arbeitstagen; warnt bei 100/140 vollen Tagen oder 200/280 halben Tagen. Setzt am 1. Januar zurück.</li>
+  <li><strong>Übergangs-Checkliste nach dem Studium.</strong> Wird aktiviert, wenn das Abschlussdatum eingegeben wird. Deckt das 18-monatige Visum zur Arbeitsuche ab, den Wechsel zur Blauen Karte oder zum Fachkräftevisum, wenn eine Stelle gefunden ist.</li>
+</ol>
+
+<h4>Arbeitnehmer / Freiberufler</h4>
+
+<p style="color: var(--muted); font-style: italic;">Persona mit den höchsten Einsätzen; tiefster Feinschliff hier.</p>
+
+<ol>
+  <li><strong>Visum-Passungs-Tool.</strong> Eingaben: Gehalt, Bildungsstand, Land des Abschlusses, Deutschniveau, Alter, vorherige Deutschland-Zeit. Ausgabe: am besten passendes Visum/Visa — Blaue Karte / Fachkräftevisum §18a / §18b / Chancenkarte / Arbeitsuchendenvisum — mit Begründung.</li>
+  <li><strong>Blaue-Karte-Schwellenprüfer.</strong> Aktuelle Zahlen für 2026 für allgemeine Berufe und Mangelberufe. Der Nutzer gibt das Jahresgehalt ein; die App sagt ja / nein / Grenzfall.</li>
+  <li><strong>Chancenkarte-Punkterechner.</strong> Volles Punktesystem: Qualifikation, Berufserfahrung, deutsches Sprachniveau, Alter, vorheriger Bezug zu Deutschland.</li>
+  <li><strong>Anmeldung-Guide.</strong> Mit Studierenden-Persona geteilt.</li>
+  <li><strong>Bankkonto-Vergleich.</strong> N26, DKB, Commerzbank, Sparkasse, C24 — einschließlich der Frage, welche Nutzer vor der Anmeldung akzeptieren. Affiliate.</li>
+  <li><strong>Krankenversicherungs-Entscheidungsbaum.</strong> Zuerst Entscheidung GKV (gesetzlich) vs. PKV (privat), dann GKV-Anbietervergleich (TK, AOK, Barmer, DAK). Affiliate, wo möglich.</li>
+  <li><strong>Steuer-ID &amp; Steuernummer-Organizer.</strong> Erklärt den Unterschied (Steuer-ID ist lebenslang persönlich; Steuernummer ist für das Unternehmen und ändert sich beim Umzug). Verfolgt, wann die Steuer-ID angekommen ist (automatisch verschickt etwa 90 Tage nach der Anmeldung). Anleitung zur Anforderung einer verlorenen ID.</li>
+  <li><strong>Sub-Flow zur Anmeldung als Freiberufler</strong> (nur für Freiberufler). Walkthrough für den Fragebogen zur steuerlichen Erfassung, USt-Entscheidung (Kleinunternehmerregelung vs. Regelbesteuerung), Berechtigungs-Check für die KSK (Künstlersozialkasse).</li>
+</ol>
+
+<h4>Familienmitglied (das zu einer ansässigen Person zieht)</h4>
+
+<ol>
+  <li><strong>Checkliste für das Familiennachzugs-Visum.</strong> Einkommensnachweis des Antragstellers, Anforderungen an die Unterkunft, A1-Deutsch-Anforderung (mit Ausnahmen für EU-Ehepartner, Hochqualifizierten-Ausnahme usw.).</li>
+  <li><strong>Buchungs-Guide für den A1-Test.</strong> Goethe-Institut, telc, ÖSD — wo man ihn im Heimatland ablegt, Kosten, was geprüft wird.</li>
+  <li><strong>Dokumentenpaket des Antragstellers.</strong> Was der Ehepartner auf der deutschen Seite vorlegen muss. Vorlage für die Einkommensbescheinigung, Wohnraumbestätigung.</li>
+  <li><strong>Checkliste nach der Ankunft.</strong> Anmeldung (geteilt), Bankkontoeröffnung, Erhalt der Aufenthaltskarte bei der Ausländerbehörde.</li>
+  <li><strong>Anleitung zum Kindergeldantrag.</strong> Walkthrough für das Formular der Familienkasse; erklärt rückwirkende Ansprüche von 6 Monaten.</li>
+  <li><strong>Grundlagen zur Kita-/Schulanmeldung.</strong> Allgemeine Anleitung plus Links zu den Anmeldeportalen der Top-5-Städte. Erklärt Willkommensklassen für nicht deutschsprachige Kinder.</li>
+  <li><strong>Sub-Flow zur Geburtsanzeige (Standesamt)</strong> — wird aktiviert, wenn der Nutzer „erwartet ein Kind" oder „neues Kind" markiert.</li>
+</ol>
+
+<h4>Langzeitansässige</h4>
+
+<p style="color: var(--muted); font-style: italic;">Geringste Dringlichkeit, höchster Lifetime Value — sie bleiben jahrelang.</p>
+
+<ol>
+  <li><strong>Niederlassungserlaubnis-Berechtigungs-Checker.</strong> Eingaben: Jahre in Deutschland, Visumtyp, Deutschniveau, Rentenbeiträge. Sagt dem Nutzer, ob er die Voraussetzungen erfüllt und was noch fehlt.</li>
+  <li><strong>Einbürgerungs-Berechtigungs-Checker.</strong> Spiegelt die Reform von 2024 wider — 5 Jahre Standard, 3 Jahre bei besonderer Integration, doppelte Staatsbürgerschaft jetzt erlaubt, B1- oder C1-Voraussetzung.</li>
+  <li><strong>Einbürgerungstest-Übungs-Tool.</strong> Alle etwa 300 offiziellen Fragen, Multiple-Choice-Modus, „falsch zum Wiederholen markieren", simulierter Testmodus. (Die Fragen sind gemeinfrei — veröffentlicht von der Bundeszentrale für politische Bildung.)</li>
+  <li><strong>Verlängerungs-Tracker.</strong> Aufenthaltstitel, Reisepass, Führerschein, eAT-Karte. Bezieht Ablaufdaten aus dem Tresor; sendet Benachrichtigungen 90 / 60 / 30 / 7 Tage vorher.</li>
+  <li><strong>Kurzanleitung Familiennachzug.</strong> Für Langzeitansässige, die später einen Ehepartner / ein Elternteil / ein Kind nachholen. Teilt die Logik mit der Familien-Persona.</li>
+</ol>
+
+<h3>Persona-Wechsel</h3>
+
+<p>Einstellungen → „Meine Situation" → Liste aller fünf Personas mit der aktuell aktiven angekreuzt.</p>
+
+<ul>
+  <li>Ein Wechsel löscht <strong>nicht</strong> den bisherigen Checklisten-Fortschritt — er bleibt erhalten und ist über „Frühere Situationen" auf demselben Einstellungs-Bildschirm zugänglich.</li>
+  <li>Home-Screen, Fristenliste und Prompts ordnen sich anhand der aktiven Persona neu an.</li>
+  <li>Tresor, Decoder und Kalender bleiben persona-unabhängig und immer präsent.</li>
+  <li>Warum den Fortschritt erhalten: Der natürliche Lebenszyklus ist Studierender → Arbeitnehmer → Langzeitansässiger → Antragsteller auf Einbürgerung. Ein Studierender, der seinen Abschluss macht und auf „Arbeitnehmer" wechselt, sollte seinen Checklisten-Verlauf nicht verlieren.</li>
+</ul>
+
+<p><strong>Mehrere gleichzeitige Personas</strong> (ein Arbeitnehmer, dessen Familie nachzieht) ist ein realer Anwendungsfall, wird aber auf V1.1 verschoben. Für V1 unterstützt das Datenmodell dies ab Tag eins — beim Wechseln wird der Nutzer gefragt „alte Checkliste zugänglich halten? (ja)" — aber die Benutzeroberfläche zeigt jeweils nur eine aktive Persona an.</p>
+
+<hr />
+
+<h2 id="pricing">7. Preisgestaltung &amp; Einnahmen</h2>
+
+<h3>Der Hauptpreis</h3>
+
+<blockquote>
+  <p><strong>29,99 € einmalig, einzige Stufe, unbegrenzte Nutzung, kein Abo.</strong></p>
+</blockquote>
+
+<p>Nach Apples 30 %-Anteil (oder 15 % unter dem Small Business Program, falls man dafür qualifiziert ist) bleiben etwa 21–25 € netto pro Verkauf. Das muss finanzieren: Inferenzkosten pro Decoder (etwa 0,02–0,10 €), EU-Hosting, jährliche Content-Pflege, Anwaltsprüfungen der Formulierungen, Kundenservice.</p>
+
+<h3>Warum kein Abo</h3>
+
+<p>Das Produkt wird gelegentlich, aber mit hohem Einsatz genutzt. Neuankömmlinge öffnen es 2–5 Mal pro Monat nach dem anfänglichen 90-Tage-Sturm. Monatliche Abos für gelegentlich genutzte Produkte kündigen schnell — jeder Kündigungsreflex („brauche ich das noch?") feuert monatlich. Ein Einmalpreis hat keinen Kündigungsreflex.</p>
+
+<h3>Warum nicht 9,99 € oder 14,99 € einmalig</h3>
+
+<p>Bei 9,99 € bleiben etwa 7 € netto pro Verkauf. Mit KI-Inferenzkosten pro Nutzung, EU-Hosting, einer Compliance-Person und Anwaltsprüfungen zu finanzieren bräuchte man etwa 100.000 zahlende Kunden allein, um mit einem kleinen Team kostendeckend zu arbeiten. Bei 29,99 € geht die Rechnung mit etwa 25.000 zahlenden Kunden auf — erreichbar in den Jahren 2–3.</p>
+
+<p>Der Preis unterbietet immer noch jede Alternative: Eine einzelne Fiverr-Übersetzung kostet einmalig 20–50 €, eine Stunde Einwanderungsanwalt über 200 €, eine Steuerberater-Beratung über 100 €.</p>
+
+<h3>Kostenlose Stufe</h3>
+
+<p>3 Behörden-Brief-Decoder-Nutzungen pro Monat, dauerhaft kostenlos. Tresor, Kalender und Persona-Checklisten sind ebenfalls kostenlos. Der Kauf von 29,99 € schaltet die unbegrenzte Decoder-Nutzung frei. Dies ist der Kundengewinnungs-Motor: niedrigschwellige Testphase, viraler Moment (Menschen zeigen Freunden dekodierte Briefe), geringe Hürde bei der Conversion an der Bezahlschranke.</p>
+
+<h3>Sekundäre Einnahmen: Affiliate</h3>
+
+<p>Affiliate-Links sitzen innerhalb der Checklisten, wo die Empfehlung ohnehin nützlich ist:</p>
+
+<ul>
+  <li><strong>Reiseversicherung</strong> (Tourist): Hanse Merkur, ADAC, Allianz — etwa 20–60 € pro Anmeldung.</li>
+  <li><strong>Sperrkonto</strong> (Studierende): Fintiba, Expatrio, Coracle — etwa 30–80 € pro Anmeldung.</li>
+  <li><strong>Studentische Krankenversicherung</strong>: TK, AOK, Barmer, DAK — etwa 30–80 € pro Anmeldung.</li>
+  <li><strong>Bankkonto</strong> (Arbeitnehmer): N26, DKB, C24 — etwa 30–80 € pro Anmeldung.</li>
+  <li><strong>Gesetzliche/private Krankenversicherung</strong> (Arbeitnehmer): etwa 50–200 € pro Police.</li>
+</ul>
+
+<p>Konservativ 15–40 € zusätzliche Einnahmen pro aktivem Nutzer über dessen Lebenszeit, zusätzlich zum Kauf von 29,99 €. Die Affiliate-Platzierung zeigt immer mindestens 3 Optionen transparent geordnet; keine Exklusivverträge.</p>
+
+<h3>Was bewusst nicht in V1 enthalten ist</h3>
+
+<ul>
+  <li>Kein B2B-Vertrieb an Arbeitgeber (Post-V1, siehe Abschnitt 11).</li>
+  <li>Keine Marktplätze (Empfehlungen für Anwälte, Steuerberater, vereidigte Übersetzer — Post-V1).</li>
+  <li>Keine Concierge-/Done-For-You-Stufe (Post-V1).</li>
+  <li>Kein WhatsApp-/Telegram-Kanal (Post-V1).</li>
+</ul>
+
+<hr />
+
+<h2 id="competitor-map">8. Wettbewerbslandkarte</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Wettbewerber</th>
+      <th>Was sie gut machen</th>
+      <th>Lücke, die zu nutzen ist</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong><a href="https://localyze.com">Localyze</a></strong></td>
+      <td>B2B für große Arbeitgeber; gut finanziert</td>
+      <td>Nicht D2C; für HR-Workflows gebaut; schwach nach den ersten 30 Tagen</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://expatrio.com">Expatrio</a></strong></td>
+      <td>Sperrkonto-und-Versicherungs-Bundle für Studierende</td>
+      <td>Schmales Produkt; schwach nach der Ankunft</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://feather-insurance.com">Feather</a></strong></td>
+      <td>Moderner, vertrauenswürdiger Versicherungsvergleich</td>
+      <td>Nur Versicherungen</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://www.simplegermany.com">SimpleGermany</a></strong></td>
+      <td>Vertrauenswürdige zweisprachige Content-Marke</td>
+      <td>Content, kein Produkt</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://allaboutberlin.com">AllAboutBerlin</a></strong></td>
+      <td>Content-Marke mit dem höchsten Vertrauen in Berlin</td>
+      <td>Nur Berlin; eine Person; kein SaaS</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://handbookgermany.de/en">Handbook Germany</a></strong></td>
+      <td>Kostenlos, mehrsprachig, offizieller Eindruck</td>
+      <td>Behördensprache; keine Personalisierung; keine Tools</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://www.make-it-in-germany.com/en">Make-It-In-Germany</a></strong></td>
+      <td>Offizielle Regierungsinformationen</td>
+      <td>Behörden-UX; keine Automatisierung</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://expats.de">Expats.de</a></strong></td>
+      <td>Concierge-artige Dokumentenbearbeitung</td>
+      <td>Sub-skalierend; begrenzte Automatisierung</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://www.fintiba.com">Fintiba</a> / <a href="https://www.coracle.de">Coracle</a></strong></td>
+      <td>Sperrkonten in großem Maßstab</td>
+      <td>Schmales Produkt</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://n26.com">N26</a> / Bunq</strong></td>
+      <td>Einfache Bank-Onboarding für Ausländer</td>
+      <td>Nur Banking</td>
+    </tr>
+    <tr>
+      <td><strong><a href="https://taxfix.de">Taxfix</a></strong></td>
+      <td>Deutsche Steuererklärungs-App</td>
+      <td>Nur deutschsprachig; nur für Steuerinländer</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Differenzierungsthese</h3>
+
+<ol>
+  <li><strong>Mehrsprachige KI-Briefdekodierung, unbegrenzt.</strong> Niemand hat das gemeistert. Es ist der Türöffner.</li>
+  <li><strong>Eine App, die alle fünf Personas mit einer einzigen Onboarding-Frage abdeckt.</strong> Wettbewerber decken einen Ausschnitt ab; wir decken den Lebenszyklus ab.</li>
+  <li><strong>Einmalpreis von 29,99 €</strong> ist neuartig in einer abodominierten Kategorie — nutzerfreundlicher für diejenigen, die laufenden Abbuchungen misstrauen.</li>
+  <li><strong>Ehrlich beim Umfang.</strong> Kein B2B in V1, kein Marktplatz in V1, kein gefakter „KI-Anwalt". Information + Organisation + Übersetzung, mit Vermittlungen, die verschoben sind, bis die Nutzerbasis sie verdient hat.</li>
+</ol>
+
+<hr />
+
+<h2 id="distribution">9. Vertrieb zum Launch</h2>
+
+<p>Da V1 D2C und nur iOS ist, sind die Kanäle begrenzt und content-lastig:</p>
+
+<ol>
+  <li><strong>SEO-Inhalte in den Sprachen der Nutzer.</strong> Das AllAboutBerlin-Drehbuch — die besten Praxis-Anleitungen in der Sprache des Nutzers schreiben, bei Google ranken, konvertieren. Horizont von mehr als 2 Jahren. Siehe <em>seo-content-plan-multilingual.md</em>.</li>
+  <li><strong>App Store Optimization (ASO).</strong> Untertitel und Keyword-Feld pro Sprache abgestimmt. Lokalisierte Einträge pro wichtiger Sprache. Custom Product Pages (Apple-Feature seit iOS 15) pro Persona — Anzeigen führen zu persona-spezifischen Seiten.</li>
+  <li><strong>Diaspora-Communities.</strong> r/germany, türkische/russische/iranische Facebook-Gruppen, Reddit-Communities nach Staatsangehörigkeit, Discord-Server für internationale Studierende. Kostenlos, langsam, hohes Vertrauen.</li>
+  <li><strong>Influencer-Partnerschaften.</strong> SimpleGermany-YouTube-Kooperationen, Erwähnungen bei AllAboutBerlin (Nicolas verlinkt gelegentlich auf Tools, die ihm gefallen).</li>
+  <li><strong>Empfehlungsprogramm.</strong> Neuankömmlinge empfehlen nächste Neuankömmlinge. Code pro Nutzer, kleine In-App-Belohnung.</li>
+</ol>
+
+<p>Was auffällig fehlt: bezahlte Akquise. Bei 29,99 € einmalig geht die CAC-Rechnung für Google- oder Meta-Anzeigen kaum auf. Bezahlte Anzeigen sind ein Post-Launch-Experiment, keine Launch-Voraussetzung.</p>
+
+<hr />
+
+<h2 id="mvp">10. Der 12-Wochen-MVP-Plan</h2>
+
+<h3>Wochen 1–2: Fundament</h3>
+<ul>
+  <li>Apple-Entwickler-Account, App-Store-Connect-Einrichtung, EU-Datenresidenz bestätigt</li>
+  <li>Backend-Grundgerüst (Node oder Go), Postgres in EU-Region, S3-äquivalenter verschlüsselter Speicher in der EU</li>
+  <li>Auth (Sign in with Apple + E-Mail)</li>
+  <li>StoreKit-2-Integration für den nicht-konsumierbaren In-App-Kauf von 29,99 €</li>
+</ul>
+
+<h3>Wochen 3–4: Gemeinsamer Kern</h3>
+<ul>
+  <li>Behörden-Brief-Decoder: Kameraerfassung, Apple-Vision-OCR, LLM-Aufruf, strukturierte Ausgabe</li>
+  <li>Dokumententresor: verschlüsselter Speicher, Kategorien, Ablaufverfolgung</li>
+  <li>Fristen-Kalender: automatische Befüllung aus dem Decoder, manuelles Hinzufügen, Benachrichtigungen</li>
+  <li>Sprachwechsler (8 Sprachen)</li>
+</ul>
+
+<h3>Wochen 5–7: Persona-Checklisten</h3>
+<ul>
+  <li>Onboarding-Flow (Sprache → Persona → Benachrichtigungen)</li>
+  <li>Fünf Persona-Checklisten (Inhalt, keine Engines) — als statisches JSON mit Übersetzung gebaut</li>
+  <li>Persona-Wechsel in den Einstellungen mit Fortschrittserhalt</li>
+  <li>Affiliate-Link-Integration</li>
+</ul>
+
+<h3>Wochen 8–9: Feinschliff &amp; Recht</h3>
+<ul>
+  <li>Anwaltliche Prüfung aller Formulierungen (RDG-Konformität)</li>
+  <li>DSGVO-Audit — Auftragsverarbeitungsverträge, Einwilligungsabläufe, Löschung</li>
+  <li>Hinweissystem pro Funktion</li>
+  <li>App-Store-Screenshots, Eintragstext in 8 Sprachen</li>
+  <li>Custom Product Pages pro Persona</li>
+</ul>
+
+<h3>Wochen 10–12: Beta und Launch</h3>
+<ul>
+  <li>TestFlight mit 50–100 eingeladenen Neuankömmlingen aus allen fünf Personas</li>
+  <li>Bug-Fixes, Content-Korrekturen</li>
+  <li>Soft-Launch in einem Land (Türkei, Indien oder Iran — die Nutzer-Funnels mit dem höchsten bekannten Schmerz)</li>
+  <li>App-Store-Launch</li>
+  <li>Beginn der SEO-Content-Veröffentlichung</li>
+</ul>
+
+<h3>6-Monats-Meilensteine</h3>
+<ul>
+  <li>10.000 kostenlose Nutzer.</li>
+  <li>1.000 zahlende Kunden (29,99 € einmalig).</li>
+  <li>5.000 dekodierte Behörden-Briefe.</li>
+  <li>500 Affiliate-Anmeldungen über alle Partner.</li>
+  <li>Nur-EU-Dateninfrastruktur durch externes DSGVO-Audit validiert.</li>
+  <li>Entscheidungspunkt: Android ausliefern? WhatsApp/Telegram hinzufügen? Mit B2B beginnen?</li>
+</ul>
+
+<hr />
+
+<h2 id="post-v1">11. Was nach V1 verschoben wird</h2>
+
+<p>Grob nach wahrscheinlichem Wert geordnet, falls die V1-Traktion die These bestätigt.</p>
+
+<ol>
+  <li><strong>Android.</strong> Etwa 65 % des deutschen Smartphone-Markts. Erforderlich, um die gesamte Diaspora-Zielgruppe zu erreichen.</li>
+  <li><strong>WhatsApp-Bot.</strong> Erreicht türkische, arabische, vietnamesische, indische, brasilianische und afrikanische Neuankömmlinge, die in WhatsApp leben.</li>
+  <li><strong>Telegram-Bot.</strong> Erreicht russische, ukrainische, iranische/Farsi-sprachige Neuankömmlinge.</li>
+  <li><strong>B2B-Arbeitgeberkanal.</strong> 500–2.000 € pro umziehenden Mitarbeiter. Höchstwertiger Kanal pro Logo. Siehe <em>b2b-employer-sales-motion.md</em>.</li>
+  <li><strong>Marktplätze.</strong> Empfehlungen für Anwälte / Steuerberater / vereidigte Übersetzer mit Plattformgebühr oder Provision.</li>
+  <li><strong>Concierge-Stufe.</strong> Von Menschen erledigter Papierkram. 200–800 € pro Fall.</li>
+  <li><strong>Bürgeramt-Termin-Monitoring.</strong> Berlin, München, Hamburg, Frankfurt — die vier schlimmsten Städte. Fragil, aber hochwertig.</li>
+  <li><strong>Doctolib-Integration.</strong> Direkte Arzttermin-Buchung aus der App heraus.</li>
+  <li><strong>Engine zum Autoausfüllen von Formularen.</strong> RDG-riskant; braucht anwaltlich geprüfte Formulierungen, bevor sie ausgeliefert wird. Hoher Nutzerwert.</li>
+  <li><strong>Alltagsfunktionen.</strong> Navigation im Gesundheitswesen, Wohnen, Verkehr, Verbraucherrechte, kulturelle Normen. Riesige Oberfläche; die am häufigsten gewünschten Funktionen zuerst auf Basis von Nutzungsdaten hinzufügen.</li>
+  <li><strong>B2B-Partnerschaften mit Universitäten.</strong> International Offices.</li>
+</ol>
+
+<p>Die Disziplin, diese in V1 <em>nicht</em> zu bauen, ist die wichtigste strategische Entscheidung in diesem Plan.</p>
+
+<hr />
+
+<h2 id="risks">12. Risiken und Gegenmaßnahmen</h2>
+
+<ol>
+  <li><strong>Die deutschen Regeln zur Rechtsberatung (RDG und StBerG).</strong> Existenziell. Jede Funktion auf sichere Formulierung geprüft. Jährlich auditiert. Siehe <em>regulatory-checklist-rdg-safe.md</em>.</li>
+  <li><strong>KI-Halluzination im Einwanderungskontext.</strong> Wenn der Decoder selbstbewusst sagt „Sie müssen X bis Freitag tun, sonst werden Sie abgeschoben" und es falsch ist, entsteht echter Schaden. Gegenmaßnahmen: enge Output-Vorlagen, dauerhafter Hinweis, rechtlich folgenreiche Inhalte an einen menschlichen Anwalt weiterleiten (Post-V1), jeden dekodierten Brief zur Überprüfung protokollieren.</li>
+  <li><strong>AGB der Behörden bei Termin-Monitoring.</strong> Nicht in V1, also kein Launch-Risiko. Wenn hinzugefügt: „Überwachen und benachrichtigen" (zulässig), niemals „im Namen des Nutzers automatisch buchen" (wahrscheinlicher AGB-Verstoß).</li>
+  <li><strong>Datensicherheit.</strong> Reisepass-Scans, Gehaltsabrechnungen, Aufenthaltstitel sind unter EU-Recht besonders sensibel. Gegenmaßnahmen: nur EU-Hosting, Verschlüsselung überall, perspektivisch SOC2- oder ISO-27001-Zertifizierung.</li>
+  <li><strong>Wartungslast.</strong> Einwanderungsrecht und Leistungsgrenzen ändern sich jährlich. Eine dedizierte Compliance-Person ist erforderlich — nicht optional.</li>
+  <li><strong>Vertrauensaufbau.</strong> Ausländer wurden von dubiosen Beratern abgezockt. Marke, transparente Preisgestaltung, echte Erfahrungsberichte und die klare „dies ist keine Rechtsberatung"-Einrahmung zahlen sich langsam, aber sie zahlen sich aus.</li>
+  <li><strong>Verbesserung der Behördenportale.</strong> BAMF und Make-It-In-Germany fügen weiterhin Funktionen hinzu. Vorsprung bei Personalisierung, Sprachabdeckung und UX-Qualität halten — drei Bereiche, in denen die Regierung ein fokussiertes Produkt nie schlagen wird.</li>
+  <li><strong>CAC bei 29,99 € ASP.</strong> Kein Spielraum für teure bezahlte Akquise. Der Plan hängt von SEO, Diaspora-Mundpropaganda und ASO ab. Wenn diese sich nicht bis Monat 9–12 verstärken, Preismodell überdenken oder B2B früh hinzufügen.</li>
+  <li><strong>Risiko der Ablehnung durch Apple.</strong> „Dies ist Information, keine Rechtsberatung"-Hinweise müssen klar sein; die App darf nicht so wirken, als gebe sie regulierte Beratung. Eine Vor-Einreichungs-Prüfung mit dem Anwalt ist Pflicht.</li>
+</ol>
+
+<hr />
+
+<h2 id="open">13. Offene Fragen</h2>
+
+<p>Diese bleiben offen und sollten in den ersten Wochen des Aufbaus geklärt werden.</p>
+
+<ul>
+  <li>Welches <strong>Launch-Land</strong> für den Soft-Launch? Türkei (große Diaspora, hoher Schmerz), Indien (riesiges Volumen, englischsprachig komfortabel), Iran (akuter Schmerz bei Botschaftsterminen, hohe Zahlungsbereitschaft für Linderung)?</li>
+  <li>Welche <strong>3 Städte</strong> sollten neben Berlin zuerst beim Anmeldung-Guide vertieft werden? München, Frankfurt, Hamburg, Düsseldorf, Köln?</li>
+  <li><strong>Limit der kostenlosen Stufe</strong>: 3 Decoder-Nutzungen/Monat sind die vorgeschlagene Obergrenze. 2, 3, 5 in der Beta testen.</li>
+  <li><strong>Auswahl der Affiliate-Partner</strong>: Welche 1–2 Partner pro Kategorie vor dem Launch an Bord holen?</li>
+  <li><strong>Anwaltliches Engagement</strong>: Welche Kanzlei übernimmt die RDG-Prüfung? Budget 5.000–15.000 € für die Launch-Prüfung und 2.000–5.000 € jährlich.</li>
+</ul>
+
+<p>Dies sind Entscheidungen für den Gründer. Markt und Strategie unterstützen mehrere richtige Antworten; die falsche Antwort ist, sie zu verzögern, bis man sich sicher ist.</p>
+
+</body>
+</html>
