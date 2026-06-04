@@ -1,82 +1,213 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
-    "appearance_dark" : {
+    "app_name" : {
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Dunkel" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dark" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alltag"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alltag"
+          }
+        }
+      }
+    },
+    "appearance_dark" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dunkel"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dark"
+          }
+        }
       }
     },
     "appearance_light" : {
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Hell" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Light" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hell"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light"
+          }
+        }
       }
     },
     "appearance_system" : {
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "System" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "System" } }
-      }
-    },
-    "app_name" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Alltag" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Alltag" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        }
       }
     },
     "placeholder_coming_soon" : {
       "comment" : "Subtitle on the Foundation-phase placeholder tab screens.",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Kommt bald" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Coming soon" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommt bald"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coming soon"
+          }
+        }
       }
     },
     "settings_appearance" : {
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Darstellung" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Appearance" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Darstellung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appearance"
+          }
+        }
       }
     },
     "settings_language" : {
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Sprache" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Language" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprache"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language"
+          }
+        }
       }
     },
     "tab_dates" : {
       "comment" : "Title of the Dates/Termine tab (deadlines & reminders).",
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Termine" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dates" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termine"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dates"
+          }
+        }
       }
     },
     "tab_decode" : {
       "comment" : "Title of the center Decode tab (Behörden-Brief Decoder).",
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Entschlüsseln" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Decode" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entschlüsseln"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decode"
+          }
+        }
       }
     },
     "tab_docs" : {
       "comment" : "Title of the Docs/Vault tab.",
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Dokumente" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Documents" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dokumente"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documents"
+          }
+        }
       }
     },
     "tab_home" : {
       "comment" : "Title of the Home tab.",
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Start" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        }
       }
     },
     "tab_settings" : {
       "comment" : "Title of the Settings tab.",
+      "extractionState" : "stale",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
       }
     }
   },
