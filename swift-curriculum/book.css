@@ -1,0 +1,280 @@
+/* ============================================================
+   Swift for Backend Engineers — book stylesheet (weasyprint)
+   ============================================================ */
+
+/* ---------- Page geometry & running furniture ---------- */
+@page {
+  size: A4;
+  margin: 24mm 22mm 22mm 22mm;
+  @top-center {
+    content: string(chaptertitle);
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 8pt;
+    color: #9a9a9a;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  @bottom-center {
+    content: counter(page);
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 9pt;
+    color: #888;
+  }
+}
+
+/* Title page: no header/footer */
+@page :first {
+  @top-center { content: none; }
+  @bottom-center { content: none; }
+  margin: 0;
+}
+
+/* ---------- Base typography ---------- */
+html {
+  font-family: "Charter", "Iowan Old Style", Georgia, serif;
+  font-size: 10.6pt;
+  line-height: 1.5;
+  color: #1c1c1e;
+  hyphens: auto;
+}
+body { margin: 0; }
+
+p { margin: 0 0 0.7em 0; text-align: justify; }
+strong { font-weight: 600; }
+em { font-style: italic; }
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4 {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 600;
+  color: #0b0b0c;
+  line-height: 1.2;
+  hyphens: none;
+}
+
+/* Chapter */
+h1 {
+  string-set: chaptertitle content(text);
+  break-before: page;
+  font-size: 23pt;
+  margin: 0 0 0.8em 0;
+  padding-bottom: 0.3em;
+  border-bottom: 3px solid #c2410c;
+  color: #9a3412;
+}
+/* don't force a page break before the very first chapter if it follows TOC
+   (the TOC section already ends with a forced break) */
+
+h2 {
+  font-size: 15pt;
+  margin: 1.5em 0 0.5em 0;
+  color: #1c1c1e;
+  break-after: avoid;
+}
+h3 {
+  font-size: 12pt;
+  margin: 1.2em 0 0.4em 0;
+  color: #3a3a3c;
+  break-after: avoid;
+}
+h4 {
+  font-size: 10.6pt;
+  margin: 1em 0 0.3em 0;
+  color: #c2410c;
+  break-after: avoid;
+}
+
+/* ---------- Code ---------- */
+code {
+  font-family: "Menlo", "SF Mono", "Consolas", monospace;
+  font-size: 0.82em;
+}
+p code, li code, td code {
+  background: #f3f3f1;
+  padding: 0.05em 0.35em;
+  border-radius: 3px;
+  color: #9a3412;
+}
+pre {
+  font-family: "Menlo", "SF Mono", "Consolas", monospace;
+  font-size: 8.4pt;
+  line-height: 1.42;
+  background: #f7f7f5;
+  border: 1px solid #e6e6e2;
+  border-left: 3px solid #c2410c;
+  border-radius: 4px;
+  padding: 0.7em 0.9em;
+  margin: 0.6em 0 1em 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ---------- Blockquotes / callouts ---------- */
+blockquote {
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fdf6ec;
+  border-left: 4px solid #d97706;
+  border-radius: 0 4px 4px 0;
+  color: #3a2f23;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* ---------- Lists ---------- */
+ul, ol { margin: 0 0 0.7em 0; padding-left: 1.4em; }
+li { margin: 0.18em 0; }
+
+/* ---------- Tables ---------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.8em 0 1.2em 0;
+  font-size: 9.3pt;
+  break-inside: avoid;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.4em 0.6em;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: #f3f3f1;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 8.8pt;
+}
+tr:nth-child(even) td { background: #fafaf8; }
+
+hr {
+  border: none;
+  border-top: 1px solid #e0e0dc;
+  margin: 1.4em 0;
+}
+
+img { max-width: 100%; }
+
+/* ---------- Title page ---------- */
+section.titlepage {
+  break-after: page;
+  height: 297mm;
+  box-sizing: border-box;
+  padding: 60mm 24mm 24mm 24mm;
+  background: #9a3412;
+  color: #fff;
+}
+section.titlepage .kicker {
+  font-family: "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 11pt;
+  color: #fed7aa;
+  margin-bottom: 1.2em;
+}
+section.titlepage h1.book-title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 42pt;
+  line-height: 1.05;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  margin: 0 0 0.3em 0;
+  padding: 0;
+  break-before: avoid;
+}
+section.titlepage .subtitle {
+  font-family: "Charter", Georgia, serif;
+  font-style: italic;
+  font-size: 16pt;
+  color: #fde8d7;
+  margin-bottom: 6em;
+  text-align: left;
+}
+section.titlepage .meta {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 11pt;
+  color: #fed7aa;
+  text-align: left;
+}
+section.titlepage .meta .author { font-size: 14pt; color: #fff; font-weight: 600; }
+
+/* ---------- Table of contents ---------- */
+section.toc { break-after: page; }
+section.toc > h1.toc-title {
+  break-before: avoid;
+  border-bottom: 3px solid #c2410c;
+  color: #9a3412;
+  font-size: 23pt;
+}
+section.toc ul { list-style: none; padding-left: 0; margin: 0; }
+section.toc ul ul { padding-left: 1.4em; }
+section.toc li { margin: 0.14em 0; }
+section.toc a {
+  text-decoration: none;
+  color: #1c1c1e;
+  font-family: "Helvetica Neue", sans-serif;
+}
+/* leader dots + page number */
+section.toc a::after {
+  content: leader('.') target-counter(attr(href), page);
+  color: #999;
+  font-weight: 400;
+  font-size: 9pt;
+}
+section.toc > ul > li {
+  font-weight: 600;
+  font-size: 10.8pt;
+  margin-top: 0.55em;
+}
+section.toc > ul > li > ul > li {
+  font-weight: 400;
+  font-size: 9.6pt;
+}
+section.toc > ul > li > ul > li a { color: #555; }
+
+/* avoid breaking a code block right after its heading where possible */
+pre, blockquote, table { break-inside: avoid; }
+
+/* ---------- Part divider pages ---------- */
+section.part-divider {
+  break-before: page;
+  break-after: page;
+  height: 240mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 8px solid #c2410c;
+  padding-left: 14mm;
+}
+section.part-divider .part-num {
+  font-family: "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 13pt;
+  color: #c2410c;
+  margin-bottom: 0.6em;
+}
+section.part-divider .part-name {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 30pt;
+  line-height: 1.1;
+  color: #1c1c1e;
+  margin-bottom: 0.8em;
+}
+section.part-divider .part-blurb {
+  font-family: "Charter", Georgia, serif;
+  font-style: italic;
+  font-size: 13pt;
+  color: #6b6259;
+  max-width: 130mm;
+}
+/* part-divider sets the running header string to the part name */
+section.part-divider .part-name { string-set: chaptertitle content(text); }

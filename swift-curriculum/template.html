@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="$lang$">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$title$</title>
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+
+<section class="titlepage">
+  <div class="kicker">$kicker$</div>
+  <h1 class="book-title">$title$</h1>
+  <p class="subtitle">$subtitle$</p>
+  <div class="meta">
+    <p class="author">$author$</p>
+    <p>$date$</p>
+    <p>$edition$</p>
+  </div>
+</section>
+
+$if(toc)$
+<section class="toc">
+  <h1 class="toc-title">Contents</h1>
+  $table-of-contents$
+</section>
+$endif$
+
+$body$
+
+</body>
+</html>
