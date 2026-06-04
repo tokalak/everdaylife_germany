@@ -1,23 +1,48 @@
 import SwiftUI
 
-/// Placeholder root for the Foundation phase (P0-01).
+/// Root of the app: the 5-tab shell (D10) with live theming and localization
+/// (P0-06).
 ///
-/// Deliberately minimal: the Warm-Companion design system (Phase 1) and the
-/// real `TabView` shell (P0-06) replace this. It exists only to give the app a
-/// launchable surface and a stable hook for the smoke test.
+/// Applies, app-wide:
+/// - the selected **theme** via `preferredColorScheme` (A-20),
+/// - the selected **language**'s `locale` and **RTL** `layoutDirection`
+///   (A-12…A-14), and
+/// - the Warm-Companion **rounded** type design (DS-02).
+///
+/// The tabs host Boundary placeholder screens; real features replace them in
+/// later phases.
 struct RootView: View {
+    @Environment(AppEnvironment.self) private var env
+    @State private var selection: AppTab = .home
+
     var body: some View {
-        VStack(spacing: 12) {
-            Text("Alltag")
-                .font(.largeTitle.weight(.semibold))
-            Text("Foundation build")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+        TabView(selection: $selection) {
+            ForEach(AppTab.allCases) { tab in
+                screen(for: tab)
+                    .tabItem { Label(tab.titleKey, systemImage: tab.systemImage) }
+                    .tag(tab)
+            }
         }
-        .padding()
+        .tint(AppColor.primary)
+        .appFontDesign()
+        .environment(\.locale, env.language.locale)
+        .environment(\.layoutDirection, env.language.layoutDirection)
+        .preferredColorScheme(env.theme.theme.colorScheme)
+    }
+
+    @ViewBuilder
+    private func screen(for tab: AppTab) -> some View {
+        switch tab {
+        case .home: HomeView()
+        case .docs: VaultView()
+        case .decode: DecoderView()
+        case .dates: DatesView()
+        case .settings: SettingsView()
+        }
     }
 }
 
 #Preview {
     RootView()
+        .environment(AppEnvironment.live())
 }

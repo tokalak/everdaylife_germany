@@ -33,8 +33,8 @@ These are settled. Do not re-litigate without an explicit decision change (and u
 | D3 | **iOS-first, SwiftUI** | Android/WhatsApp/Telegram deferred post-V1. |
 | D4 | **Everything is LOCAL — storage AND AI inference** | Documents stored encrypted **on-device only**, never uploaded; must survive app updates. **The AI model runs on-device too (D11)** — letter text/images never leave the phone. Fully offline-capable Decoder. Overrides the brief's EU-server hosting *and* its server-side LLM call. No cross-device sync in v1 (iCloud is a later option). |
 | D11 | **On-device LLM: Gemma 4 E2B (GGUF Q4_K_M) via llama.cpp** | The Decoder's understanding/translation runs **locally** on **Gemma 4 E2B instruction-tuned, GGUF `Q4_K_M`** ([`unsloth/gemma-4-E2B-it-GGUF`](https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF), **3.11 GB**). Runtime = **`llama.cpp`** with the **Metal** backend (GGUF format → not MediaPipe/LiteRT). Dense, **2.3B effective params**, **128K context**, multimodal (text/image/audio/video). **No inference backend, no per-decode server cost.** Model downloaded on first run, not bundled. Google AI Edge Gallery (`/Users/tklk/Projects/gallery`) runs the **same model generation (Gemma 4 E2B)** but via **LiteRT-LM** (`gemma-4-E2B-it.litertlm`, 2.59 GB, 32K ctx, MTP fast-decode) — a different format/runtime than our GGUF/llama.cpp choice. Runtime choice (llama.cpp vs LiteRT-LM) is settled by the spike — see OQ-14. Quant/variant tradeoffs in OQ-8. |
-| D5 | **Pricing: one-time, fixed, unlocks everything** | A single non-consumable purchase. **No subscription, no tiers, no à-la-carte IAP.** After purchase, **100% of functionality is available**. (Headline price €29.99 per brief — final number set in App Store Connect.) |
-| D6 | **Free trial as the funnel** | Before purchase: limited **Behörden-Brief Decoder** (3 decodes/month) + full Vault/Calendar/checklists/tools browsing. The purchase removes the Decoder cap and is the only gate. (Confirm exact free limit in beta — see OQ-3.) |
+| D5 | **Pricing: paid app, fixed upfront price, unlocks everything** | A **paid app** — the App Store charges a single upfront price *before download*; once installed, **100% of functionality is available**. **No subscription, no tiers, no in-app purchases, no à-la-carte IAP.** No StoreKit code in the app. (Headline price €29.99 per brief — final number/tier set in App Store Connect.) |
+| D6 | **No in-app free tier; the store page is the funnel** | There is **no free trial inside the app** — the Decoder and everything else are fully available on install. The App Store product page (description, screenshots, preview) does the converting; the upfront price is the only gate. Re-downloads restore automatically (Apple-managed), so there is **no in-app restore flow**. |
 | D7 | **Languages: v1 ships ~9; localize last** | Build the whole app in **German (default) + English** first. Add the rest **near the end of development**, then ship v1 fully localized. Full set: **DE, EN, TR, FR, ES, IT, AR, RU, ZH**. RTL (Arabic) infrastructure built from day one. |
 | D8 | **Design direction: "Warm Companion"** | Warm paper background, soft teal primary, amber for "action," rounded type (SF Pro Rounded), calm and trustworthy. Full light + dark theme. See §3 + prototype. |
 | D9 | **Information, not advice (RDG-safe)** | Never give personalized legal/tax advice. Information, translation, organization, process navigation only. Always-on disclaimers; "consult a lawyer" routing on legal items. See [`../regulatory-checklist-rdg-safe.md`](../regulatory-checklist-rdg-safe.md). |
@@ -63,7 +63,6 @@ Alltag/
     Persistence/            // SwiftData stack, file store, Keychain, crypto
     LLM/                    // MediaPipe LiteRT engine, model download/manage, prompts
     Localization/           // i18n + RTL helpers, string catalogs
-    Purchases/              // StoreKit 2 wrapper
     Notifications/          // local notification scheduling
   Features/
     Onboarding/   {Boundary,Control,Entity}
@@ -85,26 +84,27 @@ Alltag/
 - [ ] **A-06** Snapshot/UI tests for key screens incl. **Dynamic Type XXL** and **RTL** mirroring.
 
 ### 2.4 Data persistence (implements D4)
-- [ ] **A-07** Structured data (personas, checklist progress, deadlines, document metadata index) in **SwiftData**, store located in **Application Support** (persists across updates).
-- [ ] **A-08** Document blobs (scans, PDFs) written to the **Documents directory** via `FileManager` — never Caches/tmp.
-- [ ] **A-09** Encrypt blobs at rest: per-file encryption with a symmetric key stored in the **Keychain** (`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`); set `FileProtectionType.complete`.
-- [ ] **A-10** Verify persistence-across-update with an automated test (write → simulate bundle replacement → read).
+- [x] **A-07** Structured data (personas, checklist progress, deadlines, document metadata index) in **SwiftData**, store located in **Application Support** (persists across updates). *(`PersistenceController`; `DocumentRecord` is the first model — more entities appended to `schema` as features land.)*
+- [x] **A-08** Document blobs (scans, PDFs) written to the **Documents directory** via `FileManager` — never Caches/tmp. *(`EncryptedFileStore`, `Documents/Vault`.)*
+- [x] **A-09** Encrypt blobs at rest: per-file encryption with a symmetric key stored in the **Keychain** (`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`); set `FileProtectionType.complete`. *(AES-GCM via `FileCryptor`; `KeychainKeyStore`; writes use `.completeFileProtection`.)*
+- [x] **A-10** Verify persistence-across-update with an automated test (write → simulate bundle replacement → read). *(`PersistenceControllerTests.testDataSurvivesStoreReopen`.)*
 - [ ] **A-11** Exclude document store from iCloud backup *or* document the backup behavior explicitly (privacy decision — see OQ-5).
 
 ### 2.5 Localization & RTL (implements D7)
-- [ ] **A-12** Use **String Catalogs** (`.xcstrings`). All user-facing copy localized from the start (DE + EN populated; other locales stubbed, filled at end).
-- [ ] **A-13** German is the **default/development** language; English complete in parallel.
-- [ ] **A-14** Layout uses **leading/trailing** everywhere (never left/right); test every screen in a pseudo-RTL locale from day one.
-- [ ] **A-15** Decoder output language follows the user's chosen app language.
+- [x] **A-12** Use **String Catalogs** (`.xcstrings`). All user-facing copy localized from the start (DE + EN populated; other locales stubbed, filled at end). *(`Localizable.xcstrings`, DE source + EN; new copy adds keys here.)*
+- [x] **A-13** German is the **default/development** language; English complete in parallel. *(`developmentLanguage: de`; `AppLanguage.default == .de`.)*
+- [~] **A-14** Layout uses **leading/trailing** everywhere (never left/right); test every screen in a pseudo-RTL locale from day one. *(Plumbing in place: `AppLanguage.layoutDirection`, root applies `\.layoutDirection`; per-screen RTL snapshot QA is ongoing as screens land — X-02.)*
+- [x] **A-15** Decoder output language follows the user's chosen app language. *(`LanguageStore.decoderOutputLanguage`; consumed by the Decoder in P3-02.)*
 - [ ] **A-16** Plan a **content-localization pass** as a near-final milestone (Phase 8) for TR, FR, ES, IT, AR, RU, ZH.
 
 ### 2.6 Monetization (implements D5/D6)
-- [ ] **A-17** **StoreKit 2**, one **non-consumable** product (full unlock).
-- [ ] **A-18** Entitlement check gates only the Decoder monthly cap; everything else stays open.
-- [ ] **A-19** Restore purchases; handle Ask-to-Buy/family sharing per Apple guidelines.
+> **Paid-app model — no in-app purchase code.** The single upfront price is configured in App Store Connect; everything is unlocked on install. There are no StoreKit products, no entitlement checks, and no restore flow in the app.
+- [x] **A-17** **Paid app**: set the price tier in App Store Connect (Small Business Program TBD — OQ-2). No StoreKit, no products. *(App Store configuration only — no app code.)*
+- [x] **A-18** Everything unlocked on install — **no entitlement checks or gates anywhere** in the app. *(No code; the earlier `DecoderAccessPolicy`/`PurchaseService` scaffold was removed.)*
+- [x] **A-19** No in-app restore flow — re-downloads restore the paid app automatically (Apple-managed). *(N/A.)*
 
 ### 2.7 Theming
-- [ ] **A-20** Light/Dark/System theme, user-selectable in Settings, persisted. Tokens in DesignSystem (§3).
+- [x] **A-20** Light/Dark/System theme, user-selectable in Settings, persisted. Tokens in DesignSystem (§3). *(`AppTheme`/`ThemeController`; Settings segmented picker; applied via `preferredColorScheme`.)*
 
 ### 2.8 On-device LLM inference (implements D11) — `Core/LLM`
 Runtime = **`llama.cpp`** (GGUF, **Metal** backend). Model: `gemma-4-E2B-it-Q4_K_M.gguf` (3.11 GB) from `unsloth/gemma-4-E2B-it-GGUF`. The AI Edge Gallery (`/Users/tklk/Projects/gallery`) runs the **same model (Gemma 4 E2B)** but via **LiteRT-LM** (`.litertlm`, 2.59 GB, 32K ctx, MTP) — a strong alternative runtime to benchmark in the spike (OQ-14). Note its **iOS** allowlist (`ios_1_0_0.json`) currently lists only Gemma 3n, so Gemma-4-on-iOS via LiteRT-LM needs verification.
@@ -123,12 +123,12 @@ Runtime = **`llama.cpp`** (GGUF, **Metal** backend). Model: `gemma-4-E2B-it-Q4_K
 
 Mirror the prototype's tokens. Build as reusable SwiftUI components before screens.
 
-- [ ] **DS-01** Color tokens (semantic), light + dark:
+- [~] **DS-01** Color tokens (semantic), light + dark: *(Foundation slice shipped for the P0-06 shell — `AppColor` (paper/card/ink/primary/amber + severity), light+dark dynamic pairs. Full set + wash variants completed in P1-01.)*
   - Paper `#FAF8F4` / dark `#1B1916`; Card `#FFFFFF` / `#252320`
   - Ink `#2B2722` / `#F2EEE6`; Ink-soft, Ink-faint
   - Primary **teal** `#2BA39A` (deep `#1C7E76`); **amber** `#E8A13C`
   - **Severity system** (reused everywhere): info green, action amber, urgent red, legal indigo — each with a wash variant.
-- [ ] **DS-02** Typography scale on **SF Pro Rounded** (rounded design), full **Dynamic Type** support.
+- [~] **DS-02** Typography scale on **SF Pro Rounded** (rounded design), full **Dynamic Type** support. *(Foundation: `.appFontDesign()` applies `.fontDesign(.rounded)` app-wide; system text styles keep Dynamic Type. Full scale in P1-01.)*
 - [ ] **DS-03** Radii (26/20/14), soft shadows (sm/md/lg), spacing scale.
 - [ ] **DS-04** Components: `Card`, `SeverityPill`, `ChecklistRow`, `ToolTile`, `GuideRow`, `SettingsRow` (icon + title + explanation + value/chevron), `SegmentedControl`, `PrimaryButton`, `DeadlineChip`, `TrustBanner`, `Toast`, `BottomSheet`, `EmptyState`.
 - [ ] **DS-05** Motion: gentle staggered reveal on screen load; reduced-motion honored.
@@ -141,8 +141,8 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 ### Phase 0 — Foundation
 - [x] **P0-01** Create Xcode project, bundle ID, signing, App Store Connect record. *(XcodeGen project; bundle ID `de.everydaygermany.app`; iOS 17.0; German dev language; signing deferred (simulator/CI). App ID registration + App Store Connect record remain manual — see `README.md`.)*
 - [x] **P0-02** CI: build + run tests on PR. *(`.github/workflows/ios-ci.yml`: regenerates project + `xcodebuild test` on a simulator, on PRs and pushes to main.)*
-- [ ] **P0-03** SwiftData stack + file store + Keychain/crypto (A-07…A-10) with tests.
-- [ ] **P0-04** StoreKit 2 wrapper + StoreKit test config (A-17…A-19).
+- [x] **P0-03** SwiftData stack + file store + Keychain/crypto (A-07…A-10) with tests. *(`Core/Persistence`: `PersistenceController` (SwiftData store in Application Support), `EncryptedFileStore` (AES-GCM blobs in Documents, `FileProtectionType.complete`), `KeychainKeyStore` (key with `…AfterFirstUnlockThisDeviceOnly`), `DocumentRecord` metadata model. Tests incl. encrypt-at-rest + survive-store-reopen; Keychain tests `XCTSkip` on unsigned simulator.)*
+- [x] **P0-04** ~~StoreKit 2 wrapper + StoreKit test config~~ **Dropped — paid-app model (D5).** No in-app purchase code: the upfront price is set in App Store Connect and everything is unlocked on install. The earlier `Core/Purchases` scaffold (`PurchaseService`, `DecoderAccessPolicy`, `Products.storekit`) and its StoreKit run-scheme config were removed.
 - [ ] **P0-07** **Runtime decision spike (`Core/LLM`)** — foundational for the Decoder. Both candidates run the **same model, Gemma 4 E2B**:
   - **Candidate A (default):** GGUF `Q4_K_M` (3.11 GB) on **llama.cpp + Metal** — with a **GBNF grammar** for guaranteed-valid JSON.
   - **Candidate B:** `.litertlm` (2.59 GB, MTP fast-decode) on **LiteRT-LM** — the reference project's runtime (verify it works on **iOS**; the gallery's iOS allowlist still lists only 3n).
@@ -150,8 +150,8 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
   - **Measure:** decode/translation quality, JSON-validity rate, first-token + full-decode latency, peak RAM, model+download size.
   - **Decision rule:** **default to Candidate A (llama.cpp/GGUF)** for its GBNF-guaranteed structured output and proven iOS-Metal maturity. **Switch to B only if** the spike shows B runs well on iOS *and* delivers a materially better quality+latency+size result. Record the verdict and rationale here, then close **OQ-14**.
   - Build the chosen runtime behind the `LLMEngine` wrapper (A-21) so the decision stays swappable; wire model download/management + capability gate (A-22…A-26) with a round-trip test.
-- [ ] **P0-05** Localization + RTL scaffolding (A-12…A-15); DE default.
-- [ ] **P0-06** Root `TabView` shell with 5 tabs (placeholder screens) and theme switching (A-20, DS-01/02).
+- [x] **P0-05** Localization + RTL scaffolding (A-12…A-15); DE default. *(`Core/Localization`: `AppLanguage` (9 langs, DE default, only DE+EN selectable until Phase 8, AR=RTL), `LanguageStore` (persisted; exposes `locale`/`layoutDirection`/`decoderOutputLanguage`), `Localizable.xcstrings` String Catalog with DE source + EN. Root applies `\.locale` + `\.layoutDirection`.)*
+- [x] **P0-06** Root `TabView` shell with 5 tabs (placeholder screens) and theme switching (A-20, DS-01/02). *(5-tab `RootView` (Home·Docs·Decode·Dates·Settings) with per-feature Boundary placeholders; `AppTheme`/`ThemeController` (Light/Dark/System, persisted) applied via `preferredColorScheme`; `AppEnvironment` DI container injects persistence/purchases/language/theme; foundation `AppColor` tokens (DS-01) + rounded type (DS-02). Settings exposes live Appearance + Language pickers. Full token set/components remain Phase 1.)*
 
 ### Phase 1 — Design system
 - [ ] **P1-01** Implement all tokens (DS-01…DS-03).
@@ -168,12 +168,12 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 - [ ] **P3-01** **Decoder — capture**: camera + Apple Vision document scan, on-device OCR (robust text extraction). Evaluate Gemma 3n **vision** input as alternative/fallback to OCR (OQ-12).
 - [ ] **P3-02** **Decoder — explain (ON-DEVICE)**: local Gemma 3n call via `Core/LLM` → structured output (summary, asks, deadline, severity, response template, disclaimer flag). Tight schema + validate/repair (A-27); log locally for user review. **No network.**
 - [ ] **P3-03** **Decoder — result screen**: severity pill, plain summary, deadline chip → add to calendar, asks list, reply template (copy/share), collapsible original German, save-to-Vault, "talk to a lawyer" on legal items.
-- [ ] **P3-04** **Decoder — free-tier gate**: 3/month counter; paywall sheet at the wall (D6).
+- [x] **P3-04** ~~Decoder — free-tier gate~~ **Dropped (D5/D6).** No monthly counter and no paywall — the Decoder is fully available in the paid app.
 - [ ] **P3-05** **Vault**: list/grid of documents, categories, per-doc expiry, add/scan/import, PDF export/share, trust banner ("stored only on this device").
 - [ ] **P3-06** **Vault** expiry notifications at 60/30/7 days.
 - [ ] **P3-07** **Calendar/Dates**: agenda list grouped by urgency, countdowns, severity stripes, manual add, mark done.
 - [ ] **P3-08** **Calendar** auto-population from decoded letters + vault expiries; reminders at 14/7/1 day.
-- [ ] **P3-09** **Settings** (native grouped list, D10): Appearance (Light/Dark/System), language, my mode, reminders, document storage explainer, export data, delete all data (GDPR), restore purchase, help, about/legal. Each row has a speaking name + one-line explanation.
+- [ ] **P3-09** **Settings** (native grouped list, D10): Appearance (Light/Dark/System), language, my mode, reminders, document storage explainer, export data, delete all data (GDPR), help, about/legal. Each row has a speaking name + one-line explanation.
 
 ### Phase 4 — Persona framework + Worker (deepest)
 - [ ] **P4-01** Persona engine: data model supporting one active persona + preserved "past situations"; switch without losing progress (data model supports multiple simultaneous personas for V1.1, surface one now).
@@ -242,9 +242,10 @@ Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
 
 - [ ] **P6-A1** Affiliate link integration (always 3+ ranked options, transparent; per §7 of brief).
 
-### Phase 7 — Monetization polish
-- [ ] **P7-01** Paywall presentation at the wall + from Settings; price localization.
-- [ ] **P7-02** Entitlement edge cases (refund, restore, family sharing).
+### Phase 7 — Monetization (App Store config only)
+> Paid-app model (D5): no in-app paywall, entitlement, or restore work. This phase is just App Store Connect setup.
+- [ ] **P7-01** Configure the paid-app **price tier** in App Store Connect; confirm Small Business Program enrollment (OQ-2). Price display/localization is handled by the App Store automatically.
+- [x] **P7-02** ~~Entitlement edge cases (refund, restore, family sharing)~~ **Dropped (D5)** — Apple-managed for a paid app; nothing in-app.
 
 ### Phase 8 — Localization (the deferred-content milestone, D7)
 - [ ] **P8-01** Freeze UI copy; extract all strings.
@@ -286,7 +287,7 @@ Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
 | Tourist/Student/Family/Resident | tools per §4 Phase 6 | Mapped, not built |
 | Guides | 5 cross-persona | Listed, not built |
 | Theming | Light/Dark/System Warm Companion | Prototyped (HTML) |
-| Monetization | One-time unlock + free Decoder cap | Paywall prototyped |
+| Monetization | Paid app (fixed upfront price), everything unlocked | App Store config (no in-app code) |
 | Localization | DE+EN dev → 9 at launch | Infra only |
 
 The HTML prototype (`prototype/index.html`) is the **visual + interaction reference** for porting to SwiftUI. It is not production code.
@@ -297,7 +298,7 @@ The HTML prototype (`prototype/index.html`) is the **visual + interaction refere
 
 - **OQ-1 (must-verify):** Exact **Chancenkarte point values** and **Blue Card 2026 thresholds** — the prototype uses credible approximations only. Confirm against current BAMF/Make-it-in-Germany before shipping these engines. (Ties to X-06.)
 - **OQ-2:** Final **price** and whether the **Small Business Program** (15%) applies.
-- **OQ-3:** Free-tier Decoder limit — test 2/3/5 in beta (D6).
+- **OQ-3: ✅ RESOLVED** — no free tier. Paid-app model (D5/D6): everything unlocks on install, so there is no Decoder cap to tune.
 - **OQ-4: ✅ RESOLVED** — inference runs **on-device** (Gemma 4 E2B via llama.cpp, D11). No letter text or image leaves the phone; no EU-inference question. This was the biggest risk in the prior plan; the local-model decision closes it and strengthens the privacy/GDPR story.
 - **OQ-5:** iCloud backup of the **document store** — include or exclude (A-11). (The **model file** is already excluded, A-23.)
 - **OQ-6:** Which 3 cities to deepen Anmeldung guidance for first; soft-launch country; affiliate partners (per brief §13).
@@ -318,9 +319,9 @@ The HTML prototype (`prototype/index.html`) is the **visual + interaction refere
 
 1. Phase 0 + 1 (foundation + design system) — **incl. `Core/LLM` engine + model download (P0-07)**, since the Decoder depends on it
 2. Onboarding (P2) → Home shell with **Worker** persona (P4-01/02)
-3. **Decoder** end-to-end (P3-00…04) on local Gemma 3n + **run the A-28 quality eval** — the wedge feature
+3. **Decoder** end-to-end (P3-00…03) on local Gemma 3n + **run the A-28 quality eval** — the wedge feature
 4. Vault + Calendar (P3-05…08) + Settings (P3-09)
-5. Monetization gate (P3-04/P7)
+5. App Store pricing config (P7-01) — paid app, no in-app gate
 6. Worker tools incl. Chancenkarte (P6-W*) + the 5 guides (P6-G*)
 7. Remaining personas (P5) + their tools (P6)
 8. Localization (P8) → Compliance & launch (P9)

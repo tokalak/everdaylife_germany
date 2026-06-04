@@ -100,19 +100,23 @@ xcrun devicectl device process launch --device <DEVICE_ID> de.everydaygermany.ap
 ## Source layout (Boundary-Control-Entity)
 
 Code is organized **per feature**, each split into Boundary / Control / Entity
-(see `IMPLEMENTATION_PLAN.md` §2.2). The Foundation build contains only the App
-shell; the rest of the tree below is filled in as later phases land.
+(see `IMPLEMENTATION_PLAN.md` §2.2). Phase 0 has landed the foundations; feature
+Control/Entity layers fill in as later phases land.
 
 ```
 ios/
   project.yml            # XcodeGen spec (source of truth for the project)
   Alltag/
-    App/                 # entry point + root view (later: DI container, TabView)
-    Resources/           # Assets.xcassets, content JSON, string catalogs
-    # added in later phases:
-    # DesignSystem/      # tokens, components, theme (Phase 1)
-    # Core/{Persistence,LLM,Localization,Purchases,Notifications}
-    # Features/{Onboarding,Decoder,Vault,Calendar,Home,Settings,Personas,Tools,Guides}/{Boundary,Control,Entity}
+    App/                 # AlltagApp, RootView (5-tab shell), AppEnvironment (DI), AppTab
+    DesignSystem/        # AppColor tokens, AppTheme/ThemeController, typography, placeholders (foundation; full set Phase 1)
+    Core/
+      Persistence/       # PersistenceController (SwiftData), EncryptedFileStore, KeyStore, FileCryptor, DocumentRecord
+      Localization/      # AppLanguage, LanguageStore
+      # added later: LLM/, Notifications/
+    Features/            # per-feature Boundary views (placeholders today)
+      {Home,Vault,Decoder,Calendar,Settings}/Boundary
+      # added later: Onboarding, Personas, Tools, Guides + Control/Entity layers
+    Resources/           # Assets.xcassets, Localizable.xcstrings
   Tests/
     AlltagTests/         # unit tests mirroring feature folders
 ```

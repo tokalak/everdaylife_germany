@@ -1,16 +1,18 @@
 import SwiftUI
 
-/// App entry point.
+/// App entry point (P0-06).
 ///
-/// This is the Foundation-phase shell (P0-01). The real DI container and the
-/// 5-tab root (`Home · Docs · Decode · Dates · Settings`, see D10) arrive in
-/// P0-06; for now we mount a single placeholder so the project builds, launches,
-/// and is testable end to end.
+/// Builds the `AppEnvironment` DI container once and injects it into the SwiftUI
+/// environment, then mounts the 5-tab `RootView`. The environment owns the
+/// long-lived foundations (persistence, language, theme) wired up in Phase 0.
 @main
 struct AlltagApp: App {
+    @State private var env = AppEnvironment.live()
+
     var body: some Scene {
         WindowGroup {
             RootView()
+                .environment(env)
         }
     }
 }
