@@ -116,7 +116,8 @@ ios/
     Core/
       Persistence/       # PersistenceController (SwiftData), EncryptedFileStore, KeyStore, FileCryptor, DocumentRecord
       Localization/      # AppLanguage, LanguageStore
-      # added later: LLM/, Notifications/
+      LLM/               # P0-07 foundation: swappable LLMEngine (+ Stub/LlamaCpp), model catalog/spec/quant, DeviceCapabilityGate, ModelStore, downloader+verifier, ModelProvisioner, LLMService
+      # added later: Notifications/
     Features/            # per-feature Boundary views (placeholders today)
       {Home,Vault,Decoder,Calendar,Settings}/Boundary
       # added later: Onboarding, Personas, Tools, Guides + Control/Entity layers

@@ -18,13 +18,17 @@ final class AppEnvironment {
     let theme: ThemeController
     let language: LanguageStore
     let persistence: PersistenceController
+    /// On-device inference facade: model readiness + the swappable engine (P0-07).
+    let llm: LLMService
 
     init(
         persistence: PersistenceController,
+        llm: LLMService,
         theme: ThemeController = ThemeController(),
         language: LanguageStore = LanguageStore()
     ) {
         self.persistence = persistence
+        self.llm = llm
         self.theme = theme
         self.language = language
     }
@@ -33,14 +37,34 @@ final class AppEnvironment {
     /// SwiftData stack can't be opened, so the app still launches (the failure
     /// is logged for diagnosis) rather than crashing on first run.
     static func live() -> AppEnvironment {
+        let llm = makeLLM()
         do {
-            return AppEnvironment(persistence: try PersistenceController())
+            return AppEnvironment(persistence: try PersistenceController(), llm: llm)
         } catch {
             assertionFailure("Persistent store unavailable, using in-memory: \(error)")
             // `inMemory` cannot realistically fail, but if it does there is no
             // recoverable app state — a crash here is acceptable.
             return AppEnvironment(
-                persistence: try! PersistenceController(inMemory: true))
+                persistence: try! PersistenceController(inMemory: true), llm: llm)
+        }
+    }
+
+    /// Builds the LLM facade, degrading to a temp-directory model store if
+    /// Application Support is somehow unavailable — the app must still launch
+    /// (model provisioning then surfaces its own readiness UI).
+    private static func makeLLM() -> LLMService {
+        do {
+            return try LLMService.live()
+        } catch {
+            assertionFailure("LLM store unavailable, using temp directory: \(error)")
+            let store = try! ModelStore(
+                directory: FileManager.default.temporaryDirectory
+                    .appendingPathComponent("AlltagModels", isDirectory: true))
+            let provisioner = ModelProvisioner(
+                store: store, downloader: URLSessionModelDownloader())
+            return LLMService(
+                catalog: .v1, store: store, provisioner: provisioner,
+                engine: StubLLMEngine(), runtime: .current)
         }
     }
 }

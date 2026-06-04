@@ -6,9 +6,12 @@ import XCTest
 @MainActor
 final class AppEnvironmentTests: XCTestCase {
     func testEnvironmentBuildsWithInMemoryPersistence() throws {
-        let env = AppEnvironment(persistence: try PersistenceController(inMemory: true))
+        let env = AppEnvironment(
+            persistence: try PersistenceController(inMemory: true),
+            llm: try LLMTestFactory.service())
         XCTAssertEqual(env.theme.theme, .system)
         XCTAssertEqual(env.language.language, .de)
+        XCTAssertEqual(env.llm.runtime.chosen, .llamaCpp)
     }
 
     func testLiveEnvironmentInstantiates() {
@@ -16,7 +19,9 @@ final class AppEnvironmentTests: XCTestCase {
     }
 
     func testRootViewInstantiatesWithEnvironment() throws {
-        let env = AppEnvironment(persistence: try PersistenceController(inMemory: true))
+        let env = AppEnvironment(
+            persistence: try PersistenceController(inMemory: true),
+            llm: try LLMTestFactory.service())
         _ = RootView().environment(env)
     }
 }
