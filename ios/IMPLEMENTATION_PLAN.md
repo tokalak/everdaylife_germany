@@ -139,8 +139,8 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 ## 4. Phased build plan
 
 ### Phase 0 — Foundation
-- [ ] **P0-01** Create Xcode project, bundle ID, signing, App Store Connect record.
-- [ ] **P0-02** CI: build + run tests on PR.
+- [x] **P0-01** Create Xcode project, bundle ID, signing, App Store Connect record. *(XcodeGen project; bundle ID `de.everydaygermany.app`; iOS 17.0; German dev language; signing deferred (simulator/CI). App ID registration + App Store Connect record remain manual — see `README.md`.)*
+- [x] **P0-02** CI: build + run tests on PR. *(`.github/workflows/ios-ci.yml`: regenerates project + `xcodebuild test` on a simulator, on PRs and pushes to main.)*
 - [ ] **P0-03** SwiftData stack + file store + Keychain/crypto (A-07…A-10) with tests.
 - [ ] **P0-04** StoreKit 2 wrapper + StoreKit test config (A-17…A-19).
 - [ ] **P0-07** **Runtime decision spike (`Core/LLM`)** — foundational for the Decoder. Both candidates run the **same model, Gemma 4 E2B**:

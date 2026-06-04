@@ -1,0 +1,71 @@
+# Alltag — XcodeGen project spec (P0-01)
+#
+# The .xcodeproj is GENERATED from this file and is .gitignored.
+# Regenerate locally with:  cd ios && xcodegen generate
+#
+# Signing is deferred (D-decision): the project builds for the Simulator and CI
+# without a signing identity. To run on a physical device or upload to App Store
+# Connect, fill in DEVELOPMENT_TEAM and flip CODE_SIGNING_ALLOWED to YES below.
+
+name: Alltag
+
+options:
+  bundleIdPrefix: de.everydaygermany
+  developmentLanguage: de          # German is the default/dev language (D7)
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: ""            # fill in when an Apple Developer account is ready
+    CODE_SIGN_STYLE: Automatic
+    # Deferred signing: simulator/CI builds need no identity.
+    CODE_SIGNING_ALLOWED: "NO"
+    CODE_SIGNING_REQUIRED: "NO"
+    SWIFT_STRICT_CONCURRENCY: complete
+    ENABLE_USER_SCRIPT_SANDBOXING: "YES"
+
+targets:
+  Alltag:
+    type: application
+    platform: iOS
+    sources:
+      - path: Alltag
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.everydaygermany.app
+        INFOPLIST_KEY_UILaunchScreen_Generation: "YES"
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: "YES"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1"   # iPhone (iOS-first, D3)
+        GENERATE_INFOPLIST_FILE: "YES"
+
+  AlltagTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests/AlltagTests
+    dependencies:
+      - target: Alltag
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.everydaygermany.app.tests
+        GENERATE_INFOPLIST_FILE: "YES"
+
+schemes:
+  Alltag:
+    build:
+      targets:
+        Alltag: all
+    test:
+      targets:
+        - AlltagTests
+      gatherCoverageData: true
