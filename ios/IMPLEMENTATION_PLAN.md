@@ -140,7 +140,7 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 
 ### Phase 0 — Foundation
 - [x] **P0-01** Create Xcode project, bundle ID, signing, App Store Connect record. *(XcodeGen project; bundle ID `de.everydaygermany.app`; iOS 17.0; German dev language; signing deferred (simulator/CI). App ID registration + App Store Connect record remain manual — see `README.md`.)*
-- [x] **P0-02** CI: build + run tests on PR. *(`.github/workflows/ios-ci.yml`: regenerates project + `xcodebuild test` on a simulator, on PRs and pushes to main.)*
+- [x] **P0-02** CI: build + run tests on demand. *(`ios/scripts/ci.sh`: regenerates project + `xcodebuild test` on a simulator. Run locally on demand — no GitHub Actions, so the repo can be pushed with a PAT that lacks `workflow` scope.)*
 - [x] **P0-03** SwiftData stack + file store + Keychain/crypto (A-07…A-10) with tests. *(`Core/Persistence`: `PersistenceController` (SwiftData store in Application Support), `EncryptedFileStore` (AES-GCM blobs in Documents, `FileProtectionType.complete`), `KeychainKeyStore` (key with `…AfterFirstUnlockThisDeviceOnly`), `DocumentRecord` metadata model. Tests incl. encrypt-at-rest + survive-store-reopen; Keychain tests `XCTSkip` on unsigned simulator.)*
 - [x] **P0-04** ~~StoreKit 2 wrapper + StoreKit test config~~ **Dropped — paid-app model (D5).** No in-app purchase code: the upfront price is set in App Store Connect and everything is unlocked on install. The earlier `Core/Purchases` scaffold (`PurchaseService`, `DecoderAccessPolicy`, `Products.storekit`) and its StoreKit run-scheme config were removed.
 - [ ] **P0-07** **Runtime decision spike (`Core/LLM`)** — foundational for the Decoder. Both candidates run the **same model, Gemma 4 E2B**:

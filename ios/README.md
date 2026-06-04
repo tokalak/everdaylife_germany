@@ -32,8 +32,12 @@ xcodebuild test \
   CODE_SIGNING_ALLOWED=NO
 ```
 
-CI runs the same flow on every PR — see
-[`../.github/workflows/ios-ci.yml`](../.github/workflows/ios-ci.yml).
+Or run the whole pipeline (regenerate project, pick a simulator, build + test)
+on demand with the local CI script — no cloud runner required:
+
+```sh
+ios/scripts/ci.sh
+```
 
 ## Run on a connected iPhone (USB)
 
