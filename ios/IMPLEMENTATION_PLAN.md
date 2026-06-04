@@ -31,7 +31,8 @@ These are settled. Do not re-litigate without an explicit decision change (and u
 | D1 | **One app, persona-aware** | Single codebase. One onboarding question ("What's your situation?") drives a persona-specific Home, checklist, and tools. Not separate apps. |
 | D2 | **Audience: foreigners in Germany** | Five personas: Tourist, Student, Worker/Freelancer, Family, Long-term Resident. |
 | D3 | **iOS-first, SwiftUI** | Android/WhatsApp/Telegram deferred post-V1. |
-| D4 | **Storage is LOCAL-ONLY** | Documents stored encrypted **on-device only**, never uploaded. Overrides the brief's EU-server hosting. Must survive app updates. No cross-device sync in v1 (iCloud is a later option). |
+| D4 | **Everything is LOCAL — storage AND AI inference** | Documents stored encrypted **on-device only**, never uploaded; must survive app updates. **The AI model runs on-device too (D11)** — letter text/images never leave the phone. Fully offline-capable Decoder. Overrides the brief's EU-server hosting *and* its server-side LLM call. No cross-device sync in v1 (iCloud is a later option). |
+| D11 | **On-device LLM: Gemma 4 E2B (GGUF Q4_K_M) via llama.cpp** | The Decoder's understanding/translation runs **locally** on **Gemma 4 E2B instruction-tuned, GGUF `Q4_K_M`** ([`unsloth/gemma-4-E2B-it-GGUF`](https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF), **3.11 GB**). Runtime = **`llama.cpp`** with the **Metal** backend (GGUF format → not MediaPipe/LiteRT). Dense, **2.3B effective params**, **128K context**, multimodal (text/image/audio/video). **No inference backend, no per-decode server cost.** Model downloaded on first run, not bundled. Google AI Edge Gallery (`/Users/tklk/Projects/gallery`) runs the **same model generation (Gemma 4 E2B)** but via **LiteRT-LM** (`gemma-4-E2B-it.litertlm`, 2.59 GB, 32K ctx, MTP fast-decode) — a different format/runtime than our GGUF/llama.cpp choice. Runtime choice (llama.cpp vs LiteRT-LM) is settled by the spike — see OQ-14. Quant/variant tradeoffs in OQ-8. |
 | D5 | **Pricing: one-time, fixed, unlocks everything** | A single non-consumable purchase. **No subscription, no tiers, no à-la-carte IAP.** After purchase, **100% of functionality is available**. (Headline price €29.99 per brief — final number set in App Store Connect.) |
 | D6 | **Free trial as the funnel** | Before purchase: limited **Behörden-Brief Decoder** (3 decodes/month) + full Vault/Calendar/checklists/tools browsing. The purchase removes the Decoder cap and is the only gate. (Confirm exact free limit in beta — see OQ-3.) |
 | D7 | **Languages: v1 ships ~9; localize last** | Build the whole app in **German (default) + English** first. Add the rest **near the end of development**, then ship v1 fully localized. Full set: **DE, EN, TR, FR, ES, IT, AR, RU, ZH**. RTL (Arabic) infrastructure built from day one. |
@@ -60,6 +61,7 @@ Alltag/
   DesignSystem/             // tokens, components, theme, typography
   Core/
     Persistence/            // SwiftData stack, file store, Keychain, crypto
+    LLM/                    // MediaPipe LiteRT engine, model download/manage, prompts
     Localization/           // i18n + RTL helpers, string catalogs
     Purchases/              // StoreKit 2 wrapper
     Notifications/          // local notification scheduling
@@ -104,6 +106,17 @@ Alltag/
 ### 2.7 Theming
 - [ ] **A-20** Light/Dark/System theme, user-selectable in Settings, persisted. Tokens in DesignSystem (§3).
 
+### 2.8 On-device LLM inference (implements D11) — `Core/LLM`
+Runtime = **`llama.cpp`** (GGUF, **Metal** backend). Model: `gemma-4-E2B-it-Q4_K_M.gguf` (3.11 GB) from `unsloth/gemma-4-E2B-it-GGUF`. The AI Edge Gallery (`/Users/tklk/Projects/gallery`) runs the **same model (Gemma 4 E2B)** but via **LiteRT-LM** (`.litertlm`, 2.59 GB, 32K ctx, MTP) — a strong alternative runtime to benchmark in the spike (OQ-14). Note its **iOS** allowlist (`ios_1_0_0.json`) currently lists only Gemma 3n, so Gemma-4-on-iOS via LiteRT-LM needs verification.
+- [ ] **A-21** Integrate **`llama.cpp`** on iOS via its **xcframework / Swift package** with the **Metal** backend; wrap in an `LLMEngine` Control exposing a clean async interface (`generate(prompt:images:) -> AsyncStream<String>`), independent of feature code. (Evaluate a thin wrapper such as a SwiftPM binding vs vendoring llama.cpp directly — OQ-14.)
+- [ ] **A-22** **Model delivery:** download `gemma-4-E2B-it-Q4_K_M.gguf` (3.11 GB) on first run — **not bundled** (App Store / cellular limits). Resumable, Wi-Fi-recommended, retryable, progress UI; verify checksum/size. If using **vision**, also fetch the **multimodal projector (`mmproj`)** file (libmtmd) — see OQ-12.
+- [ ] **A-23** Store the model in **Application Support**, **excluded from iCloud/iTunes backup** (large + re-downloadable). Allow user to delete/redownload from Settings; show storage used.
+- [ ] **A-24** **Gemma license / Terms** acceptance flow before download; comply with the Gemma Terms + Prohibited Use Policy and pass-through use restrictions (legal check — OQ-9). Decide model hosting/source (HF `unsloth/gemma-4-E2B-it-GGUF` direct vs self-hosted/CDN mirror — OQ-10).
+- [ ] **A-25** **Device-capability gate:** check RAM/chip; ~3.11 GB weights + KV cache need a capable device. On unsupported devices, degrade gracefully with clear messaging (the Decoder is the wedge — failure here must be handled, not crash). Define a supported-device matrix (OQ-11). Consider a **smaller quant fallback** (e.g. Q3_K_M ≈2.54 GB) for low-RAM devices (OQ-8).
+- [ ] **A-26** Lifecycle: lazy-load, manage memory (unload under pressure), **cap context** well below 128K to bound KV-cache RAM (letters are short — e.g. 4–8K), warm-up, cancellation, single-inference concurrency guard, thermal/perf handling.
+- [ ] **A-27** Prompt + **structured-output** layer: system-prompt templates per task (decode, translate, summarize) in **Gemma chat format**, force JSON-ish output, **validate + repair + retry** (small models drift); optionally constrain with a **GBNF grammar** (llama.cpp) for reliable JSON; never accept a malformed deadline/severity. Unit-tested with fixtures.
+- [ ] **A-28** **Quality evaluation harness:** a fixture set of real German Behörden letters with expected fields, run across languages, to measure decode/translation accuracy and catch hallucinations (brief Risk #2). Gate Decoder release on this. Compare **quant levels and E2B vs E4B** (OQ-8).
+
 ---
 
 ## 3. Design system (Warm Companion)
@@ -130,6 +143,13 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 - [ ] **P0-02** CI: build + run tests on PR.
 - [ ] **P0-03** SwiftData stack + file store + Keychain/crypto (A-07…A-10) with tests.
 - [ ] **P0-04** StoreKit 2 wrapper + StoreKit test config (A-17…A-19).
+- [ ] **P0-07** **Runtime decision spike (`Core/LLM`)** — foundational for the Decoder. Both candidates run the **same model, Gemma 4 E2B**:
+  - **Candidate A (default):** GGUF `Q4_K_M` (3.11 GB) on **llama.cpp + Metal** — with a **GBNF grammar** for guaranteed-valid JSON.
+  - **Candidate B:** `.litertlm` (2.59 GB, MTP fast-decode) on **LiteRT-LM** — the reference project's runtime (verify it works on **iOS**; the gallery's iOS allowlist still lists only 3n).
+  - On a **real target device**, load each and decode the **same 5–10 real German Behörden letters** into the Decoder's JSON schema.
+  - **Measure:** decode/translation quality, JSON-validity rate, first-token + full-decode latency, peak RAM, model+download size.
+  - **Decision rule:** **default to Candidate A (llama.cpp/GGUF)** for its GBNF-guaranteed structured output and proven iOS-Metal maturity. **Switch to B only if** the spike shows B runs well on iOS *and* delivers a materially better quality+latency+size result. Record the verdict and rationale here, then close **OQ-14**.
+  - Build the chosen runtime behind the `LLMEngine` wrapper (A-21) so the decision stays swappable; wire model download/management + capability gate (A-22…A-26) with a round-trip test.
 - [ ] **P0-05** Localization + RTL scaffolding (A-12…A-15); DE default.
 - [ ] **P0-06** Root `TabView` shell with 5 tabs (placeholder screens) and theme switching (A-20, DS-01/02).
 
@@ -144,8 +164,9 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 - [ ] **P2-04** Persist onboarding completion; route to Home.
 
 ### Phase 3 — Shared core (always present)
-- [ ] **P3-01** **Decoder — capture**: camera + Apple Vision document scan, on-device OCR.
-- [ ] **P3-02** **Decoder — explain**: server LLM call → structured output (summary, asks, deadline, severity, response template, disclaimer flag). Tight output schema; log for review.
+- [ ] **P3-00** **Decoder — model readiness**: first-use download/acceptance flow (A-22/A-24), progress + offline-ready state; gate Decode entry on model present + device capable (A-25).
+- [ ] **P3-01** **Decoder — capture**: camera + Apple Vision document scan, on-device OCR (robust text extraction). Evaluate Gemma 3n **vision** input as alternative/fallback to OCR (OQ-12).
+- [ ] **P3-02** **Decoder — explain (ON-DEVICE)**: local Gemma 3n call via `Core/LLM` → structured output (summary, asks, deadline, severity, response template, disclaimer flag). Tight schema + validate/repair (A-27); log locally for user review. **No network.**
 - [ ] **P3-03** **Decoder — result screen**: severity pill, plain summary, deadline chip → add to calendar, asks list, reply template (copy/share), collapsible original German, save-to-Vault, "talk to a lawyer" on legal items.
 - [ ] **P3-04** **Decoder — free-tier gate**: 3/month counter; paywall sheet at the wall (D6).
 - [ ] **P3-05** **Vault**: list/grid of documents, categories, per-doc expiry, add/scan/import, PDF export/share, trust banner ("stored only on this device").
@@ -250,7 +271,7 @@ Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
 - [ ] **X-04** RDG/StBerG safety: information-not-advice framing + disclaimers on anything legally/tax consequential; lawyer-routing on legal items.
 - [ ] **X-05** Robust empty states that teach the next action.
 - [ ] **X-06** Yearly-maintenance hooks: thresholds/point values/law text isolated in versioned content files (not hard-coded in views) so they can be updated without code churn.
-- [ ] **X-07** Decoder safety: tight output templates, log every decode for review, never invent deadlines/obligations.
+- [ ] **X-07** Decoder safety: tight output templates + validate/repair (A-27), log every decode locally for user review, never invent deadlines/obligations. **Heightened with a small on-device model** — pair with the A-28 eval gate.
 
 ---
 
@@ -258,7 +279,8 @@ Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
 
 | Area | Items | Status |
 |---|---|---|
-| Shared core | Decoder, Vault, Calendar, Settings | Prototyped (HTML) |
+| On-device AI | Gemma 4 E2B (GGUF Q4_K_M, 3.11 GB) via llama.cpp/Metal, model download/manage | Decided (D11); not built |
+| Shared core | Decoder (local inference), Vault, Calendar, Settings | Prototyped (HTML) |
 | Home / IA | Search, Up-next, checklist, tools grid, guides | Prototyped (HTML) |
 | Worker | 7 tools — Chancenkarte calc fully prototyped | Chancenkarte: prototyped |
 | Tourist/Student/Family/Resident | tools per §4 Phase 6 | Mapped, not built |
@@ -276,20 +298,27 @@ The HTML prototype (`prototype/index.html`) is the **visual + interaction refere
 - **OQ-1 (must-verify):** Exact **Chancenkarte point values** and **Blue Card 2026 thresholds** — the prototype uses credible approximations only. Confirm against current BAMF/Make-it-in-Germany before shipping these engines. (Ties to X-06.)
 - **OQ-2:** Final **price** and whether the **Small Business Program** (15%) applies.
 - **OQ-3:** Free-tier Decoder limit — test 2/3/5 in beta (D6).
-- **OQ-4:** **LLM provider** + EU data-processing for the Decoder explanation step (OCR is on-device; the explanation call still sends letter text off-device — reconcile with the local-only stance and GDPR; this is a notable nuance vs D4 since the *document image* stays local but extracted *text* is sent for explanation).
-- **OQ-5:** iCloud backup of the document store — include or exclude (A-11).
+- **OQ-4: ✅ RESOLVED** — inference runs **on-device** (Gemma 4 E2B via llama.cpp, D11). No letter text or image leaves the phone; no EU-inference question. This was the biggest risk in the prior plan; the local-model decision closes it and strengthens the privacy/GDPR story.
+- **OQ-5:** iCloud backup of the **document store** — include or exclude (A-11). (The **model file** is already excluded, A-23.)
 - **OQ-6:** Which 3 cities to deepen Anmeldung guidance for first; soft-launch country; affiliate partners (per brief §13).
-- **OQ-7:** Minimum iOS version final call (proposed 17.0).
+- **OQ-7:** Minimum iOS version final call (proposed 17.0; gallery also requires 17+).
+- **OQ-8:** **Quant level + E2B vs E4B** — `Q4_K_M` (3.11 GB) is the chosen default. Does it give acceptable German-letter decode/translation quality across all 9 languages, or do we need a higher quant (Q5/Q6) or **E4B** (more quality, larger, more RAM, fewer devices)? And do low-RAM devices need a smaller quant (Q3_K_M ≈2.54 GB)? Decide via the A-28 eval harness; possibly ship a device-adaptive quant.
+- **OQ-9:** **Gemma license** review for commercial distribution inside a paid app (Prohibited Use Policy, attribution, pass-through restrictions) — fold into the lawyer review (P9-01).
+- **OQ-10:** **Model hosting & download source** — HuggingFace gated (`google/gemma-3n-E2B-it-litert-preview`) vs a self-hosted/CDN mirror; auth, versioning, and update strategy.
+- **OQ-11:** **Supported-device matrix** — minimum chip/RAM to run E2B acceptably; messaging + fallback for older iPhones (A-25).
+- **OQ-12:** **OCR vs vision** — Apple Vision OCR→text (reliable, lower memory, no extra files) vs feeding the letter image to Gemma 4's vision path (needs the **`mmproj`** projector + llama.cpp `libmtmd`, more RAM). Decide per quality/perf from A-28; OCR→text is the likely default for dense official letters.
+- **OQ-13:** **"5-second" promise** — measure real first-token + full-decode latency per device on llama.cpp/Metal; set honest UX expectations and a good progress experience.
+- **OQ-14:** **Runtime: llama.cpp/GGUF vs LiteRT-LM/`.litertlm`** — both run **Gemma 4 E2B**. llama.cpp = GBNF-guaranteed JSON, quant flexibility, iOS-Metal maturity, independence from Google's iOS release cadence (3.11 GB). LiteRT-LM (the reference's runtime) = smaller (2.59 GB), MTP fast-decode, integrated multimodal, Google-maintained — **but Gemma-4-on-iOS unproven in this snapshot** (iOS allowlist still 3n). Benchmark both in the spike on the same German letters; the `LLMEngine` wrapper (A-21) keeps the choice swappable. Also decide llama.cpp packaging (xcframework/SwiftPM vs wrapper) and pin a version.
 
-> ⚠️ **OQ-4 is important and partly contradicts D4.** Local-only storage protects the *stored documents*, but the Decoder still transmits the *letter's text* to an LLM to produce the explanation. Decide and document: EU-hosted/EU-resident inference, retention policy, and user consent. Update D4/§2.4 once resolved.
+> ✅ **The local-model decision (D11) resolves the prior OQ-4 contradiction.** With storage *and* inference on-device, "your data never leaves this device" is now literally true end-to-end — a stronger claim than the brief's. The new risks are practical (model size, device support, small-model quality), tracked as OQ-8…OQ-13 and the A-28 eval gate. Note the brief's "~€0.02–0.10 per Decoder" server cost **disappears**, improving unit economics.
 
 ---
 
 ## 8. Suggested iteration order (fast path to a usable build)
 
-1. Phase 0 + 1 (foundation + design system)
+1. Phase 0 + 1 (foundation + design system) — **incl. `Core/LLM` engine + model download (P0-07)**, since the Decoder depends on it
 2. Onboarding (P2) → Home shell with **Worker** persona (P4-01/02)
-3. **Decoder** end-to-end (P3-01…04) — the wedge feature
+3. **Decoder** end-to-end (P3-00…04) on local Gemma 3n + **run the A-28 quality eval** — the wedge feature
 4. Vault + Calendar (P3-05…08) + Settings (P3-09)
 5. Monetization gate (P3-04/P7)
 6. Worker tools incl. Chancenkarte (P6-W*) + the 5 guides (P6-G*)
