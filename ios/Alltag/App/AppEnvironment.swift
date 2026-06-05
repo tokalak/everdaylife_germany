@@ -20,8 +20,10 @@ final class AppEnvironment {
     let persistence: PersistenceController
     /// On-device inference facade: model readiness + the swappable engine (P0-07).
     let llm: LLMService
-    /// Active-persona store (P2-02/P4-01).
+    /// Active-persona store + preserved past situations (P2-02/P4-01).
     let personas: PersonaStore
+    /// Per-persona checklist progress, preserved across mode switches (P4-01/03).
+    let checklist: ChecklistStore
     /// Onboarding navigation + completion gate (P2).
     let onboarding: OnboardingController
     /// Local-notification permission (P2-03), abstracted for testability.
@@ -37,7 +39,7 @@ final class AppEnvironment {
 
     /// GDPR export/delete-all, composed from the stores (P3-09).
     var dataManagement: DataManagementController {
-        DataManagementController(vault: vault, deadlines: deadlines)
+        DataManagementController(vault: vault, deadlines: deadlines, checklist: checklist)
     }
 
     init(
@@ -57,6 +59,7 @@ final class AppEnvironment {
         self.theme = theme
         self.language = language
         self.personas = personas
+        self.checklist = ChecklistStore(context: persistence.container.mainContext)
         self.onboarding = onboarding
         self.notifications = notifications
         self.decoderReadiness = DecoderReadinessController(provisioner: llm.provisioner)

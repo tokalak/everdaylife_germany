@@ -10,13 +10,16 @@ import Foundation
 struct DataManagementController {
     let vault: VaultStore
     let deadlines: DeadlineStore
+    let checklist: ChecklistStore
 
-    /// **Delete all my data** — erase every document (and its encrypted blob) and
-    /// every deadline (cancelling their reminders). Irreversible; the caller
-    /// confirms first. Onboarding/persona/theme prefs are intentionally left.
+    /// **Delete all my data** — erase every document (and its encrypted blob),
+    /// every deadline (cancelling their reminders), and all checklist progress.
+    /// Irreversible; the caller confirms first. Onboarding/persona/theme prefs
+    /// are intentionally left.
     func deleteAllData() {
         vault.removeAll()
         deadlines.removeAll()
+        checklist.removeAll()
     }
 
     /// **Export my data** — write a human-readable summary plus a copy of every

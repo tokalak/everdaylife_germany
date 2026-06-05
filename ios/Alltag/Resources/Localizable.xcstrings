@@ -69,6 +69,1376 @@
         }
       }
     },
+    "checklist_worker_anmeldung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Innerhalb von 14 Tagen nach dem Einzug"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Within 14 days of moving in"
+          }
+        }
+      }
+    },
+    "checklist_worker_anmeldung_title": {
+      "comment": "Worker checklist: register address.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresse anmelden (Anmeldung)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register your address (Anmeldung)"
+          }
+        }
+      }
+    },
+    "checklist_worker_bank_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Gehalt, Miete und Lastschriften"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For salary, rent and direct debits"
+          }
+        }
+      }
+    },
+    "checklist_worker_bank_title": {
+      "comment": "Worker checklist: bank account.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deutsches Bankkonto eröffnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open a German bank account"
+          }
+        }
+      }
+    },
+    "checklist_worker_broadcast_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro Wohnung fällig · ~18,36 € im Monat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due per household · ~€18.36 per month"
+          }
+        }
+      }
+    },
+    "checklist_worker_broadcast_title": {
+      "comment": "Worker checklist: broadcast fee.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rundfunkbeitrag anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register for the broadcast fee"
+          }
+        }
+      }
+    },
+    "checklist_worker_freelance_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragebogen zur steuerlichen Erfassung beim Finanzamt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragebogen zur steuerlichen Erfassung at the Finanzamt"
+          }
+        }
+      }
+    },
+    "checklist_worker_freelance_title": {
+      "comment": "Worker checklist: freelance registration.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als Freiberufler:in anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register as a freelancer"
+          }
+        }
+      }
+    },
+    "checklist_worker_health_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GKV oder PKV · Entscheidungshilfe"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GKV vs PKV · decision helper"
+          }
+        }
+      }
+    },
+    "checklist_worker_health_title": {
+      "comment": "Worker checklist: health insurance.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenversicherung wählen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose health insurance"
+          }
+        }
+      }
+    },
+    "checklist_worker_liability_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privathaftpflicht ist in Deutschland üblich"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private liability cover is standard in Germany"
+          }
+        }
+      }
+    },
+    "checklist_worker_liability_title": {
+      "comment": "Worker checklist: liability insurance.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haftpflichtversicherung abschließen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get liability insurance"
+          }
+        }
+      }
+    },
+    "checklist_worker_taxid_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommt ~90 Tage nach der Anmeldung per Post"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrives ~90 days after Anmeldung by post"
+          }
+        }
+      }
+    },
+    "checklist_worker_taxid_title": {
+      "comment": "Worker checklist: tax ID.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID erhalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get your tax ID (Steuer-ID)"
+          }
+        }
+      }
+    },
+    "dates_add": {
+      "comment": "Add a deadline.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termin hinzufügen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add date"
+          }
+        }
+      }
+    },
+    "dates_bucket_done": {
+      "comment": "Agenda section: completed.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erledigt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "dates_bucket_later": {
+      "comment": "Agenda section: later than 7 days.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Später"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Later"
+          }
+        }
+      }
+    },
+    "dates_bucket_overdue": {
+      "comment": "Agenda section: overdue.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Überfällig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overdue"
+          }
+        }
+      }
+    },
+    "dates_bucket_this_week": {
+      "comment": "Agenda section: within 7 days.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Woche"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This week"
+          }
+        }
+      }
+    },
+    "dates_bucket_today": {
+      "comment": "Agenda section: due today.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heute"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today"
+          }
+        }
+      }
+    },
+    "dates_cancel": {
+      "comment": "Cancel adding a deadline.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "dates_delete": {
+      "comment": "Delete a deadline.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        }
+      }
+    },
+    "dates_due_in_days": {
+      "comment": "Countdown: due in N (>=2) days. %lld is the day count.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "in %lld Tagen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "in %lld days"
+          }
+        }
+      }
+    },
+    "dates_due_today": {
+      "comment": "Countdown: due today.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heute fällig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due today"
+          }
+        }
+      }
+    },
+    "dates_due_tomorrow": {
+      "comment": "Countdown: due tomorrow.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morgen fällig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due tomorrow"
+          }
+        }
+      }
+    },
+    "dates_due_yesterday": {
+      "comment": "Countdown: was due yesterday.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gestern fällig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was due yesterday"
+          }
+        }
+      }
+    },
+    "dates_empty_message": {
+      "comment": "Dates empty-state message.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entschlüssle einen Brief oder füge einen Termin von Hand hinzu — wir erinnern dich rechtzeitig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decode a letter or add a date by hand — we'll remind you in time."
+          }
+        }
+      }
+    },
+    "dates_empty_title": {
+      "comment": "Dates empty-state title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch keine Termine"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No dates yet"
+          }
+        }
+      }
+    },
+    "dates_field_date": {
+      "comment": "Add-deadline field: date.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date"
+          }
+        }
+      }
+    },
+    "dates_field_severity": {
+      "comment": "Add-deadline field: severity.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dringlichkeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Severity"
+          }
+        }
+      }
+    },
+    "dates_field_title": {
+      "comment": "Add-deadline field: title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titel"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Title"
+          }
+        }
+      }
+    },
+    "dates_mark_done": {
+      "comment": "Mark a deadline done.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erledigt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mark done"
+          }
+        }
+      }
+    },
+    "dates_mark_undone": {
+      "comment": "Mark a done deadline as not done.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doch nicht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not done"
+          }
+        }
+      }
+    },
+    "dates_overdue_days": {
+      "comment": "Countdown: N (>=2) days overdue. %lld is the day count.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Tage überfällig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days overdue"
+          }
+        }
+      }
+    },
+    "dates_save": {
+      "comment": "Save a deadline.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sichern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        }
+      }
+    },
+    "decoder_add_to_calendar": {
+      "comment": "Accessibility label: add the deadline to the calendar.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zu Terminen hinzufügen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add to dates"
+          }
+        }
+      }
+    },
+    "decoder_asks_title": {
+      "comment": "Result card title: what the authority asks for.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was verlangt wird"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What they're asking for"
+          }
+        }
+      }
+    },
+    "decoder_copy": {
+      "comment": "Copy the suggested reply.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy"
+          }
+        }
+      }
+    },
+    "decoder_deadline_generic_title": {
+      "comment": "Fallback deadline title when the sender is unknown.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behördenfrist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Official deadline"
+          }
+        }
+      }
+    },
+    "decoder_deadline_reminders": {
+      "comment": "Deadline card subtitle: reminder schedule.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erinnerungen 14, 7 und 1 Tag vorher"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reminders 14, 7 and 1 day before"
+          }
+        }
+      }
+    },
+    "decoder_deadline_title": {
+      "comment": "Deadline card title on the result screen.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deadline"
+          }
+        }
+      }
+    },
+    "decoder_decode_another": {
+      "comment": "Start decoding another letter.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weiteren Brief entschlüsseln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decode another letter"
+          }
+        }
+      }
+    },
+    "decoder_error_engine": {
+      "comment": "Decode error: on-device engine unavailable.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die KI ist noch nicht bereit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The on-device AI isn't ready yet."
+          }
+        }
+      }
+    },
+    "decoder_error_hint": {
+      "comment": "Generic guidance under a decode error.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versuche es mit einem schärferen Foto bei gutem Licht erneut."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again with a clearer photo in good light."
+          }
+        }
+      }
+    },
+    "decoder_error_not_understood": {
+      "comment": "Decode error: model output unusable.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Brief konnte nicht verstanden werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We couldn't make sense of this letter."
+          }
+        }
+      }
+    },
+    "decoder_error_unknown": {
+      "comment": "Decode error: unknown failure.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etwas ist schiefgelaufen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Something went wrong."
+          }
+        }
+      }
+    },
+    "decoder_error_unreadable": {
+      "comment": "Decode error: OCR found no text.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Brief konnte nicht gelesen werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We couldn't read this letter."
+          }
+        }
+      }
+    },
+    "decoder_failed_title": {
+      "comment": "Title: model download failed.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laden fehlgeschlagen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download failed"
+          }
+        }
+      }
+    },
+    "decoder_idle_subtitle": {
+      "comment": "Decoder idle hero subtitle.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografiere einen amtlichen Brief — du bekommst eine einfache Erklärung und die Frist."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photograph an official letter — get a plain-language explanation and the deadline."
+          }
+        }
+      }
+    },
+    "decoder_idle_title": {
+      "comment": "Decoder idle hero title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einen Brief entschlüsseln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decode a letter"
+          }
+        }
+      }
+    },
+    "decoder_idle_trust": {
+      "comment": "Trust banner on the idle Decoder screen.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles wird auf diesem Gerät verarbeitet — nichts wird hochgeladen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everything is processed on this device — nothing is uploaded."
+          }
+        }
+      }
+    },
+    "decoder_lawyer_note": {
+      "comment": "Shown on legal letters: route to a lawyer (D9/X-04).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das klingt nach einer rechtlichen Angelegenheit. Ziehe eine Anwältin oder einen Anwalt hinzu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This looks like a legal matter. Consider speaking to a lawyer."
+          }
+        }
+      }
+    },
+    "decoder_no_camera": {
+      "comment": "Shown when document scanning isn't available (e.g. Simulator).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zum Scannen wird eine Gerätekamera benötigt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanning a letter needs a device camera."
+          }
+        }
+      }
+    },
+    "decoder_original_title": {
+      "comment": "Collapsible: show the original German text.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Originaltext auf Deutsch ansehen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See the original German"
+          }
+        }
+      }
+    },
+    "decoder_reply_title": {
+      "comment": "Result card title: suggested reply.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antwortvorschlag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggested reply"
+          }
+        }
+      }
+    },
+    "decoder_result_title": {
+      "comment": "Decoder result screen header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entschlüsselter Brief"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decoded letter"
+          }
+        }
+      }
+    },
+    "decoder_retry": {
+      "comment": "Retry the model download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erneut versuchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again"
+          }
+        }
+      }
+    },
+    "decoder_save_vault": {
+      "comment": "Save the decoded letter to the document vault.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Dokumente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to Docs"
+          }
+        }
+      }
+    },
+    "decoder_scan": {
+      "comment": "Primary button: scan a letter.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brief scannen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan a letter"
+          }
+        }
+      }
+    },
+    "decoder_setup_cancel": {
+      "comment": "Cancel the in-progress model download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "decoder_setup_checking": {
+      "comment": "Setup progress: checking the device.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerät wird geprüft …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Checking your device …"
+          }
+        }
+      }
+    },
+    "decoder_setup_download": {
+      "comment": "Accept terms and start the model download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modell laden (ca. 3 GB)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download model (about 3 GB)"
+          }
+        }
+      }
+    },
+    "decoder_setup_downloading": {
+      "comment": "Setup progress: downloading the model.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KI-Modell wird geladen …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Downloading the AI model …"
+          }
+        }
+      }
+    },
+    "decoder_setup_offline_hint": {
+      "comment": "Setup progress hint: needed only once.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das ist nur einmal nötig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is only needed once."
+          }
+        }
+      }
+    },
+    "decoder_setup_subtitle": {
+      "comment": "Model setup subtitle: explains the one-time download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Brief-Decoder nutzt ein KI-Modell, das einmalig (ca. 3 GB) geladen wird und danach vollständig offline auf deinem Gerät läuft."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The letter Decoder uses an AI model downloaded once (about 3 GB). After that it runs fully offline on your device."
+          }
+        }
+      }
+    },
+    "decoder_setup_terms": {
+      "comment": "Gemma terms acceptance note under the download button (A-24).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit dem Laden akzeptierst du die Gemma-Nutzungsbedingungen. Am besten im WLAN."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By downloading you accept the Gemma Terms of Use. Wi-Fi recommended."
+          }
+        }
+      }
+    },
+    "decoder_setup_title": {
+      "comment": "Model setup screen title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KI auf deinem Gerät einrichten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set up the on-device AI"
+          }
+        }
+      }
+    },
+    "decoder_setup_trust": {
+      "comment": "Trust banner on setup: works offline, nothing leaves the phone.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach dem Laden funktioniert alles offline — kein Brief verlässt dein Telefon."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once downloaded it all works offline — no letter leaves your phone."
+          }
+        }
+      }
+    },
+    "decoder_setup_verifying": {
+      "comment": "Setup progress: verifying the download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird überprüft …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifying …"
+          }
+        }
+      }
+    },
+    "decoder_share": {
+      "comment": "Share the decoded result.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teilen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share"
+          }
+        }
+      }
+    },
+    "decoder_toast_calendar_added": {
+      "comment": "Toast: deadline added to Dates.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zu Terminen hinzugefügt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Added to your dates"
+          }
+        }
+      }
+    },
+    "decoder_toast_calendar_soon": {
+      "comment": "Toast: calendar feature coming soon.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termine kommen bald"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dates coming soon"
+          }
+        }
+      }
+    },
+    "decoder_toast_copied": {
+      "comment": "Toast: reply copied to clipboard.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In die Zwischenablage kopiert"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copied to clipboard"
+          }
+        }
+      }
+    },
+    "decoder_toast_vault_saved": {
+      "comment": "Toast: decoded letter saved to vault.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Dokumenten gesichert"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved to Docs"
+          }
+        }
+      }
+    },
+    "decoder_toast_vault_soon": {
+      "comment": "Toast: vault feature coming soon.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokumente kommen bald"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Docs coming soon"
+          }
+        }
+      }
+    },
+    "decoder_translated_note": {
+      "comment": "RDG note under the summary: translated, not legal advice.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus dem Deutschen übersetzt — wir geben keine Rechtsberatung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translated from German — we never give legal advice."
+          }
+        }
+      }
+    },
+    "decoder_try_again": {
+      "comment": "Retry a failed decode.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erneut versuchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again"
+          }
+        }
+      }
+    },
+    "decoder_unsupported_title": {
+      "comment": "Title: device can't run the on-device model (A-25).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf diesem Gerät nicht verfügbar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not available on this device"
+          }
+        }
+      }
+    },
+    "decoder_working_explaining": {
+      "comment": "Progress: model explaining the letter.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird erklärt …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explaining …"
+          }
+        }
+      }
+    },
+    "decoder_working_hint": {
+      "comment": "Progress hint: happens on-device.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das geschieht auf deinem Gerät."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This happens on your device."
+          }
+        }
+      }
+    },
+    "decoder_working_reading": {
+      "comment": "Progress: OCR reading the letter.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brief wird gelesen …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading the letter …"
+          }
+        }
+      }
+    },
     "disclaimer_not_legal_advice": {
       "comment": "Default DisclaimerNote copy (RDG / D9): information, not legal advice.",
       "extractionState": "stale",
@@ -83,6 +1453,528 @@
           "stringUnit": {
             "state": "translated",
             "value": "Information, not legal or tax advice. For legal questions, consult a professional."
+          }
+        }
+      }
+    },
+    "doc_category_finance": {
+      "comment": "Document category.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finanzen & Steuern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finance & tax"
+          }
+        }
+      }
+    },
+    "doc_category_housing": {
+      "comment": "Document category.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wohnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Housing"
+          }
+        }
+      }
+    },
+    "doc_category_identity": {
+      "comment": "Document category.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausweis & Aufenthalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Identity & residence"
+          }
+        }
+      }
+    },
+    "doc_category_insurance": {
+      "comment": "Document category.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versicherungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insurance"
+          }
+        }
+      }
+    },
+    "doc_category_official": {
+      "comment": "Document category.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behörden & Amtliches"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Official letters"
+          }
+        }
+      }
+    },
+    "doc_category_other": {
+      "comment": "Document category.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonstiges"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other"
+          }
+        }
+      }
+    },
+    "guide_diploma_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anerkennung · reglementierte Berufe"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anerkennung · regulated professions"
+          }
+        }
+      }
+    },
+    "guide_diploma_title": {
+      "comment": "Guide: diploma recognition.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abschluss anerkennen lassen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recognising your diploma"
+          }
+        }
+      }
+    },
+    "guide_health_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesetzlich vs. privat, so meldest du dich an"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Public vs private, how to enrol"
+          }
+        }
+      }
+    },
+    "guide_health_title": {
+      "comment": "Guide: getting health insurance.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenversicherung abschließen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getting health insurance"
+          }
+        }
+      }
+    },
+    "guide_register_business_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewerbe vs. Freiberufler"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewerbe vs Freiberufler"
+          }
+        }
+      }
+    },
+    "guide_register_business_title": {
+      "comment": "Guide: registering a business.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewerbe oder Freiberuf anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registering a business"
+          }
+        }
+      }
+    },
+    "guide_residence_permit_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthaltstitel · Schritt für Schritt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthaltstitel · step by step"
+          }
+        }
+      }
+    },
+    "guide_residence_permit_title": {
+      "comment": "Guide: residence permit.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthaltstitel bekommen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getting a residence permit"
+          }
+        }
+      }
+    },
+    "guide_taxes_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lohnsteuer, Steuerklassen, ELSTER"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lohnsteuer, Steuerklassen, ELSTER"
+          }
+        }
+      }
+    },
+    "guide_taxes_title": {
+      "comment": "Guide: how taxes work.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie Steuern funktionieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How taxes work"
+          }
+        }
+      }
+    },
+    "home_checklist_title": {
+      "comment": "Home section header: the persona checklist.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Checkliste"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your checklist"
+          }
+        }
+      }
+    },
+    "home_coming_soon": {
+      "comment": "Toast when tapping a tool/guide whose engine ships in a later update.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommt in einem späteren Update."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coming in a later update."
+          }
+        }
+      }
+    },
+    "home_greeting_day": {
+      "comment": "Home greeting, daytime.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guten Tag 👋"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hello 👋"
+          }
+        }
+      }
+    },
+    "home_greeting_evening": {
+      "comment": "Home greeting, evening.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guten Abend 👋"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good evening 👋"
+          }
+        }
+      }
+    },
+    "home_greeting_morning": {
+      "comment": "Home greeting, morning.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guten Morgen 👋"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good morning 👋"
+          }
+        }
+      }
+    },
+    "home_guides_for_everyone": {
+      "comment": "Trailing label on the Guides section header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für alle"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For everyone"
+          }
+        }
+      }
+    },
+    "home_guides_title": {
+      "comment": "Home section header: cross-persona guides.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leitfäden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guides"
+          }
+        }
+      }
+    },
+    "home_mode_prefix": {
+      "comment": "Prefix before the active persona name on the mode chip.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modus:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode:"
+          }
+        }
+      }
+    },
+    "home_no_mode_message": {
+      "comment": "Defensive empty state message.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle in den Einstellungen deine Situation, um deine Checkliste und Tools zu sehen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick your situation in Settings to see your checklist and tools."
+          }
+        }
+      }
+    },
+    "home_no_mode_title": {
+      "comment": "Defensive empty state when no persona is set.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch kein Modus gewählt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No mode selected yet"
+          }
+        }
+      }
+    },
+    "home_progress_label": {
+      "comment": "Accessibility label for the checklist progress ring.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortschritt deiner Checkliste"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your checklist progress"
+          }
+        }
+      }
+    },
+    "home_search_placeholder": {
+      "comment": "Home search field placeholder.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leitfäden & Tools durchsuchen …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search guides & tools…"
+          }
+        }
+      }
+    },
+    "home_tools_title": {
+      "comment": "Home section header: tools for the active persona.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tools für deinen Modus"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tools for your mode"
+          }
+        }
+      }
+    },
+    "home_up_next": {
+      "comment": "Label for the next upcoming deadline card.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als Nächstes"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Up next"
+          }
+        }
+      }
+    },
+    "home_welcome_subtitle": {
+      "comment": "Home greeting subtitle.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schön, dass du da bist."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good to see you."
           }
         }
       }
@@ -461,6 +2353,57 @@
         }
       }
     },
+    "reminder_deadline_title": {
+      "comment": "Local-notification title for a deadline reminder.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frist steht bald an"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A deadline is coming up"
+          }
+        }
+      }
+    },
+    "reminder_expiry_title": {
+      "comment": "Local-notification title for a document expiry.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokument läuft bald ab"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A document is expiring soon"
+          }
+        }
+      }
+    },
+    "settings_about": {
+      "comment": "Settings section header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über die App"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About"
+          }
+        }
+      }
+    },
     "settings_appearance": {
       "extractionState": "stale",
       "localizations": {
@@ -478,6 +2421,210 @@
         }
       }
     },
+    "settings_cancel": {
+      "comment": "Cancel button.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "settings_data": {
+      "comment": "Settings section header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokumente & Daten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documents & data"
+          }
+        }
+      }
+    },
+    "settings_delete_confirm": {
+      "comment": "Delete-all confirm button.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete everything"
+          }
+        }
+      }
+    },
+    "settings_delete_confirm_message": {
+      "comment": "Delete-all alert message.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Dokumente und Termine werden endgültig von diesem Gerät gelöscht. Das kann nicht rückgängig gemacht werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every document and date will be permanently erased from this device. This can't be undone."
+          }
+        }
+      }
+    },
+    "settings_delete_confirm_title": {
+      "comment": "Delete-all alert title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Daten löschen?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete all data?"
+          }
+        }
+      }
+    },
+    "settings_delete_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lösche alle Dokumente und Termine endgültig von diesem Gerät."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permanently erase every document and date from this device."
+          }
+        }
+      }
+    },
+    "settings_delete_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Daten löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete all my data"
+          }
+        }
+      }
+    },
+    "settings_done": {
+      "comment": "Done button.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fertig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "settings_export_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lade alles als Dateien herunter, die du behalten oder teilen kannst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download everything as files you can keep or share."
+          }
+        }
+      }
+    },
+    "settings_export_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meine Daten exportieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export my data"
+          }
+        }
+      }
+    },
+    "settings_help_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragen, Feedback oder ein Problem mit einer Übersetzung melden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questions, feedback, or report a problem with a translation."
+          }
+        }
+      }
+    },
+    "settings_help_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hilfe & Kontakt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help & contact"
+          }
+        }
+      }
+    },
     "settings_language": {
       "extractionState": "stale",
       "localizations": {
@@ -491,6 +2638,261 @@
           "stringUnit": {
             "state": "translated",
             "value": "Language"
+          }
+        }
+      }
+    },
+    "settings_language_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Sprache der App und jedes entschlüsselten Briefs."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The language of the app and every decoded letter."
+          }
+        }
+      }
+    },
+    "settings_language_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        }
+      }
+    },
+    "settings_legal_body": {
+      "comment": "About screen disclaimer body (RDG).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag hilft dir, amtliche Briefe und Abläufe zu verstehen und zu organisieren. Es ersetzt keine Rechts- oder Steuerberatung. Bei rechtlichen Fragen wende dich an eine Anwältin oder einen Anwalt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag helps you understand and organize official letters and processes. It is not a substitute for legal or tax advice. For legal questions, consult a lawyer."
+          }
+        }
+      }
+    },
+    "settings_legal_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag bietet Informationen und Übersetzung — keine Rechts- oder Steuerberatung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag provides information and translation — not legal or tax advice."
+          }
+        }
+      }
+    },
+    "settings_legal_privacy": {
+      "comment": "About screen privacy note.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles läuft auf deinem Gerät: Dokumente werden verschlüsselt gespeichert und die KI verarbeitet deine Briefe lokal. Nichts wird hochgeladen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everything runs on your device: documents are stored encrypted and the AI processes your letters locally. Nothing is uploaded."
+          }
+        }
+      }
+    },
+    "settings_legal_title": {
+      "comment": "Settings row + About title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über & Rechtliches"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About & legal"
+          }
+        }
+      }
+    },
+    "settings_mode_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wechsle zwischen Tourist, Studium, Arbeit, Familie und Niederlassung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Switch between Tourist, Student, Worker, Family and Resident."
+          }
+        }
+      }
+    },
+    "settings_mode_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mein Modus"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My mode"
+          }
+        }
+      }
+    },
+    "settings_reminders_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wann wir dich vor Fristen und Abläufen erinnern. In den iOS-Einstellungen verwalten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When we remind you before deadlines and expiries. Manage in iOS Settings."
+          }
+        }
+      }
+    },
+    "settings_reminders_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erinnerungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reminders"
+          }
+        }
+      }
+    },
+    "settings_setup": {
+      "comment": "Settings section header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Einrichtung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your setup"
+          }
+        }
+      }
+    },
+    "settings_storage_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Dokumente und das KI-Modell — verschlüsselt, nur auf diesem Gerät."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your documents and the AI model — encrypted, on this device only."
+          }
+        }
+      }
+    },
+    "settings_storage_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speicher"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Storage"
+          }
+        }
+      }
+    },
+    "settings_theme_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle, wie Alltag aussieht. „System“ folgt deinem iPhone."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose how Alltag looks. “System” follows your iPhone."
+          }
+        }
+      }
+    },
+    "settings_theme_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erscheinungsbild"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appearance"
           }
         }
       }
@@ -657,6 +3059,221 @@
         }
       }
     },
+    "tool_badge_try_it": {
+      "comment": "Badge on the prototyped tool tile.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausprobieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try it"
+          }
+        }
+      }
+    },
+    "tool_bank_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche ohne Anmeldung gehen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which accept pre-Anmeldung"
+          }
+        }
+      }
+    },
+    "tool_bank_title": {
+      "comment": "Tool tile: bank comparison.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bankkonten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bank accounts"
+          }
+        }
+      }
+    },
+    "tool_blue_card_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gehaltsgrenze 2026"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salary threshold 2026"
+          }
+        }
+      }
+    },
+    "tool_blue_card_title": {
+      "comment": "Tool tile: Blue Card.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blue Card prüfen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blue Card check"
+          }
+        }
+      }
+    },
+    "tool_chancenkarte_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schätze deine Punktzahl"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score your eligibility"
+          }
+        }
+      }
+    },
+    "tool_chancenkarte_title": {
+      "comment": "Tool tile: Chancenkarte points.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chancenkarte-Punkte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chancenkarte points"
+          }
+        }
+      }
+    },
+    "tool_health_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GKV vs. PKV"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GKV vs PKV"
+          }
+        }
+      }
+    },
+    "tool_health_title": {
+      "comment": "Tool tile: health insurance.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Health insurance"
+          }
+        }
+      }
+    },
+    "tool_taxid_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID vs. Steuernummer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID vs Steuernummer"
+          }
+        }
+      }
+    },
+    "tool_taxid_title": {
+      "comment": "Tool tile: tax-ID organizer.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID-Helfer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tax-ID organizer"
+          }
+        }
+      }
+    },
+    "tool_visa_fit_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcher Titel passt zu dir"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which permit suits you"
+          }
+        }
+      }
+    },
+    "tool_visa_fit_title": {
+      "comment": "Tool tile: visa-fit.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa-Finder"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa-fit tool"
+          }
+        }
+      }
+    },
     "trust_on_device": {
       "comment": "Default TrustBanner copy: documents stay on the device (D4/X-03).",
       "extractionState": "stale",
@@ -671,1383 +3288,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stored only on this device — nothing leaves your phone."
-          }
-        }
-      }
-    },
-    "decoder_result_title": {
-      "comment": "Decoder result screen header.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Entschlüsselter Brief"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Decoded letter"
-          }
-        }
-      }
-    },
-    "decoder_translated_note": {
-      "comment": "RDG note under the summary: translated, not legal advice.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aus dem Deutschen übersetzt — wir geben keine Rechtsberatung."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Translated from German — we never give legal advice."
-          }
-        }
-      }
-    },
-    "decoder_lawyer_note": {
-      "comment": "Shown on legal letters: route to a lawyer (D9/X-04).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Das klingt nach einer rechtlichen Angelegenheit. Ziehe eine Anwältin oder einen Anwalt hinzu."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "This looks like a legal matter. Consider speaking to a lawyer."
-          }
-        }
-      }
-    },
-    "decoder_deadline_title": {
-      "comment": "Deadline card title on the result screen.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Frist"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Deadline"
-          }
-        }
-      }
-    },
-    "decoder_deadline_reminders": {
-      "comment": "Deadline card subtitle: reminder schedule.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erinnerungen 14, 7 und 1 Tag vorher"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reminders 14, 7 and 1 day before"
-          }
-        }
-      }
-    },
-    "decoder_add_to_calendar": {
-      "comment": "Accessibility label: add the deadline to the calendar.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zu Terminen hinzufügen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Add to dates"
-          }
-        }
-      }
-    },
-    "decoder_asks_title": {
-      "comment": "Result card title: what the authority asks for.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Was verlangt wird"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "What they're asking for"
-          }
-        }
-      }
-    },
-    "decoder_reply_title": {
-      "comment": "Result card title: suggested reply.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Antwortvorschlag"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Suggested reply"
-          }
-        }
-      }
-    },
-    "decoder_copy": {
-      "comment": "Copy the suggested reply.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kopieren"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Copy"
-          }
-        }
-      }
-    },
-    "decoder_original_title": {
-      "comment": "Collapsible: show the original German text.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Originaltext auf Deutsch ansehen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "See the original German"
-          }
-        }
-      }
-    },
-    "decoder_save_vault": {
-      "comment": "Save the decoded letter to the document vault.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "In Dokumente"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Save to Docs"
-          }
-        }
-      }
-    },
-    "decoder_share": {
-      "comment": "Share the decoded result.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Teilen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Share"
-          }
-        }
-      }
-    },
-    "decoder_decode_another": {
-      "comment": "Start decoding another letter.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Weiteren Brief entschlüsseln"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Decode another letter"
-          }
-        }
-      }
-    },
-    "decoder_toast_calendar_soon": {
-      "comment": "Toast: calendar feature coming soon.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Termine kommen bald"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dates coming soon"
-          }
-        }
-      }
-    },
-    "decoder_toast_vault_soon": {
-      "comment": "Toast: vault feature coming soon.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dokumente kommen bald"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Docs coming soon"
-          }
-        }
-      }
-    },
-    "decoder_toast_copied": {
-      "comment": "Toast: reply copied to clipboard.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "In die Zwischenablage kopiert"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Copied to clipboard"
-          }
-        }
-      }
-    },
-    "decoder_setup_title": {
-      "comment": "Model setup screen title.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "KI auf deinem Gerät einrichten"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Set up the on-device AI"
-          }
-        }
-      }
-    },
-    "decoder_setup_subtitle": {
-      "comment": "Model setup subtitle: explains the one-time download.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Der Brief-Decoder nutzt ein KI-Modell, das einmalig (ca. 3 GB) geladen wird und danach vollständig offline auf deinem Gerät läuft."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The letter Decoder uses an AI model downloaded once (about 3 GB). After that it runs fully offline on your device."
-          }
-        }
-      }
-    },
-    "decoder_setup_trust": {
-      "comment": "Trust banner on setup: works offline, nothing leaves the phone.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nach dem Laden funktioniert alles offline — kein Brief verlässt dein Telefon."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Once downloaded it all works offline — no letter leaves your phone."
-          }
-        }
-      }
-    },
-    "decoder_setup_download": {
-      "comment": "Accept terms and start the model download.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Modell laden (ca. 3 GB)"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Download model (about 3 GB)"
-          }
-        }
-      }
-    },
-    "decoder_setup_terms": {
-      "comment": "Gemma terms acceptance note under the download button (A-24).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mit dem Laden akzeptierst du die Gemma-Nutzungsbedingungen. Am besten im WLAN."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "By downloading you accept the Gemma Terms of Use. Wi-Fi recommended."
-          }
-        }
-      }
-    },
-    "decoder_setup_checking": {
-      "comment": "Setup progress: checking the device.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gerät wird geprüft …"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Checking your device …"
-          }
-        }
-      }
-    },
-    "decoder_setup_downloading": {
-      "comment": "Setup progress: downloading the model.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "KI-Modell wird geladen …"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Downloading the AI model …"
-          }
-        }
-      }
-    },
-    "decoder_setup_verifying": {
-      "comment": "Setup progress: verifying the download.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wird überprüft …"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Verifying …"
-          }
-        }
-      }
-    },
-    "decoder_setup_offline_hint": {
-      "comment": "Setup progress hint: needed only once.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Das ist nur einmal nötig."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "This is only needed once."
-          }
-        }
-      }
-    },
-    "decoder_setup_cancel": {
-      "comment": "Cancel the in-progress model download.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abbrechen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cancel"
-          }
-        }
-      }
-    },
-    "decoder_unsupported_title": {
-      "comment": "Title: device can't run the on-device model (A-25).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Auf diesem Gerät nicht verfügbar"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Not available on this device"
-          }
-        }
-      }
-    },
-    "decoder_failed_title": {
-      "comment": "Title: model download failed.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Laden fehlgeschlagen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Download failed"
-          }
-        }
-      }
-    },
-    "decoder_retry": {
-      "comment": "Retry the model download.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erneut versuchen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Try again"
-          }
-        }
-      }
-    },
-    "decoder_idle_title": {
-      "comment": "Decoder idle hero title.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Einen Brief entschlüsseln"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Decode a letter"
-          }
-        }
-      }
-    },
-    "decoder_idle_subtitle": {
-      "comment": "Decoder idle hero subtitle.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Fotografiere einen amtlichen Brief — du bekommst eine einfache Erklärung und die Frist."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Photograph an official letter — get a plain-language explanation and the deadline."
-          }
-        }
-      }
-    },
-    "decoder_idle_trust": {
-      "comment": "Trust banner on the idle Decoder screen.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alles wird auf diesem Gerät verarbeitet — nichts wird hochgeladen."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Everything is processed on this device — nothing is uploaded."
-          }
-        }
-      }
-    },
-    "decoder_scan": {
-      "comment": "Primary button: scan a letter.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Brief scannen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scan a letter"
-          }
-        }
-      }
-    },
-    "decoder_no_camera": {
-      "comment": "Shown when document scanning isn't available (e.g. Simulator).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zum Scannen wird eine Gerätekamera benötigt."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scanning a letter needs a device camera."
-          }
-        }
-      }
-    },
-    "decoder_working_reading": {
-      "comment": "Progress: OCR reading the letter.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Brief wird gelesen …"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reading the letter …"
-          }
-        }
-      }
-    },
-    "decoder_working_explaining": {
-      "comment": "Progress: model explaining the letter.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wird erklärt …"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Explaining …"
-          }
-        }
-      }
-    },
-    "decoder_working_hint": {
-      "comment": "Progress hint: happens on-device.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Das geschieht auf deinem Gerät."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "This happens on your device."
-          }
-        }
-      }
-    },
-    "decoder_error_hint": {
-      "comment": "Generic guidance under a decode error.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Versuche es mit einem schärferen Foto bei gutem Licht erneut."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Try again with a clearer photo in good light."
-          }
-        }
-      }
-    },
-    "decoder_try_again": {
-      "comment": "Retry a failed decode.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erneut versuchen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Try again"
-          }
-        }
-      }
-    },
-    "decoder_error_unreadable": {
-      "comment": "Decode error: OCR found no text.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Der Brief konnte nicht gelesen werden."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "We couldn't read this letter."
-          }
-        }
-      }
-    },
-    "decoder_error_not_understood": {
-      "comment": "Decode error: model output unusable.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Der Brief konnte nicht verstanden werden."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "We couldn't make sense of this letter."
-          }
-        }
-      }
-    },
-    "decoder_error_engine": {
-      "comment": "Decode error: on-device engine unavailable.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Die KI ist noch nicht bereit."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The on-device AI isn't ready yet."
-          }
-        }
-      }
-    },
-    "decoder_error_unknown": {
-      "comment": "Decode error: unknown failure.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Etwas ist schiefgelaufen."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Something went wrong."
-          }
-        }
-      }
-    },
-    "reminder_deadline_title": {
-      "comment": "Local-notification title for a deadline reminder.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Frist steht bald an"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A deadline is coming up"
-          }
-        }
-      }
-    },
-    "dates_bucket_overdue": {
-      "comment": "Agenda section: overdue.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Überfällig"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Overdue"
-          }
-        }
-      }
-    },
-    "dates_bucket_today": {
-      "comment": "Agenda section: due today.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Heute"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Today"
-          }
-        }
-      }
-    },
-    "dates_bucket_this_week": {
-      "comment": "Agenda section: within 7 days.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Diese Woche"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "This week"
-          }
-        }
-      }
-    },
-    "dates_bucket_later": {
-      "comment": "Agenda section: later than 7 days.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Später"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Later"
-          }
-        }
-      }
-    },
-    "dates_bucket_done": {
-      "comment": "Agenda section: completed.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erledigt"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Done"
-          }
-        }
-      }
-    },
-    "dates_empty_title": {
-      "comment": "Dates empty-state title.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Noch keine Termine"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "No dates yet"
-          }
-        }
-      }
-    },
-    "dates_empty_message": {
-      "comment": "Dates empty-state message.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Entschlüssle einen Brief oder füge einen Termin von Hand hinzu — wir erinnern dich rechtzeitig."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Decode a letter or add a date by hand — we'll remind you in time."
-          }
-        }
-      }
-    },
-    "dates_add": {
-      "comment": "Add a deadline.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Termin hinzufügen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Add date"
-          }
-        }
-      }
-    },
-    "dates_delete": {
-      "comment": "Delete a deadline.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Löschen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Delete"
-          }
-        }
-      }
-    },
-    "dates_mark_done": {
-      "comment": "Mark a deadline done.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erledigt"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mark done"
-          }
-        }
-      }
-    },
-    "dates_mark_undone": {
-      "comment": "Mark a done deadline as not done.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Doch nicht"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Not done"
-          }
-        }
-      }
-    },
-    "dates_field_title": {
-      "comment": "Add-deadline field: title.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Titel"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Title"
-          }
-        }
-      }
-    },
-    "dates_field_date": {
-      "comment": "Add-deadline field: date.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Datum"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Date"
-          }
-        }
-      }
-    },
-    "dates_field_severity": {
-      "comment": "Add-deadline field: severity.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dringlichkeit"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Severity"
-          }
-        }
-      }
-    },
-    "dates_cancel": {
-      "comment": "Cancel adding a deadline.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abbrechen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cancel"
-          }
-        }
-      }
-    },
-    "dates_save": {
-      "comment": "Save a deadline.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sichern"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Save"
-          }
-        }
-      }
-    },
-    "dates_due_today": {
-      "comment": "Countdown: due today.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Heute fällig"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Due today"
-          }
-        }
-      }
-    },
-    "dates_due_tomorrow": {
-      "comment": "Countdown: due tomorrow.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Morgen fällig"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Due tomorrow"
-          }
-        }
-      }
-    },
-    "dates_due_yesterday": {
-      "comment": "Countdown: was due yesterday.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gestern fällig"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Was due yesterday"
-          }
-        }
-      }
-    },
-    "dates_due_in_days": {
-      "comment": "Countdown: due in N (>=2) days. %lld is the day count.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "in %lld Tagen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "in %lld days"
-          }
-        }
-      }
-    },
-    "dates_overdue_days": {
-      "comment": "Countdown: N (>=2) days overdue. %lld is the day count.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%lld Tage überfällig"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%lld days overdue"
-          }
-        }
-      }
-    },
-    "decoder_toast_calendar_added": {
-      "comment": "Toast: deadline added to Dates.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zu Terminen hinzugefügt"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Added to your dates"
-          }
-        }
-      }
-    },
-    "decoder_deadline_generic_title": {
-      "comment": "Fallback deadline title when the sender is unknown.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Behördenfrist"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Official deadline"
-          }
-        }
-      }
-    },
-    "doc_category_identity": {
-      "comment": "Document category.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ausweis & Aufenthalt"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Identity & residence"
-          }
-        }
-      }
-    },
-    "doc_category_official": {
-      "comment": "Document category.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Behörden & Amtliches"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Official letters"
-          }
-        }
-      }
-    },
-    "doc_category_finance": {
-      "comment": "Document category.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Finanzen & Steuern"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Finance & tax"
-          }
-        }
-      }
-    },
-    "doc_category_insurance": {
-      "comment": "Document category.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Versicherungen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Insurance"
-          }
-        }
-      }
-    },
-    "doc_category_housing": {
-      "comment": "Document category.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wohnen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Housing"
-          }
-        }
-      }
-    },
-    "doc_category_other": {
-      "comment": "Document category.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sonstiges"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Other"
-          }
-        }
-      }
-    },
-    "reminder_expiry_title": {
-      "comment": "Local-notification title for a document expiry.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dokument läuft bald ab"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A document is expiring soon"
-          }
-        }
-      }
-    },
-    "vault_expiry_deadline": {
-      "comment": "Agenda title for a document expiry. %@ is the document name.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%@ läuft ab"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%@ expires"
-          }
-        }
-      }
-    },
-    "vault_expired": {
-      "comment": "Document expiry badge: already expired.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abgelaufen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Expired"
-          }
-        }
-      }
-    },
-    "vault_expires_today": {
-      "comment": "Document expiry badge: expires today.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Läuft heute ab"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Expires today"
-          }
-        }
-      }
-    },
-    "vault_expires_in": {
-      "comment": "Document expiry badge. %lld is the day count.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Läuft in %lld Tagen ab"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Expires in %lld days"
-          }
-        }
-      }
-    },
-    "vault_empty_title": {
-      "comment": "Vault empty-state title.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Noch keine Dokumente"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "No documents yet"
-          }
-        }
-      }
-    },
-    "vault_empty_message": {
-      "comment": "Vault empty-state message.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scanne oder importiere wichtige Unterlagen. Sie bleiben verschlüsselt auf diesem Gerät."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scan or import important papers. They stay encrypted on this device."
-          }
-        }
-      }
-    },
-    "vault_trust": {
-      "comment": "Vault trust banner.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Verschlüsselt, nur auf diesem Gerät — nichts wird hochgeladen."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Encrypted, on this device only — nothing is uploaded."
           }
         }
       }
@@ -2069,91 +3309,6 @@
         }
       }
     },
-    "vault_scan": {
-      "comment": "Scan a document.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dokument scannen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scan document"
-          }
-        }
-      }
-    },
-    "vault_import": {
-      "comment": "Import a file.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Datei importieren"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Import file"
-          }
-        }
-      }
-    },
-    "vault_delete": {
-      "comment": "Delete a document.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Löschen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Delete"
-          }
-        }
-      }
-    },
-    "vault_share": {
-      "comment": "Share/export a document.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Teilen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Share"
-          }
-        }
-      }
-    },
-    "vault_default_scan_name": {
-      "comment": "Default name for a scanned document.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gescanntes Dokument"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scanned document"
-          }
-        }
-      }
-    },
     "vault_add_title": {
       "comment": "Add-document sheet title.",
       "localizations": {
@@ -2167,91 +3322,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Save document"
-          }
-        }
-      }
-    },
-    "vault_field_name": {
-      "comment": "Add-document field: name.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Name"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Name"
-          }
-        }
-      }
-    },
-    "vault_field_category": {
-      "comment": "Add-document field: category.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kategorie"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Category"
-          }
-        }
-      }
-    },
-    "vault_field_has_expiry": {
-      "comment": "Add-document toggle: has an expiry date.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Läuft ab"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Has an expiry date"
-          }
-        }
-      }
-    },
-    "vault_field_expiry": {
-      "comment": "Add-document field: expiry date.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ablaufdatum"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Expiry date"
-          }
-        }
-      }
-    },
-    "vault_expiry_help": {
-      "comment": "Add-document expiry help footer.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wir erinnern dich 60, 30 und 7 Tage vor Ablauf."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "We'll remind you 60, 30 and 7 days before it expires."
           }
         }
       }
@@ -2273,6 +3343,244 @@
         }
       }
     },
+    "vault_default_scan_name": {
+      "comment": "Default name for a scanned document.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gescanntes Dokument"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanned document"
+          }
+        }
+      }
+    },
+    "vault_delete": {
+      "comment": "Delete a document.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        }
+      }
+    },
+    "vault_empty_message": {
+      "comment": "Vault empty-state message.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanne oder importiere wichtige Unterlagen. Sie bleiben verschlüsselt auf diesem Gerät."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan or import important papers. They stay encrypted on this device."
+          }
+        }
+      }
+    },
+    "vault_empty_title": {
+      "comment": "Vault empty-state title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch keine Dokumente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No documents yet"
+          }
+        }
+      }
+    },
+    "vault_expired": {
+      "comment": "Document expiry badge: already expired.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abgelaufen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expired"
+          }
+        }
+      }
+    },
+    "vault_expires_in": {
+      "comment": "Document expiry badge. %lld is the day count.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Läuft in %lld Tagen ab"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expires in %lld days"
+          }
+        }
+      }
+    },
+    "vault_expires_today": {
+      "comment": "Document expiry badge: expires today.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Läuft heute ab"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expires today"
+          }
+        }
+      }
+    },
+    "vault_expiry_deadline": {
+      "comment": "Agenda title for a document expiry. %@ is the document name.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ läuft ab"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ expires"
+          }
+        }
+      }
+    },
+    "vault_expiry_help": {
+      "comment": "Add-document expiry help footer.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wir erinnern dich 60, 30 und 7 Tage vor Ablauf."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We'll remind you 60, 30 and 7 days before it expires."
+          }
+        }
+      }
+    },
+    "vault_field_category": {
+      "comment": "Add-document field: category.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kategorie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Category"
+          }
+        }
+      }
+    },
+    "vault_field_expiry": {
+      "comment": "Add-document field: expiry date.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ablaufdatum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expiry date"
+          }
+        }
+      }
+    },
+    "vault_field_has_expiry": {
+      "comment": "Add-document toggle: has an expiry date.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Läuft ab"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Has an expiry date"
+          }
+        }
+      }
+    },
+    "vault_field_name": {
+      "comment": "Add-document field: name.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name"
+          }
+        }
+      }
+    },
+    "vault_import": {
+      "comment": "Import a file.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datei importieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Import file"
+          }
+        }
+      }
+    },
     "vault_save": {
       "comment": "Save.",
       "localizations": {
@@ -2290,53 +3598,36 @@
         }
       }
     },
-    "vault_toast_saved": {
-      "comment": "Toast: document saved.",
+    "vault_scan": {
+      "comment": "Scan a document.",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "In Dokumenten gesichert"
+            "value": "Dokument scannen"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Saved to Docs"
+            "value": "Scan document"
           }
         }
       }
     },
-    "vault_toast_save_failed": {
-      "comment": "Toast: save failed.",
+    "vault_share": {
+      "comment": "Share/export a document.",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Speichern fehlgeschlagen"
+            "value": "Teilen"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Couldn't save"
-          }
-        }
-      }
-    },
-    "vault_toast_open_failed": {
-      "comment": "Toast: open/export failed.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Konnte nicht geöffnet werden"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Couldn't open this"
+            "value": "Share"
           }
         }
       }
@@ -2358,8 +3649,42 @@
         }
       }
     },
-    "decoder_toast_vault_saved": {
-      "comment": "Toast: decoded letter saved to vault.",
+    "vault_toast_open_failed": {
+      "comment": "Toast: open/export failed.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konnte nicht geöffnet werden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't open this"
+          }
+        }
+      }
+    },
+    "vault_toast_save_failed": {
+      "comment": "Toast: save failed.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speichern fehlgeschlagen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't save"
+          }
+        }
+      }
+    },
+    "vault_toast_saved": {
+      "comment": "Toast: document saved.",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -2375,478 +3700,19 @@
         }
       }
     },
-    "settings_setup": {
-      "comment": "Settings section header.",
+    "vault_trust": {
+      "comment": "Vault trust banner.",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deine Einrichtung"
+            "value": "Verschlüsselt, nur auf diesem Gerät — nichts wird hochgeladen."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Your setup"
-          }
-        }
-      }
-    },
-    "settings_data": {
-      "comment": "Settings section header.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dokumente & Daten"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Documents & data"
-          }
-        }
-      }
-    },
-    "settings_about": {
-      "comment": "Settings section header.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Über die App"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "About"
-          }
-        }
-      }
-    },
-    "settings_theme_title": {
-      "comment": "Settings row.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erscheinungsbild"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Appearance"
-          }
-        }
-      }
-    },
-    "settings_theme_explanation": {
-      "comment": "Settings row explanation.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wähle, wie Alltag aussieht. „System“ folgt deinem iPhone."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Choose how Alltag looks. “System” follows your iPhone."
-          }
-        }
-      }
-    },
-    "settings_language_title": {
-      "comment": "Settings row.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sprache"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Language"
-          }
-        }
-      }
-    },
-    "settings_language_explanation": {
-      "comment": "Settings row explanation.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Die Sprache der App und jedes entschlüsselten Briefs."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The language of the app and every decoded letter."
-          }
-        }
-      }
-    },
-    "settings_mode_title": {
-      "comment": "Settings row.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mein Modus"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "My mode"
-          }
-        }
-      }
-    },
-    "settings_mode_explanation": {
-      "comment": "Settings row explanation.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wechsle zwischen Tourist, Studium, Arbeit, Familie und Niederlassung."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Switch between Tourist, Student, Worker, Family and Resident."
-          }
-        }
-      }
-    },
-    "settings_reminders_title": {
-      "comment": "Settings row.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erinnerungen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reminders"
-          }
-        }
-      }
-    },
-    "settings_reminders_explanation": {
-      "comment": "Settings row explanation.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wann wir dich vor Fristen und Abläufen erinnern. In den iOS-Einstellungen verwalten."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "When we remind you before deadlines and expiries. Manage in iOS Settings."
-          }
-        }
-      }
-    },
-    "settings_storage_title": {
-      "comment": "Settings row.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Speicher"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Storage"
-          }
-        }
-      }
-    },
-    "settings_storage_explanation": {
-      "comment": "Settings row explanation.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Deine Dokumente und das KI-Modell — verschlüsselt, nur auf diesem Gerät."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Your documents and the AI model — encrypted, on this device only."
-          }
-        }
-      }
-    },
-    "settings_export_title": {
-      "comment": "Settings row.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Meine Daten exportieren"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Export my data"
-          }
-        }
-      }
-    },
-    "settings_export_explanation": {
-      "comment": "Settings row explanation.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lade alles als Dateien herunter, die du behalten oder teilen kannst."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Download everything as files you can keep or share."
-          }
-        }
-      }
-    },
-    "settings_delete_title": {
-      "comment": "Settings row.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alle Daten löschen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Delete all my data"
-          }
-        }
-      }
-    },
-    "settings_delete_explanation": {
-      "comment": "Settings row explanation.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lösche alle Dokumente und Termine endgültig von diesem Gerät."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Permanently erase every document and date from this device."
-          }
-        }
-      }
-    },
-    "settings_help_title": {
-      "comment": "Settings row.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hilfe & Kontakt"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Help & contact"
-          }
-        }
-      }
-    },
-    "settings_help_explanation": {
-      "comment": "Settings row explanation.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Fragen, Feedback oder ein Problem mit einer Übersetzung melden."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Questions, feedback, or report a problem with a translation."
-          }
-        }
-      }
-    },
-    "settings_legal_title": {
-      "comment": "Settings row + About title.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Über & Rechtliches"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "About & legal"
-          }
-        }
-      }
-    },
-    "settings_legal_explanation": {
-      "comment": "Settings row explanation.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alltag bietet Informationen und Übersetzung — keine Rechts- oder Steuerberatung."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alltag provides information and translation — not legal or tax advice."
-          }
-        }
-      }
-    },
-    "settings_legal_body": {
-      "comment": "About screen disclaimer body (RDG).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alltag hilft dir, amtliche Briefe und Abläufe zu verstehen und zu organisieren. Es ersetzt keine Rechts- oder Steuerberatung. Bei rechtlichen Fragen wende dich an eine Anwältin oder einen Anwalt."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alltag helps you understand and organize official letters and processes. It is not a substitute for legal or tax advice. For legal questions, consult a lawyer."
-          }
-        }
-      }
-    },
-    "settings_legal_privacy": {
-      "comment": "About screen privacy note.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alles läuft auf deinem Gerät: Dokumente werden verschlüsselt gespeichert und die KI verarbeitet deine Briefe lokal. Nichts wird hochgeladen."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Everything runs on your device: documents are stored encrypted and the AI processes your letters locally. Nothing is uploaded."
-          }
-        }
-      }
-    },
-    "settings_delete_confirm_title": {
-      "comment": "Delete-all alert title.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alle Daten löschen?"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Delete all data?"
-          }
-        }
-      }
-    },
-    "settings_delete_confirm_message": {
-      "comment": "Delete-all alert message.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alle Dokumente und Termine werden endgültig von diesem Gerät gelöscht. Das kann nicht rückgängig gemacht werden."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Every document and date will be permanently erased from this device. This can't be undone."
-          }
-        }
-      }
-    },
-    "settings_delete_confirm": {
-      "comment": "Delete-all confirm button.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alles löschen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Delete everything"
-          }
-        }
-      }
-    },
-    "settings_cancel": {
-      "comment": "Cancel button.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abbrechen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cancel"
-          }
-        }
-      }
-    },
-    "settings_done": {
-      "comment": "Done button.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Fertig"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Done"
+            "value": "Encrypted, on this device only — nothing is uploaded."
           }
         }
       }

@@ -8,6 +8,7 @@ final class DataManagementTests: XCTestCase {
     private var persistence: PersistenceController!
     private var vault: VaultStore!
     private var deadlines: DeadlineStore!
+    private var checklist: ChecklistStore!
     private var controller: DataManagementController!
 
     override func setUp() async throws {
@@ -18,17 +19,21 @@ final class DataManagementTests: XCTestCase {
         vault = VaultStore(
             context: context, fileStore: .ephemeral(),
             deadlines: deadlines, scheduler: scheduler)
-        controller = DataManagementController(vault: vault, deadlines: deadlines)
+        checklist = ChecklistStore(context: context)
+        controller = DataManagementController(
+            vault: vault, deadlines: deadlines, checklist: checklist)
     }
 
-    func testDeleteAllClearsDocumentsAndDeadlines() throws {
+    func testDeleteAllClearsDocumentsDeadlinesAndChecklist() throws {
         try vault.add(data: Data("a".utf8), fileName: "ID", category: .identity)
         deadlines.add(title: "Appointment", dueDate: CalendarTestFactory.date(daysFromNow: 5))
+        checklist.setDone("anmeldung", in: .worker, true)
 
         controller.deleteAllData()
 
         XCTAssertTrue(vault.documents.isEmpty)
         XCTAssertTrue(deadlines.deadlines.isEmpty)
+        XCTAssertFalse(checklist.isDone("anmeldung", in: .worker))
     }
 
     func testExportWritesSummaryAndDocumentFiles() throws {

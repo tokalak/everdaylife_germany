@@ -33,7 +33,7 @@ struct RootView: View {
     @ViewBuilder
     private func screen(for tab: AppTab) -> some View {
         switch tab {
-        case .home: HomeView()
+        case .home: HomeView(selection: $selection)
         case .docs: VaultView()
         case .decode: DecoderView()
         case .dates: DatesView()

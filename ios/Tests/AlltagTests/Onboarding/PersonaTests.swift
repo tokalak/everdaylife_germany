@@ -52,4 +52,40 @@ final class PersonaStoreTests: XCTestCase {
         store.select(.family)
         XCTAssertEqual(store.activePersona, .family)
     }
+
+    // MARK: - Engaged / past situations (P4-01)
+
+    func testSelectingRecordsEngagedPersona() {
+        let store = PersonaStore(defaults: defaults)
+        store.select(.worker)
+        XCTAssertEqual(store.engagedPersonas, [.worker])
+        XCTAssertTrue(store.pastPersonas.isEmpty)
+    }
+
+    func testSwitchingKeepsPriorPersonaAsPast() {
+        let store = PersonaStore(defaults: defaults)
+        store.select(.worker)
+        store.select(.student)
+        XCTAssertEqual(store.activePersona, .student)
+        XCTAssertEqual(store.engagedPersonas, [.worker, .student])
+        XCTAssertEqual(store.pastPersonas, [.worker])
+    }
+
+    func testReturningToAPersonaDoesNotDuplicateIt() {
+        let store = PersonaStore(defaults: defaults)
+        store.select(.worker)
+        store.select(.student)
+        store.select(.worker)
+        XCTAssertEqual(store.engagedPersonas, [.worker, .student])
+        XCTAssertEqual(store.pastPersonas, [.student])
+    }
+
+    func testEngagedSetPersistsAcrossInstances() {
+        let store = PersonaStore(defaults: defaults)
+        store.select(.worker)
+        store.select(.family)
+        let reloaded = PersonaStore(defaults: defaults)
+        XCTAssertEqual(reloaded.engagedPersonas, [.worker, .family])
+        XCTAssertEqual(reloaded.activePersona, .family)
+    }
 }

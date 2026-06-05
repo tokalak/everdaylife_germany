@@ -1,9 +1,254 @@
 import SwiftUI
 
-/// Home tab placeholder (P0-06). The real persona-aware Home — greeting, "Up
-/// next", checklist, tools grid, guides (D10) — is built in P4-02.
+/// The persona-aware Home (P4-02 / D10): a warm greeting with the active **mode**
+/// and a progress ring, a search entry, an "Up next" card pulled from the user's
+/// deadlines, the persona checklist (ticking preserved per-persona), the "Tools
+/// for your mode" grid, and the cross-persona guides.
+///
+/// All persona content comes from `PersonaCatalog` (X-06); progress from
+/// `ChecklistStore`; the next date from `DeadlineStore`. The interactive tool
+/// engines and the guide reader land in **Phase 6**, so their taps surface a
+/// gentle "coming soon" toast for now. Search across guides/tools is **P6-G6**.
 struct HomeView: View {
-    var body: some View {
-        PlaceholderScreen(titleKey: "tab_home", systemImage: "house")
+    @Environment(AppEnvironment.self) private var env
+    /// Lets Home deep-link into the other tabs (e.g. "Up next" → Decode/Dates).
+    @Binding var selection: AppTab
+
+    /// Embed the content in a `ScrollView` (the shipping default). The snapshot
+    /// harness sets this `false` — `ImageRenderer` renders `ScrollView` content
+    /// blank, so tests exercise the layout directly across the trait matrix.
+    var embedInScrollView = true
+
+    @State private var toast = false
+
+    init(selection: Binding<AppTab> = .constant(.home), embedInScrollView: Bool = true) {
+        self._selection = selection
+        self.embedInScrollView = embedInScrollView
     }
+
+    private var persona: Persona? { env.personas.activePersona }
+
+    var body: some View {
+        Group {
+            if embedInScrollView {
+                ScrollView { content }
+            } else {
+                content
+            }
+        }
+        .background(AppColor.paper)
+        .appToast(isPresented: $toast, "home_coming_soon", systemImage: "sparkles")
+    }
+
+    // MARK: - Content
+
+    private var content: some View {
+        VStack(alignment: .leading, spacing: AppSpacing.lg) {
+            if let persona {
+                greeting(persona)
+                    .appReveal(index: 0)
+                searchBar
+                    .appReveal(index: 1)
+                if let upNext { upNextCard(upNext).appReveal(index: 2) }
+                checklistSection(persona).appReveal(index: 3)
+                toolsSection(persona).appReveal(index: 4)
+                guidesSection.appReveal(index: 5)
+            } else {
+                // Onboarding guarantees a persona before Home; this is a defensive
+                // fallback that still teaches the next action (X-05).
+                EmptyState(
+                    systemImage: "person.crop.circle.badge.questionmark",
+                    titleKey: "home_no_mode_title",
+                    messageKey: "home_no_mode_message")
+                    .padding(.top, AppSpacing.xxxl)
+            }
+        }
+        .padding(AppSpacing.lg)
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    // MARK: - Greeting
+
+    private func greeting(_ persona: Persona) -> some View {
+        HStack(alignment: .top, spacing: AppSpacing.md) {
+            VStack(alignment: .leading, spacing: AppSpacing.xs) {
+                Text(Self.greetingKey())
+                    .appText(.display)
+                    .foregroundStyle(AppColor.ink)
+                Text("home_welcome_subtitle")
+                    .appText(.body)
+                    .foregroundStyle(AppColor.inkSoft)
+                modeChip(persona)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            ProgressRing(fraction: env.checklist.fraction(in: persona))
+        }
+    }
+
+    private func modeChip(_ persona: Persona) -> some View {
+        HStack(spacing: AppSpacing.xs) {
+            Image(systemName: persona.systemImage)
+                .imageScale(.small)
+            Text("home_mode_prefix")
+            Text(persona.titleKey)
+                .fontWeight(.semibold)
+        }
+        .appText(.label)
+        .foregroundStyle(persona.accent)
+        .padding(.horizontal, AppSpacing.sm)
+        .padding(.vertical, AppSpacing.xs)
+        .background(persona.accent.opacity(0.14), in: Capsule())
+        .padding(.top, AppSpacing.xxs)
+    }
+
+    /// Time-of-day greeting. Day-granular and purely cosmetic, so the exact hour
+    /// boundary isn't worth localizing as a plural/variation table.
+    static func greetingKey(now: Date = .now) -> LocalizedStringKey {
+        switch Calendar.current.component(.hour, from: now) {
+        case 5..<12:  return "home_greeting_morning"
+        case 12..<18: return "home_greeting_day"
+        default:      return "home_greeting_evening"
+        }
+    }
+
+    // MARK: - Search
+
+    private var searchBar: some View {
+        Button { toast = true } label: {
+            HStack(spacing: AppSpacing.sm) {
+                Image(systemName: "magnifyingglass")
+                    .foregroundStyle(AppColor.inkSoft)
+                Text("home_search_placeholder")
+                    .appText(.body)
+                    .foregroundStyle(AppColor.inkSoft)
+                Spacer()
+            }
+            .padding(AppSpacing.md)
+            .background(AppColor.card, in: RoundedRectangle(cornerRadius: AppRadius.md, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: AppRadius.md, style: .continuous)
+                    .strokeBorder(AppColor.line, lineWidth: 1))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("home_search_placeholder")
+    }
+
+    // MARK: - Up next
+
+    /// The soonest deadline the user hasn't completed (the store keeps them
+    /// sorted ascending by due date), or nil if there's nothing pending.
+    private var upNext: Deadline? {
+        env.deadlines.deadlines.first { !$0.isDone }
+    }
+
+    private func upNextCard(_ deadline: Deadline) -> some View {
+        Button { selection = .dates } label: {
+            VStack(alignment: .leading, spacing: AppSpacing.xs) {
+                Label("home_up_next", systemImage: "clock.fill")
+                    .appText(.sectionHeader)
+                    .foregroundStyle(AppColor.primaryDeep)
+                Text(deadline.title)
+                    .appText(.cardTitle)
+                    .foregroundStyle(AppColor.ink)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                DeadlineChip(
+                    date: deadline.dueDate,
+                    relativeLabel: DatesFormat.countdown(for: deadline.dueDate),
+                    severity: deadline.severity)
+            }
+            .padding(AppSpacing.md)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(AppColor.primaryWash, in: RoundedRectangle(cornerRadius: AppRadius.lg, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: AppRadius.lg, style: .continuous)
+                    .strokeBorder(AppColor.primary.opacity(0.25), lineWidth: 1))
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
+        .accessibilityHint("home_up_next")
+    }
+
+    // MARK: - Checklist
+
+    private func checklistSection(_ persona: Persona) -> some View {
+        let items = PersonaCatalog.checklist(for: persona)
+        return VStack(alignment: .leading, spacing: AppSpacing.sm) {
+            sectionHeader(
+                "home_checklist_title",
+                trailing: Text(verbatim: "\(env.checklist.completedCount(in: persona)) / \(items.count)"))
+            ForEach(items) { item in
+                ChecklistRow(
+                    titleKey: item.titleKey,
+                    subtitleKey: item.subtitleKey,
+                    isDone: env.checklist.isDone(item.id, in: persona),
+                    showsDisclosure: item.link != nil
+                ) {
+                    env.checklist.toggle(item.id, in: persona)
+                }
+            }
+        }
+    }
+
+    // MARK: - Tools
+
+    private func toolsSection(_ persona: Persona) -> some View {
+        let tools = PersonaCatalog.tools(for: persona)
+        return Group {
+            if !tools.isEmpty {
+                VStack(alignment: .leading, spacing: AppSpacing.sm) {
+                    sectionHeader("home_tools_title", trailing: Text(persona.titleKey))
+                    LazyVGrid(
+                        columns: [GridItem(.flexible(), spacing: AppSpacing.sm),
+                                  GridItem(.flexible(), spacing: AppSpacing.sm)],
+                        spacing: AppSpacing.sm
+                    ) {
+                        ForEach(tools) { tool in
+                            ToolTile(
+                                titleKey: tool.titleKey,
+                                subtitleKey: tool.subtitleKey,
+                                systemImage: tool.systemImage,
+                                tint: tool.tint
+                            ) { toast = true }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // MARK: - Guides
+
+    private var guidesSection: some View {
+        VStack(alignment: .leading, spacing: AppSpacing.sm) {
+            sectionHeader("home_guides_title", trailing: Text("home_guides_for_everyone"))
+            ForEach(PersonaCatalog.guides) { guide in
+                GuideRow(
+                    titleKey: guide.titleKey,
+                    subtitleKey: guide.subtitleKey,
+                    systemImage: guide.systemImage,
+                    tint: guide.tint
+                ) { toast = true }
+            }
+        }
+    }
+
+    // MARK: - Shared
+
+    private func sectionHeader(_ titleKey: LocalizedStringKey, trailing: Text) -> some View {
+        HStack(alignment: .firstTextBaseline) {
+            Text(titleKey)
+                .appText(.sectionHeader)
+                .foregroundStyle(AppColor.ink)
+            Spacer()
+            trailing
+                .appText(.label)
+                .foregroundStyle(AppColor.inkSoft)
+        }
+    }
+}
+
+#Preview {
+    HomeView()
+        .environment(AppEnvironment.live())
+        .appFontDesign()
 }
