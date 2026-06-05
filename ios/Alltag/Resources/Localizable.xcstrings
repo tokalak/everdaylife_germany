@@ -2483,6 +2483,615 @@
         }
       }
     },
+    "guidedoc_rp_s1_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist ein Aufenthaltstitel?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What is a residence permit?"
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s1_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Aufenthaltstitel ist die offizielle Erlaubnis, sich in Deutschland aufzuhalten – und meist auch zu arbeiten oder zu studieren. Er wird von der Ausländerbehörde erteilt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A residence permit is the official permission to stay in Germany — and usually to work or study too. It is issued by the local immigration office (Ausländerbehörde)."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s1_p2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die meisten Titel kommen heute als elektronischer Aufenthaltstitel (eAT) im Scheckkartenformat mit Chip."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Most permits are now issued as an electronic residence permit (eAT): a chip card the size of a credit card."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s2_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Staatsangehörige der EU, des EWR und der Schweiz brauchen keinen – für sie gilt Freizügigkeit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Citizens of the EU, EEA and Switzerland don't need one — they have freedom of movement."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s2_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle anderen (Drittstaatsangehörige) brauchen für einen längeren Aufenthalt einen Aufenthaltstitel."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone else (non-EU nationals) needs a residence permit for a longer stay."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s2_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für die Einreise ist oft zuerst ein nationales Visum (Kategorie D) nötig, das du später vor Ort in einen Aufenthaltstitel umwandelst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To enter, you often need a national visa (category D) first, which you later convert into a residence permit once you're here."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s2_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer braucht einen?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Who needs one?"
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s3_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaue Karte EU – für akademische Fachkräfte mit Job und Mindestgehalt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EU Blue Card — for academic professionals with a job offer and a minimum salary."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s3_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthaltserlaubnis zur Beschäftigung – für qualifizierte Fachkräfte mit anerkanntem Abschluss."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work permit (skilled worker) — for qualified professionals with a recognised qualification."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s3_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chancenkarte – punktebasierte Suche nach Arbeit, auch ohne vorherigen Vertrag."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opportunity Card (Chancenkarte) — a points-based permit to look for work without a contract yet."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s3_b4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studium – für die Einschreibung an einer Hochschule."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Study permit — for enrolment at a university."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s3_b5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiennachzug – für Ehepartner und Kinder von hier Lebenden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family reunification — for spouses and children of people living here."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s3_b6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niederlassungserlaubnis – unbefristet, nach mehreren Jahren rechtmäßigem Aufenthalt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settlement permit — permanent, after several years of lawful residence."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s3_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Häufige Arten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Common types"
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s4_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit dem passenden Visum einreisen (falls erforderlich)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter with the right visa (if required)."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s4_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wohnsitz anmelden (Anmeldung) – das brauchst du für fast alles Weitere."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register your address (Anmeldung) — you need this for almost everything that follows."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s4_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termin bei der Ausländerbehörde buchen – oft Wochen im Voraus."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Book an appointment at the Ausländerbehörde — often weeks in advance."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s4_b4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterlagen vollständig zusammenstellen und den Antrag stellen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gather all your documents and submit the application."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s4_b5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biometrische Daten abgeben und die Gebühr zahlen (meist rund 100 €)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provide biometric data and pay the fee (usually around €100)."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s4_b6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf die Karte warten – die eAT kommt einige Wochen später."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wait for the card — the eAT arrives a few weeks later."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s4_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So beantragst du ihn"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How to apply"
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s5_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültiger Reisepass."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid passport."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s5_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biometrisches Passfoto."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biometric passport photo."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s5_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meldebescheinigung (Anmeldung)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of registration (Anmeldung)."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s5_b4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis über Krankenversicherung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of health insurance."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s5_b5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis über gesicherten Lebensunterhalt (Arbeitsvertrag, Sperrkonto o. Ä.)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of secured livelihood (employment contract, blocked account, etc.)."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s5_b6": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je nach Titel: Abschluss, Anerkennung, Heiratsurkunde oder Immatrikulation."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depending on the permit: qualification, recognition, marriage certificate or enrolment."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s5_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokumente, die du meist brauchst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documents you usually need"
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s6_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach der Erteilung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After you get it"
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s6_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Aufenthaltstitel ist meist befristet. Stelle den Verlängerungsantrag rechtzeitig – idealerweise 6 bis 8 Wochen vor Ablauf."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your permit is usually time-limited. Apply to renew it in good time — ideally 6 to 8 weeks before it expires."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s6_p2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manche Titel erlauben dir, später eine Niederlassungserlaubnis oder die Einbürgerung zu beantragen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some permits let you later apply for a settlement permit or citizenship."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s7_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buche den Behördentermin so früh wie möglich – Wartezeiten sind in Großstädten lang."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Book your appointment as early as possible — waiting times are long in big cities."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s7_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lass deinen Titel nie ablaufen, ohne die Verlängerung beantragt zu haben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Never let your permit lapse without having applied for renewal."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s7_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewahre alle Dokumente sicher auf – im Dokumententresor der App hast du sie griffbereit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep all documents safe — the app's document vault keeps them at hand."
+          }
+        }
+      }
+    },
+    "guidedoc_rp_s7_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut zu wissen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good to know"
+          }
+        }
+      }
+    },
+    "guidedoc_rp_source_bamf": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BAMF – Migration & Aufenthalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BAMF — migration & residence"
+          }
+        }
+      }
+    },
+    "guidedoc_rp_source_miig": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany – Visum & Aufenthalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany — visa & residence"
+          }
+        }
+      }
+    },
+    "guidedoc_rp_summary": {
+      "comment": "Guide P6-G1 residence permit: summary line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer aus einem Nicht-EU-Land länger in Deutschland bleiben will, braucht einen Aufenthaltstitel. So funktioniert er – von der Art bis zum Antrag."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anyone from a non-EU country who wants to stay in Germany longer needs a residence permit. Here's how it works — from the type to the application."
+          }
+        }
+      }
+    },
     "home_checklist_title": {
       "comment": "Home section header: the persona checklist.",
       "localizations": {

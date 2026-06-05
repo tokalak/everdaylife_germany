@@ -199,7 +199,7 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
 
 **Cross-persona guides (all 5 ship in V1):**
-- [ ] **P6-G1** Residence permit (Aufenthaltstitel)
+- [x] **P6-G1** Residence permit (Aufenthaltstitel) *(`GuideContent`/`GuideSection`/`GuideBlock`/`GuideSource` entity + versioned `GuideLibrary` (X-06), keyed by the same id as the Home tile. Full Aufenthaltstitel body — what/who/types/apply/documents/after/tips + BAMF & Make-it-in-Germany sources — DE+EN, RDG disclaimer flagged. Reader screen = P6-G6. `GuideLibraryTests` green.)*
 - [ ] **P6-G2** Registering a business (Gewerbe vs Freiberufler)
 - [ ] **P6-G3** How taxes work
 - [ ] **P6-G4** Getting health insurance
