@@ -17,6 +17,7 @@ enum GuideLibrary {
         residencePermit,
         registerBusiness,
         howTaxesWork,
+        healthInsurance,
     ]
 
     /// The full body for a guide id, or `nil` if its content hasn't shipped yet
@@ -261,5 +262,78 @@ enum GuideLibrary {
                 id: "elster",
                 titleKey: "guidedoc_tx_source_elster",
                 url: URL(string: "https://www.elster.de/")!),
+        ])
+
+    // MARK: - P6-G4 · Getting health insurance
+
+    private static let healthInsurance = GuideContent(
+        id: "health_insurance",
+        titleKey: "guide_health_title",
+        summaryKey: "guidedoc_hi_summary",
+        sections: [
+            GuideSection(
+                id: "mandatory",
+                headingKey: "guidedoc_hi_s1_heading",
+                blocks: [
+                    .paragraph("guidedoc_hi_s1_p1"),
+                    .paragraph("guidedoc_hi_s1_p2"),
+                ]),
+            GuideSection(
+                id: "gkv_vs_pkv",
+                headingKey: "guidedoc_hi_s2_heading",
+                blocks: [
+                    .paragraph("guidedoc_hi_s2_p1"),
+                    .bullet("guidedoc_hi_s2_b1"),
+                    .bullet("guidedoc_hi_s2_b2"),
+                ]),
+            GuideSection(
+                id: "who_chooses",
+                headingKey: "guidedoc_hi_s3_heading",
+                blocks: [
+                    .bullet("guidedoc_hi_s3_b1"),
+                    .bullet("guidedoc_hi_s3_b2"),
+                    .bullet("guidedoc_hi_s3_b3"),
+                ]),
+            GuideSection(
+                id: "gkv_covers",
+                headingKey: "guidedoc_hi_s4_heading",
+                blocks: [
+                    .bullet("guidedoc_hi_s4_b1"),
+                    .bullet("guidedoc_hi_s4_b2"),
+                    .bullet("guidedoc_hi_s4_b3"),
+                ]),
+            GuideSection(
+                id: "sign_up",
+                headingKey: "guidedoc_hi_s5_heading",
+                blocks: [
+                    .bullet("guidedoc_hi_s5_b1"),
+                    .bullet("guidedoc_hi_s5_b2"),
+                    .bullet("guidedoc_hi_s5_b3"),
+                ]),
+            GuideSection(
+                id: "special",
+                headingKey: "guidedoc_hi_s6_heading",
+                blocks: [
+                    .bullet("guidedoc_hi_s6_b1"),
+                    .bullet("guidedoc_hi_s6_b2"),
+                    .bullet("guidedoc_hi_s6_b3"),
+                ]),
+            GuideSection(
+                id: "tips",
+                headingKey: "guidedoc_hi_s7_heading",
+                blocks: [
+                    .bullet("guidedoc_hi_s7_b1"),
+                    .bullet("guidedoc_hi_s7_b2"),
+                ]),
+        ],
+        sources: [
+            GuideSource(
+                id: "miig",
+                titleKey: "guidedoc_hi_source_miig",
+                url: URL(string: "https://www.make-it-in-germany.com/en/living-in-germany/health-insurance")!),
+            GuideSource(
+                id: "gkv",
+                titleKey: "guidedoc_hi_source_gkv",
+                url: URL(string: "https://www.gkv-spitzenverband.de/english/english.jsp")!),
         ])
 }

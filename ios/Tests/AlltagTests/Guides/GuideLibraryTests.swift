@@ -29,6 +29,11 @@ final class GuideLibraryTests: XCTestCase {
         XCTAssertNotNil(GuideLibrary.content(for: "how_taxes_work"))
     }
 
+    func testHealthInsuranceGuideShips() {
+        // P6-G4.
+        XCTAssertNotNil(GuideLibrary.content(for: "health_insurance"))
+    }
+
     func testShippedGuideIdsAreUnique() {
         let ids = GuideLibrary.all.map(\.id)
         XCTAssertEqual(Set(ids).count, ids.count, "guide ids must be unique")

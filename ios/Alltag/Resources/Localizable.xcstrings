@@ -2483,6 +2483,471 @@
         }
       }
     },
+    "guidedoc_hi_s1_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versicherungspflicht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insurance is mandatory"
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s1_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jede Person in Deutschland muss krankenversichert sein – das gilt auch für Zugezogene ab dem ersten Tag."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone in Germany must have health insurance — including new arrivals, from day one."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s1_p2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohne Nachweis bekommst du oft weder einen Aufenthaltstitel noch eine Anstellung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Without proof you often can't get a residence permit or sign an employment contract."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s2_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GKV: Der Beitrag richtet sich nach dem Einkommen; Familienmitglieder sind oft kostenlos mitversichert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GKV: contributions depend on income; family members are often co-insured for free."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s2_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PKV: Der Beitrag richtet sich nach Alter und Gesundheit; jeder zahlt einzeln."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PKV: premiums depend on age and health; everyone pays individually."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s2_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesetzlich oder privat?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statutory or private?"
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s2_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es gibt zwei Systeme: die gesetzliche (GKV) und die private Krankenversicherung (PKV)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "There are two systems: statutory (GKV) and private (PKV) health insurance."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s3_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die meisten Angestellten sind in der GKV pflichtversichert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Most employees are required to be in the GKV."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s3_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst über einer Einkommensgrenze oder als Selbstständige/Beamte ist die PKV wählbar."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only above an income threshold, or as self-employed / civil servants, can you opt for PKV."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s3_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Wechsel zurück in die GKV ist später oft schwierig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Switching back to the GKV later is often difficult."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s3_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer wählt was?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Who chooses what?"
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s4_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arztbesuche, Krankenhaus, Medikamente und Vorsorge."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doctor visits, hospital, medication and preventive care."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s4_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei Angestellten tragen Arbeitgeber und Arbeitnehmer den Beitrag je zur Hälfte."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For employees, the contribution is split evenly between employer and employee."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s4_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du kannst deine Krankenkasse frei wählen – die Leistungen sind weitgehend gleich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can freely choose your insurer (Krankenkasse) — benefits are largely the same."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s4_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was die GKV bietet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What the GKV covers"
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s5_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle eine Krankenkasse (GKV) und stelle einen Aufnahmeantrag."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick a Krankenkasse (GKV) and apply to join."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s5_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du erhältst eine Versicherungsnummer und eine Gesundheitskarte."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You receive an insurance number and a health card."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s5_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Arbeitgeber meldet dich an; als Selbstständiger meldest du dich selbst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your employer registers you; if self-employed, you register yourself."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s5_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So versicherst du dich"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How to sign up"
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s6_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studierende haben günstige Studententarife in der GKV."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Students get low-cost student rates in the GKV."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s6_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht erwerbstätige Familienmitglieder sind in der GKV oft beitragsfrei mitversichert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non-working family members are often co-insured in the GKV at no extra cost."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s6_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer nur kurz zu Besuch ist, braucht eine Reisekranken- oder EHIC-Versicherung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short-term visitors need travel health insurance or an EHIC card."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s6_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonderfälle"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Special cases"
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s7_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vergleiche Zusatzbeitrag und Service der Krankenkassen, bevor du wählst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare the supplementary contribution and service of insurers before you choose."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s7_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewahre deine Versicherungsbescheinigung gut auf – du brauchst sie für Behörden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep your insurance certificate safe — you need it for the authorities."
+          }
+        }
+      }
+    },
+    "guidedoc_hi_s7_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut zu wissen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good to know"
+          }
+        }
+      }
+    },
+    "guidedoc_hi_source_gkv": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GKV-Spitzenverband"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "National Association of Statutory Health Insurance Funds"
+          }
+        }
+      }
+    },
+    "guidedoc_hi_source_miig": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany – Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany — health insurance"
+          }
+        }
+      }
+    },
+    "guidedoc_hi_summary": {
+      "comment": "Guide P6-G4 health insurance: summary line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Deutschland ist eine Krankenversicherung Pflicht. Hier erfährst du, wie das System funktioniert und wie du dich versicherst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Health insurance is mandatory in Germany. Here's how the system works and how to get covered."
+          }
+        }
+      }
+    },
     "guidedoc_rb_s1_heading": {
       "localizations": {
         "de": {
