@@ -11600,6 +11600,108 @@
         }
       }
     },
+    "tool_travel_affiliate_disclosure": {
+      "comment": "Travel insurance comparison (P6-T4): affiliate transparency disclosure (P6-A1).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparenz: Einige Links sind Partnerlinks – wir erhalten dafür unter Umständen eine Provision. Das beeinflusst weder die Reihenfolge noch deinen Preis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparency: some links are affiliate links — we may earn a commission. This never affects the order shown or the price you pay."
+          }
+        }
+      }
+    },
+    "tool_travel_affiliate_tag": {
+      "comment": "Travel insurance comparison (P6-T4): per-option affiliate marker.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partnerlink"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affiliate"
+          }
+        }
+      }
+    },
+    "tool_travel_best_for": {
+      "comment": "Travel insurance comparison (P6-T4): 'best for' tag label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut für"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best for"
+          }
+        }
+      }
+    },
+    "tool_travel_cover_label": {
+      "comment": "Travel insurance comparison (P6-T4): cover/price fact-line label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deckung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cover"
+          }
+        }
+      }
+    },
+    "tool_travel_filter_english": {
+      "comment": "Travel insurance comparison (P6-T4): English-support filter label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur Anbieter mit englischem Service"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only providers with English support"
+          }
+        }
+      }
+    },
+    "tool_travel_filter_english_hint": {
+      "comment": "Travel insurance comparison (P6-T4): English-support filter hint.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeigt Anbieter mit englischsprachigem Antrag und Support."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows providers with English-language application and support."
+          }
+        }
+      }
+    },
     "tool_travel_insurance_subtitle": {
       "localizations": {
         "de": {
@@ -11629,6 +11731,567 @@
           "stringUnit": {
             "state": "translated",
             "value": "Travel insurance"
+          }
+        }
+      }
+    },
+    "tool_travel_intro": {
+      "comment": "Travel insurance comparison (P6-T4): intro.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für ein Schengen-Visum brauchst du eine Reisekrankenversicherung mit mindestens 30.000 € Deckung, gültig im gesamten Schengen-Raum für die ganze Aufenthaltsdauer. Diese Anbieter nutzen Neuankömmlinge und Visumantragstellende häufig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Schengen visa requires travel health insurance covering at least €30,000, valid across the Schengen area for your whole stay. These providers are commonly used by newcomers and visa applicants."
+          }
+        }
+      }
+    },
+    "tool_travel_open_action": {
+      "comment": "Travel insurance comparison (P6-T4): open-provider link action.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anbieter öffnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open provider"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_allianz_travel_bestfor": {
+      "comment": "Travel insurance comparison (P6-T4): 'best for' tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reisende mit bestehendem Allianz-Bezug"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Travellers already with Allianz"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_allianz_travel_fee": {
+      "comment": "Travel insurance comparison (P6-T4): cover/price fact line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tarifabhängig, ≥ 30.000 € prüfen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "varies by plan, check for ≥ €30,000"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_allianz_travel_h1": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarife mit mindestens 30.000 € Deckung verfügbar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plans with at least €30,000 cover available"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_allianz_travel_h2": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Großes Anbieternetz und Assistance-Service"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Large network and assistance service"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_allianz_travel_h3": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deckung vor Abschluss prüfen (nicht alle Tarife visumkonform)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check cover before buying (not all plans are visa compliant)"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_allianz_travel_summary": {
+      "comment": "Travel insurance comparison (P6-T4): option summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Großer Versicherer mit Reisekrankenversicherung; einzelne Tarife erfüllen die Schengen-Visumvorgaben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Major insurer offering travel health insurance; some plans meet the Schengen visa requirements."
+          }
+        }
+      }
+    },
+    "tool_travel_opt_care_concept_bestfor": {
+      "comment": "Travel insurance comparison (P6-T4): 'best for' tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Längere Aufenthalte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longer stays"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_care_concept_fee": {
+      "comment": "Travel insurance comparison (P6-T4): cover/price fact line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ab ca. 30 €/Monat, ≥ 30.000 €"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "from ~€30/month, ≥ €30,000"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_care_concept_h1": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-visumkonform, mindestens 30.000 € Deckung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-visa compliant, at least €30,000 cover"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_care_concept_h2": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online abschließbar, englischsprachige Unterlagen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buy online, English-language documents"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_care_concept_h3": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flexible Laufzeiten für den ganzen Aufenthalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flexible terms covering your whole stay"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_care_concept_summary": {
+      "comment": "Travel insurance comparison (P6-T4): option summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anbieter für Aufenthalts- und Visumversicherung in Deutschland; Tarife speziell für Schengen-Visumanträge."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provider of residence and visa insurance in Germany, with plans designed for Schengen visa applications."
+          }
+        }
+      }
+    },
+    "tool_travel_opt_dr_walter_bestfor": {
+      "comment": "Travel insurance comparison (P6-T4): 'best for' tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visumantrag mit englischem Service"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa applications with English support"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_dr_walter_fee": {
+      "comment": "Travel insurance comparison (P6-T4): cover/price fact line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ab ca. 33 €/Monat, ≥ 30.000 €"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "from ~€33/month, ≥ €30,000"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_dr_walter_h1": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-visumkonform, mindestens 30.000 € Deckung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-visa compliant, at least €30,000 cover"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_dr_walter_h2": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Komplett englischsprachiger Antrag und Support"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fully English-language application and support"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_dr_walter_h3": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auch für längere Aufenthalte und Sprachschüler"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also for longer stays and language students"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_dr_walter_summary": {
+      "comment": "Travel insurance comparison (P6-T4): option summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spezialisiert auf Visum- und Auslandsversicherung; Educare24 deckt Schengen-Visumanträge mit englischem Service."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Specialist in visa and expat insurance; Educare24 covers Schengen visa applications with English-language support."
+          }
+        }
+      }
+    },
+    "tool_travel_opt_hanse_merkur_bestfor": {
+      "comment": "Travel insurance comparison (P6-T4): 'best for' tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurze Schengen-Besuche"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short Schengen visits"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_hanse_merkur_fee": {
+      "comment": "Travel insurance comparison (P6-T4): cover/price fact line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ab ca. 1 €/Tag, ≥ 30.000 €"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "from ~€1/day, ≥ €30,000"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_hanse_merkur_h1": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-visumkonform, mindestens 30.000 € Deckung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-visa compliant, at least €30,000 cover"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_hanse_merkur_h2": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versicherungsnachweis sofort online"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insurance certificate issued instantly online"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_hanse_merkur_h3": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarife für kurze und längere Aufenthalte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plans for short and longer stays"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_hanse_merkur_summary": {
+      "comment": "Travel insurance comparison (P6-T4): option summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekannter deutscher Versicherer mit Schengen-konformer Reisekrankenversicherung und sofortigem Online-Nachweis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Well-known German insurer offering Schengen-compliant travel health insurance with an instant online certificate."
+          }
+        }
+      }
+    },
+    "tool_travel_opt_mawista_bestfor": {
+      "comment": "Travel insurance comparison (P6-T4): 'best for' tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gäste und Sprachschüler"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visitors and language students"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_mawista_fee": {
+      "comment": "Travel insurance comparison (P6-T4): cover/price fact line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ab ca. 35 €/Monat, ≥ 30.000 €"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "from ~€35/month, ≥ €30,000"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_mawista_h1": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-visumkonform, mindestens 30.000 € Deckung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-visa compliant, at least €30,000 cover"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_mawista_h2": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischsprachiger Online-Abschluss"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language online sign-up"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_mawista_h3": {
+      "comment": "Travel insurance comparison (P6-T4): option highlight.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarife für Gäste, Au-pairs und Sprachschüler"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plans for visitors, au pairs and language students"
+          }
+        }
+      }
+    },
+    "tool_travel_opt_mawista_summary": {
+      "comment": "Travel insurance comparison (P6-T4): option summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versicherer mit Fokus auf Studierende und Gäste in Deutschland; Tarife für Visum und Schengen-Reisen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insurer focused on students and visitors in Germany, with plans for visa and Schengen travel."
+          }
+        }
+      }
+    },
+    "tool_travel_schengen_note": {
+      "comment": "Travel insurance comparison (P6-T4): Schengen €30,000 requirement note.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-Visum: mindestens 30.000 € Deckung, gültig im gesamten Schengen-Raum und für die komplette Reisedauer."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen visa: at least €30,000 cover, valid across the whole Schengen area and for your entire trip."
           }
         }
       }
