@@ -1,215 +1,317 @@
 {
-  "sourceLanguage" : "de",
-  "strings" : {
-    "app_name" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alltag"
+  "sourceLanguage": "de",
+  "strings": {
+    "app_name": {
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alltag"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag"
           }
         }
       }
     },
-    "appearance_dark" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dunkel"
+    "appearance_dark": {
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dunkel"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dark"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dark"
           }
         }
       }
     },
-    "appearance_light" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hell"
+    "appearance_light": {
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hell"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Light"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Light"
           }
         }
       }
     },
-    "appearance_system" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "System"
+    "appearance_system": {
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "System"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
           }
         }
       }
     },
-    "placeholder_coming_soon" : {
-      "comment" : "Subtitle on the Foundation-phase placeholder tab screens.",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kommt bald"
+    "disclaimer_not_legal_advice": {
+      "comment": "Default DisclaimerNote copy (RDG / D9): information, not legal advice.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Information, keine Rechts- oder Steuerberatung. Bei rechtlichen Fragen wende dich an eine Fachperson."
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coming soon"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Information, not legal or tax advice. For legal questions, consult a professional."
           }
         }
       }
     },
-    "settings_appearance" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Darstellung"
+    "placeholder_coming_soon": {
+      "comment": "Subtitle on the Foundation-phase placeholder tab screens.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommt bald"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Appearance"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coming soon"
           }
         }
       }
     },
-    "settings_language" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sprache"
+    "settings_appearance": {
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Darstellung"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Language"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appearance"
           }
         }
       }
     },
-    "tab_dates" : {
-      "comment" : "Title of the Dates/Termine tab (deadlines & reminders).",
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Termine"
+    "settings_language": {
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprache"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dates"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
           }
         }
       }
     },
-    "tab_decode" : {
-      "comment" : "Title of the center Decode tab (Behörden-Brief Decoder).",
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Entschlüsseln"
+    "severity_action": {
+      "comment": "Severity level: requires the user to act.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktion"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Decode"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Action"
           }
         }
       }
     },
-    "tab_docs" : {
-      "comment" : "Title of the Docs/Vault tab.",
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dokumente"
+    "severity_info": {
+      "comment": "Severity level: informational.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Info"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Documents"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Info"
           }
         }
       }
     },
-    "tab_home" : {
-      "comment" : "Title of the Home tab.",
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start"
+    "severity_legal": {
+      "comment": "Severity level: legally consequential (route to a lawyer).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechtlich"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Home"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legal"
           }
         }
       }
     },
-    "tab_settings" : {
-      "comment" : "Title of the Settings tab.",
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Einstellungen"
+    "severity_urgent": {
+      "comment": "Severity level: time-critical.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dringend"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Settings"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urgent"
+          }
+        }
+      }
+    },
+    "tab_dates": {
+      "comment": "Title of the Dates/Termine tab (deadlines & reminders).",
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termine"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dates"
+          }
+        }
+      }
+    },
+    "tab_decode": {
+      "comment": "Title of the center Decode tab (Behörden-Brief Decoder).",
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entschlüsseln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decode"
+          }
+        }
+      }
+    },
+    "tab_docs": {
+      "comment": "Title of the Docs/Vault tab.",
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokumente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documents"
+          }
+        }
+      }
+    },
+    "tab_home": {
+      "comment": "Title of the Home tab.",
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home"
+          }
+        }
+      }
+    },
+    "tab_settings": {
+      "comment": "Title of the Settings tab.",
+      "extractionState": "stale",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einstellungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "trust_on_device": {
+      "comment": "Default TrustBanner copy: documents stay on the device (D4/X-03).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur auf diesem Gerät gespeichert — nichts verlässt dein Telefon."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stored only on this device — nothing leaves your phone."
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

@@ -81,7 +81,7 @@ Alltag/
 ### 2.3 TDD workflow
 - [ ] **A-04** Every Control use-case and Entity rule lands **test-first** (red → green → refactor).
 - [ ] **A-05** Pure-logic engines (Chancenkarte points, Blue Card thresholds, 90-in-180 counter, working-hours tracker, eligibility checkers) have exhaustive unit tests — these are the highest-risk-for-bugs surfaces.
-- [ ] **A-06** Snapshot/UI tests for key screens incl. **Dynamic Type XXL** and **RTL** mirroring.
+- [~] **A-06** Snapshot/UI tests for key screens incl. **Dynamic Type XXL** and **RTL** mirroring. *(Harness landed in P1-02: `SnapshotSupport` renders via `ImageRenderer` across a trait matrix (light/dark · Dynamic Type accessibility · RTL) and asserts non-blank output; applied to the whole component library. Extend per-screen as screens land.)*
 
 ### 2.4 Data persistence (implements D4)
 - [x] **A-07** Structured data (personas, checklist progress, deadlines, document metadata index) in **SwiftData**, store located in **Application Support** (persists across updates). *(`PersistenceController`; `DocumentRecord` is the first model — more entities appended to `schema` as features land.)*
@@ -123,16 +123,16 @@ Runtime = **`llama.cpp`** (GGUF, **Metal** backend). Model: `gemma-4-E2B-it-Q4_K
 
 Mirror the prototype's tokens. Build as reusable SwiftUI components before screens.
 
-- [~] **DS-01** Color tokens (semantic), light + dark: *(Foundation slice shipped for the P0-06 shell — `AppColor` (paper/card/ink/primary/amber + severity), light+dark dynamic pairs. Full set + wash variants completed in P1-01.)*
+- [x] **DS-01** Color tokens (semantic), light + dark: *(Full set in `ColorTokens.swift` — surfaces (paper/paper-sink/card/line), ink (ink/soft/faint), brand (teal/deep/wash + on-primary, amber/wash), and the four-level **severity system** each with a paired **wash**. Aligned exactly to the prototype CSS; light+dark dynamic pairs via trait-aware `UIColor`. Severity domain enum (`Severity.swift`) maps level → color/wash/symbol/label.)*
   - Paper `#FAF8F4` / dark `#1B1916`; Card `#FFFFFF` / `#252320`
   - Ink `#2B2722` / `#F2EEE6`; Ink-soft, Ink-faint
   - Primary **teal** `#2BA39A` (deep `#1C7E76`); **amber** `#E8A13C`
   - **Severity system** (reused everywhere): info green, action amber, urgent red, legal indigo — each with a wash variant.
-- [~] **DS-02** Typography scale on **SF Pro Rounded** (rounded design), full **Dynamic Type** support. *(Foundation: `.appFontDesign()` applies `.fontDesign(.rounded)` app-wide; system text styles keep Dynamic Type. Full scale in P1-01.)*
-- [ ] **DS-03** Radii (26/20/14), soft shadows (sm/md/lg), spacing scale.
-- [ ] **DS-04** Components: `Card`, `SeverityPill`, `ChecklistRow`, `ToolTile`, `GuideRow`, `SettingsRow` (icon + title + explanation + value/chevron), `SegmentedControl`, `PrimaryButton`, `DeadlineChip`, `TrustBanner`, `Toast`, `BottomSheet`, `EmptyState`.
-- [ ] **DS-05** Motion: gentle staggered reveal on screen load; reduced-motion honored.
-- [ ] **DS-06** Reusable `DisclaimerNote` ("information, not legal advice") component (RDG).
+- [x] **DS-02** Typography scale on **SF Pro Rounded** (rounded design), full **Dynamic Type** support. *(`AppText` role scale (display→pill) in `Typography.swift` — every style built from a *relative* system text style + rounded design + weight, so Dynamic Type scaling is preserved; `.appText(_:)` on `View`/`Text`. `.appFontDesign()` still cascades rounded at the root.)*
+- [x] **DS-03** Radii (26/20/14), soft shadows (sm/md/lg), spacing scale. *(`AppRadius` (sm/md/lg/pill), `AppShadow` (sm/md/lg, two-layer warm-tinted via `.appShadow(_:)`), `AppSpacing` (4-pt grid xxxs→xxxl). Value-tested in `DesignTokenTests`.)*
+- [x] **DS-04** Components: `Card`, `SeverityPill`, `ChecklistRow`, `ToolTile`, `GuideRow`, `SettingsRow` (icon + title + explanation + value/chevron), `SegmentedControl`, `PrimaryButton`, `DeadlineChip`, `TrustBanner`, `Toast`, `BottomSheet`, `EmptyState`. *(All in `DesignSystem/Components/`. Token-driven, leading/trailing-only (RTL-safe), with previews. `AppSegmentedControl` (generic, matched-geometry thumb), `PrimaryButton`/`SecondaryButtonStyle`, `appToast(_:)` + `appBottomSheet(_:)` view modifiers. New copy added to the String Catalog (severity labels, trust banner, disclaimer; DE+EN).)*
+- [x] **DS-05** Motion: gentle staggered reveal on screen load; reduced-motion honored. *(`Motion.swift`: `.appReveal(index:)` fade-and-rise stagger, fully suppressed under `accessibilityReduceMotion`. Toast/segmented transitions also honor reduce-motion.)*
+- [x] **DS-06** Reusable `DisclaimerNote` ("information, not legal advice") component (RDG). *(`DisclaimerNote.swift`, legal-indigo tint; default copy localized DE+EN.)*
 
 ---
 
@@ -161,8 +161,8 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 - [x] **P0-06** Root `TabView` shell with 5 tabs (placeholder screens) and theme switching (A-20, DS-01/02). *(5-tab `RootView` (Home·Docs·Decode·Dates·Settings) with per-feature Boundary placeholders; `AppTheme`/`ThemeController` (Light/Dark/System, persisted) applied via `preferredColorScheme`; `AppEnvironment` DI container injects persistence/purchases/language/theme; foundation `AppColor` tokens (DS-01) + rounded type (DS-02). Settings exposes live Appearance + Language pickers. Full token set/components remain Phase 1.)*
 
 ### Phase 1 — Design system
-- [ ] **P1-01** Implement all tokens (DS-01…DS-03).
-- [ ] **P1-02** Implement component library (DS-04…DS-06) with snapshot tests.
+- [x] **P1-01** Implement all tokens (DS-01…DS-03). *(`DesignSystem/`: `ColorTokens` (full semantic set + washes), `Severity` (domain enum → tokens), `Typography` (`AppText` Dynamic-Type-aware rounded scale), `Radii`, `Shadows`, `Spacing`, `Motion`. Token values pinned by `DesignTokenTests`.)*
+- [x] **P1-02** Implement component library (DS-04…DS-06) with snapshot tests. *(13 components + `DisclaimerNote` in `DesignSystem/Components/`. Snapshot coverage = `ComponentRenderTests` via `ImageRenderer` across a trait matrix — light/dark, Dynamic Type **accessibility size**, and **RTL** (A-06/X-02) — asserting non-blank, correctly-sized renders (no third-party snapshot lib / reference images, per A-03). Full suite: 83 tests green, 2 Keychain skips on simulator.)*
 
 ### Phase 2 — Onboarding
 - [ ] **P2-01** Screen 1: language pick (DE/EN selectable now; full list rendered, others enabled in Phase 8).
