@@ -112,7 +112,12 @@ struct DecoderResultView: View {
                 }
                 Spacer()
                 Button {
-                    fire(onAddToCalendar, fallback: "decoder_toast_calendar_soon")
+                    if let onAddToCalendar {
+                        onAddToCalendar()
+                        present("decoder_toast_calendar_added")
+                    } else {
+                        present("decoder_toast_calendar_soon")
+                    }
                 } label: {
                     Image(systemName: "calendar.badge.plus")
                         .font(.system(size: 20, weight: .semibold))

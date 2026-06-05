@@ -37,7 +37,12 @@ private struct DecoderFlowView: View {
             case .decoding:
                 working(titleKey: "decoder_working_explaining")
             case let .result(letter):
-                DecoderResultView(letter: letter, onDone: { controller.reset() })
+                DecoderResultView(
+                    letter: letter,
+                    onDone: { controller.reset() },
+                    onAddToCalendar: letter.deadline.map { due in
+                        { addToCalendar(letter, due: due) }
+                    })
             case let .failed(failure):
                 failed(failure)
             }
@@ -116,5 +121,16 @@ private struct DecoderFlowView: View {
             },
             onCancel: { showScanner = false })
         .ignoresSafeArea()
+    }
+
+    /// Persist the letter's deadline into the Dates agenda + schedule reminders
+    /// (P3-08). Titled by the sender when known, else a generic label.
+    private func addToCalendar(_ letter: DecodedLetter, due: Date) {
+        let title = letter.sender.isEmpty
+            ? String(localized: "decoder_deadline_generic_title")
+            : letter.sender
+        env.deadlines.add(
+            title: title, dueDate: due, severity: letter.severity,
+            note: letter.summary, source: .decoded)
     }
 }

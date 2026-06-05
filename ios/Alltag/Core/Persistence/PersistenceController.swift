@@ -18,6 +18,7 @@ final class PersistenceController {
     /// ChecklistProgress, …) are appended here as their features land.
     static let schema = Schema([
         DocumentRecord.self,
+        Deadline.self,
     ])
 
     /// - Parameters:

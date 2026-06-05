@@ -30,6 +30,8 @@ final class AppEnvironment {
     let decoderReadiness: DecoderReadinessController
     /// One capture → OCR → explain → result run for the Decoder (P3-01…P3-03).
     let decoder: DecoderController
+    /// Deadlines + reminder scheduling for the Dates agenda (P3-07/08).
+    let deadlines: DeadlineStore
 
     init(
         persistence: PersistenceController,
@@ -39,6 +41,7 @@ final class AppEnvironment {
         personas: PersonaStore = PersonaStore(),
         onboarding: OnboardingController = OnboardingController(),
         notifications: NotificationAuthorizing = SystemNotificationAuthorizer(),
+        reminders: any ReminderScheduling = SystemReminderScheduler(),
         recognizer: any TextRecognizing = VisionTextRecognizer()
     ) {
         self.persistence = persistence
@@ -52,6 +55,8 @@ final class AppEnvironment {
         self.decoder = DecoderController(
             recognizer: recognizer,
             decode: DecodeLetterUseCase(engine: llm.engine))
+        self.deadlines = DeadlineStore(
+            context: persistence.container.mainContext, scheduler: reminders)
     }
 
     /// Production container. Falls back to an in-memory store if the on-disk
