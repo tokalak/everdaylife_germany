@@ -6880,6 +6880,135 @@
         }
       }
     },
+    "tool_bluecard_below": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gehalt unter der Grenze"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salary below the threshold"
+          }
+        }
+      }
+    },
+    "tool_bluecard_intro": {
+      "comment": "Blue Card checker (P6-W2): intro.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Blaue Karte EU verlangt ein Mindestgehalt. Stell dein Bruttojahresgehalt ein und sieh, ob es die Grenze erreicht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The EU Blue Card requires a minimum salary. Set your gross annual salary to see whether it clears the threshold."
+          }
+        }
+      }
+    },
+    "tool_bluecard_meets": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gehalt erreicht die Grenze"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salary meets the threshold"
+          }
+        }
+      }
+    },
+    "tool_bluecard_salary_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruttojahresgehalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gross annual salary"
+          }
+        }
+      }
+    },
+    "tool_bluecard_shortage_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Mangelberufe und Hochschulabsolventen der letzten drei Jahre gilt eine niedrigere Grenze."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A lower threshold applies to shortage occupations and graduates from the last three years."
+          }
+        }
+      }
+    },
+    "tool_bluecard_shortage_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Engpassberuf oder Berufseinsteiger"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shortage occupation or new entrant"
+          }
+        }
+      }
+    },
+    "tool_bluecard_shortfall_fmt": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es fehlen noch %@ pro Jahr."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short by %@ per year."
+          }
+        }
+      }
+    },
+    "tool_bluecard_threshold_fmt": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grenze %d: mindestens %@ brutto im Jahr."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Threshold for %d: at least %@ gross per year."
+          }
+        }
+      }
+    },
     "tool_chancenkarte_subtitle": {
       "localizations": {
         "de": {

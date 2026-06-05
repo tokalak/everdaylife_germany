@@ -208,7 +208,7 @@ Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
 
 **Worker tools:**
 - [x] **P6-W1** Visa-fit tool *(Pure `VisaFitEngine` maps two answers — goal (job/job-seeking/study/family/business/visit) × qualification (academic/vocational/none) — to ranked residence routes (Blue Card, skilled-worker, Chancenkarte, job-seeker, study, family, self-employment, short-stay, recognition-first), each with a rationale + "learn more" guide link. `VisaFitView` selector + result cards, RDG note, `embedInScrollView` snapshot pattern. **Establishes `.tool` navigation:** `HomeRoute.tool`, `implementedToolIDs` registry + `toolDestination` switch, tool tiles & search results push implemented tools / toast the rest. 11 engine tests (incl. every recommended guide ships) + 3 render tests.)*
-- [ ] **P6-W2** Blue Card threshold checker (2026 numbers)
+- [x] **P6-W2** Blue Card threshold checker (2026 numbers) *(Pure `BlueCardEngine` picks the applicable threshold (lower for shortage occupations / new entrants) and compares the offered gross salary, reporting the shortfall when below. Yearly figures isolated in `BlueCardThresholds.current` (2026: general €50,700 / shortage €45,934.20 — **flagged for annual re-verification, OQ-1**); engine takes injected thresholds so the rule is value-independent. `BlueCardView`: salary slider + shortage toggle + result card + residence-permit "learn more", RDG note. Registered in `toolDestination`. 7 engine + 3 render tests; full suite green.)*
 - [ ] **P6-W3** **Chancenkarte points calculator** *(prototyped — port the logic & UX from prototype, then verify point values, OQ-1)*
 - [ ] **P6-W4** Bank account comparison (affiliate)
 - [ ] **P6-W5** GKV vs PKV decision tree (affiliate)
