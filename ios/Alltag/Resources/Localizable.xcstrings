@@ -11557,6 +11557,193 @@
         }
       }
     },
+    "tool_visaneed_etias_note": {
+      "comment": "Visa-need tool (P6-T1): 90-in-180 + ETIAS reminder for visa-free.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es gilt die 90-Tage-Regel innerhalb von 180 Tagen. Voraussichtlich wird zudem die ETIAS-Reisegenehmigung erforderlich – beantrage sie vor der Reise online."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The 90-days-in-180 rule applies. The ETIAS travel authorisation is also expected to become required — apply for it online before you travel."
+          }
+        }
+      }
+    },
+    "tool_visaneed_free_detail": {
+      "comment": "Visa-need tool (P6-T1): free-movement rationale. %@ = country name.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als Staatsangehörige:r von %@ genießt du Freizügigkeit in der EU. Du brauchst kein Visum und darfst dich in Deutschland auch aufhalten, arbeiten und leben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As a national of %@ you have EU free movement. You need no visa and may also stay, work and live in Germany."
+          }
+        }
+      }
+    },
+    "tool_visaneed_free_title": {
+      "comment": "Visa-need tool (P6-T1): free-movement result title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Visum nötig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No visa needed"
+          }
+        }
+      }
+    },
+    "tool_visaneed_intro": {
+      "comment": "Visa-need tool (P6-T1): intro.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle deine Staatsangehörigkeit und sieh, ob du für einen Kurzaufenthalt (bis zu 90 Tage) in Deutschland ein Schengen-Visum brauchst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick your nationality and see whether you need a Schengen visa for a short stay (up to 90 days) in Germany."
+          }
+        }
+      }
+    },
+    "tool_visaneed_longer_stay": {
+      "comment": "Visa-need tool (P6-T1): footnote deep-link to the residence-permit guide.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Länger als 90 Tage bleiben? Zum Aufenthaltstitel-Leitfaden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Planning to stay longer than 90 days? See the residence-permit guide"
+          }
+        }
+      }
+    },
+    "tool_visaneed_picker_label": {
+      "comment": "Visa-need tool (P6-T1): nationality picker label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Staatsangehörigkeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nationality"
+          }
+        }
+      }
+    },
+    "tool_visaneed_required_detail": {
+      "comment": "Visa-need tool (P6-T1): visa-required rationale. %@ = country name.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Staatsangehörige von %@ brauchen für einen Kurzaufenthalt ein Schengen-Visum. Beantrage es vor der Reise bei der zuständigen deutschen Auslandsvertretung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nationals of %@ need a Schengen visa for a short stay. Apply for it before travelling at the responsible German mission abroad."
+          }
+        }
+      }
+    },
+    "tool_visaneed_required_title": {
+      "comment": "Visa-need tool (P6-T1): visa-required result title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visum erforderlich"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa required"
+          }
+        }
+      }
+    },
+    "tool_visaneed_verify_note": {
+      "comment": "Visa-need tool (P6-T1): verify-with-Foreign-Office note for visa-required.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Liste kann unvollständig sein. Prüfe deinen Fall immer beim Auswärtigen Amt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This list may be incomplete. Always check your case with the Auswärtiges Amt (German Foreign Office)."
+          }
+        }
+      }
+    },
+    "tool_visaneed_visafree_detail": {
+      "comment": "Visa-need tool (P6-T1): visa-free rationale. %@ = country name.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Staatsangehörige von %@ dürfen ohne Visum für einen Kurzaufenthalt einreisen. Für längere Aufenthalte oder zum Arbeiten ist ein Aufenthaltstitel nötig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nationals of %@ may enter without a visa for a short stay. A residence permit is required for longer stays or to work."
+          }
+        }
+      }
+    },
+    "tool_visaneed_visafree_title": {
+      "comment": "Visa-need tool (P6-T1): visa-free short-stay result title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visumfrei für Kurzaufenthalte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa-free for short stays"
+          }
+        }
+      }
+    },
     "tool_working_hours_subtitle": {
       "localizations": {
         "de": {
