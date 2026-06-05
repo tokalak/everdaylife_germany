@@ -10858,6 +10858,176 @@
         }
       }
     },
+    "tool_schengen_add_stay": {
+      "comment": "Schengen counter: button to add a stay.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthalt hinzufügen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add stay"
+          }
+        }
+      }
+    },
+    "tool_schengen_asof_label": {
+      "comment": "Schengen counter: the reference date the 180-day window ends on.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stichtag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As of date"
+          }
+        }
+      }
+    },
+    "tool_schengen_at_limit": {
+      "comment": "Schengen counter: warning shown when no days remain.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie haben Ihr 90-Tage-Limit erreicht. Eine weitere Einreise könnte einen Überzug bedeuten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have reached your 90-day limit. Entering again may mean overstaying."
+          }
+        }
+      }
+    },
+    "tool_schengen_delete_stay": {
+      "comment": "Schengen counter: accessibility label for the delete-stay button.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthalt löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete stay"
+          }
+        }
+      }
+    },
+    "tool_schengen_entry_label": {
+      "comment": "Schengen counter: stay entry-date picker label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einreise"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entry"
+          }
+        }
+      }
+    },
+    "tool_schengen_exit_label": {
+      "comment": "Schengen counter: stay exit-date picker label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausreise"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exit"
+          }
+        }
+      }
+    },
+    "tool_schengen_intro": {
+      "comment": "Schengen counter: intro explaining the 90/180 rule.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als Kurzaufenthalts-Besucher dürfen Sie sich innerhalb eines beliebigen Zeitraums von 180 Tagen höchstens 90 Tage im Schengen-Raum aufhalten. Tragen Sie Ihre vergangenen und geplanten Aufenthalte ein, um zu sehen, wie viele Tage Sie bereits genutzt haben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As a short-stay visitor you may spend at most 90 days in the Schengen area within any 180-day period. Enter your past and planned stays to see how many days you have already used."
+          }
+        }
+      }
+    },
+    "tool_schengen_official_note": {
+      "comment": "Schengen counter: note that this is an estimate.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dies ist nur eine Schätzung. Die verbindliche Berechnung finden Sie im offiziellen Schengen-Rechner der EU."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is only an estimate. The binding calculation is the official Schengen calculator on the EU website."
+          }
+        }
+      }
+    },
+    "tool_schengen_remaining_fmt": {
+      "comment": "Schengen counter: days remaining. %lld is the day count.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch %lld Tage übrig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days remaining"
+          }
+        }
+      }
+    },
+    "tool_schengen_stays_title": {
+      "comment": "Schengen counter: section heading for the list of stays.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ihre Aufenthalte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your stays"
+          }
+        }
+      }
+    },
     "tool_schengen_subtitle": {
       "localizations": {
         "de": {
@@ -10887,6 +11057,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "90/180-day counter"
+          }
+        }
+      }
+    },
+    "tool_schengen_used_fmt": {
+      "comment": "Schengen counter: days used of the allowance. First %lld is days used, second %lld is the 90-day maximum.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld von %lld Tagen genutzt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld days used"
           }
         }
       }
