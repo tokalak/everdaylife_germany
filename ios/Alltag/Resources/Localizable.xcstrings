@@ -8331,6 +8331,920 @@
         }
       }
     },
+    "tool_health_affiliate_disclosure": {
+      "comment": "Health tool: affiliate transparency disclosure.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manche Links können eine Provision einbringen. Das beeinflusst weder die Reihenfolge noch deinen Beitrag."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some links may earn a commission. This never affects the ranking or the premium you pay."
+          }
+        }
+      }
+    },
+    "tool_health_affiliate_tag": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anzeige"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ad"
+          }
+        }
+      }
+    },
+    "tool_health_best_for": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut für:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best for:"
+          }
+        }
+      }
+    },
+    "tool_health_fee_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zusatzbeitrag:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Additional rate:"
+          }
+        }
+      }
+    },
+    "tool_health_gkv_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesetzlich (GKV)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statutory (GKV)"
+          }
+        }
+      }
+    },
+    "tool_health_gkv_tradeoffs": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beitrag nach Einkommen, Familienangehörige oft kostenlos mitversichert, einfacher Wechsel zwischen Kassen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premiums based on income, family members often co-insured for free, easy to switch between funds."
+          }
+        }
+      }
+    },
+    "tool_health_income_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruttojahreseinkommen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gross annual income"
+          }
+        }
+      }
+    },
+    "tool_health_intro": {
+      "comment": "Health insurance decision tree: intro.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beantworte ein paar Fragen, um zu sehen, ob du gesetzlich (GKV) versichert sein musst oder privat (PKV) wählen kannst – mit den Vor- und Nachteilen beider Systeme."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Answer a few questions to see whether you must be in statutory cover (GKV) or may choose private cover (PKV) — with the trade-offs of each system."
+          }
+        }
+      }
+    },
+    "tool_health_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more"
+          }
+        }
+      }
+    },
+    "tool_health_open_action": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anbieter öffnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open provider"
+          }
+        }
+      }
+    },
+    "tool_health_opt_aok_bestfor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "persönliche Beratung vor Ort"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "in-person local support"
+          }
+        }
+      }
+    },
+    "tool_health_opt_aok_fee": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "variiert je Region"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "varies by region"
+          }
+        }
+      }
+    },
+    "tool_health_opt_aok_h1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viele lokale Geschäftsstellen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Many local branches"
+          }
+        }
+      }
+    },
+    "tool_health_opt_aok_h2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regionale Zusatzleistungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Region-specific extra benefits"
+          }
+        }
+      }
+    },
+    "tool_health_opt_aok_h3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vor-Ort-Beratung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In-person advice"
+          }
+        }
+      }
+    },
+    "tool_health_opt_aok_summary": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regionaler Verbund gesetzlicher Kassen mit dichtem Geschäftsstellennetz."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regional network of statutory funds with a dense branch network."
+          }
+        }
+      }
+    },
+    "tool_health_opt_barmer_bestfor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zusatz- und Bonusprogramme"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "extra and bonus programs"
+          }
+        }
+      }
+    },
+    "tool_health_opt_barmer_fee": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "durchschnittlicher Zusatzbeitrag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "average additional rate"
+          }
+        }
+      }
+    },
+    "tool_health_opt_barmer_h1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bundesweit verfügbar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Available nationwide"
+          }
+        }
+      }
+    },
+    "tool_health_opt_barmer_h2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesundheits- und Bonusprogramme"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Health and bonus programs"
+          }
+        }
+      }
+    },
+    "tool_health_opt_barmer_h3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App und Online-Services"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App and online services"
+          }
+        }
+      }
+    },
+    "tool_health_opt_barmer_summary": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Große bundesweite gesetzliche Krankenkasse mit breiten Zusatzangeboten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Large nationwide statutory fund with broad extra programs."
+          }
+        }
+      }
+    },
+    "tool_health_opt_dak_bestfor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorsorge und Beratung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "prevention and advice"
+          }
+        }
+      }
+    },
+    "tool_health_opt_dak_fee": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "durchschnittlicher Zusatzbeitrag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "average additional rate"
+          }
+        }
+      }
+    },
+    "tool_health_opt_dak_h1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bundesweit verfügbar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Available nationwide"
+          }
+        }
+      }
+    },
+    "tool_health_opt_dak_h2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorsorge- und Pflegeangebote"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prevention and care services"
+          }
+        }
+      }
+    },
+    "tool_health_opt_dak_h3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online-Geschäftsstelle"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online service centre"
+          }
+        }
+      }
+    },
+    "tool_health_opt_dak_summary": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bundesweite gesetzliche Krankenkasse mit Schwerpunkt Gesundheitsvorsorge."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nationwide statutory fund with a focus on health and prevention."
+          }
+        }
+      }
+    },
+    "tool_health_opt_ottonova_bestfor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahlberechtigte Expats"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "expats eligible for PKV"
+          }
+        }
+      }
+    },
+    "tool_health_opt_ottonova_fee": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "individueller Beitrag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "individual premium"
+          }
+        }
+      }
+    },
+    "tool_health_opt_ottonova_h1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private Versicherung (PKV)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private insurance (PKV)"
+          }
+        }
+      }
+    },
+    "tool_health_opt_ottonova_h2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischsprachige App und Beratung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language app and advice"
+          }
+        }
+      }
+    },
+    "tool_health_opt_ottonova_h3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur für Wahlberechtigte (Einkommen/Status)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only for those eligible to choose (income/status)"
+          }
+        }
+      }
+    },
+    "tool_health_opt_ottonova_summary": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private Krankenversicherung (PKV) mit komplett digitalem, englischsprachigem Service – beliebt bei Expats."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private health insurance (PKV) with a fully digital, English-language service — popular with expats."
+          }
+        }
+      }
+    },
+    "tool_health_opt_tk_bestfor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neuankömmlinge ohne Deutsch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "newcomers without German"
+          }
+        }
+      }
+    },
+    "tool_health_opt_tk_fee": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "niedriger Zusatzbeitrag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "low additional rate"
+          }
+        }
+      }
+    },
+    "tool_health_opt_tk_h1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischsprachiger Service und App"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language service and app"
+          }
+        }
+      }
+    },
+    "tool_health_opt_tk_h2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bundesweite Geschäftsstellen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Branches nationwide"
+          }
+        }
+      }
+    },
+    "tool_health_opt_tk_h3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online-Anmeldung möglich"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online sign-up available"
+          }
+        }
+      }
+    },
+    "tool_health_opt_tk_summary": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Größte gesetzliche Krankenkasse, bekannt für guten englischsprachigen Service."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Largest statutory fund, known for strong English-language service."
+          }
+        }
+      }
+    },
+    "tool_health_options_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenkassen im Vergleich"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare health funds"
+          }
+        }
+      }
+    },
+    "tool_health_pkv_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privat (PKV)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private (PKV)"
+          }
+        }
+      }
+    },
+    "tool_health_pkv_tradeoffs": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beitrag nach Gesundheit und Leistungsumfang, oft mehr Leistungen, aber jede Person zahlt eigene Beiträge und ein Rückwechsel in die GKV ist meist schwierig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premiums based on health and chosen cover, often more benefits, but each person pays their own premium and returning to GKV is usually difficult."
+          }
+        }
+      }
+    },
+    "tool_health_q_status": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie bist du versichert oder beschäftigt?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How are you insured or employed?"
+          }
+        }
+      }
+    },
+    "tool_health_result_depends_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Versicherung gilt, hängt von deiner genauen Situation ab (z. B. Rente, Arbeitssuche, Familienversicherung). Informiere dich bei einer Krankenkasse über deine Möglichkeiten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which cover applies depends on your exact situation (e.g. pension, job-seeking, family co-insurance). Ask a health fund about your options."
+          }
+        }
+      }
+    },
+    "tool_health_result_depends_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommt auf den Einzelfall an"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depends on your case"
+          }
+        }
+      }
+    },
+    "tool_health_result_gkv_or_pkv_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In deiner Situation kannst du zwischen gesetzlicher (GKV) und privater (PKV) Krankenversicherung wählen. Vergleiche die Vor- und Nachteile sorgfältig – ein späterer Wechsel zurück in die GKV ist oft schwierig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In your situation you can choose between statutory (GKV) and private (PKV) health insurance. Weigh the trade-offs carefully — switching back to GKV later is often difficult."
+          }
+        }
+      }
+    },
+    "tool_health_result_gkv_or_pkv_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GKV oder PKV – du hast die Wahl"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GKV or PKV — you can choose"
+          }
+        }
+      }
+    },
+    "tool_health_result_must_gkv_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als Angestellte:r mit einem Einkommen bis zur Versicherungspflichtgrenze bist du gesetzlich pflichtversichert. Du wählst eine gesetzliche Krankenkasse."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As an employee earning up to the compulsory-insurance threshold, you are insured in the statutory system. You choose a statutory health fund."
+          }
+        }
+      }
+    },
+    "tool_health_result_must_gkv_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesetzlich versichert (GKV)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statutory cover (GKV)"
+          }
+        }
+      }
+    },
+    "tool_health_result_student_gkv_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für eingeschriebene Studierende gilt in der Regel der günstige studentische Tarif der gesetzlichen Krankenkassen. Internationale Studierende sollten prüfen, ob ihre Versicherung in Deutschland anerkannt wird."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enrolled students normally qualify for the affordable student tariff in the statutory system. International students should check whether their cover is recognised in Germany."
+          }
+        }
+      }
+    },
+    "tool_health_result_student_gkv_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studentische Krankenversicherung (GKV)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Student statutory cover (GKV)"
+          }
+        }
+      }
+    },
+    "tool_health_status_civilServant": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beamtin / Beamter"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Civil servant"
+          }
+        }
+      }
+    },
+    "tool_health_status_employee": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Angestellt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Employed"
+          }
+        }
+      }
+    },
+    "tool_health_status_other": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Andere (Rente, Arbeitssuche, Familienversicherung …)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other (pension, job-seeking, family co-insured …)"
+          }
+        }
+      }
+    },
+    "tool_health_status_selfEmployed": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selbstständig / freiberuflich"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Self-employed / freelance"
+          }
+        }
+      }
+    },
+    "tool_health_status_student": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studierend"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Student"
+          }
+        }
+      }
+    },
     "tool_health_subtitle": {
       "localizations": {
         "de": {
@@ -8343,6 +9257,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "GKV vs PKV"
+          }
+        }
+      }
+    },
+    "tool_health_threshold_fmt": {
+      "comment": "Health tool: income threshold line. %1$d year, %2$@ amount.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versicherungspflichtgrenze (Jahresarbeitsentgeltgrenze) %1$d: %2$@ pro Jahr. Darüber können Angestellte in die PKV wechseln."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compulsory-insurance threshold (Jahresarbeitsentgeltgrenze) %1$d: %2$@ per year. Above it, employees may switch to PKV."
           }
         }
       }
