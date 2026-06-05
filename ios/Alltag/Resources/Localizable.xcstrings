@@ -2450,6 +2450,23 @@
         }
       }
     },
+    "guide_sources_title": {
+      "comment": "Guide reader (P6-G6): header above the external source links.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offizielle Quellen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Official sources"
+          }
+        }
+      }
+    },
     "guide_taxes_subtitle": {
       "localizations": {
         "de": {

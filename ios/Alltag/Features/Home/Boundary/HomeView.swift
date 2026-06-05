@@ -20,6 +20,9 @@ struct HomeView: View {
     var embedInScrollView = true
 
     @State private var toast = false
+    /// Navigation stack for in-Home pushes (guide reader; tool engines extend
+    /// this in later P6 tasks). Empty in snapshot mode (no `NavigationStack`).
+    @State private var path: [HomeRoute] = []
 
     init(selection: Binding<AppTab> = .constant(.home), embedInScrollView: Bool = true) {
         self._selection = selection
@@ -31,13 +34,39 @@ struct HomeView: View {
     var body: some View {
         Group {
             if embedInScrollView {
-                ScrollView { content }
+                NavigationStack(path: $path) {
+                    ScrollView { content }
+                        .background(AppColor.paper)
+                        .navigationDestination(for: HomeRoute.self, destination: destination)
+                }
             } else {
                 content
             }
         }
         .background(AppColor.paper)
         .appToast(isPresented: $toast, "home_coming_soon", systemImage: "sparkles")
+    }
+
+    /// Resolves a pushed route to its screen. Guides open the reader; unknown
+    /// guide ids fall through to nothing (guarded by `GuideLibraryTests`).
+    @ViewBuilder
+    private func destination(_ route: HomeRoute) -> some View {
+        switch route {
+        case .guide(let id):
+            if let content = GuideLibrary.content(for: id) {
+                GuideReaderView(content: content)
+            }
+        }
+    }
+
+    /// Opens a guide in the reader, or toasts "coming soon" if its body hasn't
+    /// shipped yet (so a tile never dead-ends).
+    private func openGuide(_ id: String) {
+        if GuideLibrary.content(for: id) != nil {
+            path.append(.guide(id))
+        } else {
+            toast = true
+        }
     }
 
     // MARK: - Content
@@ -227,7 +256,7 @@ struct HomeView: View {
                     subtitleKey: guide.subtitleKey,
                     systemImage: guide.systemImage,
                     tint: guide.tint
-                ) { toast = true }
+                ) { openGuide(guide.id) }
             }
         }
     }
