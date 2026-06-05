@@ -69,6 +69,765 @@
         }
       }
     },
+    "checklist_family_a1_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meist Voraussetzung für den Ehegattennachzug."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually required for spouse reunification."
+          }
+        }
+      }
+    },
+    "checklist_family_a1_title": {
+      "comment": "Family checklist: A1 test.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A1-Deutschtest bestehen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass the A1 German test"
+          }
+        }
+      }
+    },
+    "checklist_family_anmeldung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für alle Familienmitglieder nach der Ankunft."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For every family member after arrival."
+          }
+        }
+      }
+    },
+    "checklist_family_anmeldung_title": {
+      "comment": "Family checklist: Anmeldung.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresse anmelden (Anmeldung)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register your address (Anmeldung)"
+          }
+        }
+      }
+    },
+    "checklist_family_kindergeld_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monatliche Unterstützung pro Kind."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monthly support per child."
+          }
+        }
+      }
+    },
+    "checklist_family_kindergeld_title": {
+      "comment": "Family checklist: Kindergeld.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld beantragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply for Kindergeld"
+          }
+        }
+      }
+    },
+    "checklist_family_kita_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Früh anmelden – Plätze sind oft knapp."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register early — places are often scarce."
+          }
+        }
+      }
+    },
+    "checklist_family_kita_title": {
+      "comment": "Family checklist: Kita/school.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kita- oder Schulplatz finden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find a Kita or school place"
+          }
+        }
+      }
+    },
+    "checklist_family_sponsor_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einkommen, Wohnraum und Versicherung in Deutschland."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Income, housing and insurance in Germany."
+          }
+        }
+      }
+    },
+    "checklist_family_sponsor_title": {
+      "comment": "Family checklist: sponsor documents.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterlagen der einladenden Person vorbereiten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepare the sponsor's documents"
+          }
+        }
+      }
+    },
+    "checklist_family_visa_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei der deutschen Auslandsvertretung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At the German mission abroad."
+          }
+        }
+      }
+    },
+    "checklist_family_visa_title": {
+      "comment": "Family checklist: reunification visa.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiennachzugsvisum beantragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply for the family-reunification visa"
+          }
+        }
+      }
+    },
+    "checklist_resident_anmeldung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei jedem Umzug ummelden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Re-register whenever you move."
+          }
+        }
+      }
+    },
+    "checklist_resident_anmeldung_title": {
+      "comment": "Resident checklist: keep address current.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adressmeldung aktuell halten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep your address registration current"
+          }
+        }
+      }
+    },
+    "checklist_resident_einbuergerung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reform 2024: oft schon nach 5 Jahren möglich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2024 reform: often possible after 5 years."
+          }
+        }
+      }
+    },
+    "checklist_resident_einbuergerung_title": {
+      "comment": "Resident checklist: citizenship.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anspruch auf Einbürgerung prüfen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check citizenship eligibility"
+          }
+        }
+      }
+    },
+    "checklist_resident_niederlassung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meist nach 5 Jahren mit Sprach- und Einkommensnachweis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually after 5 years with language and income proof."
+          }
+        }
+      }
+    },
+    "checklist_resident_niederlassung_title": {
+      "comment": "Resident checklist: settlement permit.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anspruch auf Niederlassungserlaubnis prüfen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check settlement-permit eligibility"
+          }
+        }
+      }
+    },
+    "checklist_resident_renewals_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass, Aufenthaltstitel und Ausweise rechtzeitig erneuern."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Renew passport, permit and IDs in good time."
+          }
+        }
+      }
+    },
+    "checklist_resident_renewals_title": {
+      "comment": "Resident checklist: renewals.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokument-Verlängerungen im Blick behalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track your document renewals"
+          }
+        }
+      }
+    },
+    "checklist_resident_test_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "33 Fragen aus einem öffentlichen Katalog."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "33 questions from a public catalogue."
+          }
+        }
+      }
+    },
+    "checklist_resident_test_title": {
+      "comment": "Resident checklist: citizenship test.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einbürgerungstest üben"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practise the citizenship test"
+          }
+        }
+      }
+    },
+    "checklist_student_anmeldung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Innerhalb von 14 Tagen nach dem Einzug."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Within 14 days of moving in."
+          }
+        }
+      }
+    },
+    "checklist_student_anmeldung_title": {
+      "comment": "Student checklist: Anmeldung.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresse anmelden (Anmeldung)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register your address (Anmeldung)"
+          }
+        }
+      }
+    },
+    "checklist_student_blocked_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis über gesicherten Lebensunterhalt fürs Visum."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of funds your student visa requires."
+          }
+        }
+      }
+    },
+    "checklist_student_blocked_title": {
+      "comment": "Student checklist: blocked account.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sperrkonto eröffnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open a blocked account (Sperrkonto)"
+          }
+        }
+      }
+    },
+    "checklist_student_enroll_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit Zulassung, Versicherung und Gebührennachweis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With your admission, insurance and fee payment."
+          }
+        }
+      }
+    },
+    "checklist_student_enroll_title": {
+      "comment": "Student checklist: enrol.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An der Hochschule immatrikulieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enrol at your university"
+          }
+        }
+      }
+    },
+    "checklist_student_health_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pflicht für die Immatrikulation."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mandatory to enrol at university."
+          }
+        }
+      }
+    },
+    "checklist_student_health_title": {
+      "comment": "Student checklist: health insurance.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studentische Krankenversicherung abschließen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get student health insurance"
+          }
+        }
+      }
+    },
+    "checklist_student_hours_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "120 ganze oder 240 halbe Tage pro Jahr."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "120 full or 240 half days per year."
+          }
+        }
+      }
+    },
+    "checklist_student_hours_title": {
+      "comment": "Student checklist: working hours.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitsstunden im Blick behalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track your working hours"
+          }
+        }
+      }
+    },
+    "checklist_student_permit_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei der Ausländerbehörde vor Ablauf des Visums."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At the immigration office before your visa expires."
+          }
+        }
+      }
+    },
+    "checklist_student_permit_title": {
+      "comment": "Student checklist: residence permit.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthaltserlaubnis beantragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply for your residence permit"
+          }
+        }
+      }
+    },
+    "checklist_tourist_documents_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pass, Fotos, Reisenachweis und Versicherung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passport, photos, travel proof and insurance."
+          }
+        }
+      }
+    },
+    "checklist_tourist_documents_title": {
+      "comment": "Tourist checklist: documents.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterlagen für die Botschaft vorbereiten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepare your embassy documents"
+          }
+        }
+      }
+    },
+    "checklist_tourist_emergency_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "112 für Notfälle, 110 für die Polizei."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "112 for emergencies, 110 for the police."
+          }
+        }
+      }
+    },
+    "checklist_tourist_emergency_title": {
+      "comment": "Tourist checklist: emergency numbers.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notrufnummern speichern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save the emergency numbers"
+          }
+        }
+      }
+    },
+    "checklist_tourist_insurance_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für ein Schengen-Visum meist Pflicht (mind. 30.000 €)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually required for a Schengen visa (min. €30,000)."
+          }
+        }
+      }
+    },
+    "checklist_tourist_insurance_title": {
+      "comment": "Tourist checklist: insurance.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reisekrankenversicherung abschließen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get travel health insurance"
+          }
+        }
+      }
+    },
+    "checklist_tourist_kit_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bargeld, Adapter, Offline-Karten und Notfallkontakte."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cash, adapter, offline maps and emergency contacts."
+          }
+        }
+      }
+    },
+    "checklist_tourist_kit_title": {
+      "comment": "Tourist checklist: kit.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Survival-Kit für die Ankunft packen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pack your arrival survival kit"
+          }
+        }
+      }
+    },
+    "checklist_tourist_schengen_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visumfreie Kurzaufenthalte sind begrenzt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa-free short stays are capped."
+          }
+        }
+      }
+    },
+    "checklist_tourist_schengen_title": {
+      "comment": "Tourist checklist: 90/180.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine 90 von 180 Tagen im Blick behalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track your 90 days in 180"
+          }
+        }
+      }
+    },
+    "checklist_tourist_visa_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hängt von deiner Staatsangehörigkeit und Aufenthaltsdauer ab."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depends on your nationality and length of stay."
+          }
+        }
+      }
+    },
+    "checklist_tourist_visa_title": {
+      "comment": "Tourist checklist: visa.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfen, ob du ein Visum brauchst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check whether you need a visa"
+          }
+        }
+      }
+    },
     "checklist_worker_anmeldung_subtitle": {
       "localizations": {
         "de": {
@@ -1979,6 +2738,108 @@
         }
       }
     },
+    "mode_active": {
+      "comment": "My-mode screen: badge on the currently active persona.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktiv"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Active"
+          }
+        }
+      }
+    },
+    "mode_choose": {
+      "comment": "My-mode screen: section header for the persona chooser.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modus wählen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose your mode"
+          }
+        }
+      }
+    },
+    "mode_past_footer": {
+      "comment": "My-mode screen: footer under past situations.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modi, die du schon genutzt hast. Tippe, um zurückzuwechseln."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modes you've used before. Tap to switch back."
+          }
+        }
+      }
+    },
+    "mode_past_situations": {
+      "comment": "My-mode screen: section header for previously used personas.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frühere Situationen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Past situations"
+          }
+        }
+      }
+    },
+    "mode_progress_format": {
+      "comment": "My-mode screen: checklist progress, e.g. '3/7 done'. %1$d done of %2$d total.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$d/%2$d erledigt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$d/%2$d done"
+          }
+        }
+      }
+    },
+    "mode_switch_footer": {
+      "comment": "My-mode screen: reassurance that switching keeps progress.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Fortschritt wird in jedem Modus gespeichert – du kannst jederzeit wechseln."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your progress is saved in every mode — switch back anytime."
+          }
+        }
+      }
+    },
     "onboarding_back": {
       "comment": "Onboarding: back button accessibility label.",
       "localizations": {
@@ -3059,6 +3920,72 @@
         }
       }
     },
+    "tool_a1_test_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfung am Goethe-Institut oder bei telc finden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find an exam at the Goethe-Institut or telc."
+          }
+        }
+      }
+    },
+    "tool_a1_test_title": {
+      "comment": "Family tool: A1 test booking.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A1-Test buchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Book the A1 test"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termin, Formular und Wohnungsgeberbestätigung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appointment, form and landlord confirmation."
+          }
+        }
+      }
+    },
+    "tool_anmeldung_title": {
+      "comment": "Student tool: Anmeldung guide.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anmeldung-Leitfaden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anmeldung guide"
+          }
+        }
+      }
+    },
     "tool_badge_try_it": {
       "comment": "Badge on the prototyped tool tile.",
       "localizations": {
@@ -3105,6 +4032,72 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bank accounts"
+          }
+        }
+      }
+    },
+    "tool_birth_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standesamt-Ablauf für Neugeborene."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Standesamt process for newborns."
+          }
+        }
+      }
+    },
+    "tool_birth_title": {
+      "comment": "Family tool: birth registration.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geburt anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register a birth"
+          }
+        }
+      }
+    },
+    "tool_blocked_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anbieter und Gebühren gegenüberstellen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare providers and fees."
+          }
+        }
+      }
+    },
+    "tool_blocked_title": {
+      "comment": "Student tool: Sperrkonto.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sperrkonto-Vergleich"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocked account comparison"
           }
         }
       }
@@ -3175,6 +4168,105 @@
         }
       }
     },
+    "tool_einbuergerung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eignungs-Check nach der Reform 2024."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eligibility check after the 2024 reform."
+          }
+        }
+      }
+    },
+    "tool_einbuergerung_title": {
+      "comment": "Resident tool: citizenship.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einbürgerung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Citizenship"
+          }
+        }
+      }
+    },
+    "tool_einbuergerungstest_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übe mit Fragen aus dem amtlichen Katalog."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practise with questions from the official catalogue."
+          }
+        }
+      }
+    },
+    "tool_einbuergerungstest_title": {
+      "comment": "Resident tool: citizenship test.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einbürgerungstest üben"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Citizenship test practice"
+          }
+        }
+      }
+    },
+    "tool_embassy_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Unterlagen der Visumantrag braucht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which documents the visa application needs."
+          }
+        }
+      }
+    },
+    "tool_embassy_title": {
+      "comment": "Tourist tool: embassy checklist.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Botschafts-Checkliste"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Embassy checklist"
+          }
+        }
+      }
+    },
     "tool_health_subtitle": {
       "localizations": {
         "de": {
@@ -3204,6 +4296,435 @@
           "stringUnit": {
             "state": "translated",
             "value": "Health insurance"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formulare und Familienkasse Schritt für Schritt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forms and the Familienkasse, step by step."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_title": {
+      "comment": "Family tool: Kindergeld.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld-Antrag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld application"
+          }
+        }
+      }
+    },
+    "tool_kita_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grundlagen zur Anmeldung deiner Kinder."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The basics of enrolling your children."
+          }
+        }
+      }
+    },
+    "tool_kita_title": {
+      "comment": "Family tool: Kita/school.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kita & Schule"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kita & school"
+          }
+        }
+      }
+    },
+    "tool_niederlassung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe, ob du die Voraussetzungen erfüllst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check whether you meet the requirements."
+          }
+        }
+      }
+    },
+    "tool_niederlassung_title": {
+      "comment": "Resident tool: settlement permit.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niederlassungserlaubnis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settlement permit"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die wichtigsten Behördengänge zuerst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The key official steps, in order."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_title": {
+      "comment": "Family tool: post-arrival.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach der Ankunft"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival"
+          }
+        }
+      }
+    },
+    "tool_post_study_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übergang zur Arbeitssuche und zum Aufenthalt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transition to job-seeking and residence."
+          }
+        }
+      }
+    },
+    "tool_post_study_title": {
+      "comment": "Student tool: post-study.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach dem Studium"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After your studies"
+          }
+        }
+      }
+    },
+    "tool_prearrival_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schritte vor dem Abflug, nach Staatsangehörigkeit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steps before departure, by nationality."
+          }
+        }
+      }
+    },
+    "tool_prearrival_title": {
+      "comment": "Student tool: pre-arrival.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vor-Anreise-Checkliste"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pre-arrival checklist"
+          }
+        }
+      }
+    },
+    "tool_renewal_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erinnerungen aus deinen Vault-Ablaufdaten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reminders from your Vault expiry dates."
+          }
+        }
+      }
+    },
+    "tool_renewal_title": {
+      "comment": "Resident tool: renewal tracker.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verlängerungs-Tracker"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Renewal tracker"
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Angehörige nachholen, wenn du hier lebst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bring relatives over once you live here."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_title": {
+      "comment": "Resident tool: reunification guide.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiennachzug – kurz erklärt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family reunification — quick guide"
+          }
+        }
+      }
+    },
+    "tool_reunification_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voraussetzungen und Unterlagen im Überblick."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requirements and documents at a glance."
+          }
+        }
+      }
+    },
+    "tool_reunification_title": {
+      "comment": "Family tool: reunification checklist.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiennachzug-Checkliste"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family reunification checklist"
+          }
+        }
+      }
+    },
+    "tool_schengen_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behalte deine erlaubten Aufenthaltstage im Blick."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep track of your allowed stay days."
+          }
+        }
+      }
+    },
+    "tool_schengen_title": {
+      "comment": "Tourist tool: 90/180 counter.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90/180-Tage-Zähler"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90/180-day counter"
+          }
+        }
+      }
+    },
+    "tool_sponsor_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was die Person in Deutschland beibringen muss."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What the person in Germany must provide."
+          }
+        }
+      }
+    },
+    "tool_sponsor_title": {
+      "comment": "Family tool: sponsor pack.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sponsoren-Unterlagen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sponsor document pack"
+          }
+        }
+      }
+    },
+    "tool_student_health_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesetzliche Tarife für Studierende vergleichen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare statutory plans for students."
+          }
+        }
+      }
+    },
+    "tool_student_health_title": {
+      "comment": "Student tool: health insurance.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studenten-Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Student health insurance"
+          }
+        }
+      }
+    },
+    "tool_survival_kit_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Wichtigste für deine erste Woche."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The essentials for your first week."
+          }
+        }
+      }
+    },
+    "tool_survival_kit_title": {
+      "comment": "Tourist tool: survival kit.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Survival-Kit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Survival kit"
           }
         }
       }
@@ -3241,6 +4762,72 @@
         }
       }
     },
+    "tool_travel_insurance_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarife für die Reisekrankenversicherung vergleichen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare travel health insurance plans."
+          }
+        }
+      }
+    },
+    "tool_travel_insurance_title": {
+      "comment": "Tourist tool: travel insurance.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reiseversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Travel insurance"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erklärt: wenn dich jemand finanziell einlädt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explained: when someone sponsors your visit."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_title": {
+      "comment": "Tourist tool: Verpflichtungserklärung.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verpflichtungserklärung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verpflichtungserklärung"
+          }
+        }
+      }
+    },
     "tool_visa_fit_subtitle": {
       "localizations": {
         "de": {
@@ -3270,6 +4857,72 @@
           "stringUnit": {
             "state": "translated",
             "value": "Visa-fit tool"
+          }
+        }
+      }
+    },
+    "tool_visa_need_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schnelle Einschätzung nach Staatsangehörigkeit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A quick check by nationality."
+          }
+        }
+      }
+    },
+    "tool_visa_need_title": {
+      "comment": "Tourist tool: visa-need.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brauche ich ein Visum?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do I need a visa?"
+          }
+        }
+      }
+    },
+    "tool_working_hours_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bleibe innerhalb des erlaubten Limits."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stay within the allowed limit."
+          }
+        }
+      }
+    },
+    "tool_working_hours_title": {
+      "comment": "Student tool: working-hours tracker.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitsstunden-Tracker"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Working-hours tracker"
           }
         }
       }

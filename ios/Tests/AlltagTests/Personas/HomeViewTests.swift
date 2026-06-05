@@ -48,6 +48,24 @@ final class HomeViewTests: XCTestCase {
             height: 1400)
     }
 
+    /// Every persona's Home (P5-01…04 content) renders across the trait matrix —
+    /// proves the Phase 5 checklist/tools content lays out for all five modes, not
+    /// just Worker.
+    func testRendersEveryPersonaHome() throws {
+        for persona in Persona.allCases {
+            let personas = PersonaStore(
+                defaults: UserDefaults(suiteName: "home.\(UUID().uuidString)")!)
+            personas.select(persona)
+            let env = AppEnvironment(
+                persistence: try PersistenceController(inMemory: true),
+                llm: try LLMTestFactory.service(),
+                personas: personas)
+            SnapshotSupport.assertRenders(
+                HomeView(embedInScrollView: false).environment(env),
+                height: 1600)
+        }
+    }
+
     func testRendersDefensiveNoModeState() throws {
         // No persona selected → the teaching empty state still renders.
         let env = AppEnvironment(

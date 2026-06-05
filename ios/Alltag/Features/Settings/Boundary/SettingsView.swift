@@ -68,10 +68,11 @@ struct SettingsView: View {
                 explain("settings_language_title", "settings_language_explanation", "globe")
             }
 
-            Picker(selection: personaBinding) {
-                ForEach(Persona.allCases) { Text($0.titleKey).tag(Optional($0)) }
+            NavigationLink {
+                ModePickerView()
             } label: {
-                explain("settings_mode_title", "settings_mode_explanation", "person.crop.circle")
+                explain("settings_mode_title", "settings_mode_explanation", "person.crop.circle",
+                        value: env.personas.activePersona?.displayName)
             }
 
             Button { openSystemSettings() } label: {
@@ -166,9 +167,6 @@ struct SettingsView: View {
     }
     private var languageBinding: Binding<AppLanguage> {
         Binding(get: { env.language.language }, set: { env.language.select($0) })
-    }
-    private var personaBinding: Binding<Persona?> {
-        Binding(get: { env.personas.activePersona }, set: { if let p = $0 { env.personas.select(p) } })
     }
 
     private var storageText: String {

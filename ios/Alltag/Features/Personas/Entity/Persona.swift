@@ -37,6 +37,18 @@ enum Persona: String, CaseIterable, Identifiable, Sendable {
         }
     }
 
+    /// The persona name resolved to a `String`, for places that need a value
+    /// rather than a `Text` (e.g. the Settings "My mode" row value).
+    var displayName: String {
+        switch self {
+        case .tourist:  return String(localized: "persona_tourist_title")
+        case .student:  return String(localized: "persona_student_title")
+        case .worker:   return String(localized: "persona_worker_title")
+        case .family:   return String(localized: "persona_family_title")
+        case .resident: return String(localized: "persona_resident_title")
+        }
+    }
+
     var systemImage: String {
         switch self {
         case .tourist:  return "suitcase.fill"

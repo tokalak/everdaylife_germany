@@ -15,6 +15,14 @@ final class PersonaTests: XCTestCase {
         let symbols = Persona.allCases.map(\.systemImage)
         XCTAssertEqual(Set(symbols).count, symbols.count)
     }
+
+    func testEachPersonaResolvesADisplayName() {
+        // displayName backs the Settings "My mode" row value (P5-05); every
+        // persona's title key must resolve to non-empty, distinct copy.
+        let names = Persona.allCases.map(\.displayName)
+        XCTAssertTrue(names.allSatisfy { !$0.isEmpty })
+        XCTAssertEqual(Set(names).count, names.count)
+    }
 }
 
 @MainActor

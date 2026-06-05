@@ -189,11 +189,11 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 - [x] **P4-04** Worker tools wired into Home grid (engines built in Phase 6). *(`PersonaTool`/`Guide` content + 6 worker tiles (visa-fit, Blue Card, Chancenkarte (badged), bank, health, tax-ID) and the 5 cross-persona guides, rendered via `ToolTile`/`GuideRow`. The interactive engines are **Phase 6** (P6-W*/P6-G*) — taps toast "coming soon" for now.)*
 
 ### Phase 5 — Remaining personas
-- [ ] **P5-01** Tourist: checklist + Home.
-- [ ] **P5-02** Student: checklist + Home.
-- [ ] **P5-03** Family: checklist + Home.
-- [ ] **P5-04** Long-term Resident: checklist + Home.
-- [ ] **P5-05** Persona-switching UI in Settings ("My mode") with progress preservation + "Past situations".
+- [x] **P5-01** Tourist: checklist + Home. *(`PersonaCatalog.touristChecklist` (6 steps: visa → embassy docs → travel insurance → 90-in-180 → survival kit → emergency numbers) + `touristTools` (6 tiles). Home renders them generically (P4-02). DE+EN copy in the String Catalog; deep-links resolve to real tiles/guides — guarded by `PersonaCatalogTests`.)*
+- [x] **P5-02** Student: checklist + Home. *(`studentChecklist` (Sperrkonto → student health → Anmeldung → enrol → residence permit → working-hours) + `studentTools` (6 tiles incl. shared Anmeldung guide). Residence-permit step deep-links the cross-persona guide.)*
+- [x] **P5-03** Family: checklist + Home. *(`familyChecklist` (reunification visa → A1 test → sponsor pack → Anmeldung → Kindergeld → Kita/school) + `familyTools` (7 tiles incl. post-arrival + birth registration).)*
+- [x] **P5-04** Long-term Resident: checklist + Home. *(`residentChecklist` (settlement-permit → citizenship → test practice → renewals → keep address current) + `residentTools` (5 tiles; Einbürgerungstest badged "Try it"). Renewal tracker tile flagged to pull Vault expiries in Phase 6.)*
+- [x] **P5-05** Persona-switching UI in Settings ("My mode") with progress preservation + "Past situations". *(`ModePickerView` (Personas/Boundary): a grouped chooser of all five personas (active badged, per-mode `done/total` progress shown) plus a **"Past situations"** section listing previously-engaged modes for quick, lossless return. Switching is lossless for free — progress is keyed by `(persona,itemId)` in `ChecklistStore` and the engaged set is preserved in `PersonaStore`. Settings replaces the inline persona picker with a `NavigationLink` showing the current mode via new `Persona.displayName`. Every persona's Home content render-tested across the trait matrix; catalog invariants (populated, unique ids, no dangling deep-links) guarded for all five personas. 191 tests green.)*
 
 ### Phase 6 — Tools (interactive engines) & Guides
 Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
@@ -289,9 +289,9 @@ Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
 |---|---|---|
 | On-device AI | Gemma 4 E2B (GGUF Q4_K_M, 3.11 GB) via llama.cpp/Metal, model download/manage | `Core/LLM` foundation built (P0-07): swappable `LLMEngine`, download/verify/store, capability gate, round-trip test. Real llama.cpp xcframework + on-device benchmark = manual device step |
 | Shared core | Decoder (local inference), Vault, Calendar, Settings | **Phase 3 complete (P3-00…09):** Decoder readiness→capture→explain→result (on `StubLLMEngine` pending the vendored runtime); Calendar/Dates (deadlines, urgency agenda, 14/7/1 reminders, decoded-letter auto-populate); Vault (encrypted docs, scan/import, PDF export, 60/30/7 expiry reminders + agenda); Settings (grouped list, GDPR export/delete, about/legal). |
-| Persona engine + Home / IA | Active + past personas, per-persona checklist progress, Home (greeting, mode, ring, up-next, checklist, tools grid, guides) | **Phase 4 complete (P4-01…04):** `PersonaStore` past-situations + lossless mode switching; `ChecklistStore`/`ChecklistProgress` per-persona progress; `HomeView` + `ProgressRing`; Worker checklist/tools + 5 guides in versioned `PersonaCatalog`. Tool engines + guide reader = Phase 6. **188 tests green** |
+| Persona engine + Home / IA | Active + past personas, per-persona checklist progress, Home (greeting, mode, ring, up-next, checklist, tools grid, guides) | **Phase 4 complete (P4-01…04):** `PersonaStore` past-situations + lossless mode switching; `ChecklistStore`/`ChecklistProgress` per-persona progress; `HomeView` + `ProgressRing`; Worker checklist/tools + 5 guides in versioned `PersonaCatalog`. Tool engines + guide reader = Phase 6. **191 tests green** |
 | Worker | 7 tools — Chancenkarte calc fully prototyped | Tiles wired into Home (P4-04); engines = Phase 6. Chancenkarte: prototyped |
-| Tourist/Student/Family/Resident | tools per §4 Phase 6 | Mapped, not built |
+| Tourist/Student/Family/Resident | checklists + tool tiles per §4 Phase 6 | **Phase 5 complete (P5-01…05):** all four personas populated in `PersonaCatalog` (checklists + tool grids, DE+EN); `ModePickerView` "My mode" switcher with lossless switching + "Past situations". Tool engines = Phase 6. |
 | Guides | 5 cross-persona | Listed, not built |
 | Theming | Light/Dark/System Warm Companion | Prototyped (HTML) |
 | Monetization | Paid app (fixed upfront price), everything unlocked | App Store config (no in-app code) |
