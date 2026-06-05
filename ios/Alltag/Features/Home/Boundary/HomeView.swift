@@ -56,6 +56,20 @@ struct HomeView: View {
             if let content = GuideLibrary.content(for: id) {
                 GuideReaderView(content: content)
             }
+        case .search:
+            SearchView(
+                items: HomeSearch.items(for: persona),
+                localize: { HomeSearch.resolve($0, locale: env.language.locale) },
+                onSelect: select)
+        }
+    }
+
+    /// Handles a search result: guides push the reader (on top of search); tools
+    /// toast "coming soon" until their engines ship in later P6 tasks.
+    private func select(_ item: SearchItem) {
+        switch item.kind {
+        case .guide: openGuide(item.targetId)
+        case .tool:  toast = true
         }
     }
 
@@ -143,7 +157,7 @@ struct HomeView: View {
     // MARK: - Search
 
     private var searchBar: some View {
-        Button { toast = true } label: {
+        Button { path.append(.search) } label: {
             HStack(spacing: AppSpacing.sm) {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(AppColor.inkSoft)
@@ -233,8 +247,8 @@ struct HomeView: View {
                     ) {
                         ForEach(tools) { tool in
                             ToolTile(
-                                titleKey: tool.titleKey,
-                                subtitleKey: tool.subtitleKey,
+                                titleKey: LocalizedStringKey(tool.titleKey),
+                                subtitleKey: tool.subtitleKey.map { LocalizedStringKey($0) },
                                 systemImage: tool.systemImage,
                                 tint: tool.tint
                             ) { toast = true }
@@ -252,8 +266,8 @@ struct HomeView: View {
             sectionHeader("home_guides_title", trailing: Text("home_guides_for_everyone"))
             ForEach(PersonaCatalog.guides) { guide in
                 GuideRow(
-                    titleKey: guide.titleKey,
-                    subtitleKey: guide.subtitleKey,
+                    titleKey: LocalizedStringKey(guide.titleKey),
+                    subtitleKey: guide.subtitleKey.map { LocalizedStringKey($0) },
                     systemImage: guide.systemImage,
                     tint: guide.tint
                 ) { openGuide(guide.id) }

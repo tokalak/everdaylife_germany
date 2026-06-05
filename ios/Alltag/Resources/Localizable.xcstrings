@@ -5926,6 +5926,73 @@
         }
       }
     },
+    "search_clear": {
+      "comment": "Accessibility label for the clear-search button.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suche löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear search"
+          }
+        }
+      }
+    },
+    "search_no_results_message": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versuch ein anderes Stichwort – etwa „Visum“, „Steuern“ oder „Versicherung“."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try another keyword — like “visa”, “taxes” or “insurance”."
+          }
+        }
+      }
+    },
+    "search_no_results_title": {
+      "comment": "Search empty state title when a query matches no guide or tool.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nichts gefunden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing found"
+          }
+        }
+      }
+    },
+    "search_title": {
+      "comment": "In-app search screen (P6-G6): navigation title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suche"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search"
+          }
+        }
+      }
+    },
     "settings_about": {
       "comment": "Settings section header.",
       "localizations": {

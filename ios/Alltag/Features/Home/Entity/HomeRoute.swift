@@ -9,4 +9,6 @@ import Foundation
 enum HomeRoute: Hashable {
     /// Opens the reader for a guide by its stable id (`GuideContent.id`).
     case guide(String)
+    /// Opens in-app search across guides and the active mode's tools.
+    case search
 }
