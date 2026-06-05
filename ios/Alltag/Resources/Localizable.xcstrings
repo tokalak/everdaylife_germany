@@ -8298,6 +8298,710 @@
         }
       }
     },
+    "tool_embassy_doc_admission_letter_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zulassung oder Immatrikulationsnachweis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Admission or enrolment confirmation."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_admission_letter_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zulassungsbescheid der Hochschule"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "University admission letter (Zulassung)"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_application_form_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vollständig ausgefüllt und eigenhändig unterschrieben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filled in completely and signed by hand."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_application_form_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausgefülltes und unterschriebenes Antragsformular"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completed and signed application form"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_appointment_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminbestätigung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appointment confirmation"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_blocked_account_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meist ein Sperrkonto oder ein gleichwertiger Nachweis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually a blocked account or an equivalent proof."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_blocked_account_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finanzierungsnachweis (Sperrkonto)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of funding (blocked account / Sperrkonto)"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_civil_certificate_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oft legalisiert oder mit Apostille und beglaubigter Übersetzung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Often legalised or apostilled, with a certified translation."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_civil_certificate_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heirats- oder Geburtsurkunde"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marriage or birth certificate"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_cv_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lebenslauf"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Curriculum vitae (CV)"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_employment_contract_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterschrieben, mit Tätigkeit und Gehalt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signed, stating the role and salary."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_employment_contract_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitsvertrag oder verbindliches Stellenangebot"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Employment contract or binding job offer"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_fee_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In der vor Ort akzeptierten Zahlungsart bereithalten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Have it ready in the payment method accepted on site."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_fee_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visumgebühr"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa fee"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_funds_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z. B. Kontoauszüge oder eine Verpflichtungserklärung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E.g. bank statements or a formal sponsorship declaration."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_funds_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis ausreichender finanzieller Mittel"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of sufficient funds"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_german_a1_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim Ehegattennachzug häufig ein A1-Nachweis erforderlich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spousal reunification often requires an A1 certificate."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_german_a1_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deutschkenntnisse (A1), oft für Ehepartner"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "German skills (A1), often for spouses"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_insurance_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit ausreichender Deckung für den Aufenthalt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With sufficient cover for your stay."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_insurance_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis einer Reise- bzw. Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of travel/health insurance"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_invitation_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falls du jemanden besuchst: formelle Einladung oder Verpflichtungserklärung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you are visiting someone: a formal invitation or Verpflichtungserklärung."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_invitation_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einladung oder Verpflichtungserklärung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitation or formal sponsorship declaration"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_passport_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meist noch mindestens 3 Monate über die geplante Ausreise hinaus gültig, mit freien Seiten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually valid for at least 3 months beyond your planned departure, with blank pages."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_passport_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültiger Reisepass"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid passport"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_photos_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuell, nach biometrischen Vorgaben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recent and meeting biometric requirements."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_photos_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biometrische Passfotos"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biometric passport photos"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_qualification_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abschlusszeugnisse, ggf. mit Anerkennung in Deutschland."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diplomas, where required with recognition in Germany."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_qualification_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qualifikationsnachweis bzw. Anerkennung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of qualification / recognition (Anerkennung)"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_sponsor_residence_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z. B. Aufenthaltstitel und Meldebescheinigung der Bezugsperson."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E.g. the sponsor's residence permit and registration certificate."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_sponsor_residence_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis, dass die Familie in Deutschland lebt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof the sponsor lives in Germany"
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_travel_itinerary_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hin- und Rückflug sowie Hotel- oder Unterkunftsnachweis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Return flight plus proof of hotel or accommodation."
+          }
+        }
+      }
+    },
+    "tool_embassy_doc_travel_itinerary_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reiseplan, Flug- und Unterkunftsbuchung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Travel itinerary, flight and accommodation booking"
+          }
+        }
+      }
+    },
+    "tool_embassy_documents_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterlagen-Checkliste"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Document checklist"
+          }
+        }
+      }
+    },
+    "tool_embassy_intro": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Unterlagen du zum Termin in der deutschen Botschaft oder im Konsulat mitbringst, hängt davon ab, was du beantragst. Wähle deinen Zweck und hake die Liste ab."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which documents you bring to your appointment at the German embassy or consulate depends on what you are applying for. Choose your purpose and tick off the list."
+          }
+        }
+      }
+    },
+    "tool_embassy_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr erfahren: Aufenthaltstitel"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more: residence permit"
+          }
+        }
+      }
+    },
+    "tool_embassy_purpose_family_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zusammenführung mit Familie in Deutschland."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joining family who live in Germany."
+          }
+        }
+      }
+    },
+    "tool_embassy_purpose_family_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiennachzug (nationales Visum)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family reunification (national visa)"
+          }
+        }
+      }
+    },
+    "tool_embassy_purpose_question": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was beantragst du?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What are you applying for?"
+          }
+        }
+      }
+    },
+    "tool_embassy_purpose_shortStay_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bis zu 90 Tage, z. B. Tourismus oder Besuch."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Up to 90 days, e.g. tourism or a visit."
+          }
+        }
+      }
+    },
+    "tool_embassy_purpose_shortStay_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurzaufenthalt (Schengen-Visum)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short stay (Schengen visa)"
+          }
+        }
+      }
+    },
+    "tool_embassy_purpose_study_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studium an einer deutschen Hochschule."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Study at a German university."
+          }
+        }
+      }
+    },
+    "tool_embassy_purpose_study_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studium (nationales Visum)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Study (national visa)"
+          }
+        }
+      }
+    },
+    "tool_embassy_purpose_work_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beschäftigung oder qualifizierte Fachkraft."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Employment or skilled worker."
+          }
+        }
+      }
+    },
+    "tool_embassy_purpose_work_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeiten (nationales Visum)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work (national visa)"
+          }
+        }
+      }
+    },
     "tool_embassy_subtitle": {
       "localizations": {
         "de": {
