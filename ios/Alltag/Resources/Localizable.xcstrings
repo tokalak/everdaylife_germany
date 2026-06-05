@@ -9724,6 +9724,439 @@
         }
       }
     },
+    "tool_taxid_checklist_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schritt für Schritt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Step by step"
+          }
+        }
+      }
+    },
+    "tool_taxid_id_steuerid_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID (Steuerliche Identifikationsnummer)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID (tax identification number)"
+          }
+        }
+      }
+    },
+    "tool_taxid_id_steuerid_what": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine 11-stellige Nummer, die dich ein Leben lang begleitet. Jede in Deutschland gemeldete Person bekommt genau eine."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An 11-digit number that stays with you for life. Everyone registered in Germany gets exactly one."
+          }
+        }
+      }
+    },
+    "tool_taxid_id_steuerid_when": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für deinen Arbeitgeber, Bank, Kindergeld und die Steuererklärung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For your employer, your bank, child benefit and your tax return."
+          }
+        }
+      }
+    },
+    "tool_taxid_id_steuerid_where": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommt nach der Anmeldung automatisch per Post. Du musst sie nicht beantragen. Du findest sie auch auf der Lohnsteuerbescheinigung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrives automatically by post after your Anmeldung. You do not have to apply for it. It also appears on your annual payslip statement."
+          }
+        }
+      }
+    },
+    "tool_taxid_id_steuernummer_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuernummer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuernummer"
+          }
+        }
+      }
+    },
+    "tool_taxid_id_steuernummer_what": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Nummer, die das Finanzamt für eine bestimmte Tätigkeit vergibt (z. B. Selbstständigkeit). Das Format hängt vom Bundesland ab."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A number the tax office (Finanzamt) issues for a specific activity (e.g. self-employment). The format depends on the federal state."
+          }
+        }
+      }
+    },
+    "tool_taxid_id_steuernummer_when": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Rechnungen als Selbstständige:r und die Kommunikation mit dem Finanzamt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For invoices when self-employed and for communicating with the tax office."
+          }
+        }
+      }
+    },
+    "tool_taxid_id_steuernummer_where": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über ELSTER oder beim zuständigen Finanzamt beantragen, meist nach der Anmeldung eines Gewerbes oder einer freiberuflichen Tätigkeit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request it via ELSTER or your local Finanzamt, usually after registering a business or freelance activity."
+          }
+        }
+      }
+    },
+    "tool_taxid_id_ustidnr_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "USt-IdNr (Umsatzsteuer-Identifikationsnummer)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "USt-IdNr (VAT ID)"
+          }
+        }
+      }
+    },
+    "tool_taxid_id_ustidnr_what": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine EU-weite Umsatzsteuer-Nummer für Unternehmen, die mit anderen EU-Ländern Geschäfte machen. Nur für Selbstständige und Firmen relevant."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An EU-wide VAT number for businesses trading with other EU countries. Only relevant for the self-employed and companies."
+          }
+        }
+      }
+    },
+    "tool_taxid_id_ustidnr_when": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für innergemeinschaftliche Lieferungen und Leistungen innerhalb der EU."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For intra-EU supplies of goods and services."
+          }
+        }
+      }
+    },
+    "tool_taxid_id_ustidnr_where": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kostenlos beim Bundeszentralamt für Steuern (BZSt) oder zusammen mit der steuerlichen Erfassung über ELSTER beantragen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply for free at the Federal Central Tax Office (BZSt) or together with your tax registration via ELSTER."
+          }
+        }
+      }
+    },
+    "tool_taxid_identifiers_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Nummern im Überblick"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The numbers at a glance"
+          }
+        }
+      }
+    },
+    "tool_taxid_intro": {
+      "comment": "Tax-ID organizer: intro.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deutschland hat mehrere Steuer-Nummern. Hier erfährst du, welche du wann brauchst, wie du sie bekommst – und du kannst das Format deiner Steuer-ID prüfen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Germany has several tax numbers. Learn which one you need and when, how to get them, and check the format of your Steuer-ID."
+          }
+        }
+      }
+    },
+    "tool_taxid_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr über Steuern erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about taxes"
+          }
+        }
+      }
+    },
+    "tool_taxid_privacy_note": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Prüfung erfolgt nur auf deinem Gerät. Deine Nummer wird nicht gespeichert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The check runs only on your device. Your number is not stored."
+          }
+        }
+      }
+    },
+    "tool_taxid_step_anmeldung_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Innerhalb von 14 Tagen nach dem Einzug beim Bürgeramt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Within 14 days of moving in, at the Bürgeramt."
+          }
+        }
+      }
+    },
+    "tool_taxid_step_anmeldung_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wohnsitz anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register your address (Anmeldung)"
+          }
+        }
+      }
+    },
+    "tool_taxid_step_await_letter_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Steuer-ID kommt automatisch per Post, meist innerhalb weniger Wochen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your Steuer-ID arrives automatically by post, usually within a few weeks."
+          }
+        }
+      }
+    },
+    "tool_taxid_step_await_letter_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf den Steuer-ID-Brief warten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wait for the Steuer-ID letter"
+          }
+        }
+      }
+    },
+    "tool_taxid_step_give_employer_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So wird die Lohnsteuer korrekt abgerechnet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So your wage tax is calculated correctly."
+          }
+        }
+      }
+    },
+    "tool_taxid_step_give_employer_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID dem Arbeitgeber geben"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Give your Steuer-ID to your employer"
+          }
+        }
+      }
+    },
+    "tool_taxid_step_keep_safe_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du brauchst sie immer wieder – für Bank, Arbeitgeber und Steuererklärung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You will need them again and again — for your bank, employer and tax return."
+          }
+        }
+      }
+    },
+    "tool_taxid_step_keep_safe_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nummern sicher aufbewahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep your numbers safe"
+          }
+        }
+      }
+    },
+    "tool_taxid_step_request_steuernummer_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über ELSTER beim Finanzamt, wenn du freiberuflich oder gewerblich tätig bist."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Via ELSTER at the Finanzamt if you work freelance or run a business."
+          }
+        }
+      }
+    },
+    "tool_taxid_step_request_steuernummer_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuernummer beantragen (falls selbstständig)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request a Steuernummer (if self-employed)"
+          }
+        }
+      }
+    },
     "tool_taxid_subtitle": {
       "localizations": {
         "de": {
@@ -9753,6 +10186,150 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tax-ID organizer"
+          }
+        }
+      }
+    },
+    "tool_taxid_validator_empty": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gib eine Steuer-ID ein, um sie zu prüfen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a Steuer-ID to check it."
+          }
+        }
+      }
+    },
+    "tool_taxid_validator_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gib deine 11-stellige Steuer-ID ein, um das Format zu prüfen. Leerzeichen und Schrägstriche sind erlaubt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter your 11-digit Steuer-ID to check its format. Spaces and slashes are allowed."
+          }
+        }
+      }
+    },
+    "tool_taxid_validator_invalid": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein gültiges Steuer-ID-Format."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not a valid Steuer-ID format."
+          }
+        }
+      }
+    },
+    "tool_taxid_validator_placeholder": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "z. B. 12 345 678 901"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. 12 345 678 901"
+          }
+        }
+      }
+    },
+    "tool_taxid_validator_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID prüfen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check a Steuer-ID"
+          }
+        }
+      }
+    },
+    "tool_taxid_validator_valid": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültiges Steuer-ID-Format."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid Steuer-ID format."
+          }
+        }
+      }
+    },
+    "tool_taxid_what_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was es ist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What it is"
+          }
+        }
+      }
+    },
+    "tool_taxid_when_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wann du sie brauchst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When you need it"
+          }
+        }
+      }
+    },
+    "tool_taxid_where_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wo du sie bekommst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where to get it"
           }
         }
       }
