@@ -19,6 +19,11 @@ final class GuideLibraryTests: XCTestCase {
         XCTAssertEqual(GuideLibrary.content(for: "residence_permit")?.id, tile?.id)
     }
 
+    func testRegisterBusinessGuideShips() {
+        // P6-G2: Gewerbe vs Freiberufler.
+        XCTAssertNotNil(GuideLibrary.content(for: "register_business"))
+    }
+
     func testShippedGuideIdsAreUnique() {
         let ids = GuideLibrary.all.map(\.id)
         XCTAssertEqual(Set(ids).count, ids.count, "guide ids must be unique")

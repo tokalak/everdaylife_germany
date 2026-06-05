@@ -2483,6 +2483,567 @@
         }
       }
     },
+    "guidedoc_rb_s1_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewerbe oder Freiberuf?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trade or freelance profession?"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s1_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selbstständige in Deutschland gehören entweder zu den Freiberuflern oder betreiben ein Gewerbe. Die Einordnung hängt von deiner Tätigkeit ab, nicht von deinem Wunsch."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Self-employed people in Germany are either freelance professionals (Freiberufler) or run a trade (Gewerbe). Which one you are depends on your activity, not your preference."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s1_p2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Unterschied bestimmt, ob du ein Gewerbe anmelden musst, ob Gewerbesteuer anfällt und ob du Mitglied der IHK wirst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The difference decides whether you must register a trade, whether trade tax applies, and whether you join the Chamber of Commerce (IHK)."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s2_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ärztinnen, Anwälte, Steuerberater und Ingenieure."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doctors, lawyers, tax advisors and engineers."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s2_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Journalistinnen, Übersetzer, Künstler und Designer."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Journalists, translators, artists and designers."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s2_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programmiererinnen und IT-Beratende (oft, aber nicht immer)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Software developers and IT consultants (often, but not always)."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s2_b4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lehrende und Coaches mit fachlicher Qualifikation."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teachers and coaches with professional qualifications."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s2_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer ist Freiberufler?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Who counts as a Freiberufler?"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s2_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freiberufler üben eine wissenschaftliche, künstlerische, schriftstellerische, lehrende oder bestimmte beratende Tätigkeit aus (sog. Katalogberufe, § 18 EStG). Beispiele:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freelancers carry out scientific, artistic, literary, teaching or certain advisory work (the \"catalogue professions\", §18 of the income-tax act). Examples:"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s3_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Handel, Onlineshops und Einzelhandel."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retail, online shops and commerce."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s3_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gastronomie, Handwerk und Dienstleistungen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gastronomy, skilled trades and services."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s3_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vermittlung, Agenturen und die meisten Start-ups."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brokering, agencies and most start-ups."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s3_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer braucht ein Gewerbe?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Who needs a trade licence?"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s3_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer Waren verkauft, handwerklich oder gewerblich tätig ist oder nicht unter die Freien Berufe fällt, betreibt ein Gewerbe. Typisch:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you sell goods, do skilled-trade or commercial work, or simply don’t fall under the free professions, you run a trade. Typical cases:"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s4_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewerbeanmeldung beim örtlichen Gewerbeamt (oft online), Gebühr meist 20–60 €."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File a Gewerbeanmeldung at your local trade office (often online); the fee is usually €20–60."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s4_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Finanzamt schickt dir danach automatisch den Fragebogen zur steuerlichen Erfassung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The tax office then automatically sends you the tax-registration questionnaire."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s4_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pflichtmitgliedschaft in IHK oder Handwerkskammer entsteht automatisch."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Membership in the Chamber of Commerce (IHK) or Crafts Chamber follows automatically."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s4_b4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ab einem Gewinn über dem Freibetrag fällt Gewerbesteuer an."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Above the tax-free allowance on profit, trade tax (Gewerbesteuer) applies."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s4_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewerbe anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registering a trade (Gewerbe)"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s5_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine Gewerbeanmeldung nötig – du meldest dich direkt beim Finanzamt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No trade registration needed — you register directly with the tax office."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s5_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fülle den Fragebogen zur steuerlichen Erfassung über ELSTER aus."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fill in the tax-registration questionnaire via ELSTER (the online tax portal)."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s5_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du erhältst eine Steuernummer und kannst Rechnungen stellen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You receive a tax number (Steuernummer) and can start invoicing."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s5_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als Freiberufler starten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starting as a freelancer"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s6_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unter der Kleinunternehmergrenze (rund 25.000 € Umsatz) kannst du auf die Umsatzsteuer verzichten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Below the small-business threshold (around €25,000 turnover) you can opt out of charging VAT."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s6_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonst weist du Umsatzsteuer aus und meldest sie regelmäßig ans Finanzamt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otherwise you charge VAT and report it to the tax office regularly."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s6_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kümmere dich selbst um Kranken- und Rentenversicherung – als Selbstständiger bist du nicht automatisch pflichtversichert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrange your own health and pension insurance — as a self-employed person you are not automatically covered."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s6_b4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manche Berufe (z. B. Künstler) können über die Künstlersozialkasse versichert sein."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some professions (e.g. artists) can be insured via the artists’ social fund (Künstlersozialkasse)."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s6_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuern & Versicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taxes & insurance"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s7_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Im Zweifel entscheidet das Finanzamt, ob du Freiberufler bist – frag im Voraus nach."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When in doubt the tax office decides whether you are a Freiberufler — ask in advance."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s7_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als Nicht-EU-Bürger muss dein Aufenthaltstitel die selbstständige Tätigkeit erlauben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As a non-EU citizen, your residence permit must allow self-employment."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s7_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lege Geld für die Steuer zurück – die erste Steuernachzahlung kommt oft erst Monate später."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set money aside for tax — your first tax bill often arrives only months later."
+          }
+        }
+      }
+    },
+    "guidedoc_rb_s7_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut zu wissen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good to know"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_source_existenzgruender": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BMWK – Existenzgründungsportal"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Federal Ministry — business start-up portal"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_source_miig": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany – Selbstständigkeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany — self-employment"
+          }
+        }
+      }
+    },
+    "guidedoc_rb_summary": {
+      "comment": "Guide P6-G2 register business: summary line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selbstständig in Deutschland: Bist du Freiberufler oder betreibst du ein Gewerbe? Das entscheidet, wo du dich anmeldest und wie du besteuert wirst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Going self-employed in Germany: are you a freelance professional or running a trade? That decides where you register and how you are taxed."
+          }
+        }
+      }
+    },
     "guidedoc_rp_s1_heading": {
       "localizations": {
         "de": {
