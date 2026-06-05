@@ -69,7 +69,7 @@ struct HomeView: View {
     /// Tool ids whose interactive screen has shipped. A tile only navigates when
     /// its id is here; everything else still toasts "coming soon" (kept in sync
     /// with the `toolDestination` switch below).
-    private static let implementedToolIDs: Set<String> = ["visa_fit", "blue_card", "chancenkarte", "bank_compare", "health_decision", "tax_id_organizer", "freelance_registration", "visa_need", "embassy_checklist"]
+    private static let implementedToolIDs: Set<String> = ["visa_fit", "blue_card", "chancenkarte", "bank_compare", "health_decision", "tax_id_organizer", "freelance_registration", "visa_need", "embassy_checklist", "verpflichtungserklaerung"]
 
     @ViewBuilder
     private func toolDestination(_ id: String) -> some View {
@@ -92,6 +92,8 @@ struct HomeView: View {
             VisaNeedView(onOpenGuide: openGuide)
         case "embassy_checklist":
             EmbassyChecklistView(onOpenGuide: openGuide)
+        case "verpflichtungserklaerung":
+            VerpflichtungView()
         default:
             EmptyView()
         }

@@ -11633,6 +11633,214 @@
         }
       }
     },
+    "tool_verpflichtung_binding_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit der Unterschrift haftest du unter Umständen für hohe Kosten – das kann auch nach Ende des Besuchs gelten. Unterschreibe nur, wenn du die Folgen verstehst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By signing you may be liable for substantial costs — possibly even after the visit ends. Only sign if you understand the consequences."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_binding_caution": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Achtung: Eine Verpflichtungserklärung ist rechtlich bindend. Du kannst für erhebliche Kosten haften. Lass dich vor der Unterschrift bei der zuständigen Ausländerbehörde beraten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caution: a Verpflichtungserklärung is legally binding. You can be liable for substantial costs. Get advice from the responsible Ausländerbehörde before signing."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_binding_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wichtig: rechtlich bindend"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Important: legally binding"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_checklist_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was die gastgebende Person mitbringt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What the sponsor brings"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_cost_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es fällt eine Gebühr von rund 25–40 € an. Die Erklärung gilt nur für einen begrenzten Zeitraum."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "There is a fee of roughly €25–40. The declaration is valid only for a limited period."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_cost_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kosten und Gültigkeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cost & validity"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_intro": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Verpflichtungserklärung ist eine förmliche Zusage: Eine in Deutschland lebende Person (die Gastgeberin oder der Gastgeber) verpflichtet sich, für die Kosten eines Besuchs aufzukommen – oft, damit der Besuch ein Visum bekommt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Verpflichtungserklärung is a formal promise: a person living in Germany (the sponsor) commits to cover a visitor's costs — often so the visitor can get a visa."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_item_housing": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mietvertrag oder Wohnungsnachweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rental contract or proof of housing"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_item_id": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültiger Ausweis oder Reisepass"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid ID or passport"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_item_income": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einkommensnachweis (z. B. Gehaltsabrechnungen)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of income (e.g. payslips)"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_item_visitor": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Angaben zur besuchenden Person"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The visitor's details"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_proof_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein ausreichendes, stabiles Einkommen – meist über Gehaltsnachweise oder einen Arbeitsnachweis; teils wird die Bonität geprüft und ein Einkommen über einer Bedarfsgrenze verlangt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A sufficient, stable income — usually via payslips or proof of employment; sometimes a solvency check and income above a needs threshold is required."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_proof_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was die gastgebende Person nachweisen muss"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What the sponsor must prove"
+          }
+        }
+      }
+    },
     "tool_verpflichtung_subtitle": {
       "localizations": {
         "de": {
@@ -11662,6 +11870,118 @@
           "stringUnit": {
             "state": "translated",
             "value": "Verpflichtungserklärung"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_what_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein rechtlich bindendes Versprechen, für die Kosten der besuchenden Person aufzukommen, falls diese es selbst nicht kann."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A legally binding promise to cover the visitor's costs if they cannot pay themselves."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_what_covers": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das umfasst Unterkunft, Lebenshaltung und im Zweifel auch Krankheits- und Rückreisekosten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This covers accommodation, living expenses and, if needed, healthcare and return travel."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_what_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was es ist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What it is"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_where_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die gastgebende Person beantragt die Erklärung persönlich bei der örtlichen Ausländerbehörde bzw. dem Bürgeramt am Wohnort."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The sponsor applies in person at the local Ausländerbehörde / Bürgeramt where they live."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_where_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wo und wie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where & how"
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_who_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Häufig für Schengen-Besuchsvisa (Kurzaufenthalt) verlangt, um ausreichende Mittel nachzuweisen – wenn die besuchende Person den Aufenthalt nicht selbst finanziert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Often required for short-stay Schengen visitor visas to prove sufficient funds — when the visitor does not fund the trip themselves."
+          }
+        }
+      }
+    },
+    "tool_verpflichtung_who_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer sie braucht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Who needs it"
           }
         }
       }
