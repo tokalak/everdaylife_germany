@@ -6748,6 +6748,652 @@
         }
       }
     },
+    "tool_bank_affiliate_disclosure": {
+      "comment": "Bank comparison (P6-W4): affiliate transparency disclosure (P6-A1).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparenz: Einige Links sind Partnerlinks – wir erhalten dafür unter Umständen eine Provision. Das beeinflusst weder die Reihenfolge noch deinen Preis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparency: some links are affiliate links — we may earn a commission. This never affects the order shown or the price you pay."
+          }
+        }
+      }
+    },
+    "tool_bank_affiliate_tag": {
+      "comment": "Bank comparison (P6-W4): per-option affiliate marker.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partnerlink"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affiliate link"
+          }
+        }
+      }
+    },
+    "tool_bank_best_for": {
+      "comment": "Bank comparison (P6-W4): 'best for' label prefix.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut für:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best for:"
+          }
+        }
+      }
+    },
+    "tool_bank_fee_label": {
+      "comment": "Bank comparison (P6-W4): monthly-fee label prefix.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontoführung:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account fee:"
+          }
+        }
+      }
+    },
+    "tool_bank_filter_english": {
+      "comment": "Bank comparison (P6-W4): English-support filter toggle.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur Banken mit Englisch-Support"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only banks with English support"
+          }
+        }
+      }
+    },
+    "tool_bank_filter_english_hint": {
+      "comment": "Bank comparison (P6-W4): English-support filter hint.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eröffnung und Kundenservice auf Englisch."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language sign-up and support."
+          }
+        }
+      }
+    },
+    "tool_bank_intro": {
+      "comment": "Bank comparison (P6-W4): intro.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Miete, Gehalt und Lastschriften brauchst du ein deutsches Girokonto mit IBAN. Hier findest du gängige Banken im Vergleich – sachlich und in einer sinnvollen Standard-Reihenfolge."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For rent, salary and direct debits you need a German current account (Girokonto) with an IBAN. Here are common banks compared — factually and in a sensible default order."
+          }
+        }
+      }
+    },
+    "tool_bank_open_action": {
+      "comment": "Bank comparison (P6-W4): open/visit link action.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zur Bank"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visit bank"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_commerzbank_bestfor": {
+      "comment": "Bank option commerzbank (P6-W4): best-for tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer persönliche Beratung in der Filiale möchte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Those who want in-branch personal advice"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_commerzbank_fee": {
+      "comment": "Bank option commerzbank (P6-W4): monthly fee.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 €/Monat bei Bedingungen, sonst Grundgebühr"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "€0/month if conditions met, otherwise a base fee"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_commerzbank_h1": {
+      "comment": "Bank option commerzbank (P6-W4): highlight 1.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filialen und persönliche Beratung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Branches and in-person advice"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_commerzbank_h2": {
+      "comment": "Bank option commerzbank (P6-W4): highlight 2.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischsprachiger Service für Neukunden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language service for new customers"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_commerzbank_h3": {
+      "comment": "Bank option commerzbank (P6-W4): highlight 3.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Häufig Startguthaben für Neukunden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Often a welcome bonus for new customers"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_commerzbank_summary": {
+      "comment": "Bank option commerzbank (P6-W4): summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filialbank mit Beratung vor Ort und englischsprachigem Service."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Branch bank with in-person advice and English-language service."
+          }
+        }
+      }
+    },
+    "tool_bank_opt_deutsche_bank_bestfor": {
+      "comment": "Bank option deutsche_bank (P6-W4): best-for tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer ein klassisches Filialkonto bevorzugt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Those who prefer a classic branch account"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_deutsche_bank_fee": {
+      "comment": "Bank option deutsche_bank (P6-W4): monthly fee.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monatliche Grundgebühr je nach Kontomodell"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monthly base fee depending on the account model"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_deutsche_bank_h1": {
+      "comment": "Bank option deutsche_bank (P6-W4): highlight 1.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Großes Filialnetz in ganz Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wide branch network across Germany"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_deutsche_bank_h2": {
+      "comment": "Bank option deutsche_bank (P6-W4): highlight 2.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beratung und Service auf Englisch verfügbar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Advice and service available in English"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_deutsche_bank_h3": {
+      "comment": "Bank option deutsche_bank (P6-W4): highlight 3.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verschiedene Kontomodelle wählbar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Several account models to choose from"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_deutsche_bank_summary": {
+      "comment": "Bank option deutsche_bank (P6-W4): summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etablierte Filialbank mit breitem Filialnetz und Service auf Englisch."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Established branch bank with a wide network and English-language service."
+          }
+        }
+      }
+    },
+    "tool_bank_opt_dkb_bestfor": {
+      "comment": "Bank option dkb (P6-W4): best-for tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kostenbewusste mit regelmäßigem Geldeingang"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cost-conscious users with regular income"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_dkb_fee": {
+      "comment": "Bank option dkb (P6-W4): monthly fee.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 €/Monat als Aktivkunde, sonst 4,50 €"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "€0/month as an active customer, otherwise €4.50"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_dkb_h1": {
+      "comment": "Bank option dkb (P6-W4): highlight 1.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kostenlos bei monatlichem Geldeingang"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free with a monthly incoming payment"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_dkb_h2": {
+      "comment": "Bank option dkb (P6-W4): highlight 2.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Großes kostenloses Geldautomaten-Netz"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Large free ATM network"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_dkb_h3": {
+      "comment": "Bank option dkb (P6-W4): highlight 3.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oberfläche überwiegend auf Deutsch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interface mainly in German"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_dkb_summary": {
+      "comment": "Bank option dkb (P6-W4): summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beliebte Direktbank mit kostenlosem Girokonto bei aktiver Nutzung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Popular direct bank with a free current account for active use."
+          }
+        }
+      }
+    },
+    "tool_bank_opt_ing_bestfor": {
+      "comment": "Bank option ing (P6-W4): best-for tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag mit Konto, Sparen und Brokerage"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyday banking plus savings and brokerage"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_ing_fee": {
+      "comment": "Bank option ing (P6-W4): monthly fee.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 €/Monat ab Geldeingang, sonst 4,90 €"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "€0/month with regular income, otherwise €4.90"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_ing_h1": {
+      "comment": "Bank option ing (P6-W4): highlight 1.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kostenlos ab regelmäßigem Geldeingang"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free with a regular incoming payment"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_ing_h2": {
+      "comment": "Bank option ing (P6-W4): highlight 2.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bargeld an vielen Automaten gebührenfrei"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fee-free cash at many ATMs"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_ing_h3": {
+      "comment": "Bank option ing (P6-W4): highlight 3.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oberfläche überwiegend auf Deutsch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interface mainly in German"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_ing_summary": {
+      "comment": "Bank option ing (P6-W4): summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Große Direktbank mit kostenlosem Girokonto und guter App."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Large direct bank with a free current account and a solid app."
+          }
+        }
+      }
+    },
+    "tool_bank_opt_n26_bestfor": {
+      "comment": "Bank option n26 (P6-W4): best-for tag.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neuankömmlinge & Smartphone-Nutzer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Newcomers & smartphone users"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_n26_fee": {
+      "comment": "Bank option n26 (P6-W4): monthly fee.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basiskonto 0 €/Monat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free basic account, €0/month"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_n26_h1": {
+      "comment": "Bank option n26 (P6-W4): highlight 1.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eröffnung per Smartphone, ohne Filialbesuch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smartphone sign-up, no branch visit"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_n26_h2": {
+      "comment": "Bank option n26 (P6-W4): highlight 2.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App, Karte und Support auf Englisch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App, card and support in English"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_n26_h3": {
+      "comment": "Bank option n26 (P6-W4): highlight 3.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konto oft schon vor der Anmeldung möglich"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Often opens before your Anmeldung"
+          }
+        }
+      }
+    },
+    "tool_bank_opt_n26_summary": {
+      "comment": "Bank option n26 (P6-W4): summary.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mobile Bank mit Eröffnung per App in Minuten, komplett auf Englisch."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mobile bank with app sign-up in minutes, fully available in English."
+          }
+        }
+      }
+    },
     "tool_bank_subtitle": {
       "localizations": {
         "de": {
