@@ -53,6 +53,11 @@ enum SnapshotSupport {
             .environment(\.colorScheme, trait.colorScheme)
             .environment(\.dynamicTypeSize, trait.dynamicType)
             .environment(\.layoutDirection, trait.layoutDirection)
+            // `ImageRenderer` never fires `onAppear`, so an `appReveal` stagger
+            // would otherwise stay at its hidden opacity-0 resting state and
+            // render blank. Disabling the reveal shows content immediately and
+            // keeps snapshots deterministic regardless of animation timing.
+            .environment(\.revealAnimationDisabled, true)
             .appFontDesign()
 
         let renderer = ImageRenderer(content: content)

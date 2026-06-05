@@ -6,7 +6,7 @@ import SwiftUI
 ///
 /// Living in the DesignSystem (not a feature) keeps the visual language
 /// consistent everywhere a severity is shown.
-enum Severity: String, CaseIterable, Identifiable, Sendable {
+enum Severity: String, CaseIterable, Identifiable, Sendable, Codable, Equatable {
     case info       // neutral, FYI
     case action     // needs the user to do something
     case urgent     // time-critical / overdue risk

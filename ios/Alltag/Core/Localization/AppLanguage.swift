@@ -32,6 +32,23 @@ enum AppLanguage: String, CaseIterable, Identifiable, Sendable {
 
     var layoutDirection: LayoutDirection { isRTL ? .rightToLeft : .leftToRight }
 
+    /// English name of the language — used in the Decoder system prompt, since
+    /// the model reliably understands "Turkish"/"Arabic" as a target language
+    /// (A-15). Distinct from `endonym`, which is for the human-facing UI.
+    var englishName: String {
+        switch self {
+        case .de: return "German"
+        case .en: return "English"
+        case .tr: return "Turkish"
+        case .fr: return "French"
+        case .es: return "Spanish"
+        case .it: return "Italian"
+        case .ar: return "Arabic"
+        case .ru: return "Russian"
+        case .zh: return "Chinese"
+        }
+    }
+
     /// Endonym — shown in its own script so users recognise their language.
     var endonym: String {
         switch self {

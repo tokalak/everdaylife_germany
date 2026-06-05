@@ -41,6 +41,8 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: de.everydaygermany.app
         INFOPLIST_KEY_UILaunchScreen_Generation: "YES"
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: "YES"
+        # Decoder letter scanning (P3-01). Processed on-device, never uploaded (X-03).
+        INFOPLIST_KEY_NSCameraUsageDescription: "Alltag uses the camera so you can scan an official letter. The photo is read on this device only and never leaves your phone."
         INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

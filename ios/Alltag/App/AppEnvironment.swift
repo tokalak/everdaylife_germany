@@ -26,6 +26,10 @@ final class AppEnvironment {
     let onboarding: OnboardingController
     /// Local-notification permission (P2-03), abstracted for testability.
     let notifications: NotificationAuthorizing
+    /// First-run model readiness for the Decoder (P3-00).
+    let decoderReadiness: DecoderReadinessController
+    /// One capture → OCR → explain → result run for the Decoder (P3-01…P3-03).
+    let decoder: DecoderController
 
     init(
         persistence: PersistenceController,
@@ -34,7 +38,8 @@ final class AppEnvironment {
         language: LanguageStore = LanguageStore(),
         personas: PersonaStore = PersonaStore(),
         onboarding: OnboardingController = OnboardingController(),
-        notifications: NotificationAuthorizing = SystemNotificationAuthorizer()
+        notifications: NotificationAuthorizing = SystemNotificationAuthorizer(),
+        recognizer: any TextRecognizing = VisionTextRecognizer()
     ) {
         self.persistence = persistence
         self.llm = llm
@@ -43,6 +48,10 @@ final class AppEnvironment {
         self.personas = personas
         self.onboarding = onboarding
         self.notifications = notifications
+        self.decoderReadiness = DecoderReadinessController(provisioner: llm.provisioner)
+        self.decoder = DecoderController(
+            recognizer: recognizer,
+            decode: DecodeLetterUseCase(engine: llm.engine))
     }
 
     /// Production container. Falls back to an in-memory store if the on-disk

@@ -9,10 +9,14 @@ private struct StaggeredRevealModifier: ViewModifier {
     let index: Int
     let baseDelay: Double
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.revealAnimationDisabled) private var revealDisabled
     @State private var shown = false
 
     func body(content: Content) -> some View {
-        if reduceMotion {
+        if reduceMotion || revealDisabled {
+            // Resting state, no entrance animation. `revealDisabled` lets static
+            // renderers (the snapshot harness, which never fires `onAppear`) show
+            // content at full opacity instead of stranding it hidden.
             content
         } else {
             content
@@ -35,5 +39,19 @@ extension View {
     /// among siblings. Honors Reduce Motion (DS-05).
     func appReveal(index: Int = 0, baseDelay: Double = 0) -> some View {
         modifier(StaggeredRevealModifier(index: index, baseDelay: baseDelay))
+    }
+}
+
+/// Disables `appReveal`'s entrance animation, showing content immediately at its
+/// resting state. Default `false` in the app; set `true` by static renderers
+/// (e.g. the snapshot harness) that never fire `onAppear`.
+private struct RevealAnimationDisabledKey: EnvironmentKey {
+    static let defaultValue = false
+}
+
+extension EnvironmentValues {
+    var revealAnimationDisabled: Bool {
+        get { self[RevealAnimationDisabledKey.self] }
+        set { self[RevealAnimationDisabledKey.self] = newValue }
     }
 }

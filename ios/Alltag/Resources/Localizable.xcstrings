@@ -674,6 +674,737 @@
           }
         }
       }
+    },
+    "decoder_result_title": {
+      "comment": "Decoder result screen header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entschlüsselter Brief"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decoded letter"
+          }
+        }
+      }
+    },
+    "decoder_translated_note": {
+      "comment": "RDG note under the summary: translated, not legal advice.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus dem Deutschen übersetzt — wir geben keine Rechtsberatung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translated from German — we never give legal advice."
+          }
+        }
+      }
+    },
+    "decoder_lawyer_note": {
+      "comment": "Shown on legal letters: route to a lawyer (D9/X-04).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das klingt nach einer rechtlichen Angelegenheit. Ziehe eine Anwältin oder einen Anwalt hinzu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This looks like a legal matter. Consider speaking to a lawyer."
+          }
+        }
+      }
+    },
+    "decoder_deadline_title": {
+      "comment": "Deadline card title on the result screen.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deadline"
+          }
+        }
+      }
+    },
+    "decoder_deadline_reminders": {
+      "comment": "Deadline card subtitle: reminder schedule.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erinnerungen 14, 7 und 1 Tag vorher"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reminders 14, 7 and 1 day before"
+          }
+        }
+      }
+    },
+    "decoder_add_to_calendar": {
+      "comment": "Accessibility label: add the deadline to the calendar.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zu Terminen hinzufügen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add to dates"
+          }
+        }
+      }
+    },
+    "decoder_asks_title": {
+      "comment": "Result card title: what the authority asks for.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was verlangt wird"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What they're asking for"
+          }
+        }
+      }
+    },
+    "decoder_reply_title": {
+      "comment": "Result card title: suggested reply.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antwortvorschlag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggested reply"
+          }
+        }
+      }
+    },
+    "decoder_copy": {
+      "comment": "Copy the suggested reply.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy"
+          }
+        }
+      }
+    },
+    "decoder_original_title": {
+      "comment": "Collapsible: show the original German text.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Originaltext auf Deutsch ansehen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See the original German"
+          }
+        }
+      }
+    },
+    "decoder_save_vault": {
+      "comment": "Save the decoded letter to the document vault.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Dokumente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to Docs"
+          }
+        }
+      }
+    },
+    "decoder_share": {
+      "comment": "Share the decoded result.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teilen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share"
+          }
+        }
+      }
+    },
+    "decoder_decode_another": {
+      "comment": "Start decoding another letter.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weiteren Brief entschlüsseln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decode another letter"
+          }
+        }
+      }
+    },
+    "decoder_toast_calendar_soon": {
+      "comment": "Toast: calendar feature coming soon.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termine kommen bald"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dates coming soon"
+          }
+        }
+      }
+    },
+    "decoder_toast_vault_soon": {
+      "comment": "Toast: vault feature coming soon.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokumente kommen bald"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Docs coming soon"
+          }
+        }
+      }
+    },
+    "decoder_toast_copied": {
+      "comment": "Toast: reply copied to clipboard.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In die Zwischenablage kopiert"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copied to clipboard"
+          }
+        }
+      }
+    },
+    "decoder_setup_title": {
+      "comment": "Model setup screen title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KI auf deinem Gerät einrichten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set up the on-device AI"
+          }
+        }
+      }
+    },
+    "decoder_setup_subtitle": {
+      "comment": "Model setup subtitle: explains the one-time download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Brief-Decoder nutzt ein KI-Modell, das einmalig (ca. 3 GB) geladen wird und danach vollständig offline auf deinem Gerät läuft."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The letter Decoder uses an AI model downloaded once (about 3 GB). After that it runs fully offline on your device."
+          }
+        }
+      }
+    },
+    "decoder_setup_trust": {
+      "comment": "Trust banner on setup: works offline, nothing leaves the phone.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach dem Laden funktioniert alles offline — kein Brief verlässt dein Telefon."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once downloaded it all works offline — no letter leaves your phone."
+          }
+        }
+      }
+    },
+    "decoder_setup_download": {
+      "comment": "Accept terms and start the model download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modell laden (ca. 3 GB)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download model (about 3 GB)"
+          }
+        }
+      }
+    },
+    "decoder_setup_terms": {
+      "comment": "Gemma terms acceptance note under the download button (A-24).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit dem Laden akzeptierst du die Gemma-Nutzungsbedingungen. Am besten im WLAN."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By downloading you accept the Gemma Terms of Use. Wi-Fi recommended."
+          }
+        }
+      }
+    },
+    "decoder_setup_checking": {
+      "comment": "Setup progress: checking the device.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerät wird geprüft …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Checking your device …"
+          }
+        }
+      }
+    },
+    "decoder_setup_downloading": {
+      "comment": "Setup progress: downloading the model.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KI-Modell wird geladen …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Downloading the AI model …"
+          }
+        }
+      }
+    },
+    "decoder_setup_verifying": {
+      "comment": "Setup progress: verifying the download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird überprüft …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifying …"
+          }
+        }
+      }
+    },
+    "decoder_setup_offline_hint": {
+      "comment": "Setup progress hint: needed only once.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das ist nur einmal nötig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is only needed once."
+          }
+        }
+      }
+    },
+    "decoder_setup_cancel": {
+      "comment": "Cancel the in-progress model download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "decoder_unsupported_title": {
+      "comment": "Title: device can't run the on-device model (A-25).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf diesem Gerät nicht verfügbar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not available on this device"
+          }
+        }
+      }
+    },
+    "decoder_failed_title": {
+      "comment": "Title: model download failed.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laden fehlgeschlagen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download failed"
+          }
+        }
+      }
+    },
+    "decoder_retry": {
+      "comment": "Retry the model download.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erneut versuchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again"
+          }
+        }
+      }
+    },
+    "decoder_idle_title": {
+      "comment": "Decoder idle hero title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einen Brief entschlüsseln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decode a letter"
+          }
+        }
+      }
+    },
+    "decoder_idle_subtitle": {
+      "comment": "Decoder idle hero subtitle.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografiere einen amtlichen Brief — du bekommst eine einfache Erklärung und die Frist."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photograph an official letter — get a plain-language explanation and the deadline."
+          }
+        }
+      }
+    },
+    "decoder_idle_trust": {
+      "comment": "Trust banner on the idle Decoder screen.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles wird auf diesem Gerät verarbeitet — nichts wird hochgeladen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everything is processed on this device — nothing is uploaded."
+          }
+        }
+      }
+    },
+    "decoder_scan": {
+      "comment": "Primary button: scan a letter.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brief scannen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan a letter"
+          }
+        }
+      }
+    },
+    "decoder_no_camera": {
+      "comment": "Shown when document scanning isn't available (e.g. Simulator).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zum Scannen wird eine Gerätekamera benötigt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanning a letter needs a device camera."
+          }
+        }
+      }
+    },
+    "decoder_working_reading": {
+      "comment": "Progress: OCR reading the letter.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brief wird gelesen …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading the letter …"
+          }
+        }
+      }
+    },
+    "decoder_working_explaining": {
+      "comment": "Progress: model explaining the letter.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird erklärt …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explaining …"
+          }
+        }
+      }
+    },
+    "decoder_working_hint": {
+      "comment": "Progress hint: happens on-device.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das geschieht auf deinem Gerät."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This happens on your device."
+          }
+        }
+      }
+    },
+    "decoder_error_hint": {
+      "comment": "Generic guidance under a decode error.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versuche es mit einem schärferen Foto bei gutem Licht erneut."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again with a clearer photo in good light."
+          }
+        }
+      }
+    },
+    "decoder_try_again": {
+      "comment": "Retry a failed decode.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erneut versuchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again"
+          }
+        }
+      }
+    },
+    "decoder_error_unreadable": {
+      "comment": "Decode error: OCR found no text.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Brief konnte nicht gelesen werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We couldn't read this letter."
+          }
+        }
+      }
+    },
+    "decoder_error_not_understood": {
+      "comment": "Decode error: model output unusable.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Brief konnte nicht verstanden werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We couldn't make sense of this letter."
+          }
+        }
+      }
+    },
+    "decoder_error_engine": {
+      "comment": "Decode error: on-device engine unavailable.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die KI ist noch nicht bereit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The on-device AI isn't ready yet."
+          }
+        }
+      }
+    },
+    "decoder_error_unknown": {
+      "comment": "Decode error: unknown failure.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etwas ist schiefgelaufen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Something went wrong."
+          }
+        }
+      }
     }
   },
   "version": "1.0"
