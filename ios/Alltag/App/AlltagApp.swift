@@ -11,7 +11,7 @@ struct AlltagApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            AppFlowView()
                 .environment(env)
         }
     }

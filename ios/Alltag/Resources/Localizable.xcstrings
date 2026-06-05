@@ -71,6 +71,7 @@
     },
     "disclaimer_not_legal_advice": {
       "comment": "Default DisclaimerNote copy (RDG / D9): information, not legal advice.",
+      "extractionState": "stale",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -82,6 +83,363 @@
           "stringUnit": {
             "state": "translated",
             "value": "Information, not legal or tax advice. For legal questions, consult a professional."
+          }
+        }
+      }
+    },
+    "onboarding_back": {
+      "comment": "Onboarding: back button accessibility label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zurück"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back"
+          }
+        }
+      }
+    },
+    "onboarding_continue": {
+      "comment": "Onboarding: advance to the next step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weiter"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        }
+      }
+    },
+    "onboarding_language_soon": {
+      "comment": "Badge on languages not yet available (enabled in Phase 8).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bald"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soon"
+          }
+        }
+      }
+    },
+    "onboarding_language_subtitle": {
+      "comment": "Onboarding step 1 subtitle.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du kannst das jederzeit in den Einstellungen ändern."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can change this anytime in Settings."
+          }
+        }
+      }
+    },
+    "onboarding_language_title": {
+      "comment": "Onboarding step 1 title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprache wählen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose your language"
+          }
+        }
+      }
+    },
+    "onboarding_notifications_allow": {
+      "comment": "Onboarding step 3: request notification permission.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erinnerungen aktivieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable reminders"
+          }
+        }
+      }
+    },
+    "onboarding_notifications_skip": {
+      "comment": "Onboarding step 3: skip permission and finish.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jetzt nicht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not now"
+          }
+        }
+      }
+    },
+    "onboarding_notifications_subtitle": {
+      "comment": "Onboarding step 3 subtitle (with privacy reassurance).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erhalte sanfte Erinnerungen vor amtlichen Fristen und ablaufenden Dokumenten. Alles bleibt auf deinem Gerät."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get gentle reminders before official deadlines and document expiries. Everything stays on your device."
+          }
+        }
+      }
+    },
+    "onboarding_notifications_title": {
+      "comment": "Onboarding step 3 title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fristen im Blick behalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stay ahead of deadlines"
+          }
+        }
+      }
+    },
+    "onboarding_persona_subtitle": {
+      "comment": "Onboarding step 2 subtitle.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wir passen Checkliste und Tools daran an."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We'll tailor your checklist and tools to it."
+          }
+        }
+      }
+    },
+    "onboarding_persona_title": {
+      "comment": "Onboarding step 2 title — the key persona decision.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist deine Situation?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What's your situation?"
+          }
+        }
+      }
+    },
+    "persona_family_subtitle": {
+      "comment": "Family situation descriptor.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familie in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joining or raising family"
+          }
+        }
+      }
+    },
+    "persona_family_title": {
+      "comment": "Persona name: Family.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family"
+          }
+        }
+      }
+    },
+    "persona_resident_subtitle": {
+      "comment": "Resident situation descriptor.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Langfristig in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settling for the long term"
+          }
+        }
+      }
+    },
+    "persona_resident_title": {
+      "comment": "Persona name: Long-term resident.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daueraufenthalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Long-term resident"
+          }
+        }
+      }
+    },
+    "persona_student_subtitle": {
+      "comment": "Student situation descriptor.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studieren in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studying here"
+          }
+        }
+      }
+    },
+    "persona_student_title": {
+      "comment": "Persona name: Student.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studium"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Student"
+          }
+        }
+      }
+    },
+    "persona_tourist_subtitle": {
+      "comment": "Tourist situation descriptor.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zu Besuch in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visiting Germany"
+          }
+        }
+      }
+    },
+    "persona_tourist_title": {
+      "comment": "Persona name: Tourist.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tourist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tourist"
+          }
+        }
+      }
+    },
+    "persona_worker_subtitle": {
+      "comment": "Worker situation descriptor.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeit oder Selbstständigkeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Working or freelancing"
+          }
+        }
+      }
+    },
+    "persona_worker_title": {
+      "comment": "Persona name: Worker / Freelancer.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berufstätig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker"
           }
         }
       }
@@ -139,6 +497,7 @@
     },
     "severity_action": {
       "comment": "Severity level: requires the user to act.",
+      "extractionState": "stale",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -156,6 +515,7 @@
     },
     "severity_info": {
       "comment": "Severity level: informational.",
+      "extractionState": "stale",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -173,6 +533,7 @@
     },
     "severity_legal": {
       "comment": "Severity level: legally consequential (route to a lawyer).",
+      "extractionState": "stale",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -190,6 +551,7 @@
     },
     "severity_urgent": {
       "comment": "Severity level: time-critical.",
+      "extractionState": "stale",
       "localizations": {
         "de": {
           "stringUnit": {
@@ -297,6 +659,7 @@
     },
     "trust_on_device": {
       "comment": "Default TrustBanner copy: documents stay on the device (D4/X-03).",
+      "extractionState": "stale",
       "localizations": {
         "de": {
           "stringUnit": {

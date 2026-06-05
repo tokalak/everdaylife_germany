@@ -20,17 +20,29 @@ final class AppEnvironment {
     let persistence: PersistenceController
     /// On-device inference facade: model readiness + the swappable engine (P0-07).
     let llm: LLMService
+    /// Active-persona store (P2-02/P4-01).
+    let personas: PersonaStore
+    /// Onboarding navigation + completion gate (P2).
+    let onboarding: OnboardingController
+    /// Local-notification permission (P2-03), abstracted for testability.
+    let notifications: NotificationAuthorizing
 
     init(
         persistence: PersistenceController,
         llm: LLMService,
         theme: ThemeController = ThemeController(),
-        language: LanguageStore = LanguageStore()
+        language: LanguageStore = LanguageStore(),
+        personas: PersonaStore = PersonaStore(),
+        onboarding: OnboardingController = OnboardingController(),
+        notifications: NotificationAuthorizing = SystemNotificationAuthorizer()
     ) {
         self.persistence = persistence
         self.llm = llm
         self.theme = theme
         self.language = language
+        self.personas = personas
+        self.onboarding = onboarding
+        self.notifications = notifications
     }
 
     /// Production container. Falls back to an in-memory store if the on-disk

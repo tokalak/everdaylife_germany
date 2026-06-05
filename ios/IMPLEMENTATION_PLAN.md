@@ -165,10 +165,10 @@ Mirror the prototype's tokens. Build as reusable SwiftUI components before scree
 - [x] **P1-02** Implement component library (DS-04…DS-06) with snapshot tests. *(13 components + `DisclaimerNote` in `DesignSystem/Components/`. Snapshot coverage = `ComponentRenderTests` via `ImageRenderer` across a trait matrix — light/dark, Dynamic Type **accessibility size**, and **RTL** (A-06/X-02) — asserting non-blank, correctly-sized renders (no third-party snapshot lib / reference images, per A-03). Full suite: 83 tests green, 2 Keychain skips on simulator.)*
 
 ### Phase 2 — Onboarding
-- [ ] **P2-01** Screen 1: language pick (DE/EN selectable now; full list rendered, others enabled in Phase 8).
-- [ ] **P2-02** Screen 2: **persona pick** (5 illustrated cards) — the key decision; writes active persona.
-- [ ] **P2-03** Screen 3: notification permission request.
-- [ ] **P2-04** Persist onboarding completion; route to Home.
+- [x] **P2-01** Screen 1: language pick (DE/EN selectable now; full list rendered, others enabled in Phase 8). *(`LanguageStepView`: all 9 `AppLanguage` rendered; only `selectable` (DE/EN) tappable, the rest disabled with a "Soon" badge. Selection drives the live `LanguageStore` so the rest of onboarding re-localizes instantly.)*
+- [x] **P2-02** Screen 2: **persona pick** (5 illustrated cards) — the key decision; writes active persona. *(`Persona` entity (5 audiences, D2) + `PersonaStore` (UserDefaults-persisted active persona). `PersonaStepView`: 5 selectable cards (SF-Symbol "illustration" + accent from the DS palette), `Continue` gated on a selection. Custom illustrations can replace the symbols later.)*
+- [x] **P2-03** Screen 3: notification permission request. *(`Core/Notifications/NotificationAuthorizing` seam (`SystemNotificationAuthorizer` over `UNUserNotificationCenter`, stubbed in tests). `NotificationStepView` explains the value + on-device privacy (`TrustBanner`), requests permission, and finishes either way — permission is never a hard gate.)*
+- [x] **P2-04** Persist onboarding completion; route to Home. *(`OnboardingController` (3-step nav + persisted `hasCompleted`). `AppFlowView` is the top-level router: onboarding until complete, then the 5-tab `RootView`; `AlltagApp` now mounts it. Wired into `AppEnvironment` (personas/onboarding/notifications). 17 tests incl. nav/persistence/routing + per-screen render snapshots across light/dark · Dynamic Type · RTL; full suite 100 green.)*
 
 ### Phase 3 — Shared core (always present)
 - [ ] **P3-00** **Decoder — model readiness**: first-use download/acceptance flow (A-22/A-24), progress + offline-ready state; gate Decode entry on model present + device capable (A-25).

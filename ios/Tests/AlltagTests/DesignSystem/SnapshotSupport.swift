@@ -35,13 +35,20 @@ enum SnapshotSupport {
     }
 
     /// Renders `view` at the given width under `trait` and returns the bitmap.
+    ///
+    /// Pass `height` for screen-level views (which contain a `ScrollView` and so
+    /// have no intrinsic height); leave it `nil` for components that self-size.
     @MainActor
     static func render<V: View>(
-        _ view: V, width: CGFloat = 320, trait: Trait
+        _ view: V, width: CGFloat = 320, height: CGFloat? = nil, trait: Trait
     ) -> UIImage? {
-        let content = view
-            .frame(width: width)
-            .fixedSize(horizontal: false, vertical: true)
+        let sized: AnyView = {
+            if let height {
+                return AnyView(view.frame(width: width, height: height))
+            }
+            return AnyView(view.frame(width: width).fixedSize(horizontal: false, vertical: true))
+        }()
+        let content = sized
             .background(AppColor.paper)
             .environment(\.colorScheme, trait.colorScheme)
             .environment(\.dynamicTypeSize, trait.dynamicType)
@@ -49,7 +56,7 @@ enum SnapshotSupport {
             .appFontDesign()
 
         let renderer = ImageRenderer(content: content)
-        renderer.proposedSize = ProposedViewSize(width: width, height: nil)
+        renderer.proposedSize = ProposedViewSize(width: width, height: height)
         renderer.scale = 2
         return renderer.uiImage
     }
@@ -82,10 +89,11 @@ enum SnapshotSupport {
     static func assertRenders<V: View>(
         _ view: @autoclosure () -> V,
         width: CGFloat = 320,
+        height: CGFloat? = nil,
         file: StaticString = #filePath, line: UInt = #line
     ) {
         for trait in Trait.matrix {
-            guard let image = render(view(), width: width, trait: trait) else {
+            guard let image = render(view(), width: width, height: height, trait: trait) else {
                 XCTFail("nil render for trait \(trait)", file: file, line: line)
                 continue
             }
