@@ -7639,6 +7639,535 @@
         }
       }
     },
+    "tool_visafit_best_match": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beste Übereinstimmung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best match"
+          }
+        }
+      }
+    },
+    "tool_visafit_goal_business": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich möchte gründen oder freiberuflich arbeiten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I want to found a company or freelance"
+          }
+        }
+      }
+    },
+    "tool_visafit_goal_family": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich ziehe zu Familie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I am joining family"
+          }
+        }
+      }
+    },
+    "tool_visafit_goal_job": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich habe (oder erwarte) ein Jobangebot"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I have (or expect) a job offer"
+          }
+        }
+      }
+    },
+    "tool_visafit_goal_jobSeeking": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich bin qualifiziert und suche Arbeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I am qualified and looking for work"
+          }
+        }
+      }
+    },
+    "tool_visafit_goal_study": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich möchte studieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I want to study"
+          }
+        }
+      }
+    },
+    "tool_visafit_goal_visit": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich komme nur kurz zu Besuch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I am only visiting briefly"
+          }
+        }
+      }
+    },
+    "tool_visafit_intro": {
+      "comment": "Visa-fit tool (P6-W1): intro line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beantworte zwei Fragen und wir zeigen dir, welche Aufenthaltswege am besten zu dir passen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Answer two questions and we will show you which residence routes fit you best."
+          }
+        }
+      }
+    },
+    "tool_visafit_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more"
+          }
+        }
+      }
+    },
+    "tool_visafit_q_goal": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was bringt dich nach Deutschland?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What brings you to Germany?"
+          }
+        }
+      }
+    },
+    "tool_visafit_q_qual": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein höchster Abschluss"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your highest qualification"
+          }
+        }
+      }
+    },
+    "tool_visafit_qual_academic": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anerkannter Hochschulabschluss"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recognised university degree"
+          }
+        }
+      }
+    },
+    "tool_visafit_qual_none": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch keiner / nicht anerkannt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "None yet / not recognised"
+          }
+        }
+      }
+    },
+    "tool_visafit_qual_vocational": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anerkannte Berufsausbildung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recognised vocational qualification"
+          }
+        }
+      }
+    },
+    "tool_visafit_results_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passende Wege"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Routes that fit"
+          }
+        }
+      }
+    },
+    "tool_visafit_route_blue_card_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Akademiker mit Jobangebot über der Gehaltsgrenze. Schneller Weg zur Niederlassung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For academics with a job offer above the salary threshold. A fast track to settlement."
+          }
+        }
+      }
+    },
+    "tool_visafit_route_blue_card_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaue Karte EU"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EU Blue Card"
+          }
+        }
+      }
+    },
+    "tool_visafit_route_chancenkarte_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Punktebasierte Karte, um bis zu ein Jahr in Deutschland Arbeit zu suchen. Probier den Punkterechner aus."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A points-based card to look for work in Germany for up to a year. Try the points calculator."
+          }
+        }
+      }
+    },
+    "tool_visafit_route_chancenkarte_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chancenkarte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opportunity Card (Chancenkarte)"
+          }
+        }
+      }
+    },
+    "tool_visafit_route_family_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um zu Ehepartner, Eltern oder Kindern zu ziehen, die in Deutschland leben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To join a spouse, parent or child living in Germany."
+          }
+        }
+      }
+    },
+    "tool_visafit_route_family_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visum zum Familiennachzug"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family-reunification visa"
+          }
+        }
+      }
+    },
+    "tool_visafit_route_job_seeker_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Visum, um von Deutschland aus eine passende Stelle zu finden, wenn du die Voraussetzungen erfüllst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A visa to find a suitable position from within Germany if you meet the requirements."
+          }
+        }
+      }
+    },
+    "tool_visafit_route_job_seeker_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visum zur Arbeitsuche"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Job-seeker visa"
+          }
+        }
+      }
+    },
+    "tool_visafit_route_recognition_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohne anerkannten Abschluss beginnt der Weg meist mit der Anerkennung – sie öffnet weitere Optionen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Without a recognised qualification the path usually starts with recognition — it opens up further options."
+          }
+        }
+      }
+    },
+    "tool_visafit_route_recognition_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zuerst Abschluss anerkennen lassen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get your qualification recognised first"
+          }
+        }
+      }
+    },
+    "tool_visafit_route_self_employment_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Freiberufler und Gründer mit einem tragfähigen Vorhaben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For freelancers and founders with a viable plan."
+          }
+        }
+      }
+    },
+    "tool_visafit_route_self_employment_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visum für Selbstständige"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Self-employment visa"
+          }
+        }
+      }
+    },
+    "tool_visafit_route_short_stay_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tourismus, Besuche und Geschäftsreisen bis 90 Tage – für viele Länder visumfrei."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tourism, visits and business trips up to 90 days — visa-free for many countries."
+          }
+        }
+      }
+    },
+    "tool_visafit_route_short_stay_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen-Visum / Kurzaufenthalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schengen / short-stay visa"
+          }
+        }
+      }
+    },
+    "tool_visafit_route_skilled_worker_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für einen anerkannten Abschluss und ein konkretes Jobangebot."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For a recognised qualification together with a concrete job offer."
+          }
+        }
+      }
+    },
+    "tool_visafit_route_skilled_worker_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visum für Fachkräfte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skilled-worker visa"
+          }
+        }
+      }
+    },
+    "tool_visafit_route_study_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für die Einschreibung – oder einen Vorbereitungskurs – an einer deutschen Hochschule."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For enrolment — or a preparatory course — at a German institution."
+          }
+        }
+      }
+    },
+    "tool_visafit_route_study_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studentenvisum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Student visa"
+          }
+        }
+      }
+    },
     "tool_working_hours_subtitle": {
       "localizations": {
         "de": {

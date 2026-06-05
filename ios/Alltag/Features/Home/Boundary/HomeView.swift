@@ -56,6 +56,8 @@ struct HomeView: View {
             if let content = GuideLibrary.content(for: id) {
                 GuideReaderView(content: content)
             }
+        case .tool(let id):
+            toolDestination(id)
         case .search:
             SearchView(
                 items: HomeSearch.items(for: persona),
@@ -64,12 +66,37 @@ struct HomeView: View {
         }
     }
 
-    /// Handles a search result: guides push the reader (on top of search); tools
-    /// toast "coming soon" until their engines ship in later P6 tasks.
+    /// Tool ids whose interactive screen has shipped. A tile only navigates when
+    /// its id is here; everything else still toasts "coming soon" (kept in sync
+    /// with the `toolDestination` switch below).
+    private static let implementedToolIDs: Set<String> = ["visa_fit"]
+
+    @ViewBuilder
+    private func toolDestination(_ id: String) -> some View {
+        switch id {
+        case "visa_fit":
+            VisaFitView(onOpenGuide: openGuide)
+        default:
+            EmptyView()
+        }
+    }
+
+    /// Handles a search result: guides push the reader (on top of search);
+    /// implemented tools open too, the rest toast "coming soon".
     private func select(_ item: SearchItem) {
         switch item.kind {
         case .guide: openGuide(item.targetId)
-        case .tool:  toast = true
+        case .tool:  openTool(item.targetId)
+        }
+    }
+
+    /// Opens a tool screen if it has shipped, else toasts "coming soon" — so a
+    /// tile never dead-ends while engines land task by task.
+    private func openTool(_ id: String) {
+        if Self.implementedToolIDs.contains(id) {
+            path.append(.tool(id))
+        } else {
+            toast = true
         }
     }
 
@@ -251,7 +278,7 @@ struct HomeView: View {
                                 subtitleKey: tool.subtitleKey.map { LocalizedStringKey($0) },
                                 systemImage: tool.systemImage,
                                 tint: tool.tint
-                            ) { toast = true }
+                            ) { openTool(tool.id) }
                         }
                     }
                 }
