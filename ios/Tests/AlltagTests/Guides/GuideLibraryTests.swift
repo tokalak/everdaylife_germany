@@ -34,6 +34,20 @@ final class GuideLibraryTests: XCTestCase {
         XCTAssertNotNil(GuideLibrary.content(for: "health_insurance"))
     }
 
+    func testDiplomaRecognitionGuideShips() {
+        // P6-G5.
+        XCTAssertNotNil(GuideLibrary.content(for: "diploma_recognition"))
+    }
+
+    /// With P6-G1…G5 all shipped, every Home guide tile must resolve to a body —
+    /// no tile that opens to nothing in the reader (P6-G6).
+    func testEveryHomeGuideTileHasContent() {
+        for tile in PersonaCatalog.guides {
+            XCTAssertNotNil(GuideLibrary.content(for: tile.id),
+                            "guide tile \(tile.id) has no body in GuideLibrary")
+        }
+    }
+
     func testShippedGuideIdsAreUnique() {
         let ids = GuideLibrary.all.map(\.id)
         XCTAssertEqual(Set(ids).count, ids.count, "guide ids must be unique")

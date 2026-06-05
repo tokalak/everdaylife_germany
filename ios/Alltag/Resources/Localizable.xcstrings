@@ -2483,6 +2483,503 @@
         }
       }
     },
+    "guidedoc_dr_s1_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist Anerkennung?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What is recognition?"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s1_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei der Anerkennung prüft eine zuständige Stelle, ob dein ausländischer Abschluss einem deutschen gleichwertig ist."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In recognition, a competent body checks whether your foreign qualification is equivalent to a German one."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s1_p2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Ergebnis hilft dir, in deinem Beruf zu arbeiten – und oft auch beim Visum für Fachkräfte."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The outcome helps you work in your profession — and often with the skilled-worker visa too."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s2_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reglementierte Berufe: Die Anerkennung ist Pflicht, um arbeiten zu dürfen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regulated professions: recognition is required before you may work."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s2_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht reglementierte Berufe: Du darfst ohne Anerkennung arbeiten – sie kann aber bei der Jobsuche helfen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non-regulated professions: you may work without recognition — but it can help your job search."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s2_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für ein Visum als Fachkraft ist oft eine Anerkennung oder ein vergleichbarer Nachweis nötig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For a skilled-worker visa, recognition or a comparable proof is often required."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s2_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wann brauchst du sie?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When do you need it?"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s3_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ärztinnen, Pflegekräfte und andere Gesundheitsberufe."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doctors, nurses and other health professions."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s3_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lehrkräfte und Erzieher."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teachers and educators."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s3_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Juristische und technische Berufe mit gesetzlichem Titelschutz."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legal and technical professions with protected titles."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s3_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reglementierte Berufe"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regulated professions"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s3_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reglementiert sind vor allem Berufe mit Verantwortung für Gesundheit, Sicherheit oder Recht, zum Beispiel:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regulated professions are mainly those carrying responsibility for health, safety or law, for example:"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s4_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finde die zuständige Stelle – am einfachsten über anerkennung-in-deutschland.de."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find the competent body — easiest via anerkennung-in-deutschland.de."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s4_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stelle den Antrag und reiche deine Unterlagen ein."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Submit your application and documents."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s4_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Stelle bewertet die Gleichwertigkeit und teilt dir das Ergebnis mit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The body assesses equivalence and tells you the result."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s4_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So läuft die Anerkennung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How recognition works"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s5_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abschlusszeugnisse und Diplome (oft als beglaubigte Übersetzung)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diplomas and certificates (often as certified translations)."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s5_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweise über Inhalte und Dauer der Ausbildung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of the content and duration of your training."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s5_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweise über Berufserfahrung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evidence of work experience."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s5_b4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Identitätsnachweis (Reisepass)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of identity (passport)."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s5_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Unterlagen?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which documents?"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s6_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volle Gleichwertigkeit: Dein Abschluss wird voll anerkannt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Full equivalence: your qualification is fully recognised."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s6_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teilweise Gleichwertigkeit: Du kannst Unterschiede durch Anpassungslehrgänge oder eine Prüfung ausgleichen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partial equivalence: you can make up the differences with an adaptation course or an exam."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s6_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Ergebnis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The outcome"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s7_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Verfahren kostet meist eine Gebühr und kann einige Monate dauern – fang früh an."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The process usually costs a fee and can take several months — start early."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s7_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Fachkräfte gibt es die Anerkennungspartnerschaft: einreisen und die Anerkennung in Deutschland nachholen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skilled workers can use a recognition partnership: enter Germany and complete recognition here."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s7_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lass Übersetzungen nur von anerkannten Stellen anfertigen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Have translations done only by recognised providers."
+          }
+        }
+      }
+    },
+    "guidedoc_dr_s7_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut zu wissen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good to know"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_source_aid": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anerkennung in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recognition in Germany (official portal)"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_source_miig": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany – Anerkennung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany — recognition of qualifications"
+          }
+        }
+      }
+    },
+    "guidedoc_dr_summary": {
+      "comment": "Guide P6-G5 diploma recognition: summary line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ob dein ausländischer Abschluss in Deutschland zählt, klärt die Anerkennung. Bei manchen Berufen ist sie Pflicht, bei anderen freiwillig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whether your foreign qualification counts in Germany is settled by recognition (Anerkennung). For some professions it is mandatory, for others optional."
+          }
+        }
+      }
+    },
     "guidedoc_hi_s1_heading": {
       "localizations": {
         "de": {

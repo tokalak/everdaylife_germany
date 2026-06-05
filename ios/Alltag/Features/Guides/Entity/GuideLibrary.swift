@@ -18,6 +18,7 @@ enum GuideLibrary {
         registerBusiness,
         howTaxesWork,
         healthInsurance,
+        diplomaRecognition,
     ]
 
     /// The full body for a guide id, or `nil` if its content hasn't shipped yet
@@ -335,5 +336,80 @@ enum GuideLibrary {
                 id: "gkv",
                 titleKey: "guidedoc_hi_source_gkv",
                 url: URL(string: "https://www.gkv-spitzenverband.de/english/english.jsp")!),
+        ])
+
+    // MARK: - P6-G5 · Recognising a foreign diploma (Anerkennung)
+
+    private static let diplomaRecognition = GuideContent(
+        id: "diploma_recognition",
+        titleKey: "guide_diploma_title",
+        summaryKey: "guidedoc_dr_summary",
+        sections: [
+            GuideSection(
+                id: "what",
+                headingKey: "guidedoc_dr_s1_heading",
+                blocks: [
+                    .paragraph("guidedoc_dr_s1_p1"),
+                    .paragraph("guidedoc_dr_s1_p2"),
+                ]),
+            GuideSection(
+                id: "when",
+                headingKey: "guidedoc_dr_s2_heading",
+                blocks: [
+                    .bullet("guidedoc_dr_s2_b1"),
+                    .bullet("guidedoc_dr_s2_b2"),
+                    .bullet("guidedoc_dr_s2_b3"),
+                ]),
+            GuideSection(
+                id: "regulated",
+                headingKey: "guidedoc_dr_s3_heading",
+                blocks: [
+                    .paragraph("guidedoc_dr_s3_p1"),
+                    .bullet("guidedoc_dr_s3_b1"),
+                    .bullet("guidedoc_dr_s3_b2"),
+                    .bullet("guidedoc_dr_s3_b3"),
+                ]),
+            GuideSection(
+                id: "how",
+                headingKey: "guidedoc_dr_s4_heading",
+                blocks: [
+                    .bullet("guidedoc_dr_s4_b1"),
+                    .bullet("guidedoc_dr_s4_b2"),
+                    .bullet("guidedoc_dr_s4_b3"),
+                ]),
+            GuideSection(
+                id: "documents",
+                headingKey: "guidedoc_dr_s5_heading",
+                blocks: [
+                    .bullet("guidedoc_dr_s5_b1"),
+                    .bullet("guidedoc_dr_s5_b2"),
+                    .bullet("guidedoc_dr_s5_b3"),
+                    .bullet("guidedoc_dr_s5_b4"),
+                ]),
+            GuideSection(
+                id: "outcome",
+                headingKey: "guidedoc_dr_s6_heading",
+                blocks: [
+                    .bullet("guidedoc_dr_s6_b1"),
+                    .bullet("guidedoc_dr_s6_b2"),
+                ]),
+            GuideSection(
+                id: "tips",
+                headingKey: "guidedoc_dr_s7_heading",
+                blocks: [
+                    .bullet("guidedoc_dr_s7_b1"),
+                    .bullet("guidedoc_dr_s7_b2"),
+                    .bullet("guidedoc_dr_s7_b3"),
+                ]),
+        ],
+        sources: [
+            GuideSource(
+                id: "aid",
+                titleKey: "guidedoc_dr_source_aid",
+                url: URL(string: "https://www.anerkennung-in-deutschland.de/en/")!),
+            GuideSource(
+                id: "miig",
+                titleKey: "guidedoc_dr_source_miig",
+                url: URL(string: "https://www.make-it-in-germany.com/en/working-in-germany/recognition-of-qualifications")!),
         ])
 }

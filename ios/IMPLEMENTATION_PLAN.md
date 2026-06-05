@@ -203,7 +203,7 @@ Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
 - [x] **P6-G2** Registering a business (Gewerbe vs Freiberufler) *(`registerBusiness` body in `GuideLibrary`: two-paths / who-is-Freiberufler / who-needs-Gewerbe / register-each / taxes+insurance (Kleinunternehmer, VAT, KSK) / tips, with non-EU permit caveat. Make-it-in-Germany + Existenzgründer sources, DE+EN. `GuideLibraryTests` green.)*
 - [x] **P6-G3** How taxes work *(`howTaxesWork` body in `GuideLibrary`: basics / Steuer-ID vs Steuernummer / progressive income tax / the six Steuerklassen / salary deductions / the annual return via ELSTER / tips. Make-it-in-Germany + ELSTER sources, DE+EN. Test added.)*
 - [x] **P6-G4** Getting health insurance *(`healthInsurance` body in `GuideLibrary`: mandatory cover / GKV vs PKV / who chooses which / what GKV covers / how to sign up / special cases (students, family co-insurance, visitors) / tips. Make-it-in-Germany + GKV-Spitzenverband sources, DE+EN. Test added. Complements the P6-W5 GKV/PKV decision tree.)*
-- [ ] **P6-G5** Recognising a foreign diploma (Anerkennung)
+- [x] **P6-G5** Recognising a foreign diploma (Anerkennung) *(`diplomaRecognition` body in `GuideLibrary`: what recognition is / when needed (regulated vs not) / regulated professions / how it works / documents / outcome (full vs partial + adaptation) / tips incl. Anerkennungspartnerschaft. anerkennung-in-deutschland.de + Make-it-in-Germany sources, DE+EN. **All 5 guide tiles now resolve to content** (asserted by `testEveryHomeGuideTileHasContent`).)*
 - [ ] **P6-G6** Guide reader screen + in-app search across guides/tools
 
 **Worker tools:**
