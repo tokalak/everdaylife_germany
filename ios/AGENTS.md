@@ -29,3 +29,6 @@ Persona-aware (Tourist / Student / Worker / Family / Long-term Resident). The an
 - Always use **red/green TDD**. Pure-logic engines (Chancenkarte points, Blue Card thresholds, eligibility checkers, 90-in-180 counter) get exhaustive unit tests.
 - Decoder output must use tight structured templates with **validate/repair/retry** and never invent deadlines/obligations; gate Decoder releases on the quality-eval harness (`IMPLEMENTATION_PLAN.md` A-28).
 - Every screen must support **Dynamic Type** and **RTL**.
+- Work always on the main branch. do not create feature branches.
+- Use the KISS (Keep it simple stupid) pattern
+- Use the DRY (do not repeat yourself) pattern
