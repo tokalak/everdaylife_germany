@@ -2374,6 +2374,482 @@
           }
         }
       }
+    },
+    "settings_setup": {
+      "comment": "Settings section header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Einrichtung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your setup"
+          }
+        }
+      }
+    },
+    "settings_data": {
+      "comment": "Settings section header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokumente & Daten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documents & data"
+          }
+        }
+      }
+    },
+    "settings_about": {
+      "comment": "Settings section header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über die App"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About"
+          }
+        }
+      }
+    },
+    "settings_theme_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erscheinungsbild"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appearance"
+          }
+        }
+      }
+    },
+    "settings_theme_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle, wie Alltag aussieht. „System“ folgt deinem iPhone."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose how Alltag looks. “System” follows your iPhone."
+          }
+        }
+      }
+    },
+    "settings_language_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        }
+      }
+    },
+    "settings_language_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Sprache der App und jedes entschlüsselten Briefs."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The language of the app and every decoded letter."
+          }
+        }
+      }
+    },
+    "settings_mode_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mein Modus"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My mode"
+          }
+        }
+      }
+    },
+    "settings_mode_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wechsle zwischen Tourist, Studium, Arbeit, Familie und Niederlassung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Switch between Tourist, Student, Worker, Family and Resident."
+          }
+        }
+      }
+    },
+    "settings_reminders_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erinnerungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reminders"
+          }
+        }
+      }
+    },
+    "settings_reminders_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wann wir dich vor Fristen und Abläufen erinnern. In den iOS-Einstellungen verwalten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When we remind you before deadlines and expiries. Manage in iOS Settings."
+          }
+        }
+      }
+    },
+    "settings_storage_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speicher"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Storage"
+          }
+        }
+      }
+    },
+    "settings_storage_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Dokumente und das KI-Modell — verschlüsselt, nur auf diesem Gerät."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your documents and the AI model — encrypted, on this device only."
+          }
+        }
+      }
+    },
+    "settings_export_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meine Daten exportieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export my data"
+          }
+        }
+      }
+    },
+    "settings_export_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lade alles als Dateien herunter, die du behalten oder teilen kannst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download everything as files you can keep or share."
+          }
+        }
+      }
+    },
+    "settings_delete_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Daten löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete all my data"
+          }
+        }
+      }
+    },
+    "settings_delete_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lösche alle Dokumente und Termine endgültig von diesem Gerät."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permanently erase every document and date from this device."
+          }
+        }
+      }
+    },
+    "settings_help_title": {
+      "comment": "Settings row.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hilfe & Kontakt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help & contact"
+          }
+        }
+      }
+    },
+    "settings_help_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragen, Feedback oder ein Problem mit einer Übersetzung melden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questions, feedback, or report a problem with a translation."
+          }
+        }
+      }
+    },
+    "settings_legal_title": {
+      "comment": "Settings row + About title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über & Rechtliches"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About & legal"
+          }
+        }
+      }
+    },
+    "settings_legal_explanation": {
+      "comment": "Settings row explanation.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag bietet Informationen und Übersetzung — keine Rechts- oder Steuerberatung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag provides information and translation — not legal or tax advice."
+          }
+        }
+      }
+    },
+    "settings_legal_body": {
+      "comment": "About screen disclaimer body (RDG).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag hilft dir, amtliche Briefe und Abläufe zu verstehen und zu organisieren. Es ersetzt keine Rechts- oder Steuerberatung. Bei rechtlichen Fragen wende dich an eine Anwältin oder einen Anwalt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag helps you understand and organize official letters and processes. It is not a substitute for legal or tax advice. For legal questions, consult a lawyer."
+          }
+        }
+      }
+    },
+    "settings_legal_privacy": {
+      "comment": "About screen privacy note.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles läuft auf deinem Gerät: Dokumente werden verschlüsselt gespeichert und die KI verarbeitet deine Briefe lokal. Nichts wird hochgeladen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everything runs on your device: documents are stored encrypted and the AI processes your letters locally. Nothing is uploaded."
+          }
+        }
+      }
+    },
+    "settings_delete_confirm_title": {
+      "comment": "Delete-all alert title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Daten löschen?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete all data?"
+          }
+        }
+      }
+    },
+    "settings_delete_confirm_message": {
+      "comment": "Delete-all alert message.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Dokumente und Termine werden endgültig von diesem Gerät gelöscht. Das kann nicht rückgängig gemacht werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every document and date will be permanently erased from this device. This can't be undone."
+          }
+        }
+      }
+    },
+    "settings_delete_confirm": {
+      "comment": "Delete-all confirm button.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete everything"
+          }
+        }
+      }
+    },
+    "settings_cancel": {
+      "comment": "Cancel button.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "settings_done": {
+      "comment": "Done button.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fertig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

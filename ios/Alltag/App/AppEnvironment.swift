@@ -35,6 +35,11 @@ final class AppEnvironment {
     /// On-device document vault + expiry handling (P3-05/06).
     let vault: VaultStore
 
+    /// GDPR export/delete-all, composed from the stores (P3-09).
+    var dataManagement: DataManagementController {
+        DataManagementController(vault: vault, deadlines: deadlines)
+    }
+
     init(
         persistence: PersistenceController,
         llm: LLMService,
