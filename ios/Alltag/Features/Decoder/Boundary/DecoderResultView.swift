@@ -211,7 +211,12 @@ struct DecoderResultView: View {
         VStack(spacing: AppSpacing.sm) {
             HStack(spacing: AppSpacing.sm) {
                 Button {
-                    fire(onSaveToVault, fallback: "decoder_toast_vault_soon")
+                    if let onSaveToVault {
+                        onSaveToVault()
+                        present("decoder_toast_vault_saved")
+                    } else {
+                        present("decoder_toast_vault_soon")
+                    }
                 } label: {
                     Label("decoder_save_vault", systemImage: "tray.and.arrow.down")
                 }

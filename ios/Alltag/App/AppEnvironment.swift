@@ -32,10 +32,13 @@ final class AppEnvironment {
     let decoder: DecoderController
     /// Deadlines + reminder scheduling for the Dates agenda (P3-07/08).
     let deadlines: DeadlineStore
+    /// On-device document vault + expiry handling (P3-05/06).
+    let vault: VaultStore
 
     init(
         persistence: PersistenceController,
         llm: LLMService,
+        fileStore: EncryptedFileStore = .ephemeral(),
         theme: ThemeController = ThemeController(),
         language: LanguageStore = LanguageStore(),
         personas: PersonaStore = PersonaStore(),
@@ -55,8 +58,14 @@ final class AppEnvironment {
         self.decoder = DecoderController(
             recognizer: recognizer,
             decode: DecodeLetterUseCase(engine: llm.engine))
-        self.deadlines = DeadlineStore(
+        let deadlines = DeadlineStore(
             context: persistence.container.mainContext, scheduler: reminders)
+        self.deadlines = deadlines
+        self.vault = VaultStore(
+            context: persistence.container.mainContext,
+            fileStore: fileStore,
+            deadlines: deadlines,
+            scheduler: reminders)
     }
 
     /// Production container. Falls back to an in-memory store if the on-disk
@@ -64,14 +73,32 @@ final class AppEnvironment {
     /// is logged for diagnosis) rather than crashing on first run.
     static func live() -> AppEnvironment {
         let llm = makeLLM()
+        let fileStore = makeFileStore()
         do {
-            return AppEnvironment(persistence: try PersistenceController(), llm: llm)
+            return AppEnvironment(
+                persistence: try PersistenceController(), llm: llm, fileStore: fileStore)
         } catch {
             assertionFailure("Persistent store unavailable, using in-memory: \(error)")
             // `inMemory` cannot realistically fail, but if it does there is no
             // recoverable app state — a crash here is acceptable.
             return AppEnvironment(
-                persistence: try! PersistenceController(inMemory: true), llm: llm)
+                persistence: try! PersistenceController(inMemory: true),
+                llm: llm, fileStore: fileStore)
+        }
+    }
+
+    /// The Keychain-backed encrypted document store (D4/A-09), degrading to a
+    /// temp-directory store if Documents is somehow unavailable so the app still
+    /// launches; the Vault then surfaces save errors per-action.
+    private static func makeFileStore() -> EncryptedFileStore {
+        do {
+            return try EncryptedFileStore(keyStore: KeychainKeyStore())
+        } catch {
+            assertionFailure("Document store unavailable, using temp directory: \(error)")
+            return try! EncryptedFileStore(
+                directory: FileManager.default.temporaryDirectory
+                    .appendingPathComponent("AlltagVault", isDirectory: true),
+                keyStore: KeychainKeyStore())
         }
     }
 

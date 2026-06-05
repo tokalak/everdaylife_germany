@@ -42,7 +42,8 @@ private struct DecoderFlowView: View {
                     onDone: { controller.reset() },
                     onAddToCalendar: letter.deadline.map { due in
                         { addToCalendar(letter, due: due) }
-                    })
+                    },
+                    onSaveToVault: { saveToVault(letter) })
             case let .failed(failure):
                 failed(failure)
             }
@@ -132,5 +133,17 @@ private struct DecoderFlowView: View {
         env.deadlines.add(
             title: title, dueDate: due, severity: letter.severity,
             note: letter.summary, source: .decoded)
+    }
+
+    /// Save the decoded letter to the Vault as a PDF of its original German text
+    /// (P3-05). The scan image isn't retained — only the OCR'd text — so we render
+    /// that to a document.
+    private func saveToVault(_ letter: DecodedLetter) {
+        let text = letter.originalText.isEmpty ? letter.summary : letter.originalText
+        guard let pdf = DocumentPDF.make(fromText: text) else { return }
+        let name = letter.sender.isEmpty
+            ? String(localized: "decoder_deadline_generic_title")
+            : letter.sender
+        try? env.vault.add(data: pdf, fileName: name, category: .official)
     }
 }

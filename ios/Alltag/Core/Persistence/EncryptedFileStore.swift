@@ -37,6 +37,16 @@ struct EncryptedFileStore {
             at: self.directory, withIntermediateDirectories: true)
     }
 
+    /// A throwaway store in a unique temp directory with an in-memory key — for
+    /// previews, tests, and as a safe DI default. Never touches the Keychain or
+    /// the real Documents vault.
+    static func ephemeral() -> EncryptedFileStore {
+        try! EncryptedFileStore(
+            directory: FileManager.default.temporaryDirectory
+                .appendingPathComponent(UUID().uuidString, isDirectory: true),
+            keyStore: InMemoryKeyStore())
+    }
+
     /// Encrypts and writes `data`, returning the on-disk URL. Overwrites any
     /// existing blob with the same id.
     @discardableResult
@@ -57,6 +67,13 @@ struct EncryptedFileStore {
 
     func exists(id: String) -> Bool {
         FileManager.default.fileExists(atPath: fileURL(for: id).path)
+    }
+
+    /// On-disk size of the (encrypted) blob for `id`, or nil if absent. Used by
+    /// the Vault storage explainer (P3-09). Ciphertext size ≈ plaintext size.
+    func byteCount(id: String) -> Int64? {
+        let values = try? fileURL(for: id).resourceValues(forKeys: [.fileSizeKey])
+        return (values?.fileSize).map(Int64.init)
     }
 
     func delete(id: String) throws {

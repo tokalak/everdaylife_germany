@@ -111,6 +111,14 @@ final class DeadlineStore {
         persist()
     }
 
+    /// Remove the deadline auto-populated from a given source entity, if any
+    /// (e.g. a Vault document deleted, P3-06). No-op when none matches.
+    func removeBySource(_ source: DeadlineSource, sourceId: String) {
+        guard let match = deadlines.first(
+            where: { $0.source == source && $0.sourceId == sourceId }) else { return }
+        remove(match)
+    }
+
     /// Remove every deadline (GDPR "delete all data", P3-09).
     func removeAll() {
         for deadline in deadlines { cancelReminders(for: deadline) }
@@ -136,7 +144,10 @@ final class DeadlineStore {
     }
 
     private func scheduleReminders(for deadline: Deadline) {
-        guard !deadline.isDone else { return }
+        // Vault-sourced deadlines are shown in the agenda for visibility, but
+        // their reminders are owned by the Vault at the longer 60/30/7 expiry
+        // cadence (P3-06) — don't double-schedule them at 14/7/1 here.
+        guard !deadline.isDone, deadline.source != .vault else { return }
         let request = reminderRequest(for: deadline)
         Task { await scheduler.schedule(request) }
     }
