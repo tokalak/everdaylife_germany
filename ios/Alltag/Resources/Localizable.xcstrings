@@ -7042,6 +7042,550 @@
         }
       }
     },
+    "tool_ck_age_from35": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "35–39"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "35–39"
+          }
+        }
+      }
+    },
+    "tool_ck_age_from40": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40 oder älter"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "40 or older"
+          }
+        }
+      }
+    },
+    "tool_ck_age_under35": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unter 35"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Under 35"
+          }
+        }
+      }
+    },
+    "tool_ck_below_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du erreichst die Punktegrenze noch nicht. Bessere einzelne Kriterien aus, etwa Sprache oder Berufserfahrung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You don't reach the points threshold yet. Improving individual criteria — such as language or work experience — can help."
+          }
+        }
+      }
+    },
+    "tool_ck_eligible": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wahrscheinlich berechtigt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Likely eligible"
+          }
+        }
+      }
+    },
+    "tool_ck_eligible_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du erreichst die Punktegrenze. Prüfe zusätzlich die Grundvoraussetzungen und deine genaue Route mit einer Fachperson."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You reach the points threshold. Also check the baseline requirements and your exact route with a professional."
+          }
+        }
+      }
+    },
+    "tool_ck_english_belowC1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unter C1"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Below C1"
+          }
+        }
+      }
+    },
+    "tool_ck_english_c1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C1 oder Muttersprache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C1 or native"
+          }
+        }
+      }
+    },
+    "tool_ck_exp_from2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2–4 Jahre"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2–4 years"
+          }
+        }
+      }
+    },
+    "tool_ck_exp_from5": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5+ Jahre"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5+ years"
+          }
+        }
+      }
+    },
+    "tool_ck_exp_under2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unter 2 Jahre"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Under 2 years"
+          }
+        }
+      }
+    },
+    "tool_ck_german_a2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A2"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A2"
+          }
+        }
+      }
+    },
+    "tool_ck_german_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B1"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B1"
+          }
+        }
+      }
+    },
+    "tool_ck_german_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B2 oder höher"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B2 or higher"
+          }
+        }
+      }
+    },
+    "tool_ck_german_none": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine / A1"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "None / A1"
+          }
+        }
+      }
+    },
+    "tool_ck_intro": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Chancenkarte erlaubt dir, bis zu ein Jahr nach Deutschland zu kommen, um Arbeit zu suchen. Zusätzlich zu den Grundvoraussetzungen (anerkannte Qualifikation + Deutsch A1 oder Englisch B2 + Nachweis über Lebensunterhalt) brauchst du mindestens 6 Punkte. Beantworte die Fragen, um deinen Stand einzuschätzen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Chancenkarte lets you come to Germany for up to a year to look for work. On top of the basic requirements (a recognised qualification + German A1 or English B2 + proof of funds), you need at least 6 points. Answer below to estimate your score."
+          }
+        }
+      }
+    },
+    "tool_ck_more_needed_fmt": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch %d nötig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d more needed"
+          }
+        }
+      }
+    },
+    "tool_ck_q_age": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Alter"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your age"
+          }
+        }
+      }
+    },
+    "tool_ck_q_age_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jüngere Bewerber erhalten mehr Punkte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Younger applicants score higher"
+          }
+        }
+      }
+    },
+    "tool_ck_q_english": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischkenntnisse"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English language level"
+          }
+        }
+      }
+    },
+    "tool_ck_q_english_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muttersprache oder zertifiziert"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Native or certified"
+          }
+        }
+      }
+    },
+    "tool_ck_q_exp": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berufserfahrung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work experience"
+          }
+        }
+      }
+    },
+    "tool_ck_q_exp_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passend zur Qualifikation, in den letzten 7 Jahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Related to your qualification, in the last 7 years"
+          }
+        }
+      }
+    },
+    "tool_ck_q_german": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deutschkenntnisse"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "German language level"
+          }
+        }
+      }
+    },
+    "tool_ck_q_german_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein höchstes zertifiziertes Deutschniveau"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your strongest certified German level"
+          }
+        }
+      }
+    },
+    "tool_ck_q_partner": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partner bewirbt sich mit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partner applying with you"
+          }
+        }
+      }
+    },
+    "tool_ck_q_partner_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Ehe-/Lebenspartner erfüllt ebenfalls die Voraussetzungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your spouse/partner also meets the requirements"
+          }
+        }
+      }
+    },
+    "tool_ck_q_prev": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Früherer Aufenthalt in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previous stay in Germany"
+          }
+        }
+      }
+    },
+    "tool_ck_q_prev_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mindestens 6 Monate in den letzten 5 Jahren (kein Tourismus)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At least 6 months in the last 5 years (not tourism)"
+          }
+        }
+      }
+    },
+    "tool_ck_q_shortage": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Engpassberuf?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shortage occupation?"
+          }
+        }
+      }
+    },
+    "tool_ck_q_shortage_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Beruf steht auf der Engpassliste"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your job is on Germany's Engpassberufe list"
+          }
+        }
+      }
+    },
+    "tool_ck_recognition_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit voller Anerkennung qualifizierst du dich direkt — ohne Punkte."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With full recognition you qualify directly — no points needed."
+          }
+        }
+      }
+    },
+    "tool_ck_recognition_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volle Anerkennung der Qualifikation"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Full recognition of your qualification"
+          }
+        }
+      }
+    },
+    "tool_ck_score_fmt": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$d / %2$d Punkte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$d / %2$d points"
+          }
+        }
+      }
+    },
     "tool_einbuergerung_subtitle": {
       "localizations": {
         "de": {
