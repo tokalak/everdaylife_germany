@@ -16,6 +16,7 @@ enum GuideLibrary {
     static let all: [GuideContent] = [
         residencePermit,
         registerBusiness,
+        howTaxesWork,
     ]
 
     /// The full body for a guide id, or `nil` if its content hasn't shipped yet
@@ -183,5 +184,82 @@ enum GuideLibrary {
                 id: "existenzgruender",
                 titleKey: "guidedoc_rb_source_existenzgruender",
                 url: URL(string: "https://www.existenzgruender.de/")!),
+        ])
+
+    // MARK: - P6-G3 · How taxes work
+
+    private static let howTaxesWork = GuideContent(
+        id: "how_taxes_work",
+        titleKey: "guide_taxes_title",
+        summaryKey: "guidedoc_tx_summary",
+        sections: [
+            GuideSection(
+                id: "basics",
+                headingKey: "guidedoc_tx_s1_heading",
+                blocks: [
+                    .paragraph("guidedoc_tx_s1_p1"),
+                    .paragraph("guidedoc_tx_s1_p2"),
+                ]),
+            GuideSection(
+                id: "id_vs_number",
+                headingKey: "guidedoc_tx_s2_heading",
+                blocks: [
+                    .bullet("guidedoc_tx_s2_b1"),
+                    .bullet("guidedoc_tx_s2_b2"),
+                    .bullet("guidedoc_tx_s2_b3"),
+                ]),
+            GuideSection(
+                id: "income_tax",
+                headingKey: "guidedoc_tx_s3_heading",
+                blocks: [
+                    .paragraph("guidedoc_tx_s3_p1"),
+                    .bullet("guidedoc_tx_s3_b1"),
+                    .bullet("guidedoc_tx_s3_b2"),
+                ]),
+            GuideSection(
+                id: "tax_classes",
+                headingKey: "guidedoc_tx_s4_heading",
+                blocks: [
+                    .paragraph("guidedoc_tx_s4_p1"),
+                    .bullet("guidedoc_tx_s4_b1"),
+                    .bullet("guidedoc_tx_s4_b2"),
+                    .bullet("guidedoc_tx_s4_b3"),
+                ]),
+            GuideSection(
+                id: "deductions",
+                headingKey: "guidedoc_tx_s5_heading",
+                blocks: [
+                    .bullet("guidedoc_tx_s5_b1"),
+                    .bullet("guidedoc_tx_s5_b2"),
+                    .bullet("guidedoc_tx_s5_b3"),
+                    .bullet("guidedoc_tx_s5_b4"),
+                ]),
+            GuideSection(
+                id: "return",
+                headingKey: "guidedoc_tx_s6_heading",
+                blocks: [
+                    .bullet("guidedoc_tx_s6_b1"),
+                    .bullet("guidedoc_tx_s6_b2"),
+                    .bullet("guidedoc_tx_s6_b3"),
+                    .bullet("guidedoc_tx_s6_b4"),
+                ]),
+            GuideSection(
+                id: "tips",
+                headingKey: "guidedoc_tx_s7_heading",
+                blocks: [
+                    .bullet("guidedoc_tx_s7_b1"),
+                    .bullet("guidedoc_tx_s7_b2"),
+                    .bullet("guidedoc_tx_s7_b3"),
+                ]),
+        ],
+        sources: [
+            GuideSource(
+                id: "miig",
+                titleKey: "guidedoc_tx_source_miig",
+                url: URL(string: "https://www.make-it-in-germany.com/en/living-in-germany/money-banking/taxes")!),
+            GuideSource(
+                id: "elster",
+                titleKey: "guidedoc_tx_source_elster",
+                url: URL(string: "https://www.elster.de/")!),
         ])
 }

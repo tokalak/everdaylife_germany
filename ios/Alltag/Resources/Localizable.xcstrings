@@ -3653,6 +3653,535 @@
         }
       }
     },
+    "guidedoc_tx_s1_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Grundlagen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The basics"
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s1_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer in Deutschland lebt und arbeitet, zahlt Einkommensteuer. Bei Angestellten zieht der Arbeitgeber sie automatisch als Lohnsteuer vom Gehalt ab."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you live and work in Germany, you pay income tax. For employees, the employer automatically deducts it from your pay as wage tax (Lohnsteuer)."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s1_p2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bis zum Grundfreibetrag bleibt dein Einkommen steuerfrei; darüber steigt der Steuersatz progressiv mit dem Einkommen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Up to the basic tax-free allowance (Grundfreibetrag) your income is untaxed; above it the rate rises progressively with income."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s2_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Steuer-Identifikationsnummer (Steuer-ID) ist 11-stellig, lebenslang gültig und kommt nach der Anmeldung per Post."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The tax identification number (Steuer-ID) has 11 digits, is valid for life, and arrives by post after you register your address."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s2_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Steuernummer vergibt das Finanzamt für eine bestimmte Tätigkeit – etwa für Selbstständige."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The tax number (Steuernummer) is issued by the tax office for a specific activity — e.g. for the self-employed."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s2_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den Arbeitgeber interessiert vor allem deine Steuer-ID."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your employer mainly needs your Steuer-ID."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s2_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID und Steuernummer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tax ID and tax number"
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s3_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hinzu kommen ggf. Solidaritätszuschlag und Kirchensteuer."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On top may come the solidarity surcharge and church tax."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s3_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was du tatsächlich zahlst, hängt von Einkommen, Familienstand und Abzügen ab."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What you actually pay depends on income, family status and deductions."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s3_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einkommensteuer & Tarif"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Income tax & brackets"
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s3_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Einkommensteuertarif ist progressiv: Die ersten Euro über dem Grundfreibetrag werden niedrig besteuert, hohe Einkommen mit dem Spitzensteuersatz."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Income tax is progressive: the first euros above the allowance are taxed lightly, high incomes at the top rate."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s4_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klasse 1: Alleinstehende."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Class 1: single."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s4_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klassen 3/5 oder 4/4: Verheiratete, je nach Einkommensverteilung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classes 3/5 or 4/4: married couples, depending on how income is split."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s4_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klasse 6: für ein zweites Arbeitsverhältnis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Class 6: for a second job."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s4_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuerklassen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tax classes (Steuerklassen)"
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s4_p1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Angestellte werden einer von sechs Steuerklassen zugeordnet. Sie bestimmt, wie viel Lohnsteuer monatlich einbehalten wird."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Employees are placed in one of six tax classes. The class sets how much wage tax is withheld each month."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s5_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lohnsteuer (Vorauszahlung auf die Einkommensteuer)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wage tax (an advance on your income tax)."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s5_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sozialabgaben: Renten-, Kranken-, Pflege- und Arbeitslosenversicherung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Social contributions: pension, health, long-term care and unemployment insurance."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s5_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ggf. Solidaritätszuschlag und Kirchensteuer."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where applicable, solidarity surcharge and church tax."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s5_b4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was übrig bleibt, ist dein Nettogehalt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What remains is your net salary."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s5_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was vom Gehalt abgeht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What comes off your salary"
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s6_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viele Angestellte müssen keine abgeben – können aber freiwillig, oft mit Rückerstattung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Many employees aren't required to file one — but can voluntarily, often getting a refund."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s6_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pflicht ist sie z. B. bei Selbstständigkeit, mehreren Jobs oder bestimmten Steuerklassen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It is mandatory e.g. for the self-employed, multiple jobs or certain tax classes."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s6_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eingereicht wird sie online über ELSTER, meist bis zum 31. Juli des Folgejahres."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You file it online via ELSTER, usually by 31 July of the following year."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s6_b4": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Werbungskosten, Pendeln und Versicherungen können die Steuer senken."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work expenses, commuting and insurance can lower your tax."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s6_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Steuererklärung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The annual tax return"
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s7_b1": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hebe Lohnabrechnungen und Belege auf – du brauchst sie für die Erklärung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep payslips and receipts — you need them for your return."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s7_b2": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Lohnsteuerhilfeverein oder Steuerberater hilft bei kniffligen Fällen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A wage-tax help association or tax advisor helps with tricky cases."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s7_b3": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuersätze und Freibeträge ändern sich jährlich – prüfe aktuelle Zahlen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rates and allowances change yearly — check current figures."
+          }
+        }
+      }
+    },
+    "guidedoc_tx_s7_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut zu wissen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good to know"
+          }
+        }
+      }
+    },
+    "guidedoc_tx_source_elster": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ELSTER – Online-Finanzamt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ELSTER — the online tax office"
+          }
+        }
+      }
+    },
+    "guidedoc_tx_source_miig": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany – Steuern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make it in Germany — taxes"
+          }
+        }
+      }
+    },
+    "guidedoc_tx_summary": {
+      "comment": "Guide P6-G3 taxes: summary line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuern in Deutschland wirken kompliziert, folgen aber klaren Regeln. Hier sind die Grundlagen – von der Steuer-ID bis zur Steuererklärung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taxes in Germany look complicated but follow clear rules. Here are the basics — from your tax ID to the annual return."
+          }
+        }
+      }
+    },
     "home_checklist_title": {
       "comment": "Home section header: the persona checklist.",
       "localizations": {

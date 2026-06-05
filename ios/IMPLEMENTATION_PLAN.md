@@ -201,7 +201,7 @@ Engines are pure-logic + tested (A-05). Each carries the RDG disclaimer.
 **Cross-persona guides (all 5 ship in V1):**
 - [x] **P6-G1** Residence permit (Aufenthaltstitel) *(`GuideContent`/`GuideSection`/`GuideBlock`/`GuideSource` entity + versioned `GuideLibrary` (X-06), keyed by the same id as the Home tile. Full Aufenthaltstitel body — what/who/types/apply/documents/after/tips + BAMF & Make-it-in-Germany sources — DE+EN, RDG disclaimer flagged. Reader screen = P6-G6. `GuideLibraryTests` green.)*
 - [x] **P6-G2** Registering a business (Gewerbe vs Freiberufler) *(`registerBusiness` body in `GuideLibrary`: two-paths / who-is-Freiberufler / who-needs-Gewerbe / register-each / taxes+insurance (Kleinunternehmer, VAT, KSK) / tips, with non-EU permit caveat. Make-it-in-Germany + Existenzgründer sources, DE+EN. `GuideLibraryTests` green.)*
-- [ ] **P6-G3** How taxes work
+- [x] **P6-G3** How taxes work *(`howTaxesWork` body in `GuideLibrary`: basics / Steuer-ID vs Steuernummer / progressive income tax / the six Steuerklassen / salary deductions / the annual return via ELSTER / tips. Make-it-in-Germany + ELSTER sources, DE+EN. Test added.)*
 - [ ] **P6-G4** Getting health insurance
 - [ ] **P6-G5** Recognising a foreign diploma (Anerkennung)
 - [ ] **P6-G6** Guide reader screen + in-app search across guides/tools
