@@ -8331,6 +8331,568 @@
         }
       }
     },
+    "tool_freelance_fb_confirm_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe, ob dein Beruf zu den Katalogberufen oder ähnlichen freien Berufen gehört. Im Zweifel entscheidet das Finanzamt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check whether your profession is a catalogue (liberal) profession or a similar free profession. If in doubt, the Finanzamt decides."
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_confirm_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freiberufler-Status bestätigen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm you qualify as a Freiberufler"
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_fragebogen_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reiche den „Fragebogen zur steuerlichen Erfassung“ online über ELSTER beim Finanzamt ein. Ein Gewerbeamt brauchst du nicht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Submit the “Fragebogen zur steuerlichen Erfassung” to the Finanzamt online via ELSTER. You don’t need the Gewerbeamt."
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_fragebogen_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragebogen zur steuerlichen Erfassung ausfüllen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fill the tax-registration questionnaire"
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_insurance_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als Selbstständiger organisierst du deine Krankenversicherung selbst. Manche freien Berufe haben eine Pflicht zur Renten- oder Künstlersozialkasse."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As a self-employed person you arrange your own health insurance. Some free professions must pay into a pension fund or the Künstlersozialkasse."
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_insurance_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kranken- und Rentenversicherung regeln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrange health & pension insurance"
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_invoicing_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schreibe ordnungsgemäße Rechnungen mit allen Pflichtangaben und bewahre Belege für die Steuererklärung auf."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write proper invoices with all required details and keep your receipts for the tax return."
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_invoicing_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit dem Rechnungstellen beginnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start invoicing"
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_steuernummer_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Finanzamt schickt dir deine Steuernummer für die selbstständige Tätigkeit. Sie gehört auf jede Rechnung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Finanzamt sends you the Steuernummer for your activity. It goes on every invoice you write."
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_steuernummer_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuernummer erhalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Receive your Steuernummer"
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_vat_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entscheide, ob du die Kleinunternehmerregelung nutzt (keine Umsatzsteuer) oder Umsatzsteuer ausweist. Das gibst du im Fragebogen an."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decide whether to use the Kleinunternehmer scheme (no VAT) or charge VAT. You state this in the questionnaire."
+          }
+        }
+      }
+    },
+    "tool_freelance_fb_vat_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kleinunternehmer oder Umsatzsteuer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kleinunternehmer vs charging VAT"
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_anmeldung_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melde dein Gewerbe beim örtlichen Gewerbeamt an. Das ist der erste Schritt für gewerbliche Tätigkeiten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register your trade at the local Gewerbeamt. This is the first step for a commercial activity."
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_anmeldung_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewerbeanmeldung beim Gewerbeamt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File the Gewerbeanmeldung at the Gewerbeamt"
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_chamber_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit der Gewerbeanmeldung wirst du automatisch Pflichtmitglied der IHK oder Handwerkskammer (oft mit Jahresbeitrag)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With the Gewerbeanmeldung you automatically become a mandatory member of the IHK or Handwerkskammer (usually with an annual fee)."
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_chamber_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mitgliedschaft in IHK/Handwerkskammer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IHK/Handwerkskammer membership"
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_fragebogen_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Finanzamt schickt dir den Fragebogen zur steuerlichen Erfassung – oder du reichst ihn direkt über ELSTER ein."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Finanzamt sends you the tax-registration questionnaire — or you file it directly via ELSTER."
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_fragebogen_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragebogen zur steuerlichen Erfassung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tax-registration questionnaire"
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_insurance_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organisiere deine Krankenversicherung selbst und prüfe sinnvolle betriebliche Versicherungen wie eine Betriebshaftpflicht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrange your own health insurance and consider sensible business cover such as professional liability insurance."
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_insurance_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versicherungen regeln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrange insurance"
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_steuernummer_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach dem Fragebogen schickt dir das Finanzamt deine Steuernummer für das Gewerbe."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After the questionnaire, the Finanzamt sends you the Steuernummer for your business."
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_steuernummer_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuernummer erhalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Receive your Steuernummer"
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_taxes_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entscheide über die Kleinunternehmerregelung vs. Umsatzsteuer. Über dem Freibetrag fällt zusätzlich Gewerbesteuer an."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decide on Kleinunternehmer vs charging VAT. Above the allowance you also pay Gewerbesteuer (trade tax)."
+          }
+        }
+      }
+    },
+    "tool_freelance_gw_taxes_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umsatzsteuer und Gewerbesteuer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VAT and Gewerbesteuer"
+          }
+        }
+      }
+    },
+    "tool_freelance_intro": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selbstständig in Deutschland? Wähle deine Rechtsform und folge den Schritten zur Anmeldung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Going self-employed in Germany? Choose your legal form and follow the steps to register."
+          }
+        }
+      }
+    },
+    "tool_freelance_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr über Gewerbe & Freiberuf erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about registering a business"
+          }
+        }
+      }
+    },
+    "tool_freelance_noneu_caveat": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht-EU-Bürger: Dein Aufenthaltstitel muss die selbstständige Tätigkeit ausdrücklich erlauben. Prüfe das vor der Anmeldung mit deiner Ausländerbehörde."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non-EU citizens: your residence permit must explicitly allow self-employment. Check this with your immigration office before registering."
+          }
+        }
+      }
+    },
+    "tool_freelance_path_freiberufler_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katalogberufe wie Ärzte, Anwälte, Designer, Entwickler, Journalisten – kein Gewerbe."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catalogue professions like doctors, lawyers, designers, developers, journalists — no trade licence."
+          }
+        }
+      }
+    },
+    "tool_freelance_path_freiberufler_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freiberufler"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freiberufler (liberal profession)"
+          }
+        }
+      }
+    },
+    "tool_freelance_path_gewerbe_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Handel, Handwerk und die meisten anderen Tätigkeiten – mit Gewerbeanmeldung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trade, crafts and most other activities — with a Gewerbeanmeldung."
+          }
+        }
+      }
+    },
+    "tool_freelance_path_gewerbe_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewerbe"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewerbe (trade business)"
+          }
+        }
+      }
+    },
+    "tool_freelance_path_question": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Rechtsform passt zu dir?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which legal form fits you?"
+          }
+        }
+      }
+    },
+    "tool_freelance_steps_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Schritte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your steps"
+          }
+        }
+      }
+    },
+    "tool_freelance_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freiberufler oder Gewerbe – Schritt für Schritt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freiberufler or Gewerbe — step by step"
+          }
+        }
+      },
+      "comment": "Freelance registration tool: tile subtitle."
+    },
+    "tool_freelance_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freiberufler anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register as self-employed"
+          }
+        }
+      },
+      "comment": "Freelance registration tool: tile title / nav title."
+    },
     "tool_health_affiliate_disclosure": {
       "comment": "Health tool: affiliate transparency disclosure.",
       "localizations": {

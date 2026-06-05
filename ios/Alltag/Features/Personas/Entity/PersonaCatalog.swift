@@ -89,7 +89,7 @@ enum PersonaCatalog {
             id: "freelance_registration",
             titleKey: "checklist_worker_freelance_title",
             subtitleKey: "checklist_worker_freelance_subtitle",
-            link: .guide("register_business")),
+            link: .tool("freelance_registration")),
         ChecklistItem(
             id: "liability_insurance",
             titleKey: "checklist_worker_liability_title",
@@ -139,6 +139,12 @@ enum PersonaCatalog {
             subtitleKey: "tool_taxid_subtitle",
             systemImage: "doc.plaintext.fill",
             tint: AppColor.severityUrgent),
+        PersonaTool(
+            id: "freelance_registration",
+            titleKey: "tool_freelance_title",
+            subtitleKey: "tool_freelance_subtitle",
+            systemImage: "doc.badge.plus",
+            tint: AppColor.primaryDeep),
     ]
 
     // MARK: - Tourist (P5-01)
