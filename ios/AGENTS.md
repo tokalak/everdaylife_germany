@@ -32,3 +32,7 @@ Persona-aware (Tourist / Student / Worker / Family / Long-term Resident). The an
 - Work always on the main branch. do not create feature branches.
 - Use the KISS (Keep it simple stupid) pattern
 - Use the DRY (do not repeat yourself) pattern
+
+## GIT
+- The commit message should contain only the implementation and changes. Never refer to an LLM as commiter. Avoid such things like *Co-Authored-By* etc.
+ 
