@@ -12430,6 +12430,312 @@
         }
       }
     },
+    "tool_kita_apply_early": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewirb dich früh und trage dich auf Wartelisten ein."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply early and join waiting lists."
+          }
+        }
+      }
+    },
+    "tool_kita_apply_fees": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Gebühren sind einkommensabhängig und unterscheiden sich je nach Bundesland – in einigen ist die Betreuung kostenlos."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fees are income-based and vary by Bundesland — in some it is free."
+          }
+        }
+      }
+    },
+    "tool_kita_apply_gutschein": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In manchen Städten brauchst du einen Kita-Gutschein vom Jugendamt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In some cities you need a Kita-Gutschein (childcare voucher) from the Jugendamt."
+          }
+        }
+      }
+    },
+    "tool_kita_apply_heading": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einen Kita-Platz beantragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applying for a Kita place"
+          }
+        }
+      }
+    },
+    "tool_kita_intro": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein klarer Überblick über Kinderbetreuung und Schule in Deutschland – plus praktische Schritte für die Anmeldung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A clear overview of childcare and school in Germany — plus practical steps to enrol."
+          }
+        }
+      }
+    },
+    "tool_kita_school_age": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kinder müssen ab etwa 6 Jahren zur Schule gehen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Children must attend school from about age 6."
+          }
+        }
+      }
+    },
+    "tool_kita_school_enrol": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Anmeldung erfolgt an der örtlichen Grundschule bzw. über das Schulamt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You enrol at the local primary school (Grundschule) / via the Schulamt."
+          }
+        }
+      }
+    },
+    "tool_kita_school_heading": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schulpflicht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compulsory school (Schulpflicht)"
+          }
+        }
+      }
+    },
+    "tool_kita_stages_entitlement": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ab dem 1. Geburtstag besteht ein Rechtsanspruch auf einen Betreuungsplatz. Die Nachfrage ist allerdings hoch und die Plätze sind begrenzt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "There is a legal entitlement to a childcare place from age 1. Demand is high, though, and places are limited."
+          }
+        }
+      }
+    },
+    "tool_kita_stages_heading": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Betreuungsstufen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Childcare stages"
+          }
+        }
+      }
+    },
+    "tool_kita_stages_kindergarten": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergarten / Kita – etwa von 3 bis 6 Jahren."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergarten / Kita — roughly ages 3 to 6."
+          }
+        }
+      }
+    },
+    "tool_kita_stages_krippe": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krippe – für Kinder unter 3 Jahren."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krippe — for children under 3."
+          }
+        }
+      }
+    },
+    "tool_kita_step_anmeldung": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zuerst die Adresse anmelden (Anmeldung)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register your address (Anmeldung) first."
+          }
+        }
+      }
+    },
+    "tool_kita_step_apply": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Früh bewerben – und einen Kita-Gutschein besorgen, falls deine Stadt das verlangt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply early — and get a Kita-Gutschein if your city needs one."
+          }
+        }
+      }
+    },
+    "tool_kita_step_research": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kitas und Schulen in der Nähe recherchieren."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Research nearby Kitas and schools."
+          }
+        }
+      }
+    },
+    "tool_kita_step_school": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für das Schulalter die örtliche Grundschule bzw. das Schulamt kontaktieren, um anzumelden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For school age, contact the local Grundschule / Schulamt to enrol."
+          }
+        }
+      }
+    },
+    "tool_kita_step_support": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Willkommensklassen / Sprachförderung fragen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask about Willkommensklassen / language support."
+          }
+        }
+      }
+    },
+    "tool_kita_steps_title": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Praktische Schritte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practical steps"
+          }
+        }
+      }
+    },
     "tool_kita_subtitle": {
       "localizations": {
         "de": {
@@ -12442,6 +12748,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "The basics of enrolling your children."
+          }
+        }
+      }
+    },
+    "tool_kita_support_classes": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Willkommensklassen (Sprach- und Vorbereitungsklassen) helfen Kindern, die noch kein Deutsch sprechen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language / welcome classes (Willkommensklassen) help children who do not yet speak German."
+          }
+        }
+      }
+    },
+    "tool_kita_support_heading": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterstützung für Neuankömmlinge"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support for newcomers"
           }
         }
       }
@@ -12459,6 +12799,57 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kita & school"
+          }
+        }
+      }
+    },
+    "tool_kita_types_heading": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schulformen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "School types"
+          }
+        }
+      }
+    },
+    "tool_kita_types_split": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach der Grundschule teilt sich der weiterführende Weg auf – z. B. Gymnasium, Realschule, Mittel-/Hauptschule, Gesamtschule."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After Grundschule, the secondary path splits — e.g. Gymnasium, Realschule, Mittel-/Hauptschule, Gesamtschule."
+          }
+        }
+      }
+    },
+    "tool_kita_types_varies": {
+      "comment": "Kita/school enrollment basics tool (P6-F6).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Formen es gibt, unterscheidet sich je nach Bundesland."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which types exist varies by Bundesland."
           }
         }
       }
