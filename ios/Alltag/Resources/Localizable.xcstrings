@@ -16085,6 +16085,358 @@
         }
       }
     },
+    "tool_settlement_criteria_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voraussetzungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requirements"
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_adequate_housing_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast ausreichend Wohnraum für dich und deine Familie."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have adequate housing for you and your family."
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_adequate_housing_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausreichender Wohnraum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adequate housing"
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_german_b1_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast ausreichende Deutschkenntnisse (in der Regel Niveau B1)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have sufficient German language skills (usually level B1)."
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_german_b1_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deutsch auf B1-Niveau"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "German at B1 level"
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_legal_social_order_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast Grundkenntnisse der Rechts- und Gesellschaftsordnung (Test „Leben in Deutschland“)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have basic knowledge of the legal and social order (the “Leben in Deutschland” test)."
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_legal_social_order_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kenntnisse der Rechts- und Gesellschaftsordnung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Knowledge of the legal and social order"
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_no_serious_crime_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast keine schwerwiegenden Straftaten begangen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have no serious criminal record."
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_no_serious_crime_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine schwerwiegenden Straftaten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No serious criminal record"
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_pension_contributions_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast mindestens %d Monate Pflichtbeiträge zur gesetzlichen Rentenversicherung (oder Gleichwertiges) gezahlt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have paid at least %d months of statutory pension contributions (or equivalent)."
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_pension_contributions_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rentenbeiträge"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pension contributions"
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_residence_period_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast seit mindestens %d Jahren einen Aufenthaltstitel."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have held a residence permit for at least %d years."
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_residence_period_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthaltstitel seit mindestens 5 Jahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Residence permit for at least 5 years"
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_secure_livelihood_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Einkommen reicht, um dich und deine Familie ohne staatliche Hilfe zu versorgen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your income is enough to support you and your family without state assistance."
+          }
+        }
+      }
+    },
+    "tool_settlement_criterion_secure_livelihood_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesicherter Lebensunterhalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Secure livelihood"
+          }
+        }
+      }
+    },
+    "tool_settlement_eligible": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du erfüllst voraussichtlich alle Voraussetzungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You likely meet all the requirements"
+          }
+        }
+      }
+    },
+    "tool_settlement_eligible_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach deinen Angaben erfüllst du den Standardweg. Das ist nur eine Selbsteinschätzung – die Ausländerbehörde entscheidet im Einzelfall."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Based on your answers you meet the standard route. This is only a self-assessment — the immigration office decides each case."
+          }
+        }
+      }
+    },
+    "tool_settlement_faster_note": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schnellere Wege gibt es: Inhaber einer Blauen Karte EU (ca. 21–33 Monate), Fachkräfte (verkürzte Frist), Ehepartner von Deutschen und Hochschulabsolventen. Dieser Check deckt nur den Standardweg ab."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faster tracks exist: EU Blue Card holders (about 21–33 months), skilled workers (reduced period), spouses of a German citizen, and university graduates. This check covers the standard route only."
+          }
+        }
+      }
+    },
+    "tool_settlement_intro_fmt": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für die Niederlassungserlaubnis (unbefristeter Aufenthalt) musst du auf dem Standardweg in der Regel alle folgenden Voraussetzungen erfüllen – meist nach mindestens %d Jahren. Hake ab, was du erfüllst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For a settlement permit (permanent residence) you generally have to meet all of the conditions below on the standard route — usually after at least %d years. Tick the ones you meet."
+          }
+        }
+      }
+    },
+    "tool_settlement_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zum Aufenthaltstitel"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about residence permits"
+          }
+        }
+      }
+    },
+    "tool_settlement_not_yet": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du erfüllst möglicherweise noch nicht alle Voraussetzungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You may not qualify yet"
+          }
+        }
+      }
+    },
+    "tool_settlement_not_yet_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Punkte fehlen nach deinen Angaben noch:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Based on your answers, these points are still missing:"
+          }
+        }
+      }
+    },
     "tool_sponsor_doc_bank_statements": {
       "localizations": {
         "de": {
