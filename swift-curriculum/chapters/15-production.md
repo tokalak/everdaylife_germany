@@ -40,7 +40,7 @@ If you call one, you must declare an approved reason code, or App
 Review rejects the upload. *Alltag* uses `UserDefaults` for theme
 and language preferences, so it declares reason `CA92.1` (app's own
 data, not shared). It checks free disk space before downloading the
-3.11 GB model, so it declares the disk-space reason too.
+2.62 GB model, so it declares the disk-space reason too.
 
 > **Quarkus analogy.** Think of `PrivacyInfo.xcprivacy` as a
 > `compile`-time SBOM for *behavior*, not dependencies. The
@@ -152,12 +152,12 @@ long to launch (the watchdog), so never block `init` on heavy work
 
 ### The on-device LLM is the performance story
 
-*Alltag*'s Decoder runs **Gemma 4 E2B, GGUF `Q4_K_M` (3.11 GB), on
+*Alltag*'s Decoder runs **Gemma 4 E2B QAT, GGUF `UD-Q4_K_XL` (2.62 GB), on
 `llama.cpp` with the Metal backend** — entirely on the phone. No
 backend service exists. That makes the model the single biggest
 performance concern in the app, and it touches every axis at once:
 
-- **Model load time.** Reading 3.11 GB of weights into memory takes
+- **Model load time.** Reading 2.62 GB of weights into memory takes
   seconds. Load lazily, off the main actor, with a warm-up pass and
   a visible progress state — never on launch.
 - **RAM footprint.** Weights plus KV cache can dominate the
@@ -169,10 +169,13 @@ performance concern in the app, and it touches every axis at once:
 - **Why Q4 and Metal matter.** **Quantization** (Q4 = 4-bit
   weights) is what makes 2.3B effective parameters fit and run at
   all; full-precision weights would be several times larger and far
-  slower. **Metal** moves the matrix math onto the GPU/Neural
+  slower. *Alltag* uses a **QAT** (quantization-aware training)
+  build, which trains the model to tolerate 4-bit weights —
+  recovering most of the accuracy a naive post-training quant would
+  lose, at a smaller size. **Metal** moves the matrix math onto the GPU/Neural
   Engine instead of the CPU, which is the difference between a
   usable few-seconds decode and an unusable one. A low-RAM device
-  may fall back to a smaller `Q3_K_M` quant; a too-small device is
+  may fall back to a smaller `UD-Q2_K_XL` quant; a too-small device is
   gated out with a clear message rather than crashed.
 - **Thermals and battery.** Sustained inference heats the device
   and drains the battery; iOS responds by *throttling* the CPU/GPU,
@@ -189,7 +192,7 @@ performance concern in the app, and it touches every axis at once:
 ### App size and the shipped model
 
 A multi-hundred-megabyte — here, multi-*gigabyte* — model is a real
-shipping constraint. You **cannot bundle 3.11 GB into the app
+shipping constraint. You **cannot bundle 2.62 GB into the app
 binary**: the App Store cellular-download limit and review friction
 make it impractical. *Alltag*'s answer is to **download the model on
 first run** — resumable, Wi-Fi-recommended, checksum-verified — and

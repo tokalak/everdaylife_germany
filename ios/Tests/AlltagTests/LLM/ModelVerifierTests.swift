@@ -34,7 +34,7 @@ final class ModelVerifierTests: XCTestCase {
         let payload = Data(repeating: 9, count: 100)
         let url = try write(payload)
         let spec = LLMModelSpec(
-            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_M,
+            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_XL,
             fileName: "m.gguf", sourceURL: URL(string: "https://x.test/m")!,
             expectedByteCount: 101, sha256: nil, contextWindowCap: 4096)
         XCTAssertThrowsError(try verifier.verify(fileAt: url, against: spec)) {
@@ -49,7 +49,7 @@ final class ModelVerifierTests: XCTestCase {
         let url = try write(payload)
         // Right size, wrong hash.
         let spec = LLMModelSpec(
-            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_M,
+            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_XL,
             fileName: "m.gguf", sourceURL: URL(string: "https://x.test/m")!,
             expectedByteCount: 64,
             sha256: String(repeating: "0", count: 64), contextWindowCap: 4096)
@@ -64,7 +64,7 @@ final class ModelVerifierTests: XCTestCase {
         let payload = Data(repeating: 3, count: 32)
         let url = try write(payload)
         let spec = LLMModelSpec(
-            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_M,
+            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_XL,
             fileName: "m.gguf", sourceURL: URL(string: "https://x.test/m")!,
             expectedByteCount: 32, sha256: nil, contextWindowCap: 4096)
         XCTAssertNoThrow(try verifier.verify(fileAt: url, against: spec))
@@ -75,7 +75,7 @@ final class ModelVerifierTests: XCTestCase {
         let url = try write(payload)
         let upper = LLMTestFactory.sha256Hex(payload).uppercased()
         let spec = LLMModelSpec(
-            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_M,
+            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_XL,
             fileName: "m.gguf", sourceURL: URL(string: "https://x.test/m")!,
             expectedByteCount: Int64(payload.count), sha256: upper,
             contextWindowCap: 4096)

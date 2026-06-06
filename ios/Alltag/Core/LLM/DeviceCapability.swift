@@ -28,8 +28,8 @@ enum DeviceSupport: Sendable, Equatable {
 /// Decides which model (if any) a device should download (A-25).
 ///
 /// Walks the catalog's deliverable specs heaviest-first and returns the first
-/// whose RAM floor the device meets — so a 6 GB phone gets `q4_K_M` and a 4 GB
-/// phone the `q3_K_M` fallback (OQ-8). Below the lowest floor it returns
+/// whose RAM floor the device meets — so a 6 GB phone gets `q4_K_XL` and a 4 GB
+/// phone the `q2_K_XL` fallback (OQ-8). Below the lowest floor it returns
 /// ``DeviceSupport/unsupported(reason:)`` rather than letting the Decoder OOM.
 struct DeviceCapabilityGate: Sendable {
     let catalog: LLMModelCatalog

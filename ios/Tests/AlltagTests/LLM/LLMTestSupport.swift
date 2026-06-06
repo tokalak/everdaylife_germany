@@ -56,7 +56,7 @@ enum LLMTestFactory {
             id: id,
             displayName: "Test Model",
             runtime: .llamaCpp,
-            quant: .q4_K_M,
+            quant: .q4_K_XL,
             fileName: "\(id).gguf",
             sourceURL: URL(string: "https://example.test/\(id).gguf")!,
             expectedByteCount: Int64(payload.count),

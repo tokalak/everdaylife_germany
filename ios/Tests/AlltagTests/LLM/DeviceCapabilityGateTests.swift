@@ -11,16 +11,16 @@ final class DeviceCapabilityGateTests: XCTestCase {
         guard case let .supported(spec) = support else {
             return XCTFail("8 GB device should be supported")
         }
-        XCTAssertEqual(spec.quant, .q4_K_M)
+        XCTAssertEqual(spec.quant, .q4_K_XL)
     }
 
     func testMidMemoryDeviceGetsLowMemoryFallback() {
-        // 4 GB clears q3_K_M's floor but not q4_K_M's (6 GB).
+        // 4 GB clears q2_K_XL's floor but not q4_K_XL's (6 GB).
         let support = gate.evaluate(DeviceCapability(physicalMemory: 4 * gb))
         guard case let .supported(spec) = support else {
             return XCTFail("4 GB device should fall back, not be rejected")
         }
-        XCTAssertEqual(spec.quant, .q3_K_M)
+        XCTAssertEqual(spec.quant, .q2_K_XL)
     }
 
     func testLowMemoryDeviceIsUnsupportedWithReason() {
@@ -33,10 +33,10 @@ final class DeviceCapabilityGateTests: XCTestCase {
 
     func testExactFloorIsInclusive() {
         let support = gate.evaluate(
-            DeviceCapability(physicalMemory: ModelQuant.q4_K_M.minimumDeviceMemory))
+            DeviceCapability(physicalMemory: ModelQuant.q4_K_XL.minimumDeviceMemory))
         guard case let .supported(spec) = support else {
             return XCTFail("device exactly at the floor should qualify")
         }
-        XCTAssertEqual(spec.quant, .q4_K_M)
+        XCTAssertEqual(spec.quant, .q4_K_XL)
     }
 }

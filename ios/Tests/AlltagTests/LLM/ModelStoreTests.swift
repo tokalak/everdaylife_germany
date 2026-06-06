@@ -19,7 +19,7 @@ final class ModelStoreTests: XCTestCase {
 
     private func makeSpec(byteCount: Int64) -> LLMModelSpec {
         LLMModelSpec(
-            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_M,
+            id: "m", displayName: "M", runtime: .llamaCpp, quant: .q4_K_XL,
             fileName: "m.gguf",
             sourceURL: URL(string: "https://example.test/m.gguf")!,
             expectedByteCount: byteCount, sha256: nil, contextWindowCap: 4096)

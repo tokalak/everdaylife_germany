@@ -68,7 +68,7 @@ struct StubTextRecognizer: TextRecognizing {
 /// Builds provisioners/capabilities sized to small fake payloads, so the
 /// readiness flow round-trips with no network and no 3 GB file.
 enum DecoderReadinessFactory {
-    /// ~8 GB device — comfortably runs the `q4_K_M` floor.
+    /// ~8 GB device — comfortably runs the `q4_K_XL` floor.
     static let capableDevice = DeviceCapability(physicalMemory: 8 * 1_024 * 1_024 * 1_024)
     /// ~1 GB device — below every deliverable quant's floor.
     static let incapableDevice = DeviceCapability(physicalMemory: 1 * 1_024 * 1_024 * 1_024)
@@ -76,8 +76,8 @@ enum DecoderReadinessFactory {
     /// A catalog whose primary (and fallback) spec verifies against `payload`,
     /// so a `FakeModelDownloader(payload:)` produces an installable model.
     static func catalog(matching payload: Data) -> LLMModelCatalog {
-        let primary = spec(matching: payload, id: "test-primary", quant: .q4_K_M)
-        let fallback = spec(matching: payload, id: "test-fallback", quant: .q3_K_M)
+        let primary = spec(matching: payload, id: "test-primary", quant: .q4_K_XL)
+        let fallback = spec(matching: payload, id: "test-fallback", quant: .q2_K_XL)
         return LLMModelCatalog(
             primary: primary, lowMemoryFallback: fallback, candidateB: primary)
     }

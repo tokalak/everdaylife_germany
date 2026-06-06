@@ -4,12 +4,13 @@ import XCTest
 /// P0-07 / OQ-14: the catalog carries the shippable llama.cpp candidates and the
 /// recorded runtime decision defaults to Candidate A.
 final class LLMModelCatalogTests: XCTestCase {
-    func testPrimaryIsGemma4E2BQ4OnLlamaCpp() {
+    func testPrimaryIsGemma4E2BQATQ4OnLlamaCpp() {
         let primary = LLMModelCatalog.v1.primary
         XCTAssertEqual(primary.runtime, .llamaCpp)
-        XCTAssertEqual(primary.quant, .q4_K_M)
+        XCTAssertEqual(primary.quant, .q4_K_XL)
         XCTAssertTrue(primary.fileName.hasSuffix(".gguf"))
-        XCTAssertEqual(primary.expectedByteCount, ModelQuant.q4_K_M.approximateByteCount)
+        XCTAssertTrue(primary.fileName.contains("qat"))
+        XCTAssertEqual(primary.expectedByteCount, ModelQuant.q4_K_XL.approximateByteCount)
     }
 
     func testDeliverableSpecsAreLlamaCppOnly() {
@@ -21,18 +22,18 @@ final class LLMModelCatalogTests: XCTestCase {
 
     func testLowMemoryFallbackIsSmallerThanPrimary() {
         let catalog = LLMModelCatalog.v1
-        XCTAssertEqual(catalog.lowMemoryFallback.quant, .q3_K_M)
+        XCTAssertEqual(catalog.lowMemoryFallback.quant, .q2_K_XL)
         XCTAssertLessThan(
             catalog.lowMemoryFallback.expectedByteCount,
             catalog.primary.expectedByteCount)
         XCTAssertLessThan(
-            ModelQuant.q3_K_M.minimumDeviceMemory,
-            ModelQuant.q4_K_M.minimumDeviceMemory)
+            ModelQuant.q2_K_XL.minimumDeviceMemory,
+            ModelQuant.q4_K_XL.minimumDeviceMemory)
     }
 
     func testSpecLookupByQuant() {
-        XCTAssertEqual(LLMModelCatalog.v1.spec(for: .q4_K_M)?.quant, .q4_K_M)
-        XCTAssertEqual(LLMModelCatalog.v1.spec(for: .q3_K_M)?.quant, .q3_K_M)
+        XCTAssertEqual(LLMModelCatalog.v1.spec(for: .q4_K_XL)?.quant, .q4_K_XL)
+        XCTAssertEqual(LLMModelCatalog.v1.spec(for: .q2_K_XL)?.quant, .q2_K_XL)
     }
 
     func testContextWindowCappedWellBelow128K() {

@@ -58,8 +58,8 @@ struct RuntimeDecision: Sendable, Equatable {
         chosen: .llamaCpp,
         rationale: """
         Default per P0-07 decision rule: llama.cpp/GGUF gives GBNF-guaranteed \
-        valid JSON for the Decoder schema (A-27), quant flexibility (q4_K_M with \
-        a q3_K_M low-memory fallback), and mature iOS-Metal support independent \
+        valid JSON for the Decoder schema (A-27), quant flexibility (QAT q4_K_XL \
+        with a q2_K_XL low-memory fallback), and mature iOS-Metal support independent \
         of Google's iOS release cadence. Candidate B (LiteRT-LM) remains a \
         swap-in candidate pending an on-device benchmark on the same German \
         Behörden letters (OQ-14); switch only if it runs well on iOS AND is \
