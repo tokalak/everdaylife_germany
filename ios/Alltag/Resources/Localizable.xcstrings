@@ -10726,6 +10726,686 @@
         }
       }
     },
+    "tool_prearrival_fm_accommodation_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wohnheim oder Zimmer suchen – nötig für die Anmeldung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find a dorm or room — needed for your address registration."
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_accommodation_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterkunft planen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan accommodation"
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_admission_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewirb dich und sichere dir möglichst die Zulassung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply and ideally secure your admission letter."
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_admission_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zulassung oder Bewerbung an der Hochschule"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "University admission (Zulassung) or application"
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_anmeldung_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Innerhalb der ersten Wochen beim Bürgeramt anmelden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register at the Bürgeramt within the first weeks."
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_anmeldung_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Ankunft: Anmeldung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: register your address (Anmeldung)"
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_bank_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Girokonto erleichtert Miete und Alltag."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A current account makes rent and daily life easier."
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_bank_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Ankunft: Bankkonto eröffnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: open a bank account"
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_enroll_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An der Hochschule einschreiben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enrol at your university."
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_enroll_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Ankunft: Immatrikulation"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: enrol"
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_health_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EHIC nutzen oder eine deutsche studentische Versicherung abschließen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use your EHIC or take out German student health cover."
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_health_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenversicherung organisieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrange health insurance"
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_passport_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für die Einreise reicht ein gültiges Ausweisdokument."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A valid ID document is enough to enter."
+          }
+        }
+      }
+    },
+    "tool_prearrival_fm_passport_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültiger Pass oder Personalausweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid passport or ID card"
+          }
+        }
+      }
+    },
+    "tool_prearrival_intro": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): intro.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für ein Studium in Deutschland (Aufenthalt über 90 Tage) hängt der Weg von deiner Staatsangehörigkeit ab. Wähle sie aus und sieh, was du vor und kurz nach der Anreise erledigst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For studying in Germany (a stay over 90 days) the route depends on your nationality. Pick it to see what to do before and right after you arrive."
+          }
+        }
+      }
+    },
+    "tool_prearrival_learn_more": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): learn-more link into the residence-permit guide.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zur Aufenthaltserlaubnis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about the residence permit"
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_admission_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zulassungsbescheid oder Nachweis der Bewerbung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Admission letter or proof you have applied."
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_admission_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zulassung oder Bewerberstatus"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Admission or applicant status"
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_anmeldung_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Innerhalb der ersten Wochen beim Bürgeramt anmelden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register at the Bürgeramt within the first weeks."
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_anmeldung_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Ankunft: Anmeldung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: register your address (Anmeldung)"
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_blocked_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis der Finanzierung für das erste Jahr."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof you can fund your first year."
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_blocked_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sperrkonto / Finanzierungsnachweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocked account (Sperrkonto) / proof of funds"
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_enroll_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An der Hochschule einschreiben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enrol at your university."
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_enroll_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Ankunft: Immatrikulation"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: enrol"
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_health_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültige Versicherung für den Studienstart."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid cover for the start of your studies."
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_health_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Health insurance"
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_permit_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vor Ablauf des Visums den Aufenthaltstitel beantragen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply for the residence permit before the visa expires."
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_permit_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Ankunft: Visum in Aufenthaltserlaubnis umwandeln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: convert to a residence permit"
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_translations_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeugnisse und Urkunden ggf. beglaubigt übersetzen lassen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Have certificates and documents officially translated where needed."
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_translations_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beglaubigte Übersetzungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Certified translations"
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_visa_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frühzeitig beantragen – die Wartezeiten sind oft lang."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply well in advance — lead times are often long."
+          }
+        }
+      }
+    },
+    "tool_prearrival_nv_visa_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nationales Studenten-/Bewerbervisum bei der Botschaft"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "National student/applicant visa at the German embassy"
+          }
+        }
+      }
+    },
+    "tool_prearrival_picker_label": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): nationality picker label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Staatsangehörigkeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your nationality"
+          }
+        }
+      }
+    },
+    "tool_prearrival_route_free_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement route detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als EU-/EWR-/Schweiz-Staatsangehörige:r brauchst du weder Visum noch Aufenthaltstitel. Du schreibst dich ein, meldest dich an und sicherst dich krankenversichert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As an EU/EEA/Switzerland national you need neither a visa nor a residence permit. You just enrol, register your address and arrange health insurance."
+          }
+        }
+      }
+    },
+    "tool_prearrival_route_free_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement route title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freizügigkeit – kein Visum nötig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free movement — no visa needed"
+          }
+        }
+      }
+    },
+    "tool_prearrival_route_visa_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa route detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du brauchst ein nationales Studentenvisum (Typ D), das du vor der Reise bei der deutschen Botschaft beantragst. Plane viel Vorlauf ein."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You need a national student visa (type D), applied for at the German embassy before you travel. Allow plenty of lead time."
+          }
+        }
+      }
+    },
+    "tool_prearrival_route_visa_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): national-visa route title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nationales Visum vor der Reise nötig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "National visa required before travelling"
+          }
+        }
+      }
+    },
+    "tool_prearrival_route_visafree_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free-entry route detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Staatsangehörigkeit (§ 41 AufenthV) darf visumfrei einreisen und die Aufenthaltserlaubnis nach der Ankunft beantragen – innerhalb von 90 Tagen bei der Ausländerbehörde."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your nationality (§ 41 AufenthV) may enter visa-free and apply for the residence permit after arrival — within 90 days at the Ausländerbehörde."
+          }
+        }
+      }
+    },
+    "tool_prearrival_route_visafree_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free-entry route title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visumfreie Einreise – Titel danach beantragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa-free entry — apply for the permit afterwards"
+          }
+        }
+      }
+    },
+    "tool_prearrival_steps_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): checklist section header.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Schritte vor der Anreise"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your pre-arrival steps"
+          }
+        }
+      }
+    },
     "tool_prearrival_subtitle": {
       "localizations": {
         "de": {
@@ -10755,6 +11435,278 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pre-arrival checklist"
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_admission_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Zulassung der Hochschule mitbringen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bring your university admission letter."
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_admission_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zulassungsbescheid"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Admission letter"
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_anmeldung_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird oft für den Aufenthaltstitel gebraucht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Often needed for the residence permit."
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_anmeldung_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Ankunft: Anmeldung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: register your address (Anmeldung)"
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_blocked_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis der Finanzierung für das erste Jahr."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof you can fund your first year."
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_blocked_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sperrkonto / Finanzierungsnachweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocked account (Sperrkonto) / proof of funds"
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_enroll_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An der Hochschule einschreiben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enrol at your university."
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_enroll_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach Ankunft: Immatrikulation"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: enrol"
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_fees_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semesterbeitrag und Gebühr für den Aufenthaltstitel einplanen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Budget for the semester fee and the residence-permit fee."
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_fees_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mittel für Gebühren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funds for fees"
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_health_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültige Versicherung für den Studienstart."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid cover for the start of your studies."
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_health_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Health insurance"
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_passport_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über die geplante Aufenthaltsdauer hinaus gültig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid well beyond your planned stay."
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_passport_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültiger Reisepass"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid passport"
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_permit_detail": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step detail.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termin bei der Ausländerbehörde buchen und die Aufenthaltserlaubnis innerhalb von 90 Tagen beantragen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Book the Ausländerbehörde appointment and apply for the study residence permit within 90 days."
+          }
+        }
+      }
+    },
+    "tool_prearrival_vf_permit_title": {
+      "comment": "Pre-arrival-by-nationality tool (P6-S1): visa-free step.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach visumfreier Einreise: Termin & Antrag (90 Tage)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After visa-free entry: appointment & permit (within 90 days)"
           }
         }
       }
