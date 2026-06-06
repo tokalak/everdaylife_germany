@@ -7460,6 +7460,567 @@
         }
       }
     },
+    "tool_blocked_affiliate_disclosure": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). Affiliate transparency disclosure (P6-A1).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparenz: Einige Links sind Partnerlinks – wir erhalten dafür unter Umständen eine Provision. Das beeinflusst weder die Reihenfolge noch deinen Preis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparency: some links are affiliate links — we may earn a commission. This never affects the order shown or the price you pay."
+          }
+        }
+      }
+    },
+    "tool_blocked_affiliate_tag": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). Per-option affiliate marker.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partnerlink"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affiliate"
+          }
+        }
+      }
+    },
+    "tool_blocked_best_for": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). \"Best for\" label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut für:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best for:"
+          }
+        }
+      }
+    },
+    "tool_blocked_fee_label": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). Setup/monthly fee label.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gebühren:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fees:"
+          }
+        }
+      }
+    },
+    "tool_blocked_filter_english": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). English-support filter toggle.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur mit englischem Support"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English support only"
+          }
+        }
+      }
+    },
+    "tool_blocked_filter_english_hint": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). English-support filter hint.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anbieter mit englischsprachiger Anmeldung und Betreuung anzeigen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show providers with English-language onboarding and support."
+          }
+        }
+      }
+    },
+    "tool_blocked_intro": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für ein Studierendenvisum musst du in der Regel nachweisen, dass du deinen Lebensunterhalt finanzieren kannst – meist über ein Sperrkonto. Du zahlst den Jahresbetrag ein und kannst monatlich einen festen Betrag abheben. Hier ein transparenter Vergleich gängiger Anbieter."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For a student visa you usually have to prove you can cover your living costs — typically via a blocked account (Sperrkonto). You deposit the annual amount and may withdraw a fixed sum each month. Here is a transparent comparison of common providers."
+          }
+        }
+      }
+    },
+    "tool_blocked_open_action": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). Open-provider link action.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anbieter öffnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open provider"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_coracle_bestfor": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studierende, die Konto und Versicherung bündeln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "students bundling account and insurance"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_coracle_fee": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einrichtungs- + Monatsgebühr"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setup + monthly fee"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_coracle_h1": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online-Eröffnung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online opening"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_coracle_h2": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischsprachiger Support"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language support"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_coracle_h3": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versicherungen zubuchbar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add-on insurance available"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_coracle_summary": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sperrkonto und Versicherungen für Studierende; englischsprachiger Service und Online-Eröffnung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocked account and insurance for students; English-language service and online opening."
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_deutsche_bank_bestfor": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "wer eine klassische Filialbank bevorzugt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "those who prefer a traditional branch bank"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_deutsche_bank_fee": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einrichtungsgebühr"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setup fee"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_deutsche_bank_h1": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etablierte Filialbank"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Established branch bank"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_deutsche_bank_h2": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Von Auslandsvertretungen anerkannt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recognised by missions abroad"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_deutsche_bank_h3": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bearbeitung kann länger dauern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Processing can take longer"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_deutsche_bank_summary": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klassisches Sperrkonto bei einer Filialbank; etabliert und von Botschaften anerkannt, Eröffnung teils vor Ort."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classic blocked account at a branch bank; established and embassy-accepted, opening sometimes in person."
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_expatrio_bestfor": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sperrkonto + Versicherung im Paket"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "blocked account + insurance bundled"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_expatrio_fee": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einrichtungs- + Monatsgebühr"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setup + monthly fee"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_expatrio_h1": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online-Eröffnung mit englischer Anleitung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online opening with English guidance"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_expatrio_h2": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kombipaket mit Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combined package with health insurance"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_expatrio_h3": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Von vielen Auslandsvertretungen anerkannt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recognised by many missions abroad"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_expatrio_summary": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sperrkonto häufig im \"Value Package\" mit Krankenversicherung; von vielen Botschaften akzeptiert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocked account often in a \"Value Package\" with health insurance; accepted by many embassies."
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_fintiba_bestfor": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "schnelle, voll digitale Einrichtung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "fast, fully digital setup"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_fintiba_fee": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einrichtungs- + geringe Monatsgebühr"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setup + small monthly fee"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_fintiba_h1": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schnelle Online-Eröffnung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fast online opening"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_fintiba_h2": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischsprachiger Support"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language support"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_fintiba_h3": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paket mit Krankenversicherung möglich"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bundle with health insurance available"
+          }
+        }
+      }
+    },
+    "tool_blocked_opt_fintiba_summary": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Digitales Sperrkonto, das von vielen deutschen Auslandsvertretungen anerkannt wird; oft mit Krankenversicherung kombinierbar."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Digital blocked account accepted by many German missions abroad; often bundled with health insurance."
+          }
+        }
+      }
+    },
+    "tool_blocked_required_fmt": {
+      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). Required blocked amount line; %1$d = year, %2$@ = annual total, %3$@ = monthly allowance.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuell (%1$d) müssen rund %2$@ auf dem Sperrkonto liegen – das entspricht etwa %3$@ pro Monat. Bitte beim Auswärtigen Amt prüfen, der Betrag ändert sich jährlich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Currently (%1$d) you must block around %2$@ — about %3$@ per month. Please verify with the Foreign Office; the amount changes each year."
+          }
+        }
+      }
+    },
     "tool_blocked_subtitle": {
       "localizations": {
         "de": {
