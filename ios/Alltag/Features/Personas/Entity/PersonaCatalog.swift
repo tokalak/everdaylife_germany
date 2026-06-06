@@ -69,7 +69,8 @@ enum PersonaCatalog {
         ChecklistItem(
             id: "anmeldung",
             titleKey: "checklist_worker_anmeldung_title",
-            subtitleKey: "checklist_worker_anmeldung_subtitle"),
+            subtitleKey: "checklist_worker_anmeldung_subtitle",
+            link: .tool("anmeldung_guide")),
         ChecklistItem(
             id: "bank_account",
             titleKey: "checklist_worker_bank_title",
@@ -145,6 +146,15 @@ enum PersonaCatalog {
             subtitleKey: "tool_freelance_subtitle",
             systemImage: "doc.badge.plus",
             tint: AppColor.primaryDeep),
+        // Shared with the Student persona (P6-S4) — reuses the generic
+        // `tool_anmeldung_*` keys (DRY) and the same `anmeldung_guide` tool, so
+        // the worker checklist's `anmeldung` item can deep-link here.
+        PersonaTool(
+            id: "anmeldung_guide",
+            titleKey: "tool_anmeldung_title",
+            subtitleKey: "tool_anmeldung_subtitle",
+            systemImage: "house.fill",
+            tint: AppColor.primary),
     ]
 
     // MARK: - Tourist (P5-01)

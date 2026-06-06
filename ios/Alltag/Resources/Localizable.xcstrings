@@ -6698,6 +6698,312 @@
         }
       }
     },
+    "tool_anmeldung_deadline_body": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melde dich in der Regel innerhalb von 14 Tagen nach dem Einzug an. Die genaue Frist kann je nach Stadt abweichen – prüfe sie vor Ort."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register within 14 days of moving in, as a rule. The exact deadline can vary by city, so check it locally."
+          }
+        }
+      }
+    },
+    "tool_anmeldung_deadline_heading": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deadline"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_doc_certificates": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heirats- oder Geburtsurkunden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marriage or birth certificates"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_doc_certificates_hint": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei Familien: für die Anmeldung von Ehepartnern und Kindern."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For families: when registering spouses and children."
+          }
+        }
+      }
+    },
+    "tool_anmeldung_doc_form": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausgefülltes Anmeldeformular"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completed registration form (Anmeldeformular)"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_doc_passport": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültiger Reisepass oder Personalausweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid passport or ID card"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_doc_wohnungsgeber": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wohnungsgeberbestätigung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wohnungsgeberbestätigung (landlord's move-in confirmation)"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_doc_wohnungsgeber_hint": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unverzichtbar: die Einzugsbestätigung deiner Vermieterin oder deines Vermieters. Ohne sie ist keine Anmeldung möglich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essential: your landlord's confirmation that you have moved in. Without it the Anmeldung is not possible."
+          }
+        }
+      }
+    },
+    "tool_anmeldung_documents_title": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was du mitbringst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What to bring"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_intro": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So meldest du deinen Wohnsitz beim örtlichen Bürgeramt an – Schritt für Schritt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How to register your home address at the local Bürgeramt, step by step."
+          }
+        }
+      }
+    },
+    "tool_anmeldung_result_body": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach dem Termin erhältst du die Meldebescheinigung – die Bestätigung deiner Anmeldung. Bewahre sie gut auf."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After the appointment you receive the Meldebescheinigung — confirmation of your registration. Keep it safe."
+          }
+        }
+      }
+    },
+    "tool_anmeldung_result_heading": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was du bekommst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What you receive"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_step_attend": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zum Termin gehen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attend the appointment"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_step_book": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termin beim Bürgeramt buchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Book a Bürgeramt appointment"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_step_form": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anmeldeformular ausfüllen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fill in the registration form"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_step_receive": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meldebescheinigung erhalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Receive your Meldebescheinigung"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_step_wohnungsgeber": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wohnungsgeberbestätigung von der Vermietung einholen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get the Wohnungsgeberbestätigung from your landlord"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_steps_title": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So gehst du vor"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How to do it"
+          }
+        }
+      }
+    },
     "tool_anmeldung_subtitle": {
       "localizations": {
         "de": {
@@ -6727,6 +7033,91 @@
           "stringUnit": {
             "state": "translated",
             "value": "Anmeldung guide"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_what_body": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Anmeldung ist die Registrierung deiner Wohnanschrift beim örtlichen Bürgeramt bzw. Einwohnermeldeamt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Anmeldung is registering your home address at the local Bürgeramt (citizens' office) or Einwohnermeldeamt."
+          }
+        }
+      }
+    },
+    "tool_anmeldung_what_heading": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist die Anmeldung?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What is the Anmeldung?"
+          }
+        }
+      }
+    },
+    "tool_anmeldung_what_why": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du brauchst die Meldebescheinigung für fast alles: um eine Steuer-ID zu bekommen, viele Bankkonten zu eröffnen, Verträge abzuschließen und einen Aufenthaltstitel zu erhalten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You need the Meldebescheinigung for almost everything: to get a tax-ID, open many bank accounts, sign contracts and obtain a residence permit."
+          }
+        }
+      }
+    },
+    "tool_anmeldung_where_body": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Anmeldung erfolgt persönlich beim örtlichen Bürgeramt. Buche einen Termin – oft sind Termine erst Wochen im Voraus frei."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You register in person at the local Bürgeramt. Book an appointment — slots are often only available weeks ahead."
+          }
+        }
+      }
+    },
+    "tool_anmeldung_where_heading": {
+      "comment": "Anmeldung guide (shared by Student and Worker).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wo & wie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where & how"
           }
         }
       }
