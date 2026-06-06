@@ -52,7 +52,7 @@ struct StudentHealthView: View {
                 .foregroundStyle(AppColor.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
 
-            affiliateDisclosure
+            AffiliateDisclosure()
             DisclaimerNote()
 
             englishFilter
@@ -75,28 +75,6 @@ struct StudentHealthView: View {
         }
         .padding(AppSpacing.lg)
         .frame(maxWidth: .infinity, alignment: .leading)
-    }
-
-    // MARK: - Transparency
-
-    private var affiliateDisclosure: some View {
-        HStack(alignment: .top, spacing: AppSpacing.sm) {
-            Image(systemName: "info.circle.fill")
-                .foregroundStyle(AppColor.amber)
-            Text("tool_studenthealth_affiliate_disclosure")
-                .appText(.label)
-                .foregroundStyle(AppColor.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-                .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .padding(AppSpacing.md)
-        .background(
-            AppColor.amberWash,
-            in: RoundedRectangle(cornerRadius: AppRadius.md, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: AppRadius.md, style: .continuous)
-                .strokeBorder(AppColor.amber.opacity(0.4), lineWidth: 1))
-        .accessibilityElement(children: .combine)
     }
 
     // MARK: - Filter
@@ -133,14 +111,7 @@ struct StudentHealthView: View {
                     .appText(.cardTitle)
                     .foregroundStyle(AppColor.ink)
                 Spacer(minLength: 0)
-                if option.isAffiliate {
-                    Text("tool_studenthealth_affiliate_tag")
-                        .appText(.caption)
-                        .foregroundStyle(AppColor.severityAction)
-                        .padding(.horizontal, AppSpacing.xs)
-                        .padding(.vertical, AppSpacing.xxs)
-                        .background(AppColor.amberWash, in: Capsule())
-                }
+                if option.isAffiliate { AffiliateTag() }
             }
 
             Text(LocalizedStringKey(option.summaryKey))

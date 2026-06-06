@@ -1,6 +1,40 @@
 {
   "sourceLanguage": "de",
   "strings": {
+    "affiliate_disclosure": {
+      "comment": "Shared affiliate transparency disclosure across all comparison tools (P6-A1).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparenz: Einige Links sind Partnerlinks – wir erhalten dafür unter Umständen eine Provision. Das beeinflusst weder die Reihenfolge noch deinen Preis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparency: some links are affiliate links — we may earn a commission. This never affects the order shown or the price you pay."
+          }
+        }
+      }
+    },
+    "affiliate_tag": {
+      "comment": "Shared per-option affiliate marker across all comparison tools (P6-A1).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partnerlink"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affiliate link"
+          }
+        }
+      }
+    },
     "app_name": {
       "extractionState": "stale",
       "localizations": {
@@ -7581,40 +7615,6 @@
         }
       }
     },
-    "tool_bank_affiliate_disclosure": {
-      "comment": "Bank comparison (P6-W4): affiliate transparency disclosure (P6-A1).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Transparenz: Einige Links sind Partnerlinks – wir erhalten dafür unter Umständen eine Provision. Das beeinflusst weder die Reihenfolge noch deinen Preis."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Transparency: some links are affiliate links — we may earn a commission. This never affects the order shown or the price you pay."
-          }
-        }
-      }
-    },
-    "tool_bank_affiliate_tag": {
-      "comment": "Bank comparison (P6-W4): per-option affiliate marker.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Partnerlink"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Affiliate link"
-          }
-        }
-      }
-    },
     "tool_bank_best_for": {
       "comment": "Bank comparison (P6-W4): 'best for' label prefix.",
       "localizations": {
@@ -8714,40 +8714,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Register a birth"
-          }
-        }
-      }
-    },
-    "tool_blocked_affiliate_disclosure": {
-      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). Affiliate transparency disclosure (P6-A1).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Transparenz: Einige Links sind Partnerlinks – wir erhalten dafür unter Umständen eine Provision. Das beeinflusst weder die Reihenfolge noch deinen Preis."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Transparency: some links are affiliate links — we may earn a commission. This never affects the order shown or the price you pay."
-          }
-        }
-      }
-    },
-    "tool_blocked_affiliate_tag": {
-      "comment": "Blocked account (Sperrkonto) comparison (P6-S2). Per-option affiliate marker.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Partnerlink"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Affiliate"
           }
         }
       }
@@ -11954,39 +11920,6 @@
         }
       },
       "comment": "Freelance registration tool: tile title / nav title."
-    },
-    "tool_health_affiliate_disclosure": {
-      "comment": "Health tool: affiliate transparency disclosure.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Manche Links können eine Provision einbringen. Das beeinflusst weder die Reihenfolge noch deinen Beitrag."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Some links may earn a commission. This never affects the ranking or the premium you pay."
-          }
-        }
-      }
-    },
-    "tool_health_affiliate_tag": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Anzeige"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ad"
-          }
-        }
-      }
     },
     "tool_health_best_for": {
       "localizations": {
@@ -17984,40 +17917,6 @@
         }
       }
     },
-    "tool_studenthealth_affiliate_disclosure": {
-      "comment": "Student health-insurance comparison (P6-S3).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Transparenz: Einige Links sind Partnerlinks – wir können eine Provision erhalten. Das beeinflusst weder die Reihenfolge noch den Preis, den du zahlst."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Transparency: some links are affiliate links — we may earn a commission. This never affects the ranking or the price you pay."
-          }
-        }
-      }
-    },
-    "tool_studenthealth_affiliate_tag": {
-      "comment": "Student health-insurance comparison (P6-S3).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Partnerlink"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Affiliate"
-          }
-        }
-      }
-    },
     "tool_studenthealth_best_for": {
       "comment": "Student health-insurance comparison (P6-S3).",
       "localizations": {
@@ -19847,40 +19746,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Where to get it"
-          }
-        }
-      }
-    },
-    "tool_travel_affiliate_disclosure": {
-      "comment": "Travel insurance comparison (P6-T4): affiliate transparency disclosure (P6-A1).",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Transparenz: Einige Links sind Partnerlinks – wir erhalten dafür unter Umständen eine Provision. Das beeinflusst weder die Reihenfolge noch deinen Preis."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Transparency: some links are affiliate links — we may earn a commission. This never affects the order shown or the price you pay."
-          }
-        }
-      }
-    },
-    "tool_travel_affiliate_tag": {
-      "comment": "Travel insurance comparison (P6-T4): per-option affiliate marker.",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Partnerlink"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Affiliate"
           }
         }
       }

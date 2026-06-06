@@ -213,7 +213,7 @@ struct HealthDecisionView: View {
                 .appText(.sectionHeader)
                 .foregroundStyle(AppColor.ink)
 
-            affiliateDisclosure
+            AffiliateDisclosure()
 
             VStack(alignment: .leading, spacing: AppSpacing.sm) {
                 ForEach(Array(options.enumerated()), id: \.element.id) { index, option in
@@ -221,26 +221,6 @@ struct HealthDecisionView: View {
                 }
             }
         }
-    }
-
-    private var affiliateDisclosure: some View {
-        HStack(alignment: .top, spacing: AppSpacing.sm) {
-            Image(systemName: "info.circle.fill")
-                .foregroundStyle(AppColor.amber)
-            Text("tool_health_affiliate_disclosure")
-                .appText(.label)
-                .foregroundStyle(AppColor.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-                .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .padding(AppSpacing.md)
-        .background(
-            AppColor.amberWash,
-            in: RoundedRectangle(cornerRadius: AppRadius.md, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: AppRadius.md, style: .continuous)
-                .strokeBorder(AppColor.amber.opacity(0.4), lineWidth: 1))
-        .accessibilityElement(children: .combine)
     }
 
     private func optionCard(_ option: ComparisonOption, rank: Int) -> some View {
@@ -254,14 +234,7 @@ struct HealthDecisionView: View {
                     .appText(.cardTitle)
                     .foregroundStyle(AppColor.ink)
                 Spacer(minLength: 0)
-                if option.isAffiliate {
-                    Text("tool_health_affiliate_tag")
-                        .appText(.caption)
-                        .foregroundStyle(AppColor.severityAction)
-                        .padding(.horizontal, AppSpacing.xs)
-                        .padding(.vertical, AppSpacing.xxs)
-                        .background(AppColor.amberWash, in: Capsule())
-                }
+                if option.isAffiliate { AffiliateTag() }
             }
 
             Text(LocalizedStringKey(option.summaryKey))
