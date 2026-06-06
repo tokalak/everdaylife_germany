@@ -78,8 +78,12 @@ enum DecoderReadinessFactory {
     static func catalog(matching payload: Data) -> LLMModelCatalog {
         let primary = spec(matching: payload, id: "test-primary", quant: .q4_K_XL)
         let fallback = spec(matching: payload, id: "test-fallback", quant: .q2_K_XL)
+        // Default to the primary quant here so the capable device picks it (these
+        // readiness tests pre-install `primary`); the production catalog's q2_K_XL
+        // default is covered by the catalog/gate suites.
         return LLMModelCatalog(
-            primary: primary, lowMemoryFallback: fallback, candidateB: primary)
+            primary: primary, lowMemoryFallback: fallback, candidateB: primary,
+            defaultQuant: .q4_K_XL)
     }
 
     private static func spec(

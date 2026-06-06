@@ -27,9 +27,13 @@ enum DeviceSupport: Sendable, Equatable {
 
 /// Decides which model (if any) a device should download (A-25).
 ///
-/// Walks the catalog's deliverable specs heaviest-first and returns the first
-/// whose RAM floor the device meets — so a 6 GB phone gets `q4_K_XL` and a 4 GB
-/// phone the `q2_K_XL` fallback (OQ-8). Below the lowest floor it returns
+/// Selection is **policy then capability**: prefer the catalog's
+/// ``LLMModelCatalog/defaultQuant`` whenever the device can run it, and only
+/// step down to the heaviest *other* quant that still fits when the default
+/// doesn't. With the default set to `q2_K_XL`, every supported device runs that
+/// quant; were it set to the richest quant, this reduces to the old
+/// "best-that-fits" walk (a 6 GB phone gets `q4_K_XL`, a 4 GB phone the
+/// `q2_K_XL` fallback — OQ-8). Below the lowest floor it returns
 /// ``DeviceSupport/unsupported(reason:)`` rather than letting the Decoder OOM.
 struct DeviceCapabilityGate: Sendable {
     let catalog: LLMModelCatalog
@@ -40,11 +44,16 @@ struct DeviceCapabilityGate: Sendable {
 
     func evaluate(_ capability: DeviceCapability) -> DeviceSupport {
         let affordable = catalog.deliverable
+            .filter { capability.physicalMemory >= $0.minimumDeviceMemory }
             .sorted { $0.minimumDeviceMemory > $1.minimumDeviceMemory }
-            .first { capability.physicalMemory >= $0.minimumDeviceMemory }
 
-        if let affordable {
-            return .supported(affordable)
+        // Honour the preferred default quant if it fits; otherwise fall back to
+        // the heaviest quant the device can still afford (graceful degradation).
+        let chosen = affordable.first { $0.quant == catalog.defaultQuant }
+            ?? affordable.first
+
+        if let chosen {
+            return .supported(chosen)
         }
         let neededGB = lowestFloorGigabytes()
         return .unsupported(

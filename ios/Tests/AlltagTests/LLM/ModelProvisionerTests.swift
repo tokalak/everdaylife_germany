@@ -16,8 +16,11 @@ final class ModelProvisionerTests: XCTestCase {
     /// download verifies and installs.
     private func catalog(matching payload: Data) -> LLMModelCatalog {
         let spec = LLMTestFactory.spec(matching: payload, id: "primary")
+        // defaultQuant matches the spec's quant so an 8 GB device picks it (this
+        // suite tests provisioning mechanics, not the production quant policy).
         return LLMModelCatalog(
-            primary: spec, lowMemoryFallback: spec, candidateB: spec)
+            primary: spec, lowMemoryFallback: spec, candidateB: spec,
+            defaultQuant: spec.quant ?? .q4_K_XL)
     }
 
     private func collect(

@@ -31,6 +31,16 @@ final class LLMModelCatalogTests: XCTestCase {
             ModelQuant.q4_K_XL.minimumDeviceMemory)
     }
 
+    func testDefaultQuantIsQ2Trial() {
+        // Trial (2026-06-06): the app defaults to the smaller/faster q2_K_XL
+        // while we evaluate whether its quality suffices. Flip to .q4_K_XL to
+        // restore quality-first selection.
+        XCTAssertEqual(LLMModelCatalog.v1.defaultQuant, .q2_K_XL)
+        XCTAssertNotNil(
+            LLMModelCatalog.v1.spec(for: LLMModelCatalog.v1.defaultQuant),
+            "default quant must be a deliverable spec")
+    }
+
     func testSpecLookupByQuant() {
         XCTAssertEqual(LLMModelCatalog.v1.spec(for: .q4_K_XL)?.quant, .q4_K_XL)
         XCTAssertEqual(LLMModelCatalog.v1.spec(for: .q2_K_XL)?.quant, .q2_K_XL)

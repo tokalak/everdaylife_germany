@@ -95,8 +95,17 @@ struct LLMModelCatalog: Sendable, Equatable {
     /// not shipped unless the benchmark flips ``RuntimeDecision``.
     let candidateB: LLMModelSpec
 
+    /// The quant the app prefers by default, independent of what a device *could*
+    /// run. This separates **policy** (which quant we want) from **capability**
+    /// (which quants fit). The capability gate honours this whenever the device
+    /// can run it, only stepping down to a heavier-but-still-affordable quant if
+    /// the default itself doesn't fit. Set it to the richest quant to get the
+    /// old "best that fits" behaviour back (a one-line revert).
+    let defaultQuant: ModelQuant
+
     /// Specs that can actually be served to a device, heaviest (best) first —
-    /// the capability gate walks this to pick the richest quant that fits.
+    /// the capability gate walks this together with ``defaultQuant`` to pick the
+    /// quant a device should run.
     var deliverable: [LLMModelSpec] { [primary, lowMemoryFallback] }
 
     /// The spec for a given quant, if the catalog carries it.
@@ -140,5 +149,11 @@ struct LLMModelCatalog: Sendable, Equatable {
                 string: "https://huggingface.co/google/gemma-4-E2B-it-litert-preview/resolve/main/gemma-4-E2B-it.litertlm")!,
             expectedByteCount: 2_590_000_000,
             sha256: nil,
-            contextWindowCap: 8_192))
+            contextWindowCap: 8_192),
+        // Trial (2026-06-06): default to the smaller/faster QAT `Q2_K_XL` and
+        // evaluate whether its quality is sufficient for German Behörden letters.
+        // Because Q2_K_XL also has the lowest RAM floor, every supported device
+        // runs the same quant by default — `Q4_K_XL` stays in the catalog as the
+        // quality-first option. Revert to `.q4_K_XL` to restore best-that-fits.
+        defaultQuant: .q2_K_XL)
 }
