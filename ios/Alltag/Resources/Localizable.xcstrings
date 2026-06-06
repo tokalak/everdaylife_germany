@@ -16746,6 +16746,210 @@
         }
       }
     },
+    "tool_working_hours_add_day": {
+      "comment": "Working-hours tracker: button to add a work day to the list.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitstag hinzufügen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add work day"
+          }
+        }
+      }
+    },
+    "tool_working_hours_at_limit": {
+      "comment": "Working-hours tracker: warning shown when the annual allowance is used up.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast dein Jahreskontingent erreicht. Mehr Arbeit kann gegen deine Aufenthaltserlaubnis verstoßen — kläre das mit der Ausländerbehörde."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have reached your annual allowance. Working more may breach your residence permit — check with the immigration office."
+          }
+        }
+      }
+    },
+    "tool_working_hours_counts_fmt": {
+      "comment": "Working-hours tracker: breakdown of logged days. First %lld is full days, second %lld is half days.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld ganze Tage, %lld halbe Tage"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld full days, %lld half days"
+          }
+        }
+      }
+    },
+    "tool_working_hours_counts_full": {
+      "comment": "Working-hours tracker: label shown when a day counts as a full day.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zählt als ganzer Tag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Counts as a full day"
+          }
+        }
+      }
+    },
+    "tool_working_hours_counts_half": {
+      "comment": "Working-hours tracker: label shown when a day counts as a half day.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zählt als halber Tag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Counts as a half day"
+          }
+        }
+      }
+    },
+    "tool_working_hours_date_label": {
+      "comment": "Working-hours tracker: date picker label for a logged work day.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date"
+          }
+        }
+      }
+    },
+    "tool_working_hours_days_title": {
+      "comment": "Working-hours tracker: section title for the list of logged work days.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Arbeitstage"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your work days"
+          }
+        }
+      }
+    },
+    "tool_working_hours_delete_day": {
+      "comment": "Working-hours tracker: accessibility label for deleting a work day.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitstag löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete work day"
+          }
+        }
+      }
+    },
+    "tool_working_hours_hours_fmt": {
+      "comment": "Working-hours tracker: hours worked on a day. %@ is the number of hours.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ Std."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ h"
+          }
+        }
+      }
+    },
+    "tool_working_hours_intro": {
+      "comment": "Working-hours tracker: intro explaining the 140-full / 280-half day rule.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als internationale*r Student*in (Nicht-EU) darfst du pro Jahr begrenzt arbeiten: in der Regel 140 ganze oder 280 halbe Tage. Ein Tag bis 4 Stunden zählt als halber Tag, mehr als 4 Stunden als ganzer Tag. Trage deine Arbeitstage ein und sieh, wie viel deines Jahreskontingents übrig ist."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As a non-EU international student you may work a limited amount per year: usually 140 full days or 280 half days. A day of up to 4 hours counts as a half day, more than 4 hours as a full day. Log your work days and see how much of your annual allowance is left."
+          }
+        }
+      }
+    },
+    "tool_working_hours_learn_more": {
+      "comment": "Working-hours tracker: link into the residence-permit guide.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zur Aufenthaltserlaubnis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More about the residence permit"
+          }
+        }
+      }
+    },
+    "tool_working_hours_remaining_fmt": {
+      "comment": "Working-hours tracker: remaining allowance. %@ is the remaining full-day equivalents.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch %@ Tage übrig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ days remaining"
+          }
+        }
+      }
+    },
     "tool_working_hours_subtitle": {
       "localizations": {
         "de": {
@@ -16775,6 +16979,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "Working-hours tracker"
+          }
+        }
+      }
+    },
+    "tool_working_hours_used_fmt": {
+      "comment": "Working-hours tracker: equivalents used of the allowance. %@ is the used full-day equivalents, %lld is the 140-day maximum.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ von %lld Tagen genutzt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ of %lld days used"
           }
         }
       }
