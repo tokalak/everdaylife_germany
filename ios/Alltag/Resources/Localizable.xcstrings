@@ -13087,6 +13087,534 @@
         }
       }
     },
+    "tool_reunification_doc_age_eighteen_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altersnachweis kann verlangt werden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of age may be requested"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_age_eighteen_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beide Ehepartner in der Regel mindestens 18 Jahre alt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both spouses generally at least 18 years old"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_application_form_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterschrieben"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signed"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_application_form_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausgefüllter Antrag auf ein nationales Visum (Typ D)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completed national visa (type D) application"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_birth_certificate_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In der Regel legalisiert oder mit Apostille"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually legalised or apostilled"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_birth_certificate_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geburtsurkunde des Kindes"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Child's birth certificate"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_child_is_minor_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geburtsurkunde des Kindes"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Child's birth certificate"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_child_is_minor_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis, dass das Kind in Deutschland minderjährig ist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof that the child in Germany is a minor"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_custody_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ggf. Zustimmung des anderen Elternteils"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consent of the other parent may be needed"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_custody_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis des Sorgerechts"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of custody / parental authority"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_german_a1_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Häufig erforderlich; es gibt Ausnahmen – beim zuständigen Konsulat prüfen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Often required; exemptions exist — check with the responsible consulate"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_german_a1_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deutschnachweis Niveau A1"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basic German (A1) certificate"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_health_insurance_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versicherungsschutz für die nachziehenden Personen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coverage for the people joining"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_health_insurance_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Health insurance"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_housing_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mietvertrag und Wohnungsgröße für die Familie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tenancy agreement and enough space for the family"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_housing_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis ausreichenden Wohnraums"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of adequate housing"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_income_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In der Regel muss die Person in Deutschland den Lebensunterhalt sichern können"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually the relative in Germany must be able to support the family"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_income_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis ausreichender Einkünfte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of sufficient income"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_marriage_certificate_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In der Regel legalisiert oder mit Apostille"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually legalised or apostilled"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_marriage_certificate_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heiratsurkunde"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marriage certificate"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_parent_custody_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis der elterlichen Sorge für das Kind"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of parental authority over the child"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_parent_custody_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis des Sorgerechts"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of custody"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_parent_restricted_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim zuständigen Konsulat zu den Voraussetzungen erkundigen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check the requirements with the responsible consulate"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_parent_restricted_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hinweis: Elternnachzug ist stärker eingeschränkt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Note: parent reunification is more restricted"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_parents_status_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis des Aufenthaltstitels der in Deutschland lebenden Eltern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of the residence permit of the parents living in Germany"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_parents_status_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthaltsstatus der Eltern in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parents' residence status in Germany"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_passport_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für jede nachziehende Person"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For each person joining"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_passport_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültiger Reisepass"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid passport"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_photos_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuell, nach Vorgabe"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recent, to specification"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_photos_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biometrische Passfotos"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biometric passport photos"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_sponsor_residence_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis, dass die Person in Deutschland einen geeigneten Aufenthaltstitel besitzt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof that the relative in Germany holds a qualifying residence permit"
+          }
+        }
+      }
+    },
+    "tool_reunification_doc_sponsor_residence_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthaltsnachweis der Person in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sponsor's residence status in Germany"
+          }
+        }
+      }
+    },
+    "tool_reunification_documents_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benötigte Unterlagen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documents to gather"
+          }
+        }
+      }
+    },
     "tool_reunification_guide_subtitle": {
       "localizations": {
         "de": {
@@ -13116,6 +13644,150 @@
           "stringUnit": {
             "state": "translated",
             "value": "Family reunification — quick guide"
+          }
+        }
+      }
+    },
+    "tool_reunification_intro": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiennachzug erlaubt es engen Familienangehörigen, zu einer Person zu ziehen, die in Deutschland lebt. Wähle aus, wer nachziehen möchte, und du erhältst eine Liste der Unterlagen für den nationalen Visumantrag (Typ D)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family reunification lets close relatives join someone living in Germany. Choose who is joining and get a list of the documents for the national (type-D) visa application."
+          }
+        }
+      }
+    },
+    "tool_reunification_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zum Aufenthaltstitel erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about the residence permit"
+          }
+        }
+      }
+    },
+    "tool_reunification_relation_child_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minderjähriges Kind zieht zu den Eltern in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minor child joining parents in Germany"
+          }
+        }
+      }
+    },
+    "tool_reunification_relation_child_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minderjähriges Kind"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minor child"
+          }
+        }
+      }
+    },
+    "tool_reunification_relation_parent_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elternteil eines minderjährigen Kindes in Deutschland"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parent of a minor child living in Germany"
+          }
+        }
+      }
+    },
+    "tool_reunification_relation_parent_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elternteil"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parent"
+          }
+        }
+      }
+    },
+    "tool_reunification_relation_question": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wer möchte nachziehen?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Who is joining?"
+          }
+        }
+      }
+    },
+    "tool_reunification_relation_spouse_subtitle": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ehepartner/in zieht zu einer in Deutschland lebenden Person"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouse joining a partner living in Germany"
+          }
+        }
+      }
+    },
+    "tool_reunification_relation_spouse_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ehepartner/in"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouse"
           }
         }
       }
