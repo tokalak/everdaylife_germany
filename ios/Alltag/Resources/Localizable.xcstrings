@@ -12054,6 +12054,346 @@
         }
       }
     },
+    "tool_post_arrival_checklist_title": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine ersten Wochen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your first weeks"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_intro": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerade in Deutschland angekommen? In den ersten Wochen sind einige Anmeldungen und Einrichtungen zu erledigen. Diese Liste zeigt sie in einer sinnvollen Reihenfolge für die ganze Familie."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Just arrived in Germany? The first few weeks involve a sequence of registrations and setups. This list walks the whole family through them in a sensible order."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_learn_more": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zur Aufenthaltserlaubnis erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about the residence permit"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_order_note": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Reihenfolge zählt: Melde zuerst deine Adresse an (Anmeldung). Die Meldebescheinigung und die danach per Post kommende Steuer-ID werden für fast alle weiteren Schritte gebraucht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order matters: register your address (Anmeldung) first. The Meldebescheinigung and the tax-ID that arrives by post afterwards are needed for almost every other step."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_anmeldung": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresse anmelden (Anmeldung)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register your address (Anmeldung)"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_anmeldung_detail": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Innerhalb von etwa 14 Tagen nach dem Einzug beim Bürgeramt. Du erhältst die Meldebescheinigung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At the Bürgeramt within about 14 days of moving in. You receive the Meldebescheinigung."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_bank": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bankkonto eröffnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open a bank account"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_bank_detail": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Girokonto wird für Miete, Gehalt und Verträge gebraucht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A current account is needed for rent, salary and contracts."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_health": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenversicherung einrichten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set up health insurance"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_health_detail": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für die ganze Familie – gesetzlich (GKV) oder privat. In Deutschland Pflicht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For the whole family — public (GKV) or private. It is mandatory in Germany."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_integration": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Integrationskurs in Betracht ziehen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consider an Integrationskurs"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_integration_detail": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprach- und Orientierungskurs; oft empfohlen oder erforderlich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A German language and orientation course; often recommended or required."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_kindergeld": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld beantragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply for Kindergeld (child benefit)"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_kindergeld_detail": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei der Familienkasse – mit Steuer-IDs von Eltern und Kindern."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At the Familienkasse — using the tax-IDs of the parents and children."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_permit": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aufenthaltstitel abholen oder beantragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collect or apply for residence permits"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_permit_detail": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei der Ausländerbehörde für alle Familienmitglieder, die einen brauchen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At the Ausländerbehörde, for every family member who needs one."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_school": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kinder in Kita / Schule anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enrol children in Kita / school"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_school_detail": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schulpflicht gilt ab einem bestimmten Alter; Kita-Plätze frühzeitig anfragen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "School is compulsory from a certain age; ask about Kita places early."
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_tax_id": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID erhalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get your tax-ID"
+          }
+        }
+      }
+    },
+    "tool_post_arrival_step_tax_id_detail": {
+      "comment": "Post-arrival checklist tool (P6-F4).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommt nach der Anmeldung automatisch per Post – für Gehalt und Kindergeld nötig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It arrives automatically by post after the Anmeldung — needed for salary and Kindergeld."
+          }
+        }
+      }
+    },
     "tool_post_arrival_subtitle": {
       "localizations": {
         "de": {
