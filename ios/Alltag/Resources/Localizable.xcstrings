@@ -11955,6 +11955,312 @@
         }
       }
     },
+    "tool_kindergeld_amount_fmt": {
+      "comment": "Kindergeld application guide (P6-F5). %@ = monthly amount per child.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuell rund %@ pro Kind und Monat. Der Betrag kann sich ändern – bitte bei der Familienkasse prüfen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Currently around %@ per child per month. The amount can change — please verify with the Familienkasse."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_doc_application": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausgefüllter Antrag auf Kindergeld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completed Kindergeld application (Antrag auf Kindergeld)"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_doc_birth_certificate": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geburtsurkunde des Kindes"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Child's birth certificate"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_doc_education_proof": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei älteren Kindern: Nachweis über Ausbildung oder Studium"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For older children: proof of education or training"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_doc_residence_identity": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis über Aufenthalt und Identität"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of residence and identity"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_doc_tax_id": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-ID (Steuer-Identifikationsnummer) von Antragsteller und Kind"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tax-ID (Steuer-ID) of both the applicant and the child"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_documents_title": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benötigte Unterlagen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documents you need"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_how_much_age": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In der Regel bis zum 18. Geburtstag – und länger (bis 25), wenn das Kind in Ausbildung oder Studium ist."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually until the child turns 18 — and longer (up to 25) if the child is in education or training."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_how_much_body": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld wird pro Kind gezahlt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld is paid per child."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_how_much_heading": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie viel und wie lange?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How much and for how long?"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_intro": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld ist eine monatliche Leistung für Kinder, die von der Familienkasse gezahlt wird. Dieser Leitfaden erklärt, wer Anspruch hat, wie viel es gibt und wie man den Antrag stellt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld is a monthly child-benefit payment from the Familienkasse. This guide explains who can claim it, how much you get and how to apply."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_learn_more": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zum Thema Steuern erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about how taxes work"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_step_attach": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die benötigten Unterlagen beifügen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attach the required documents."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_step_fill": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den Antrag ausfüllen – online über die Familienkasse."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fill in the application — online via the Familienkasse."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_step_receive": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den Bescheid abwarten und die monatlichen Zahlungen erhalten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wait for the decision and receive the monthly payments."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_step_submit": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den Antrag bei der Familienkasse einreichen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Submit the application to the Familienkasse."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_step_tax_ids": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steuer-IDs von sich und dem Kind bereitlegen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get the tax-IDs of yourself and the child."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_steps_title": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So beantragen Sie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How to apply"
+          }
+        }
+      }
+    },
     "tool_kindergeld_subtitle": {
       "localizations": {
         "de": {
@@ -11984,6 +12290,142 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kindergeld application"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_what_body": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld ist eine staatliche Leistung für Eltern, die mit ihrem Kind in Deutschland wohnen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld is a state benefit for parents who live in Germany with their child."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_what_heading": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist Kindergeld und wer kann es beantragen?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What is Kindergeld and who can claim it?"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_what_status": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auch viele Ausländerinnen und Ausländer mit dem passenden Aufenthaltsstatus haben Anspruch – der konkrete Status ist hier entscheidend."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Many foreigners with the right residence status can also claim it — the specific status matters here."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_when_backdate": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es kann nur für eine begrenzte Anzahl von Monaten rückwirkend gezahlt werden – stellen Sie den Antrag daher früh."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It can be backdated only for a limited number of months, so apply early."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_when_body": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld wird monatlich auf ein Konto überwiesen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld is paid monthly into a bank account."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_when_heading": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wann und wie wird gezahlt?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When and how it is paid"
+          }
+        }
+      }
+    },
+    "tool_kindergeld_where_body": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Antrag läuft über die Familienkasse, die zur Bundesagentur für Arbeit gehört."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You apply through the Familienkasse, which is part of the Bundesagentur für Arbeit (Federal Employment Agency)."
+          }
+        }
+      }
+    },
+    "tool_kindergeld_where_heading": {
+      "comment": "Kindergeld application guide (P6-F5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wo beantragen?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where to apply"
           }
         }
       }
