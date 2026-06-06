@@ -7,14 +7,16 @@
 #   ios/scripts/fetch-model.sh --all      # both deliverable GGUF quants
 #
 # The weights are multi-GB and are NOT committed to git (see .gitignore). This
-# script reproduces them on demand: the download URLs are read straight out of
-# Alltag/Core/LLM/LLMModel.swift, which is the single versioned source of truth
-# for model URLs/sizes (X-06) — there is deliberately no second copy here.
+# script reproduces them on demand from a single source of truth (X-06):
+# Alltag/Core/LLM/LLMModel.swift. Both the download URLs and the exact expected
+# byte counts (ModelQuant.approximateByteCount — the same values the app's
+# ModelVerifier enforces) are read from that file, matched by quant suffix, so
+# there is deliberately no second copy here to drift.
 #
 # Files land in $ALLTAG_MODELS_DIR (default: ios/Models), the same layout the
 # app uses at runtime under Application Support/Alltag/Models. After a download
-# the script verifies the byte count against the server and prints the SHA-256
-# so it can be pinned in LLMModelSpec.sha256 at release time.
+# the script verifies the exact byte count and prints the SHA-256 so it can be
+# pinned in LLMModelSpec.sha256 at release time.
 #
 # Requirements: curl, shasum (both ship with macOS).
 
@@ -37,6 +39,27 @@ if [ "${#URLS[@]}" -lt 2 ]; then
   exit 1
 fi
 
+# quant-suffix -> exact byte count, joined from ModelQuant's `fileSuffix` and
+# `approximateByteCount` switches. The >=7-digit guard ignores the short
+# `minimumDeviceMemory` literals (6, 4, 1_024) that share the `case .x:` shape.
+SIZE_MAP="$(awk '
+  $1=="case" && $3 ~ /^"UD-/   { c=$2; gsub(/[.:]/,"",c); s=$3; gsub(/"/,"",s); suf[c]=s }
+  $1=="case" && $3 ~ /^[0-9]/  { c=$2; gsub(/[.:]/,"",c); b=$3; gsub(/_/,"",b);
+                                 if (length(b) >= 7) byt[c]=b }
+  END { for (c in suf) if (c in byt) print suf[c], byt[c] }
+' "$CATALOG")"
+
+# Echo the exact expected byte count for a model filename (empty if unknown).
+expected_bytes_for() {
+  local name="$1" suf bytes
+  while read -r suf bytes; do
+    [ -n "$suf" ] || continue
+    case "$name" in *"$suf"*) echo "$bytes"; return 0 ;; esac
+  done <<EOF
+$SIZE_MAP
+EOF
+}
+
 case "${1:-}" in
   --all)      WANT=("${URLS[0]}" "${URLS[1]}") ;;
   --fallback) WANT=("${URLS[1]}") ;;
@@ -49,23 +72,25 @@ mkdir -p "$MODELS_DIR"
 for url in "${WANT[@]}"; do
   name="${url##*/}"
   dest="$MODELS_DIR/$name"
+  expected="$(expected_bytes_for "$name")"
+  if [ -z "$expected" ]; then
+    echo "error: no pinned byte count for $name in $CATALOG" >&2
+    exit 1
+  fi
 
-  # Authoritative size = server Content-Length (follows the HF CDN redirect).
-  expected="$(curl -fsIL "$url" | awk 'BEGIN{IGNORECASE=1} /^content-length:/{n=$2} END{gsub(/\r/,"",n); print n}')"
-
-  if [ -f "$dest" ] && [ -n "$expected" ] && [ "$(wc -c <"$dest")" -eq "$expected" ]; then
-    echo "==> $name already present and complete (${expected} bytes) — skipping"
+  if [ -f "$dest" ] && [ "$(wc -c <"$dest" | tr -d ' ')" -eq "$expected" ]; then
+    echo "==> $name already present and complete ($expected bytes) — skipping"
   else
-    echo "==> Downloading $name (${expected:-unknown} bytes) to $dest"
+    echo "==> Downloading $name ($expected bytes) to $dest"
     curl -fL --retry 3 --retry-delay 2 -C - -o "$dest" "$url"
   fi
 
-  actual="$(wc -c <"$dest")"
-  if [ -n "$expected" ] && [ "$actual" -ne "$expected" ]; then
+  actual="$(wc -c <"$dest" | tr -d ' ')"
+  if [ "$actual" -ne "$expected" ]; then
     echo "error: $name size mismatch — got $actual, expected $expected" >&2
     exit 1
   fi
-  echo "    bytes:  $actual"
+  echo "    bytes:  $actual (matches pinned expectedByteCount)"
   echo "    sha256: $(shasum -a 256 "$dest" | awk '{print $1}')"
 done
 
