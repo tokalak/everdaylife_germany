@@ -6665,6 +6665,312 @@
         }
       }
     },
+    "tool_a1_test_exemptions_body": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In bestimmten Fällen ist kein A1-Nachweis erforderlich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In certain cases no A1 proof is required."
+          }
+        }
+      }
+    },
+    "tool_a1_test_exemptions_check": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ob eine Ausnahme auf dich zutrifft, klärst du am besten vorab mit der zuständigen Auslandsvertretung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whether an exemption applies to you is best checked in advance with the responsible mission abroad."
+          }
+        }
+      }
+    },
+    "tool_a1_test_exemptions_examples": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zum Beispiel: Ehepartner von EU-Bürgern oder von bestimmten Fachkräften bzw. Blaue-Karte-Inhabern, ein erkennbar geringer Integrationsbedarf, eine nachweisbare Härte oder Staatsangehörige bestimmter Länder."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For example: spouses of EU citizens or of certain skilled workers or EU Blue Card holders, an obviously low integration need, a recognisable hardship, or citizens of certain countries."
+          }
+        }
+      }
+    },
+    "tool_a1_test_exemptions_heading": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausnahmen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exemptions"
+          }
+        }
+      }
+    },
+    "tool_a1_test_format_heading": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfungsformat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test format"
+          }
+        }
+      }
+    },
+    "tool_a1_test_format_parts": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Prüfung hat vier Teile: Hören, Lesen, Schreiben und Sprechen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The exam has four parts: listening (Hören), reading (Lesen), writing (Schreiben) and speaking (Sprechen)."
+          }
+        }
+      }
+    },
+    "tool_a1_test_format_pass": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewertet wird das Gesamtergebnis – du musst die Prüfung insgesamt bestehen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are graded on the overall result — you must pass the exam as a whole."
+          }
+        }
+      }
+    },
+    "tool_a1_test_intro": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für den Familiennachzug zum Ehepartner ist meist ein Nachweis über einfache Deutschkenntnisse (Niveau A1) nötig. Diese Prüfung legst du in der Regel im Ausland ab, bevor du das Visum beantragst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouse reunification usually requires proof of basic German (level A1). You normally take this test abroad before you apply for the visa."
+          }
+        }
+      }
+    },
+    "tool_a1_test_learn_more": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zum Aufenthaltstitel erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about the residence permit"
+          }
+        }
+      }
+    },
+    "tool_a1_test_prepare_body": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bereite dich mit einem A1-Kurs, offiziellen Modellprüfungen und Lern-Apps vor."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepare with an A1 course, official practice exams and learning apps."
+          }
+        }
+      }
+    },
+    "tool_a1_test_prepare_heading": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie du dich vorbereitest"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How to prepare"
+          }
+        }
+      }
+    },
+    "tool_a1_test_step_certificate": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Zertifikat abholen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collect your certificate"
+          }
+        }
+      }
+    },
+    "tool_a1_test_step_find": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein lizenziertes Prüfungszentrum in deiner Nähe finden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find a licensed test centre near you"
+          }
+        }
+      }
+    },
+    "tool_a1_test_step_id": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Am Prüfungstag einen gültigen Ausweis mitbringen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bring valid ID on the day of the exam"
+          }
+        }
+      }
+    },
+    "tool_a1_test_step_prepare": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit einem Kurs oder Modellprüfungen vorbereiten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepare with a course or practice tests"
+          }
+        }
+      }
+    },
+    "tool_a1_test_step_register": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online anmelden und die Prüfungsgebühr bezahlen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register online and pay the exam fee"
+          }
+        }
+      }
+    },
+    "tool_a1_test_step_submit": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es zusammen mit dem Visumantrag einreichen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Submit it with your visa application"
+          }
+        }
+      }
+    },
+    "tool_a1_test_steps_title": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buchung Schritt für Schritt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Booking step by step"
+          }
+        }
+      }
+    },
     "tool_a1_test_subtitle": {
       "localizations": {
         "de": {
@@ -6694,6 +7000,142 @@
           "stringUnit": {
             "state": "translated",
             "value": "Book the A1 test"
+          }
+        }
+      }
+    },
+    "tool_a1_test_what_body": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A1 ist die unterste Stufe des Gemeinsamen Europäischen Referenzrahmens (GER): einfache Deutschkenntnisse für den Alltag – sich vorstellen, einfache Fragen stellen und beantworten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A1 is the lowest level of the Common European Framework (CEFR): basic everyday German — introducing yourself and asking and answering simple questions."
+          }
+        }
+      }
+    },
+    "tool_a1_test_what_exams": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übliche Prüfungen sind das Goethe-Zertifikat A1 „Start Deutsch 1“, telc Deutsch A1 und ÖSD Zertifikat A1."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Common exams are the Goethe-Zertifikat A1 “Start Deutsch 1”, telc Deutsch A1 and the ÖSD Zertifikat A1."
+          }
+        }
+      }
+    },
+    "tool_a1_test_what_heading": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist A1?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What is A1?"
+          }
+        }
+      }
+    },
+    "tool_a1_test_where_body": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Prüfung legst du bei einem lizenzierten Prüfungszentrum im Ausland ab – etwa beim Goethe-Institut oder bei Partnern von telc bzw. ÖSD."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Take the exam at a licensed test centre abroad — for example a Goethe-Institut or a telc or ÖSD partner."
+          }
+        }
+      }
+    },
+    "tool_a1_test_where_heading": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wo du sie ablegst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where to take it"
+          }
+        }
+      }
+    },
+    "tool_a1_test_why_body": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim Ehegattennachzug verlangen die Behörden meist einen Nachweis einfacher Deutschkenntnisse (A1)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For spouse reunification the authorities usually require proof of basic German (A1)."
+          }
+        }
+      }
+    },
+    "tool_a1_test_why_heading": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wofür du es brauchst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Why you need it"
+          }
+        }
+      }
+    },
+    "tool_a1_test_why_visa": {
+      "comment": "A1 German test booking guide (P6-F2).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du legst das Zertifikat zusammen mit dem Visumantrag bei der deutschen Auslandsvertretung vor."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You submit the certificate together with your visa application at the German mission abroad."
           }
         }
       }
