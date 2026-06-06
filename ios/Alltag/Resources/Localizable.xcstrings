@@ -16296,6 +16296,346 @@
         }
       }
     },
+    "tool_reunification_guide_intro": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du lebst dauerhaft in Deutschland und möchtest deine Familie nachholen? Dieser Kurzüberblick erklärt, wen du nachholen kannst, was du als zusammenführende Person nachweisen musst und wie der Ablauf grob aussieht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settled in Germany and want to bring your family over? This quick overview explains who you can bring, what you (the sponsor) must show, and roughly how the process works."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_learn_more": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr erfahren: Aufenthaltstitel"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more: residence permits"
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_member_documents": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweise zur Beziehung (Heirats- bzw. Geburtsurkunden), legalisiert oder mit Apostille."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relationship documents (marriage / birth certificates), legalised or apostilled."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_member_german": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ehepartner brauchen meist einfache Deutschkenntnisse (A1) vor der Einreise – es gibt Ausnahmen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouses usually need basic German (A1) before arrival — exemptions exist."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_member_heading": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anforderungen an das Familienmitglied"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requirements for the family member"
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_member_passport": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültige Reisepässe."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid passports."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_process_arrival": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach der Einreise: Anmeldung beim Bürgeramt und Aufenthaltserlaubnis bei der Ausländerbehörde."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: register the address (Anmeldung) and get a residence permit at the Ausländerbehörde."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_process_heading": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Ablauf"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The process"
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_process_visa": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Familienmitglied beantragt ein nationales Visum (Typ D) bei der deutschen Auslandsvertretung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The family member applies for a national visa (type D) at the German mission abroad."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_process_work": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ehepartner erhalten in der Regel Zugang zum Arbeitsmarkt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouses generally gain access to work."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_sponsor_heading": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was du nachweisen musst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What you (the sponsor) must show"
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_sponsor_housing": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausreichenden Wohnraum für die Familie."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adequate housing for the family."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_sponsor_income": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausreichendes Einkommen, um die Familie ohne Sozialleistungen zu versorgen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sufficient income to support the family without relying on welfare."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_sponsor_status": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einen geeigneten Aufenthaltstitel oder die deutsche Staatsangehörigkeit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A suitable residence title or German citizenship."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_step_a1": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ehepartner legt bei Bedarf den A1-Test ab."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The spouse takes the A1 test if required."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_step_arrival": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach der Einreise: Anmeldung und Aufenthaltserlaubnis erledigen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After arrival: complete the Anmeldung and the residence permit."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_step_confirm": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe, ob dein Status, Einkommen und Wohnraum ausreichen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm that your status, income and housing qualify."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_step_documents": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beziehungsnachweise sammeln (legalisiert / mit Apostille)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gather relationship documents (legalised / apostilled)."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_step_visa": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familienmitglied bucht den Visumtermin und stellt den Antrag im Ausland."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The family member books the visa appointment and applies abroad."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_steps_title": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schritte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steps"
+          }
+        }
+      }
+    },
     "tool_reunification_guide_subtitle": {
       "localizations": {
         "de": {
@@ -16325,6 +16665,57 @@
           "stringUnit": {
             "state": "translated",
             "value": "Family reunification — quick guide"
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_who_heading": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wen du nachholen kannst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Who you can bring"
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_who_other_relatives": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Andere Verwandte (z. B. Eltern) nur in besonderen Härtefällen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other relatives (e.g. parents) only in exceptional hardship cases."
+          }
+        }
+      }
+    },
+    "tool_reunification_guide_who_spouse_children": {
+      "comment": "Family-reunification quick guide tool (P6-R5).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In der Regel den Ehepartner bzw. die Ehepartnerin und minderjährige Kinder."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually your spouse and your minor children."
           }
         }
       }
