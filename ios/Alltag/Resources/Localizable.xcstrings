@@ -11645,6 +11645,312 @@
         }
       }
     },
+    "tool_post_study_check_apply": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "18-Monate-Aufenthalt zur Arbeitssuche beantragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply for the 18-month job-seeker permit"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_check_appointment": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termin bei der Ausländerbehörde frühzeitig buchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Book the Ausländerbehörde appointment early"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_check_certificate": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abschlusszeugnis und Notenübersichten zusammenstellen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gather your degree certificate and transcripts"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_check_expiry": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ablaufdatum deiner studentischen Aufenthaltserlaubnis notieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Note when your student residence permit expires"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_check_health": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krankenversicherung umstellen, sobald du zu arbeiten beginnst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Update health insurance when you start work"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_check_switch": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach der Einstellung auf Arbeitserlaubnis / Blaue Karte EU wechseln"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once hired, apply to switch to a work permit / Blue Card"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_checklist_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übergangs-Checkliste"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transition checklist"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_intro": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast dein Studium in Deutschland abgeschlossen? So wechselst du von der studentischen Aufenthaltserlaubnis auf einen Weg zur Arbeit oder Arbeitssuche."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finished your degree in Germany? Here is how to move from the student residence permit onto a working or job-seeking route."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_jobseeker_before_expiry": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beantrage ihn bei der Ausländerbehörde, bevor deine studentische Aufenthaltserlaubnis abläuft."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply for it at the Ausländerbehörde before your student permit expires."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_jobseeker_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Absolventinnen und Absolventen können einen Aufenthalt von bis zu 18 Monaten erhalten, um eine Stelle zu finden, die zu ihrem Abschluss passt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Graduates can get a residence permit for up to 18 months to find a job that matches their qualification."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_jobseeker_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "18-Monate-Aufenthalt zur Arbeitssuche"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "18-month job-seeker residence permit"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zur Aufenthaltserlaubnis erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about the residence permit"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_practical_anmeldung": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halte deine Anmeldung (Wohnsitz) aktuell, wenn du umziehst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep your Anmeldung (address registration) up to date if you move."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_practical_funds": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewahre Nachweise über ausreichende Mittel auf, bis du angestellt bist."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep proof of sufficient funds until you are employed."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_practical_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Praktische Änderungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practical changes"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_practical_health": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wechsle deine Krankenversicherung vom Studententarif in den regulären Tarif, sobald du zu arbeiten beginnst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Switch your health insurance from the student tariff to regular cover once you start working."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_selfemployment_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statt einer Anstellung ist auch eine selbstständige oder freiberufliche Tätigkeit möglich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instead of employment, self-employment or freelance work is also an option."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_selfemployment_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selbstständigkeit oder Freiberuflichkeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Self-employment or freelancing"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
     "tool_post_study_subtitle": {
       "localizations": {
         "de": {
@@ -11660,6 +11966,57 @@
           }
         }
       }
+    },
+    "tool_post_study_switch_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobald du ein qualifiziertes Stellenangebot hast, wechselst du auf eine Arbeitserlaubnis oder die Blaue Karte EU."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once you have a qualified job offer, switch to a work permit or the EU Blue Card."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_switch_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wechsel zur Arbeitserlaubnis oder Blauen Karte EU"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Switch to a work permit or EU Blue Card"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_switch_settlement": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das ist zugleich ein schneller Weg zur späteren Niederlassungserlaubnis."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is also a fast path toward settlement (Niederlassungserlaubnis) later."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
     },
     "tool_post_study_title": {
       "comment": "Student tool: post-study.",
@@ -11677,6 +12034,40 @@
           }
         }
       }
+    },
+    "tool_post_study_work_body": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Während dieser 18 Monate darfst du uneingeschränkt arbeiten, während du eine passende Stelle suchst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "During these 18 months you may work without restriction while you look for a suitable job."
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
+    },
+    "tool_post_study_work_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeiten während der Suche"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Working during the search"
+          }
+        }
+      },
+      "comment": "Post-study transition tool (P6-S6)."
     },
     "tool_prearrival_fm_accommodation_detail": {
       "comment": "Pre-arrival-by-nationality tool (P6-S1): free-movement step detail.",
