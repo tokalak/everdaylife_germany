@@ -12657,6 +12657,686 @@
         }
       }
     },
+    "tool_studenthealth_affiliate_disclosure": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparenz: Einige Links sind Partnerlinks – wir können eine Provision erhalten. Das beeinflusst weder die Reihenfolge noch den Preis, den du zahlst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparency: some links are affiliate links — we may earn a commission. This never affects the ranking or the price you pay."
+          }
+        }
+      }
+    },
+    "tool_studenthealth_affiliate_tag": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partnerlink"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affiliate"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_best_for": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geeignet für:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best for:"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_fee_label": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beitrag:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Price:"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_filter_english": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur mit englischem Service"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only with English support"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_filter_english_hint": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anbieter mit englischsprachigem Abschluss und Support anzeigen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show providers offering English-language sign-up and support."
+          }
+        }
+      }
+    },
+    "tool_studenthealth_intro": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Krankenversicherung ist für die Immatrikulation Pflicht. Eingeschriebene Studierende unter ~30 nutzen meist die gesetzliche Studierendenversicherung (GKV-Studententarif) zu einem festen, niedrigen Monatsbeitrag, der für die Immatrikulation anerkannt wird. Wer den GKV-Studententarif nicht nutzen kann (über 30, Sprach- oder Vorbereitungskurs, manche Austauschgäste), wählt eine private/Incoming-Versicherung. Hier ein transparenter Vergleich beider Wege."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Health insurance is mandatory to enrol. Enrolled students under ~30 usually take public student health insurance (GKV student tariff) at a fixed, low monthly rate that is accepted for enrolment. Those who can't use the GKV student tariff (over 30, language or preparatory course, some exchange visitors) take private/incoming insurance instead. Here is a transparent comparison of both routes."
+          }
+        }
+      }
+    },
+    "tool_studenthealth_learn_more": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zur Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about health insurance"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_open_action": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anbieter öffnen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open provider"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_aok_bestfor": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eingeschriebene Studierende unter 30"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enrolled students under 30"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_aok_fee": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fester GKV-Studententarif pro Monat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fixed GKV student tariff per month"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_aok_h1": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fester GKV-Studententarif (Monatsbeitrag)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fixed GKV student tariff (monthly rate)"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_aok_h2": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für die Immatrikulation anerkannt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accepted for university enrolment"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_aok_h3": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regionale Geschäftsstellen vor Ort"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regional branches on the ground"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_aok_summary": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regionale gesetzliche Krankenkassen mit Studierendentarif zum festen Monatsbeitrag – für die Immatrikulation anerkannt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regional public health funds with a student tariff at a fixed monthly rate — accepted for enrolment."
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_care_concept_bestfor": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über 30 oder Austauschgast, nicht GKV-fähig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 30 or exchange visitor, not GKV-eligible"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_care_concept_fee": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privater Monatsbeitrag je nach Tarif"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private monthly premium by tariff"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_care_concept_h1": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für über 30 und Austauschgäste geeignet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suits those over 30 and exchange visitors"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_care_concept_h2": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schneller Online-Abschluss mit Nachweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fast online sign-up with certificate"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_care_concept_h3": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischsprachiger Service"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language service"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_care_concept_summary": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private/Incoming-Versicherung für Studierende ohne GKV-Anspruch – verschiedene Tarife, englischsprachig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private/incoming insurance for students without a GKV entitlement — several tariffs, English-language."
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_mawista_bestfor": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprach-/Vorbereitungskurs, nicht GKV-fähig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language/prep course, not GKV-eligible"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_mawista_fee": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privater Monatsbeitrag je nach Tarif"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private monthly premium by tariff"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_mawista_h1": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Sprach- und Vorbereitungskurse geeignet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suits language and preparatory courses"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_mawista_h2": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schneller Online-Abschluss mit Nachweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fast online sign-up with certificate"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_mawista_h3": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischsprachiger Service"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language service"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_mawista_summary": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private/Incoming-Versicherung für Studierende, die den GKV-Tarif nicht nutzen können – schneller Online-Abschluss, englischsprachig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private/incoming insurance for students who can't use the GKV tariff — fast online sign-up, English-language."
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_ottonova_bestfor": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht GKV-fähig, digitalaffin"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not GKV-eligible, digital-first"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_ottonova_fee": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privater Monatsbeitrag je nach Tarif"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private monthly premium by tariff"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_ottonova_h1": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vollständig digital, englischsprachige App"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fully digital, English-language app"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_ottonova_h2": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private Tarife für nicht GKV-fähige Studierende"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Private tariffs for non-GKV-eligible students"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_ottonova_h3": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concierge-Support auf Englisch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concierge support in English"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_ottonova_summary": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Digitale private Krankenversicherung mit englischsprachiger App – für Studierende ohne GKV-Anspruch."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Digital private health insurer with an English-language app — for students without a GKV entitlement."
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_tk_bestfor": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eingeschriebene Studierende unter 30"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enrolled students under 30"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_tk_fee": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fester GKV-Studententarif pro Monat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fixed GKV student tariff per month"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_tk_h1": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fester GKV-Studententarif (Monatsbeitrag)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fixed GKV student tariff (monthly rate)"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_tk_h2": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für die Immatrikulation anerkannt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accepted for university enrolment"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_tk_h3": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Englischsprachiger Online-Service"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English-language online service"
+          }
+        }
+      }
+    },
+    "tool_studenthealth_opt_tk_summary": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Große gesetzliche Krankenkasse mit Studierendentarif – für die Immatrikulation anerkannt, englischsprachiger Service."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Large public health fund with a student tariff — accepted for enrolment, with English-language service."
+          }
+        }
+      }
+    },
+    "tool_studenthealth_title": {
+      "comment": "Student health-insurance comparison (P6-S3).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studierenden-Krankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Student health insurance"
+          }
+        }
+      }
+    },
     "tool_survival_check_adapter": {
       "localizations": {
         "de": {
