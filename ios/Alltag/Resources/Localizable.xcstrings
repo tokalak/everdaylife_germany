@@ -11144,6 +11144,422 @@
         }
       }
     },
+    "tool_survival_check_adapter": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reiseadapter Typ F (deutsche Steckdose)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Type-F power adapter (German socket)"
+          }
+        }
+      }
+    },
+    "tool_survival_check_cash": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etwas Euro in bar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some euros in cash"
+          }
+        }
+      }
+    },
+    "tool_survival_check_funds": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis über ausreichende Mittel und Unterkunft"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof of funds and accommodation"
+          }
+        }
+      }
+    },
+    "tool_survival_check_insurance": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reisekranken-/Auslandskrankenversicherung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Travel health insurance"
+          }
+        }
+      }
+    },
+    "tool_survival_check_offline_maps": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offline-Karten und Notfallkontakte gespeichert"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offline maps and emergency contacts saved"
+          }
+        }
+      }
+    },
+    "tool_survival_check_passport": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reisepass, der deutlich über deinen Aufenthalt hinaus gültig ist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passport valid well beyond your stay"
+          }
+        }
+      }
+    },
+    "tool_survival_check_return_ticket": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rück- oder Weiterreiseticket"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Return or onward ticket"
+          }
+        }
+      }
+    },
+    "tool_survival_checklist_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vor dem Abflug"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Before you fly"
+          }
+        }
+      }
+    },
+    "tool_survival_connectivity_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbindung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connectivity"
+          }
+        }
+      }
+    },
+    "tool_survival_connectivity_sim": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepaid-SIM oder eSIM sind überall erhältlich (Supermarkt, Drogerie, online)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepaid SIM or eSIM are widely available (supermarket, drugstore, online)."
+          }
+        }
+      }
+    },
+    "tool_survival_connectivity_wifi": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kostenloses öffentliches WLAN ist eher begrenzt – plane mobiles Datenvolumen ein."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free public WiFi is fairly limited — plan for mobile data."
+          }
+        }
+      }
+    },
+    "tool_survival_daily_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alltag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily life"
+          }
+        }
+      }
+    },
+    "tool_survival_daily_recycling": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Müll wird getrennt (Recycling) – Papier, Verpackungen, Glas und Restmüll gehören in verschiedene Tonnen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rubbish is separated (recycling) — paper, packaging, glass and general waste go in different bins."
+          }
+        }
+      }
+    },
+    "tool_survival_daily_ruhezeit": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ruhezeiten beachten: nachts und besonders sonntags leise sein."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mind quiet hours (Ruhezeit): keep it down at night and especially on Sundays."
+          }
+        }
+      }
+    },
+    "tool_survival_daily_sundays": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die meisten Geschäfte sind sonntags und an Feiertagen geschlossen – vorher einkaufen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Most shops are closed on Sundays and public holidays — stock up beforehand."
+          }
+        }
+      }
+    },
+    "tool_survival_daily_water": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leitungswasser ist bedenkenlos trinkbar."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap water is safe to drink."
+          }
+        }
+      }
+    },
+    "tool_survival_emergencies_110": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "110 – Polizei."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "110 — police."
+          }
+        }
+      }
+    },
+    "tool_survival_emergencies_112": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "112 – Rettungsdienst und Feuerwehr (kostenlos, rund um die Uhr)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "112 — ambulance and fire (free, around the clock)."
+          }
+        }
+      }
+    },
+    "tool_survival_emergencies_116117": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "116117 – ärztlicher Bereitschaftsdienst für nicht lebensbedrohliche Fälle außerhalb der Sprechzeiten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "116117 — the on-call medical service for non-life-threatening cases outside surgery hours."
+          }
+        }
+      }
+    },
+    "tool_survival_emergencies_apotheke": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für kleinere Beschwerden hilft die Apotheke; Notdienst-Apotheken haben nachts und sonntags geöffnet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For minor needs, the pharmacy (Apotheke) helps; emergency pharmacies open at night and on Sundays."
+          }
+        }
+      }
+    },
+    "tool_survival_emergencies_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notfälle & Gesundheit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencies & health"
+          }
+        }
+      }
+    },
+    "tool_survival_etiquette_greeting": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit „Guten Tag“ grüßen ist höflich und üblich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Greeting with “Guten Tag” is polite and customary."
+          }
+        }
+      }
+    },
+    "tool_survival_etiquette_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umgangsformen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etiquette"
+          }
+        }
+      }
+    },
+    "tool_survival_etiquette_punctuality": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pünktlichkeit zählt – zu Terminen lieber etwas früher kommen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Punctuality matters — arrive a little early for appointments."
+          }
+        }
+      }
+    },
+    "tool_survival_etiquette_tipping": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trinkgeld: aufrunden bzw. etwa 5–10 %, direkt beim Bezahlen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipping: round up or about 5–10%, given directly when you pay."
+          }
+        }
+      }
+    },
+    "tool_survival_intro": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Wichtigste fürs Ankommen in Deutschland – ein freundlicher Überblick plus eine Checkliste für vor dem Abflug."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The essentials for arriving in Germany — a friendly overview plus a before-you-fly checklist."
+          }
+        }
+      }
+    },
     "tool_survival_kit_subtitle": {
       "localizations": {
         "de": {
@@ -11173,6 +11589,134 @@
           "stringUnit": {
             "state": "translated",
             "value": "Survival kit"
+          }
+        }
+      }
+    },
+    "tool_survival_money_cards": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viele Geschäfte nehmen Girocard/EC, aber nicht überall Kreditkarten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Many places take Girocard/EC, but not everywhere accepts credit cards."
+          }
+        }
+      }
+    },
+    "tool_survival_money_cash": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deutschland ist bargeldfreundlich – führe immer etwas Euro bei dir."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Germany is cash-friendly — always carry some euros."
+          }
+        }
+      }
+    },
+    "tool_survival_money_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Money"
+          }
+        }
+      }
+    },
+    "tool_survival_money_pfand": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf viele Flaschen und Dosen gibt es Pfand – am Automaten im Supermarkt zurückgeben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Many bottles and cans carry a deposit (Pfand) — return them at the supermarket machine for a refund."
+          }
+        }
+      }
+    },
+    "tool_survival_transport_db": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Bahnfahrten ist die App DB Navigator der Deutschen Bahn hilfreich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For train journeys, Deutsche Bahn's DB Navigator app is handy."
+          }
+        }
+      }
+    },
+    "tool_survival_transport_deutschlandticket": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Deutschland-Ticket gilt im Monatsabo für den regionalen Nah- und Regionalverkehr."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Deutschland-Ticket is a monthly pass valid on regional and local public transport."
+          }
+        }
+      }
+    },
+    "tool_survival_transport_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterwegs"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getting around"
+          }
+        }
+      }
+    },
+    "tool_survival_transport_validate": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tickets vor oder beim Einstieg kaufen und entwerten – Fahren ohne gültiges Ticket wird teuer."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buy and validate tickets before or as you board — travelling without a valid ticket gets expensive."
           }
         }
       }
