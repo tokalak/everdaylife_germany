@@ -15633,6 +15633,108 @@
         }
       }
     },
+    "tool_renewal_empty_message": {
+      "comment": "Renewal tracker: empty-state message pointing to Docs.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fügen Sie unter „Unterlagen“ ein Dokument mit Ablaufdatum hinzu, dann erscheint es hier."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add a document with an expiry date in Docs and it will show up here."
+          }
+        }
+      }
+    },
+    "tool_renewal_empty_title": {
+      "comment": "Renewal tracker: empty-state title.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine ablaufenden Dokumente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No expiring documents"
+          }
+        }
+      }
+    },
+    "tool_renewal_intro": {
+      "comment": "Renewal tracker: intro explaining it lists Vault documents with an expiry date.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hier sehen Sie alle Dokumente aus Ihren Unterlagen, die ein Ablaufdatum haben — die bald ablaufenden zuerst, damit Sie rechtzeitig verlängern können."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Here are all the documents in your Docs that carry an expiry date — soonest first, so you can renew them in time."
+          }
+        }
+      }
+    },
+    "tool_renewal_status_due_soon": {
+      "comment": "Renewal tracker: status label for a document expiring soon.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bald fällig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due soon"
+          }
+        }
+      }
+    },
+    "tool_renewal_status_expired": {
+      "comment": "Renewal tracker: status label for an already-expired document.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abgelaufen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expired"
+          }
+        }
+      }
+    },
+    "tool_renewal_status_upcoming": {
+      "comment": "Renewal tracker: status label for a document expiring later.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demnächst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upcoming"
+          }
+        }
+      }
+    },
     "tool_renewal_subtitle": {
       "localizations": {
         "de": {
