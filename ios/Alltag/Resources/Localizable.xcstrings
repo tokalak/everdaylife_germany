@@ -14487,6 +14487,455 @@
         }
       }
     },
+    "tool_sponsor_doc_bank_statements": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontoauszüge mit Nachweis eines stabilen Einkommens"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bank statements showing stable income"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_birth_certificate": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geburtsurkunde (bei Kindernachzug)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birth certificate (for a child)"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_birth_certificate_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Häufig legalisiert oder mit Apostille; ggf. mit beglaubigter Übersetzung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Often legalised or apostilled; may need a certified translation."
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_declaration_of_support": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optional: Einladung oder Unterstützungserklärung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optional: a formal invitation / declaration of support"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_declaration_of_support_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manche Auslandsvertretungen verlangen eine formlose Erklärung der unterstützenden Person."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some missions ask for an informal statement from the supporting sponsor."
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_employment_contract": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitsvertrag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Employment contract"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_home_size": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachweis ausreichend großer Wohnung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proof the home is large enough for the family"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_home_size_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Angaben zu Wohnfläche und Zimmerzahl im Verhältnis zur Personenzahl."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Floor area and number of rooms relative to the number of people."
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_landlord_confirmation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestätigung der Vermieterin oder des Vermieters"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Landlord confirmation"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_landlord_confirmation_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falls erforderlich, z. B. Zustimmung zum Einzug weiterer Personen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If needed, e.g. consent for additional people to move in."
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_marriage_certificate": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heiratsurkunde (bei Ehegattennachzug)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marriage certificate (for a spouse)"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_marriage_certificate_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Häufig legalisiert oder mit Apostille; ggf. mit beglaubigter Übersetzung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Often legalised or apostilled; may need a certified translation."
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_meldebescheinigung": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meldebescheinigung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registration certificate (Meldebescheinigung)"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_meldebescheinigung_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuelle Anmeldung Ihres Wohnsitzes beim Einwohnermeldeamt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current registration of your address from the registration office."
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_passport": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültiger Reisepass oder Personalausweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid passport or ID card"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_payslips": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuelle Gehaltsabrechnungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recent payslips"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_payslips_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meist der letzten 3–6 Monate."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually the last 3–6 months."
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_rental_contract": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mietvertrag"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rental contract"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_residence_status": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopie des Aufenthaltstitels bzw. Nachweis der deutschen Staatsangehörigkeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy of your residence permit or proof of German citizenship"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_residence_status_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "z. B. Aufenthaltstitel, Niederlassungserlaubnis oder Personalausweis/Reisepass bei deutscher Staatsangehörigkeit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. residence permit, settlement permit, or ID/passport if you are a German citizen."
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_self_employed_income": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei Selbstständigkeit: Einkommensnachweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If self-employed: proof of income"
+          }
+        }
+      }
+    },
+    "tool_sponsor_doc_self_employed_income_hint": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "z. B. Steuerbescheid oder Bescheinigung des Steuerberaters."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. tax assessment notice or a statement from your tax advisor."
+          }
+        }
+      }
+    },
+    "tool_sponsor_group_finances_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finanzen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finances"
+          }
+        }
+      }
+    },
+    "tool_sponsor_group_housing_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wohnraum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Housing"
+          }
+        }
+      }
+    },
+    "tool_sponsor_group_identity_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Identität & Aufenthaltsstatus"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Identity & status"
+          }
+        }
+      }
+    },
+    "tool_sponsor_group_relationship_heading": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwandtschaftsnachweis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relationship"
+          }
+        }
+      }
+    },
+    "tool_sponsor_intro": {
+      "comment": "Family tool: sponsor document pack intro.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie leben bereits in Deutschland und möchten Familienangehörige nachholen? Stellen Sie hier die Unterlagen zusammen, die Sie als unterstützende Person beibringen müssen — geordnet nach Kategorien."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Already living in Germany and want a family member to join you? Use this to assemble the documents you, as the supporting sponsor, must provide — grouped by category."
+          }
+        }
+      }
+    },
+    "tool_sponsor_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zum Aufenthaltstitel erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about residence permits"
+          }
+        }
+      }
+    },
     "tool_sponsor_subtitle": {
       "localizations": {
         "de": {
