@@ -9507,6 +9507,358 @@
         }
       }
     },
+    "tool_citizenship_criteria_title": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voraussetzungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requirements"
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_citizenship_test_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast den Einbürgerungstest bestanden und kennst die Rechts- und Gesellschaftsordnung."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have passed the citizenship test (Einbürgerungstest) and know the legal and social order."
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_citizenship_test_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einbürgerungstest bestanden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passed the citizenship test"
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_democratic_commitment_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du bekennst dich zur freiheitlich-demokratischen Grundordnung. Antisemitische oder rassistische Handlungen schließen die Einbürgerung aus."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You commit to the free democratic basic order. Antisemitic or racist acts bar naturalisation."
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_democratic_commitment_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekenntnis zur freiheitlich-demokratischen Grundordnung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commitment to the free democratic basic order"
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_german_b1_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du beherrschst Deutsch mindestens auf Niveau B1 (C1 beim 3-Jahres-Schnellverfahren)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You speak German at least at level B1 (C1 for the 3-year fast track)."
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_german_b1_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deutsch auf Niveau B1"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "German at level B1"
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_no_serious_crime_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du bist nicht wegen einer schweren Straftat verurteilt worden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have not been convicted of a serious crime."
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_no_serious_crime_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine schweren Straftaten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No serious criminal convictions"
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_residence_period_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du lebst seit mindestens %d Jahren rechtmäßig und gewöhnlich in Deutschland (3 Jahre bei besonderen Integrationsleistungen)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have lived lawfully and habitually in Germany for at least %1$d years (%2$d years with special integration achievements)."
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_residence_period_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mindestens 5 Jahre rechtmäßiger Aufenthalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At least 5 years of lawful residence"
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_secure_livelihood_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du kannst dich und deine Familie ohne die meisten Sozialleistungen versorgen (mit eng begrenzten Ausnahmen)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can support yourself and your family without relying on most welfare benefits (with limited exceptions)."
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_secure_livelihood_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesicherter Lebensunterhalt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Secure livelihood"
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_settled_status_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast eine Niederlassungserlaubnis oder ein vergleichbares unbefristetes Aufenthaltsrecht."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You hold a settlement permit or a comparable permanent right of residence."
+          }
+        }
+      }
+    },
+    "tool_citizenship_criterion_settled_status_label": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesichertes Aufenthaltsrecht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settled residence status"
+          }
+        }
+      }
+    },
+    "tool_citizenship_dual_note": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Reform erlaubt jetzt grundsätzlich die doppelte Staatsangehörigkeit: Meist musst du deine bisherige Staatsangehörigkeit nicht mehr aufgeben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The reform now generally allows dual citizenship: in most cases you no longer have to give up your previous nationality."
+          }
+        }
+      }
+    },
+    "tool_citizenship_eligible": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du erfüllst voraussichtlich alle Voraussetzungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You likely meet all the requirements"
+          }
+        }
+      }
+    },
+    "tool_citizenship_eligible_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf Basis deiner Angaben erfüllst du die Voraussetzungen des Standardwegs. Die Einbürgerungsbehörde entscheidet im Einzelfall."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Based on your answers you meet the standard-route requirements. The naturalisation authority decides each case individually."
+          }
+        }
+      }
+    },
+    "tool_citizenship_intro_fmt": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seit der Reform vom Juni 2024 kannst du dich in der Regel schon nach %d Jahren rechtmäßigem Aufenthalt einbürgern lassen – mit besonderen Integrationsleistungen sogar nach %d Jahren. Hake ab, welche Voraussetzungen du erfüllst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Since the June 2024 reform you can usually apply for citizenship after %d years of lawful residence – or after %d years with special integration achievements. Tick the conditions you meet."
+          }
+        }
+      }
+    },
+    "tool_citizenship_learn_more": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zum Aufenthaltsrecht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about residence permits"
+          }
+        }
+      }
+    },
+    "tool_citizenship_not_yet": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du erfüllst möglicherweise noch nicht alle Voraussetzungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You may not qualify yet"
+          }
+        }
+      }
+    },
+    "tool_citizenship_not_yet_detail": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Punkte fehlen noch. Prüfe sie und hole bei Bedarf Rat ein."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The following points are still missing. Review them and seek advice if needed."
+          }
+        }
+      }
+    },
     "tool_ck_age_from35": {
       "localizations": {
         "de": {
