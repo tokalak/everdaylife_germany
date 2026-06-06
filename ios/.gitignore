@@ -11,3 +11,8 @@ build/
 
 # macOS
 .DS_Store
+
+# On-device LLM weights — multi-GB, fetched via scripts/fetch-model.sh (never commit).
+Models/
+*.gguf
+*.litertlm
