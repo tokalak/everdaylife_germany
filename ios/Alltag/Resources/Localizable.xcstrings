@@ -8260,6 +8260,431 @@
         }
       }
     },
+    "tool_birth_reg_deadline_body": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melden Sie die Geburt in der Regel innerhalb von etwa einer Woche beim Standesamt des Geburtsorts an."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register the birth at the Standesamt of the place of birth within roughly one week."
+          }
+        }
+      }
+    },
+    "tool_birth_reg_deadline_certificate": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie erhalten die Geburtsurkunde — fordern Sie am besten gleich mehrere beglaubigte Exemplare an, da Sie sie für weitere Anmeldungen brauchen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You receive the Geburtsurkunde (birth certificate) — it is best to request several certified copies at once, as you will need them for the follow-up registrations."
+          }
+        }
+      }
+    },
+    "tool_birth_reg_deadline_heading": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frist & Geburtsurkunde"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deadline & birth certificate"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_doc_marriage": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heiratsurkunde der Eltern (falls verheiratet) — andernfalls die eigenen Geburtsurkunden der Eltern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parents' marriage certificate (if married) — otherwise the parents' own birth certificates"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_doc_marriage_hint": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausländische Urkunden müssen ggf. beglaubigt übersetzt werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foreign documents may need a certified translation."
+          }
+        }
+      }
+    },
+    "tool_birth_reg_doc_meldebescheinigung": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meldebescheinigung der Eltern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parents' Meldebescheinigung (proof of registered address)"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_doc_notification": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geburtsbescheinigung vom Krankenhaus oder von der Hebamme"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birth notification (Geburtsbescheinigung) from the hospital or midwife"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_doc_passports": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gültige Reisepässe oder Ausweise beider Eltern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both parents' valid passports or IDs"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_doc_paternity": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaterschaftsanerkennung (falls die Eltern nicht verheiratet sind)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acknowledgement of paternity (Vaterschaftsanerkennung), if the parents are not married"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_doc_paternity_hint": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird vor oder bei der Geburtsanmeldung beim Standesamt oder Jugendamt erklärt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Declared before or at registration, at the Standesamt or Jugendamt."
+          }
+        }
+      }
+    },
+    "tool_birth_reg_documents_title": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Unterlagen mitbringen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documents to bring"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_intro": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird in Deutschland ein Kind geboren, muss die Geburt beim Standesamt angemeldet werden. Danach folgen mehrere weitere Anmeldungen. Dieser Ablauf führt Schritt für Schritt hindurch."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When a baby is born in Germany, the birth must be registered at the Standesamt (registry office). Several follow-up registrations then cascade. This sub-flow walks you through it step by step."
+          }
+        }
+      }
+    },
+    "tool_birth_reg_learn_more": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr zum Aufenthaltstitel erfahren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about the residence permit"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_step_anmeldung": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wohnsitz des Babys anmelden (Anmeldung)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register the baby's address (Anmeldung)"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_step_certificate": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geburtsurkunde abholen (mehrere Exemplare)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collect the Geburtsurkunde (several copies)"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_step_health": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Baby bei Ihrer Krankenversicherung anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add the baby to your health insurance"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_step_kindergeld": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kindergeld bei der Familienkasse beantragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply for Kindergeld at the Familienkasse"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_step_notification": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geburtsbescheinigung vom Krankenhaus oder von der Hebamme erhalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get the birth notification from the hospital or midwife"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_step_register": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termin beim Standesamt buchen und die Geburt anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Book a Standesamt appointment and register the birth"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_step_residence": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei Nicht-EU-Eltern: Aufenthaltstitel für das Baby klären"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If the parents are non-EU: sort out the baby's residence permit"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_steps_title": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ablauf & Folge-Anmeldungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sub-flow & follow-ups"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_title": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geburt anmelden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Register a birth"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_what_body": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Geburt eines Kindes wird beim Standesamt des Geburtsorts angemeldet. Daraufhin wird die Geburt amtlich eingetragen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A child's birth is registered at the Standesamt of the place of birth. The birth is then entered into the official register."
+          }
+        }
+      }
+    },
+    "tool_birth_reg_what_heading": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was ist die Geburtsanmeldung?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What is birth registration?"
+          }
+        }
+      }
+    },
+    "tool_birth_reg_what_notification": {
+      "comment": "Birth registration (Standesamt) sub-flow (P6-F7).",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Krankenhaus oder die Hebamme stellt eine Geburtsbescheinigung (Geburtsmeldung) aus, die Sie dafür benötigen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The hospital or midwife issues a birth notification (Geburtsbescheinigung) that you need for this."
+          }
+        }
+      }
+    },
     "tool_birth_subtitle": {
       "localizations": {
         "de": {
