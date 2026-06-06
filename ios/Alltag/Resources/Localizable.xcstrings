@@ -10403,6 +10403,193 @@
         }
       }
     },
+    "tool_einbtest_correct": {
+      "comment": "Einbürgerungstest practice (P6-R3): feedback for a correct answer.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richtig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correct"
+          }
+        }
+      }
+    },
+    "tool_einbtest_incorrect": {
+      "comment": "Einbürgerungstest practice (P6-R3): feedback for a wrong answer.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leider falsch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incorrect"
+          }
+        }
+      }
+    },
+    "tool_einbtest_intro": {
+      "comment": "Einbürgerungstest practice (P6-R3): intro line.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übe für den Einbürgerungstest „Leben in Deutschland“. Beantworte jede Frage und sieh sofort, ob sie richtig war."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practise for the “Living in Germany” citizenship test. Answer each question and see right away whether it was correct."
+          }
+        }
+      }
+    },
+    "tool_einbtest_next": {
+      "comment": "Einbürgerungstest practice (P6-R3): button to the next question.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nächste Frage"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next question"
+          }
+        }
+      }
+    },
+    "tool_einbtest_not_passed": {
+      "comment": "Einbürgerungstest practice (P6-R3): result heading when not passed.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht bestanden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not passed"
+          }
+        }
+      }
+    },
+    "tool_einbtest_passed": {
+      "comment": "Einbürgerungstest practice (P6-R3): result heading when passed.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestanden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passed"
+          }
+        }
+      }
+    },
+    "tool_einbtest_progress_fmt": {
+      "comment": "Einbürgerungstest practice (P6-R3): progress, e.g. “Question 3 of 33”. %1$lld current, %2$lld total.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frage %1$lld von %2$lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Question %1$lld of %2$lld"
+          }
+        }
+      }
+    },
+    "tool_einbtest_required_fmt": {
+      "comment": "Einbürgerungstest practice (P6-R3): how many were needed to pass. %1$lld required.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zum Bestehen brauchst du %1$lld richtige Antworten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You need %1$lld correct answers to pass."
+          }
+        }
+      }
+    },
+    "tool_einbtest_restart": {
+      "comment": "Einbürgerungstest practice (P6-R3): restart button.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neu starten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start over"
+          }
+        }
+      }
+    },
+    "tool_einbtest_score_fmt": {
+      "comment": "Einbürgerungstest practice (P6-R3): score line. %1$lld correct, %2$lld total.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld von %2$lld richtig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld of %2$lld correct"
+          }
+        }
+      }
+    },
+    "tool_einbtest_see_result": {
+      "comment": "Einbürgerungstest practice (P6-R3): button on the last question to the result.",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ergebnis ansehen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See result"
+          }
+        }
+      }
+    },
     "tool_einbuergerung_subtitle": {
       "localizations": {
         "de": {
