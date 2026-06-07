@@ -1,0 +1,18 @@
+# Optional overlay that links the real on-device llama.cpp runtime into the app.
+#
+# project.yml includes this ONLY when ALLTAG_LLAMA_RUNTIME is truthy at generate
+# time (see its `include:` block). That keeps CI/Simulator builds — which never
+# vendor the binary — building cleanly against StubLLMEngine, while device builds
+# get the real LlamaCppEngine. Produce the framework first:
+#
+#   ios/scripts/build-llama-xcframework.sh     # writes Vendor/llama.xcframework
+#   ios/scripts/deploy-device.sh               # sets the flag automatically
+#
+# Once linked, `#if canImport(llama)` flips LlamaCppEngine to its real
+# implementation and LLMService.live() loads the bundled default model.
+targets:
+  Alltag:
+    dependencies:
+      - framework: Vendor/llama.xcframework
+        embed: true
+        codeSign: true

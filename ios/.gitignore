@@ -16,3 +16,8 @@ build/
 Models/
 *.gguf
 *.litertlm
+
+# llama.cpp Metal runtime — vendored binary framework + its checkout, built on
+# demand via scripts/build-llama-xcframework.sh (never commit; device-only).
+Vendor/
+.llama-build/

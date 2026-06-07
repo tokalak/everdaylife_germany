@@ -14,9 +14,12 @@
 # there is deliberately no second copy here to drift.
 #
 # Files land in $ALLTAG_MODELS_DIR (default: ios/Models), the same layout the
-# app uses at runtime under Application Support/Alltag/Models. After a download
-# the script verifies the exact byte count and prints the SHA-256 so it can be
-# pinned in LLMModelSpec.sha256 at release time.
+# app uses at runtime under Application Support/Alltag/Models. The default-quant
+# file in ios/Models is ALSO bundled into the app at build time (project.yml's
+# "Bundle on-device model" script), so physical-device builds ship ready with no
+# first-run download. After a download the script verifies the exact byte count
+# and prints the SHA-256 so it can be pinned in LLMModelSpec.sha256 at release
+# time.
 #
 # Requirements: curl, shasum (both ship with macOS).
 

@@ -121,8 +121,7 @@ final class AppEnvironment {
             let store = try! ModelStore(
                 directory: FileManager.default.temporaryDirectory
                     .appendingPathComponent("AlltagModels", isDirectory: true))
-            let provisioner = ModelProvisioner(
-                store: store, downloader: URLSessionModelDownloader())
+            let provisioner = ModelProvisioner(store: store)
             return LLMService(
                 catalog: .v1, store: store, provisioner: provisioner,
                 engine: StubLLMEngine(), runtime: .current)

@@ -50,6 +50,15 @@ if ! command -v xcodegen >/dev/null 2>&1; then
 fi
 
 echo "==> Generate Xcode project"
+# Link the real llama.cpp/Metal runtime when its framework has been vendored
+# (scripts/build-llama-xcframework.sh). Without it, the build falls back to the
+# development stub. project.yml only references the framework when this is set.
+if [ -d "$IOS_DIR/Vendor/llama.xcframework" ]; then
+  export ALLTAG_LLAMA_RUNTIME=true
+  echo "    on-device llama.cpp runtime: ENABLED (Vendor/llama.xcframework present)"
+else
+  echo "    on-device llama.cpp runtime: stub (run scripts/build-llama-xcframework.sh to enable)"
+fi
 xcodegen generate
 
 # Auto-detect a connected device when none was given. devicectl lists physical

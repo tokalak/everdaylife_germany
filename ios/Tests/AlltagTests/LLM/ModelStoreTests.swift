@@ -82,6 +82,53 @@ final class ModelStoreTests: XCTestCase {
         XCTAssertNoThrow(try store.remove(spec))  // removing again is a no-op
     }
 
+    func testBundledCopyCountsAsInstalled() throws {
+        let payload = Data(repeating: 0xCD, count: 256)
+        let bundled = directory.appendingPathComponent("bundled.gguf")
+        try payload.write(to: bundled)
+        let spec = makeSpec(byteCount: Int64(payload.count))
+        // A store whose download dir is empty but with the weights "bundled".
+        let store = try ModelStore(
+            directory: directory.appendingPathComponent("store", isDirectory: true),
+            bundledModelURL: { _ in bundled })
+
+        XCTAssertTrue(store.isInstalled(spec))
+        XCTAssertEqual(store.bundledURL(for: spec), bundled)
+        XCTAssertEqual(store.installedURL(for: spec), bundled,
+                       "with no download, the bundled copy is the usable URL")
+    }
+
+    func testBundledCopyIgnoredWhenSizeMismatches() throws {
+        let bundled = directory.appendingPathComponent("bundled.gguf")
+        try Data(repeating: 0, count: 10).write(to: bundled)
+        let spec = makeSpec(byteCount: 999)  // expects a different size
+        let store = try ModelStore(
+            directory: directory.appendingPathComponent("store2", isDirectory: true),
+            bundledModelURL: { _ in bundled })
+
+        XCTAssertFalse(store.isInstalled(spec))
+        XCTAssertNil(store.bundledURL(for: spec))
+        XCTAssertNil(store.installedURL(for: spec))
+    }
+
+    func testDownloadedCopyPreferredOverBundled() throws {
+        let payload = Data(repeating: 9, count: 128)
+        let bundled = directory.appendingPathComponent("bundled.gguf")
+        try payload.write(to: bundled)
+        let spec = makeSpec(byteCount: Int64(payload.count))
+        let store = try ModelStore(
+            directory: directory.appendingPathComponent("store3", isDirectory: true),
+            bundledModelURL: { _ in bundled })
+
+        // A user download of the same spec lands in the writable store.
+        let temp = directory.appendingPathComponent("incoming.part")
+        try payload.write(to: temp)
+        _ = try store.install(from: temp, as: spec)
+
+        XCTAssertEqual(store.installedURL(for: spec), store.url(for: spec),
+                       "a downloaded copy wins over the bundled one")
+    }
+
     func testTotalBytesUsedSumsFiles() throws {
         let spec = makeSpec(byteCount: 300)
         let temp = directory.appendingPathComponent("incoming.part")

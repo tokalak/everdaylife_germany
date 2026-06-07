@@ -1,74 +1,37 @@
 import XCTest
 @testable import Alltag
 
-/// The first-run readiness state machine (P3-00): consent gate, device gate,
-/// download→verify→ready, and the unsupported/failure branches — all with a fake
-/// downloader, no device.
+/// The readiness state machine (P3-00) with the model **bundled in the app** —
+/// no download, no consent, no async. It resolves synchronously: ready when the
+/// model is installed/bundled, unsupported on a weak device, and unavailable
+/// when the build didn't ship the weights.
 @MainActor
 final class DecoderReadinessControllerTests: XCTestCase {
     private let payload = Data("a tiny fake model file".utf8)
 
-    /// Spin the run loop until `predicate` holds or we give up, so we can await
-    /// the controller's internal provisioning Task without exposing it.
-    private func wait(
-        for predicate: @escaping () -> Bool, timeout: TimeInterval = 2
-    ) async {
-        let deadline = Date().addingTimeInterval(timeout)
-        while !predicate() && Date() < deadline {
-            try? await Task.sleep(nanoseconds: 5_000_000)
-        }
-    }
-
-    func testReadyImmediatelyWhenModelAlreadyInstalled() throws {
-        let provisioner = try DecoderReadinessFactory.provisioner(matching: payload)
-        // Pre-install the primary spec by writing the matching bytes into place.
-        try payload.write(to: provisioner.store.url(for: provisioner.catalog.primary))
-
+    func testReadyWhenModelInstalled() throws {
+        let provisioner = try DecoderReadinessFactory.readyProvisioner(matching: payload)
         let controller = DecoderReadinessController(
-            provisioner: provisioner,
-            capability: DecoderReadinessFactory.capableDevice,
-            defaults: DecoderReadinessFactory.defaults())
+            provisioner: provisioner, capability: DecoderReadinessFactory.capableDevice)
 
         XCTAssertEqual(controller.readiness, .ready)
         XCTAssertTrue(controller.isReady)
     }
 
-    func testStartRequestsConsentWhenTermsNotAccepted() throws {
-        let controller = try makeController()
-        controller.start()
-        XCTAssertEqual(controller.readiness, .needsConsent)
-        XCTAssertFalse(controller.hasAcceptedTerms)
-    }
-
-    func testAcceptingTermsDownloadsThroughToReady() async throws {
-        let defaults = DecoderReadinessFactory.defaults()
-        let controller = try makeController(defaults: defaults)
+    func testStartIsIdempotentWhenReady() throws {
+        let provisioner = try DecoderReadinessFactory.readyProvisioner(matching: payload)
+        let controller = DecoderReadinessController(
+            provisioner: provisioner, capability: DecoderReadinessFactory.capableDevice)
 
         controller.start()
-        XCTAssertEqual(controller.readiness, .needsConsent)
-
-        controller.acceptTermsAndDownload()
-        await wait(for: { controller.readiness == .ready })
-
-        XCTAssertEqual(controller.readiness, .ready)
-        XCTAssertTrue(controller.hasAcceptedTerms)
-        XCTAssertTrue(defaults.bool(forKey: "alltag.gemmaTermsAccepted"))
-    }
-
-    func testStartSkipsConsentWhenAlreadyAccepted() async throws {
-        let defaults = DecoderReadinessFactory.defaults()
-        defaults.set(true, forKey: "alltag.gemmaTermsAccepted")
-        let controller = try makeController(defaults: defaults)
-
-        controller.start()
-        await wait(for: { controller.readiness == .ready })
-
         XCTAssertEqual(controller.readiness, .ready)
     }
 
     func testUnsupportedDeviceIsReported() throws {
-        let controller = try makeController(capability: DecoderReadinessFactory.incapableDevice)
-        controller.start()
+        let provisioner = try DecoderReadinessFactory.readyProvisioner(matching: payload)
+        let controller = DecoderReadinessController(
+            provisioner: provisioner, capability: DecoderReadinessFactory.incapableDevice)
+
         if case .unsupported = controller.readiness {
             // expected
         } else {
@@ -76,35 +39,13 @@ final class DecoderReadinessControllerTests: XCTestCase {
         }
     }
 
-    func testDownloadFailureSurfacesFailedState() async throws {
-        let provisioner = try DecoderReadinessFactory.failingProvisioner()
+    func testUnavailableWhenModelNotBundled() throws {
+        // Capable device, but nothing installed/bundled — a packaging error.
+        let provisioner = try DecoderReadinessFactory.provisioner(matching: payload)
         let controller = DecoderReadinessController(
-            provisioner: provisioner,
-            capability: DecoderReadinessFactory.capableDevice,
-            defaults: DecoderReadinessFactory.defaults())
+            provisioner: provisioner, capability: DecoderReadinessFactory.capableDevice)
 
-        controller.acceptTermsAndDownload()
-        await wait(for: {
-            if case .failed = controller.readiness { return true }
-            return false
-        })
-
-        if case .failed = controller.readiness {
-            // expected
-        } else {
-            XCTFail("expected .failed, got \(controller.readiness)")
-        }
-    }
-
-    // MARK: - Helpers
-
-    private func makeController(
-        capability: DeviceCapability = DecoderReadinessFactory.capableDevice,
-        defaults: UserDefaults? = nil
-    ) throws -> DecoderReadinessController {
-        DecoderReadinessController(
-            provisioner: try DecoderReadinessFactory.provisioner(matching: payload),
-            capability: capability,
-            defaults: defaults ?? DecoderReadinessFactory.defaults())
+        XCTAssertEqual(controller.readiness, .unavailable)
+        XCTAssertFalse(controller.isReady)
     }
 }

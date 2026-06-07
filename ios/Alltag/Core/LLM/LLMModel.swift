@@ -46,11 +46,13 @@ enum ModelQuant: String, Sendable, CaseIterable, Codable {
     }
 }
 
-/// Everything needed to fetch, verify, and locate one on-device model file.
+/// Everything needed to locate and validate one on-device model file.
 ///
-/// A spec is *data*, not behaviour: it describes a downloadable artifact so that
-/// ``ModelStore`` knows where to put it, ``ModelDownloading`` knows where to get
-/// it, and ``ModelVerifier`` knows how to validate it (A-22).
+/// A spec is *data*, not behaviour: it describes the bundled artifact so that
+/// ``ModelStore`` knows where to find it and ``ModelVerifier`` knows how to
+/// validate it (A-22). The `sourceURL` is retained only so the dev-time
+/// `scripts/fetch-model.sh` knows where to fetch the weights to bundle — the
+/// app itself never downloads.
 struct LLMModelSpec: Sendable, Equatable, Identifiable, Codable {
     /// Stable identifier, e.g. `gemma-4-e2b-it-q4_k_m`.
     let id: String

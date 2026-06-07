@@ -1,56 +1,48 @@
 import Foundation
 
-/// A step in bringing the on-device model from "nothing" to "ready" (P3-00).
+/// The outcome of resolving on-device model readiness.
 ///
-/// Emitted as a stream so the readiness UI can show device-check → download
-/// progress → verify → done, or stop early on an unsupported device.
-enum ProvisioningEvent: Sendable, Equatable {
-    case checkingDevice
-    /// Device can't run any deliverable quant; carries the user-facing reason.
-    case unsupportedDevice(reason: String)
-    /// The right model for this device is already on disk and valid.
-    case alreadyInstalled(URL)
-    /// Downloading the chosen spec; fraction is `nil` when length is unknown.
-    case downloading(fraction: Double?)
-    case verifying
-    /// Installed and ready to load.
+/// There is deliberately **no downloading/verifying state**: the app never
+/// fetches weights at runtime (hard rule). The model ships *inside the app*
+/// (see `project.yml`'s bundling script + `scripts/fetch-model.sh`), so
+/// readiness is decided synchronously from the device's capability and whether
+/// the bundled (or, in dev, store-resident) file is present.
+enum ModelReadiness: Sendable, Equatable {
+    /// Ready to load, at this on-disk URL (bundled inside the app, or installed
+    /// in the model store during development).
     case ready(URL)
+    /// The device can't run any deliverable quant; carries a user-facing reason.
+    case unsupported(reason: String)
+    /// The device *could* run the model, but its file isn't present — i.e. the
+    /// build didn't bundle the weights. A packaging error, not a user state: a
+    /// correct release always ships the file.
+    case missing(spec: LLMModelSpec)
 }
 
-/// Orchestrates first-run model readiness end to end (A-22…A-26, P3-00).
+/// Resolves whether the on-device model is ready to use — with **no network**.
 ///
-/// Pipeline: **capability gate → already-installed? → download → verify →
-/// install → ready**. Each model-mutating dependency is injected behind a
-/// protocol/value type, so the whole flow round-trips in a unit test with a fake
-/// downloader writing known bytes — no network, no 3 GB, no device. That
-/// round-trip test is the concrete deliverable the P0-07 spike asks of the
-/// non-device code.
-///
-/// The provisioner never loads the model itself — that's the engine's job once a
-/// runtime binary exists. It only guarantees a verified file is on disk.
+/// The weights are bundled into the app (the app never downloads them at
+/// runtime; that is a hard product rule). This type is therefore a pure,
+/// synchronous resolver over two inputs: the device-capability gate (A-25 — can
+/// this device run a deliverable quant at all?) and the ``ModelStore`` (is the
+/// chosen quant's file present and the right size?). It does not load the model
+/// — that's the engine's job once a runtime binary exists.
 struct ModelProvisioner: Sendable {
     let catalog: LLMModelCatalog
     let gate: DeviceCapabilityGate
     let store: ModelStore
-    let downloader: any ModelDownloading
-    let verifier: ModelVerifier
 
     init(
         catalog: LLMModelCatalog = .v1,
         gate: DeviceCapabilityGate? = nil,
-        store: ModelStore,
-        downloader: any ModelDownloading,
-        verifier: ModelVerifier = ModelVerifier()
+        store: ModelStore
     ) {
         self.catalog = catalog
         self.gate = gate ?? DeviceCapabilityGate(catalog: catalog)
         self.store = store
-        self.downloader = downloader
-        self.verifier = verifier
     }
 
-    /// The spec this device should use, or nil if unsupported. Lets callers
-    /// (Settings, Decode-entry gate) ask without kicking off a download.
+    /// The spec this device should use, or nil if unsupported.
     func plannedSpec(for capability: DeviceCapability = .current) -> LLMModelSpec? {
         if case let .supported(spec) = gate.evaluate(capability) { return spec }
         return nil
@@ -62,70 +54,17 @@ struct ModelProvisioner: Sendable {
         return store.isInstalled(spec)
     }
 
-    func provision(
-        for capability: DeviceCapability = .current
-    ) -> AsyncThrowingStream<ProvisioningEvent, Error> {
-        AsyncThrowingStream { continuation in
-            let task = Task {
-                do {
-                    try await run(capability: capability, into: continuation)
-                } catch is CancellationError {
-                    continuation.finish(throwing: LLMError.cancelled)
-                } catch {
-                    continuation.finish(throwing: error)
-                }
-            }
-            continuation.onTermination = { _ in task.cancel() }
-        }
-    }
-
-    private func run(
-        capability: DeviceCapability,
-        into continuation: AsyncThrowingStream<ProvisioningEvent, Error>.Continuation
-    ) async throws {
-        continuation.yield(.checkingDevice)
-
-        let spec: LLMModelSpec
+    /// Resolve readiness now. Synchronous and side-effect-free beyond a
+    /// file-size stat — no async, no I/O, and crucially no download.
+    func resolve(for capability: DeviceCapability = .current) -> ModelReadiness {
         switch gate.evaluate(capability) {
         case let .unsupported(reason):
-            continuation.yield(.unsupportedDevice(reason: reason))
-            continuation.finish()
-            return
-        case let .supported(supportedSpec):
-            spec = supportedSpec
-        }
-
-        if store.isInstalled(spec) {
-            continuation.yield(.alreadyInstalled(store.url(for: spec)))
-            continuation.finish()
-            return
-        }
-
-        var downloadedURL: URL?
-        for try await event in downloader.download(spec) {
-            try Task.checkCancellation()
-            switch event {
-            case let .progress(fraction):
-                continuation.yield(.downloading(fraction: fraction))
-            case let .completed(url):
-                downloadedURL = url
+            return .unsupported(reason: reason)
+        case let .supported(spec):
+            guard let url = store.installedURL(for: spec) else {
+                return .missing(spec: spec)
             }
+            return .ready(url)
         }
-        guard let downloadedURL else {
-            throw LLMError.modelNotLoaded
-        }
-
-        continuation.yield(.verifying)
-        do {
-            try verifier.verify(fileAt: downloadedURL, against: spec)
-        } catch {
-            // Don't leave a bad partial file behind.
-            try? FileManager.default.removeItem(at: downloadedURL)
-            throw error
-        }
-
-        let installed = try store.install(from: downloadedURL, as: spec)
-        continuation.yield(.ready(installed))
-        continuation.finish()
     }
 }

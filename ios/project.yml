@@ -9,6 +9,16 @@
 
 name: Alltag
 
+# The real on-device llama.cpp/Metal runtime is linked via this overlay, but
+# ONLY when ALLTAG_LLAMA_RUNTIME is truthy at generate time — so CI/Simulator
+# builds (which don't vendor the multi-GB binary framework) keep building the
+# development stub. Vendor the framework with scripts/build-llama-xcframework.sh,
+# then generate with `ALLTAG_LLAMA_RUNTIME=true xcodegen generate` (or just run
+# scripts/deploy-device.sh, which sets the flag when the framework is present).
+include:
+  - path: project.llama.yml
+    enable: ${ALLTAG_LLAMA_RUNTIME}
+
 options:
   bundleIdPrefix: de.everydaygermany
   developmentLanguage: de          # German is the default/dev language (D7)
@@ -49,6 +59,35 @@ targets:
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         TARGETED_DEVICE_FAMILY: "1"   # iPhone (iOS-first, D3)
         GENERATE_INFOPLIST_FILE: "YES"
+    postBuildScripts:
+      # Bundle the default on-device model into the app *if the weights are
+      # present*, so physical-device builds ship ready (no ~2 GB first-run
+      # download). The weights are gitignored (multi-GB) and only present after
+      # scripts/fetch-model.sh, so this must stay OPTIONAL: a plain resource
+      # reference hard-fails the build when the file is absent (Simulator/CI/
+      # fresh checkout). Runs after Copy Bundle Resources and before code
+      # signing, so the copied file is sealed into the signature. When absent,
+      # it no-ops and the app falls back to its runtime download path;
+      # ModelStore treats a bundled copy as already installed. Keep the filename
+      # in sync with LLMModelCatalog.defaultQuant (currently Q2_K_XL).
+      - name: Bundle on-device model (if present)
+        inputFiles:
+          - $(SRCROOT)/Models/gemma-4-E2B-it-qat-UD-Q2_K_XL.gguf
+        outputFiles:
+          - $(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/gemma-4-E2B-it-qat-UD-Q2_K_XL.gguf
+        script: |
+          set -euo pipefail
+          SRC="${SCRIPT_INPUT_FILE_0}"
+          DST="${SCRIPT_OUTPUT_FILE_0}"
+          if [ -f "$SRC" ]; then
+            # cp writes straight to $DST (the declared, sandbox-permitted output);
+            # rsync would stage a temp file the script sandbox forbids.
+            /bin/cp -f "$SRC" "$DST"
+            echo "note: bundled on-device model ($(basename "$SRC")) into the app"
+          else
+            echo "warning: on-device model not found at $SRC — app will download it at runtime"
+            rm -f "$DST" || true
+          fi
 
   AlltagTests:
     type: bundle.unit-test

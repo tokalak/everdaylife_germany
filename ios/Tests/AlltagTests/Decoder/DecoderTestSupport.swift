@@ -66,20 +66,21 @@ struct StubTextRecognizer: TextRecognizing {
 }
 
 /// Builds provisioners/capabilities sized to small fake payloads, so the
-/// readiness flow round-trips with no network and no 3 GB file.
+/// readiness flow exercises with no network and no 3 GB file. The app never
+/// downloads — readiness is "supported device + model file present?".
 enum DecoderReadinessFactory {
     /// ~8 GB device — comfortably runs the `q4_K_XL` floor.
     static let capableDevice = DeviceCapability(physicalMemory: 8 * 1_024 * 1_024 * 1_024)
     /// ~1 GB device — below every deliverable quant's floor.
     static let incapableDevice = DeviceCapability(physicalMemory: 1 * 1_024 * 1_024 * 1_024)
 
-    /// A catalog whose primary (and fallback) spec verifies against `payload`,
-    /// so a `FakeModelDownloader(payload:)` produces an installable model.
+    /// A catalog whose primary (and fallback) spec matches `payload`'s size, so
+    /// writing `payload` into the store makes the model count as installed.
     static func catalog(matching payload: Data) -> LLMModelCatalog {
         let primary = spec(matching: payload, id: "test-primary", quant: .q4_K_XL)
         let fallback = spec(matching: payload, id: "test-fallback", quant: .q2_K_XL)
         // Default to the primary quant here so the capable device picks it (these
-        // readiness tests pre-install `primary`); the production catalog's q2_K_XL
+        // readiness tests install `primary`); the production catalog's q2_K_XL
         // default is covered by the catalog/gate suites.
         return LLMModelCatalog(
             primary: primary, lowMemoryFallback: fallback, candidateB: primary,
@@ -101,26 +102,19 @@ enum DecoderReadinessFactory {
             contextWindowCap: 4096)
     }
 
-    /// A provisioner with a temp store + fake downloader serving `payload`.
+    /// A provisioner over a fresh temp store — no model present yet (so it
+    /// resolves to `.missing` on a capable device).
     static func provisioner(matching payload: Data) throws -> ModelProvisioner {
-        let cat = catalog(matching: payload)
-        return ModelProvisioner(
-            catalog: cat,
-            store: try LLMTestFactory.temporaryStore(),
-            downloader: FakeModelDownloader(payload: payload))
-    }
-
-    /// A provisioner whose downloader always fails (for the failure branch).
-    static func failingProvisioner() throws -> ModelProvisioner {
-        let payload = Data("x".utf8)
-        return ModelProvisioner(
+        ModelProvisioner(
             catalog: catalog(matching: payload),
-            store: try LLMTestFactory.temporaryStore(),
-            downloader: FakeModelDownloader(payload: payload, failure: .modelNotLoaded))
+            store: try LLMTestFactory.temporaryStore())
     }
 
-    /// An isolated UserDefaults suite so the consent flag doesn't leak between tests.
-    static func defaults() -> UserDefaults {
-        UserDefaults(suiteName: "decoder-readiness-\(UUID().uuidString)")!
+    /// A provisioner whose model is already installed in the store (the bundled-
+    /// /installed happy path), by writing `payload` into the primary spec's slot.
+    static func readyProvisioner(matching payload: Data) throws -> ModelProvisioner {
+        let p = try provisioner(matching: payload)
+        try payload.write(to: p.store.url(for: p.catalog.primary))
+        return p
     }
 }

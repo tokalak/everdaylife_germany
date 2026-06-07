@@ -14,15 +14,35 @@ enum ModelStoreError: Error, Equatable {
 /// iCloud quota (A-23). Files are written with complete file protection, matching
 /// the document store.
 ///
-/// The store is pure location + filesystem bookkeeping; it does not download or
-/// verify (those are ``ModelDownloading`` / ``ModelVerifier``).
+/// The store is pure location + filesystem bookkeeping; it does not verify
+/// (that's ``ModelVerifier``). Nothing downloads — the weights ship bundled in
+/// the app (hard rule), so the store only locates the bundled/installed file.
+///
+/// A model can also ship **bundled inside the app** (the weights are copied into
+/// `Alltag.app` at build time — see `project.yml`). When present, the store
+/// treats that read-only copy as already installed, so device builds run fully
+/// offline on first launch with no ~2 GB download. The writable store location
+/// (Application Support) is unchanged; the bundle is only an extra *read* source
+/// consulted as a fallback, and the download path still applies when no bundled
+/// copy exists (Simulator/CI, or a quant the device picks that wasn't shipped).
 struct ModelStore {
     let directory: URL
 
-    /// - Parameter directory: where model files live. Defaults to
-    ///   `Application Support/Alltag/Models` (created + backup-excluded on init).
-    ///   Tests pass a temp URL.
-    init(directory: URL? = nil) throws {
+    /// Locates a spec's weights inside the app bundle, if they were shipped
+    /// there. Injectable so tests can point at a temp file instead of
+    /// `Bundle.main`. Returns `nil` when nothing is bundled for the spec.
+    private let bundledModelURL: @Sendable (LLMModelSpec) -> URL?
+
+    /// - Parameters:
+    ///   - directory: where downloaded model files live. Defaults to
+    ///     `Application Support/Alltag/Models` (created + backup-excluded on
+    ///     init). Tests pass a temp URL.
+    ///   - bundledModelURL: resolves a spec to its bundled copy. Defaults to a
+    ///     `Bundle.main` lookup by filename.
+    init(
+        directory: URL? = nil,
+        bundledModelURL: @escaping @Sendable (LLMModelSpec) -> URL? = ModelStore.mainBundleModelURL
+    ) throws {
         if let directory {
             self.directory = directory
         } else {
@@ -33,21 +53,51 @@ struct ModelStore {
                 .appendingPathComponent("Alltag", isDirectory: true)
                 .appendingPathComponent("Models", isDirectory: true)
         }
+        self.bundledModelURL = bundledModelURL
         try FileManager.default.createDirectory(
             at: self.directory, withIntermediateDirectories: true)
         try excludeFromBackup(self.directory)
     }
 
-    /// On-disk URL for a spec's model file (whether or not it exists yet).
+    /// Default ``bundledModelURL``: look the spec's file up in the main app
+    /// bundle (the build-time bundled-weights path).
+    static func mainBundleModelURL(for spec: LLMModelSpec) -> URL? {
+        let name = (spec.fileName as NSString).deletingPathExtension
+        let ext = (spec.fileName as NSString).pathExtension
+        return Bundle.main.url(forResource: name, withExtension: ext)
+    }
+
+    /// Writable on-disk URL for a spec's downloaded file (the install
+    /// destination, whether or not the file exists yet). Never the bundle —
+    /// for the resolved *usable* location, see ``installedURL(for:)``.
     func url(for spec: LLMModelSpec) -> URL {
         directory.appendingPathComponent(spec.fileName, isDirectory: false)
     }
 
-    /// The file exists *and* matches the expected size — a cheap "is it usable?"
-    /// check. Full integrity (SHA-256) is ``ModelVerifier``'s job, run once at
-    /// install time, not on every launch.
+    /// The spec's bundled-in-app copy, but only if it's present and the right
+    /// size (`nil` otherwise). Read-only — usable for loading, not writing.
+    func bundledURL(for spec: LLMModelSpec) -> URL? {
+        guard let url = bundledModelURL(spec),
+              let size = (try? url.resourceValues(forKeys: [.fileSizeKey]))?.fileSize,
+              Int64(size) == spec.expectedByteCount
+        else { return nil }
+        return url
+    }
+
+    /// The usable location of a valid copy of the spec, or `nil` if neither a
+    /// downloaded nor a bundled copy is present. Prefers the writable download
+    /// over the bundled copy (a user redownload/update wins), falling back to
+    /// the app bundle. This is the URL the engine should load.
+    func installedURL(for spec: LLMModelSpec) -> URL? {
+        if byteCount(for: spec) == spec.expectedByteCount { return url(for: spec) }
+        return bundledURL(for: spec)
+    }
+
+    /// A valid copy exists (downloaded *or* bundled) and matches the expected
+    /// size — a cheap "is it usable?" check. Full integrity (SHA-256) is
+    /// ``ModelVerifier``'s job, run once at install time, not on every launch.
     func isInstalled(_ spec: LLMModelSpec) -> Bool {
-        byteCount(for: spec) == spec.expectedByteCount
+        installedURL(for: spec) != nil
     }
 
     /// Size on disk of a spec's file, or nil if absent.
