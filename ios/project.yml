@@ -46,12 +46,13 @@ targets:
     platform: iOS
     sources:
       - path: Alltag
-    # Raise the per-app jetsam memory limit so the ~2.2 GB on-device model can
-    # stay resident on 4 GB phones. llama.cpp offloads all layers to Metal
-    # (n_gpu_layers = 999), so the weights live in unified memory counted against
-    # the app; without this entitlement iOS kills the app at ≈1.4 GB on a 4 GB
-    # device, before the model finishes loading. XcodeGen generates the
-    # .entitlements file from these properties and wires CODE_SIGN_ENTITLEMENTS.
+    # Raise the per-app jetsam memory limit so the on-device model stays resident
+    # with headroom. The current model (Qwen3.5-0.8B Q4_K_M, ~0.5 GB) is small
+    # enough not to need this on most devices, but llama.cpp offloads all layers
+    # to Metal (n_gpu_layers = 999) so the weights live in unified memory counted
+    # against the app; the entitlement is kept as harmless headroom (and to keep
+    # the door open for a larger model). XcodeGen generates the .entitlements
+    # file from these properties and wires CODE_SIGN_ENTITLEMENTS.
     entitlements:
       path: Alltag/Alltag.entitlements
       properties:
@@ -71,20 +72,20 @@ targets:
         GENERATE_INFOPLIST_FILE: "YES"
     postBuildScripts:
       # Bundle the default on-device model into the app *if the weights are
-      # present*, so physical-device builds ship ready (no ~2 GB first-run
-      # download). The weights are gitignored (multi-GB) and only present after
+      # present*, so physical-device builds ship ready (no first-run download).
+      # The weights are gitignored (large) and only present after
       # scripts/fetch-model.sh, so this must stay OPTIONAL: a plain resource
       # reference hard-fails the build when the file is absent (Simulator/CI/
       # fresh checkout). Runs after Copy Bundle Resources and before code
       # signing, so the copied file is sealed into the signature. When absent,
       # it no-ops and the app falls back to its runtime download path;
       # ModelStore treats a bundled copy as already installed. Keep the filename
-      # in sync with LLMModelCatalog.defaultQuant (currently Q2_K_XL).
+      # in sync with LLMModelCatalog.defaultQuant (currently Qwen3.5-0.8B Q4_K_M).
       - name: Bundle on-device model (if present)
         inputFiles:
-          - $(SRCROOT)/Models/gemma-4-E2B-it-qat-UD-Q2_K_XL.gguf
+          - $(SRCROOT)/Models/Qwen3.5-0.8B-Q4_K_M.gguf
         outputFiles:
-          - $(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/gemma-4-E2B-it-qat-UD-Q2_K_XL.gguf
+          - $(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Qwen3.5-0.8B-Q4_K_M.gguf
         script: |
           set -euo pipefail
           SRC="${SCRIPT_INPUT_FILE_0}"

@@ -146,8 +146,9 @@ private actor LlamaRunner {
         }
         defer { llama_sampler_free(sampler) }
 
-        // Prompt → tokens (BOS + special tokens parsed so the chat markers bind).
-        var tokens = tokenize(GemmaChat.format(prompt), addBOS: true)
+        // Prompt → tokens (special tokens parsed so the chat markers bind; Qwen
+        // defines no BOS, so `add_special` adds nothing here, which is correct).
+        var tokens = tokenize(QwenChat.format(prompt), addBOS: true)
         guard !tokens.isEmpty, tokens.count < contextWindowCap else {
             throw LLMError.runtimeUnavailable
         }
@@ -210,6 +211,13 @@ private actor LlamaRunner {
         if options.temperature <= 0 {
             llama_sampler_chain_add(chain, llama_sampler_init_greedy())
         } else {
+            // Qwen3.5 (non-thinking) recommends top_k = 20; we also apply a small
+            // min_p floor to trim the long tail on this 0.8B model (the docs use
+            // min_p = 0, but a light relative floor guards against rare garbage
+            // tokens). Order matches llama.cpp's example: truncate (top_k → min_p)
+            // → temperature → sample.
+            llama_sampler_chain_add(chain, llama_sampler_init_top_k(20))
+            llama_sampler_chain_add(chain, llama_sampler_init_min_p(0.05, 1))
             llama_sampler_chain_add(chain, llama_sampler_init_temp(Float(options.temperature)))
             llama_sampler_chain_add(chain, llama_sampler_init_dist(0xFFFF_FFFF))
         }
@@ -248,15 +256,21 @@ private actor LlamaRunner {
     }
 }
 
-/// Gemma instruction-format helper. Gemma has no separate system role, so the
-/// task instruction is folded into the single user turn; `add_special` supplies
-/// the BOS, so the literal `<bos>` is omitted here.
-private enum GemmaChat {
+/// Qwen ChatML instruction-format helper. Qwen3.5 uses the ChatML markers
+/// `<|im_start|>` / `<|im_end|>` and has a native system role, so the task
+/// instruction goes in its own system turn (kept separate from the user text).
+/// The assistant turn is left open for generation; the model's `<|im_end|>` is
+/// an end-of-generation token, so the caller's `llama_vocab_is_eog` check stops
+/// the stream. Qwen defines no BOS token, so none is prepended.
+private enum QwenChat {
     static func format(_ prompt: LLMPrompt) -> String {
-        var body = ""
-        if !prompt.system.isEmpty { body += prompt.system + "\n\n" }
-        body += prompt.user
-        return "<start_of_turn>user\n\(body)<end_of_turn>\n<start_of_turn>model\n"
+        var text = ""
+        if !prompt.system.isEmpty {
+            text += "<|im_start|>system\n\(prompt.system)<|im_end|>\n"
+        }
+        text += "<|im_start|>user\n\(prompt.user)<|im_end|>\n"
+        text += "<|im_start|>assistant\n"
+        return text
     }
 }
 

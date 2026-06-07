@@ -1,6 +1,6 @@
 import Foundation
 
-/// Quantisation level of a Gemma 4 E2B weight file.
+/// Quantisation level of an on-device weight file.
 ///
 /// Smaller quants trade a little quality for a smaller download and lower RAM,
 /// which is how we reach older/lower-RAM iPhones (A-25, OQ-8/OQ-11). The byte
@@ -8,19 +8,23 @@ import Foundation
 /// (X-06) — they are tuned by the A-28 eval harness and the supported-device
 /// matrix, never hard-coded into views.
 enum ModelQuant: String, Sendable, CaseIterable, Codable {
-    /// Default: Unsloth dynamic **QAT** 4-bit (`UD-Q4_K_XL`, 2.62 GB). QAT
-    /// (quantization-aware training) recovers most of the accuracy lost to
-    /// quantisation, so this is both *smaller* and *higher quality* than the
-    /// old post-training `Q4_K_M`. Unsloth ships only this one precision —
-    /// higher quants degrade rather than improve QAT accuracy.
+    /// Default: **Qwen3.5-0.8B** post-training 4-bit (`Q4_K_M`, ≈0.53 GB). A
+    /// sub-1B instruct model whose tiny footprint runs on essentially every
+    /// supported iPhone with a small KV cache — chosen as the shipping Decoder
+    /// model (replaces the larger Gemma 4 E2B QAT builds below).
+    case q4_K_M
+    /// Legacy/retained: Unsloth dynamic **QAT** 4-bit Gemma 4 E2B
+    /// (`UD-Q4_K_XL`, 2.62 GB). No longer shipped; kept as catalog metadata and
+    /// as a generic quant tag in tests.
     case q4_K_XL
-    /// Mobile-mixture QAT 2-bit fallback (`UD-Q2_K_XL`, ≈2.19 GB) for
-    /// ~4 GB-RAM devices.
+    /// Legacy/retained: mobile-mixture QAT 2-bit Gemma 4 E2B (`UD-Q2_K_XL`,
+    /// ≈2.19 GB) for ~4 GB-RAM devices. No longer shipped.
     case q2_K_XL
 
     /// Suffix used in the GGUF filename (`…-<suffix>.gguf`).
     var fileSuffix: String {
         switch self {
+        case .q4_K_M: "Q4_K_M"
         case .q4_K_XL: "UD-Q4_K_XL"
         case .q2_K_XL: "UD-Q2_K_XL"
         }
@@ -30,6 +34,7 @@ enum ModelQuant: String, Sendable, CaseIterable, Codable {
     /// before hashing — ``ModelVerifier`` requires an exact match).
     var approximateByteCount: Int64 {
         switch self {
+        case .q4_K_M: 532_517_120      // ≈0.53 GB (Qwen3.5-0.8B-Q4_K_M)
         case .q4_K_XL: 2_620_368_960   // 2.62 GB (unsloth/gemma-4-E2B-it-qat-GGUF)
         case .q2_K_XL: 2_186_184_768   // ≈2.19 GB (mobile mixture)
         }
@@ -48,6 +53,7 @@ enum ModelQuant: String, Sendable, CaseIterable, Codable {
     /// ≈2.9 GiB), low enough to admit the class we intend.
     var minimumDeviceMemory: UInt64 {
         switch self {
+        case .q4_K_M: 3 * 1_024 * 1_024 * 1_024 / 2     // 1.5 GiB → ~2 GB-class devices (report ≈1.8 GiB)
         case .q4_K_XL: 5 * 1_024 * 1_024 * 1_024        // 5 GiB → ~6 GB-class devices (report ≈5.5 GiB)
         case .q2_K_XL: 7 * 1_024 * 1_024 * 1_024 / 2    // 3.5 GiB → ~4 GB-class devices (report ≈3.7 GiB)
         }
@@ -97,9 +103,12 @@ struct LLMModelSpec: Sendable, Equatable, Identifiable, Codable {
 /// carries both llama.cpp candidates we actually ship (primary + low-memory
 /// fallback) and a record of Candidate B (LiteRT-LM) kept for the OQ-14 spike.
 struct LLMModelCatalog: Sendable, Equatable {
-    /// Candidate A, default: Gemma 4 E2B **QAT** GGUF `UD-Q4_K_XL` on llama.cpp.
+    /// The shipping on-device model: Qwen3.5-0.8B GGUF `Q4_K_M` on llama.cpp.
     let primary: LLMModelSpec
-    /// Smaller quant for low-RAM devices (still llama.cpp/GGUF).
+    /// Mirror of ``primary``. Qwen3.5-0.8B is ~0.5 GB — small enough to run on
+    /// every supported iPhone — so there is **no separate low-memory build**;
+    /// this slot is retained for struct shape and points at the same spec.
+    /// (``deliverable`` carries just the single model, below.)
     let lowMemoryFallback: LLMModelSpec
     /// Candidate B: the LiteRT-LM `.litertlm` artifact — recorded for the spike,
     /// not shipped unless the benchmark flips ``RuntimeDecision``.
@@ -113,42 +122,27 @@ struct LLMModelCatalog: Sendable, Equatable {
     /// old "best that fits" behaviour back (a one-line revert).
     let defaultQuant: ModelQuant
 
-    /// Specs that can actually be served to a device, heaviest (best) first —
-    /// the capability gate walks this together with ``defaultQuant`` to pick the
-    /// quant a device should run.
-    var deliverable: [LLMModelSpec] { [primary, lowMemoryFallback] }
+    /// Specs that can actually be served to a device — the capability gate walks
+    /// this together with ``defaultQuant`` to pick the quant a device should run.
+    /// There is a single shipping model (Qwen3.5-0.8B); ``lowMemoryFallback``
+    /// mirrors it, so the deliverable set is just ``primary``.
+    var deliverable: [LLMModelSpec] { [primary] }
 
     /// The spec for a given quant, if the catalog carries it.
     func spec(for quant: ModelQuant) -> LLMModelSpec? {
         deliverable.first { $0.quant == quant }
     }
 
-    /// The v1 catalog. URLs point at `unsloth/gemma-4-E2B-it-qat-GGUF` (the
-    /// QAT build; OQ-10 may later swap in a CDN mirror); checksums are pinned
-    /// at release time.
+    /// The v1 catalog. The shipping model is **Qwen3.5-0.8B `Q4_K_M`** — a
+    /// sub-1B instruct model small enough (~0.53 GB) to run on essentially every
+    /// supported iPhone (switched 2026-06-07 from the larger Gemma 4 E2B builds
+    /// per the user). The Gemma `candidateB` (LiteRT-LM) record is kept for the
+    /// OQ-14 spike. The SHA-256 is pinned to the file provided in `ios/Models/`.
     static let v1 = LLMModelCatalog(
-        primary: LLMModelSpec(
-            id: "gemma-4-e2b-it-qat-q4_k_xl",
-            displayName: "Gemma 4 E2B · QAT Q4_K_XL",
-            runtime: .llamaCpp,
-            quant: .q4_K_XL,
-            fileName: "gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf",
-            sourceURL: URL(
-                string: "https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF/resolve/main/gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf")!,
-            expectedByteCount: ModelQuant.q4_K_XL.approximateByteCount,
-            sha256: nil,
-            contextWindowCap: 8_192),
-        lowMemoryFallback: LLMModelSpec(
-            id: "gemma-4-e2b-it-qat-q2_k_xl",
-            displayName: "Gemma 4 E2B · QAT Q2_K_XL (low memory)",
-            runtime: .llamaCpp,
-            quant: .q2_K_XL,
-            fileName: "gemma-4-E2B-it-qat-UD-Q2_K_XL.gguf",
-            sourceURL: URL(
-                string: "https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF/resolve/main/gemma-4-E2B-it-qat-UD-Q2_K_XL.gguf")!,
-            expectedByteCount: ModelQuant.q2_K_XL.approximateByteCount,
-            sha256: nil,
-            contextWindowCap: 8_192),
+        primary: qwen3_5_0_8B_Q4KM,
+        // No separate low-memory build — Qwen3.5-0.8B already fits the lowest
+        // supported device. Mirrors `primary`; see ``lowMemoryFallback``.
+        lowMemoryFallback: qwen3_5_0_8B_Q4KM,
         candidateB: LLMModelSpec(
             id: "gemma-4-e2b-it-litertlm",
             displayName: "Gemma 4 E2B · LiteRT-LM",
@@ -160,10 +154,21 @@ struct LLMModelCatalog: Sendable, Equatable {
             expectedByteCount: 2_590_000_000,
             sha256: nil,
             contextWindowCap: 8_192),
-        // Trial (2026-06-06): default to the smaller/faster QAT `Q2_K_XL` and
-        // evaluate whether its quality is sufficient for German Behörden letters.
-        // Because Q2_K_XL also has the lowest RAM floor, every supported device
-        // runs the same quant by default — `Q4_K_XL` stays in the catalog as the
-        // quality-first option. Revert to `.q4_K_XL` to restore best-that-fits.
-        defaultQuant: .q2_K_XL)
+        defaultQuant: .q4_K_M)
+
+    /// The single shipping on-device model — Unsloth's GGUF build
+    /// ([`unsloth/Qwen3.5-0.8B-GGUF`](https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF)).
+    /// `sourceURL` is only used by the dev-time `scripts/fetch-model.sh`; the app
+    /// never downloads (hard rule) and the weights are provided in `ios/Models/`.
+    private static let qwen3_5_0_8B_Q4KM = LLMModelSpec(
+        id: "qwen3.5-0.8b-q4_k_m",
+        displayName: "Qwen3.5 0.8B · Q4_K_M",
+        runtime: .llamaCpp,
+        quant: .q4_K_M,
+        fileName: "Qwen3.5-0.8B-Q4_K_M.gguf",
+        sourceURL: URL(
+            string: "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B-Q4_K_M.gguf")!,
+        expectedByteCount: ModelQuant.q4_K_M.approximateByteCount,
+        sha256: "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+        contextWindowCap: 8_192)
 }

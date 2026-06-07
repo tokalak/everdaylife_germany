@@ -2,9 +2,9 @@
 #
 # Fetch the on-device LLM weights for local development.
 #
-#   ios/scripts/fetch-model.sh            # primary (Q4_K_XL, ~2.62 GB)
-#   ios/scripts/fetch-model.sh --fallback # low-memory fallback (Q2_K_XL, ~2.19 GB)
-#   ios/scripts/fetch-model.sh --all      # both deliverable GGUF quants
+#   ios/scripts/fetch-model.sh            # the shipping model (Qwen3.5-0.8B Q4_K_M, ~0.53 GB)
+#   ios/scripts/fetch-model.sh --fallback # same model (no distinct low-memory build today)
+#   ios/scripts/fetch-model.sh --all      # every deliverable GGUF the catalog carries
 #
 # The weights are multi-GB and are NOT committed to git (see .gitignore). This
 # script reproduces them on demand from a single source of truth (X-06):
@@ -37,18 +37,19 @@ URLS=()
 while IFS= read -r line; do
   URLS+=("$line")
 done < <(grep -oE 'https://[^"]+\.gguf' "$CATALOG")
-if [ "${#URLS[@]}" -lt 2 ]; then
-  echo "error: expected 2 GGUF URLs in $CATALOG, found ${#URLS[@]}" >&2
+if [ "${#URLS[@]}" -lt 1 ]; then
+  echo "error: expected at least 1 GGUF URL in $CATALOG, found ${#URLS[@]}" >&2
   exit 1
 fi
 
 # quant-suffix -> exact byte count, joined from ModelQuant's `fileSuffix` and
-# `approximateByteCount` switches. The >=7-digit guard ignores the short
+# `approximateByteCount` switches. Suffixes are either `UD-…` (legacy Gemma) or
+# a bare `Q…` (the current Qwen model). The >=7-digit guard ignores the short
 # `minimumDeviceMemory` literals (6, 4, 1_024) that share the `case .x:` shape.
 SIZE_MAP="$(awk '
-  $1=="case" && $3 ~ /^"UD-/   { c=$2; gsub(/[.:]/,"",c); s=$3; gsub(/"/,"",s); suf[c]=s }
-  $1=="case" && $3 ~ /^[0-9]/  { c=$2; gsub(/[.:]/,"",c); b=$3; gsub(/_/,"",b);
-                                 if (length(b) >= 7) byt[c]=b }
+  $1=="case" && $3 ~ /^"(UD-|Q[0-9])/ { c=$2; gsub(/[.:]/,"",c); s=$3; gsub(/"/,"",s); suf[c]=s }
+  $1=="case" && $3 ~ /^[0-9]/         { c=$2; gsub(/[.:]/,"",c); b=$3; gsub(/_/,"",b);
+                                        if (length(b) >= 7) byt[c]=b }
   END { for (c in suf) if (c in byt) print suf[c], byt[c] }
 ' "$CATALOG")"
 
@@ -63,9 +64,13 @@ $SIZE_MAP
 EOF
 }
 
+# The catalog currently ships a single GGUF model (Qwen3.5-0.8B), so there is no
+# distinct low-memory build — every flag resolves to the deliverable URL(s).
+# `--fallback` falls back to the primary when no second URL exists; `--all`
+# fetches whatever URLs the catalog actually carries.
 case "${1:-}" in
-  --all)      WANT=("${URLS[0]}" "${URLS[1]}") ;;
-  --fallback) WANT=("${URLS[1]}") ;;
+  --all)      WANT=("${URLS[@]}") ;;
+  --fallback) WANT=("${URLS[1]:-${URLS[0]}}") ;;
   ""|--primary) WANT=("${URLS[0]}") ;;
   *) echo "usage: $0 [--primary|--fallback|--all]" >&2; exit 2 ;;
 esac
