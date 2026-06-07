@@ -38,10 +38,18 @@ enum ModelQuant: String, Sendable, CaseIterable, Codable {
     /// Minimum device physical RAM to run this quant with a small KV cache
     /// without thrashing (A-25/A-26). Weights must be resident plus headroom for
     /// the OS, the app, and a capped context window.
+    ///
+    /// These floors are matched against `ProcessInfo.physicalMemory`, which on
+    /// real hardware reports a bit *below* the marketed nominal (iOS reserves
+    /// some RAM): a "4 GB" iPhone reports ≈3.7 GiB, a "6 GB" one ≈5.5 GiB. So a
+    /// floor of exactly the nominal binary size (e.g. `4 * 1024³`) would reject
+    /// every device of that class. We therefore set each floor a notch below
+    /// nominal — high enough to keep the next class down out (a 3 GB phone reports
+    /// ≈2.9 GiB), low enough to admit the class we intend.
     var minimumDeviceMemory: UInt64 {
         switch self {
-        case .q4_K_XL: 6 * 1_024 * 1_024 * 1_024   // ~6 GB-class devices
-        case .q2_K_XL: 4 * 1_024 * 1_024 * 1_024   // ~4 GB-class devices
+        case .q4_K_XL: 5 * 1_024 * 1_024 * 1_024        // 5 GiB → ~6 GB-class devices (report ≈5.5 GiB)
+        case .q2_K_XL: 7 * 1_024 * 1_024 * 1_024 / 2    // 3.5 GiB → ~4 GB-class devices (report ≈3.7 GiB)
         }
     }
 }

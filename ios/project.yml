@@ -46,6 +46,16 @@ targets:
     platform: iOS
     sources:
       - path: Alltag
+    # Raise the per-app jetsam memory limit so the ~2.2 GB on-device model can
+    # stay resident on 4 GB phones. llama.cpp offloads all layers to Metal
+    # (n_gpu_layers = 999), so the weights live in unified memory counted against
+    # the app; without this entitlement iOS kills the app at ≈1.4 GB on a 4 GB
+    # device, before the model finishes loading. XcodeGen generates the
+    # .entitlements file from these properties and wires CODE_SIGN_ENTITLEMENTS.
+    entitlements:
+      path: Alltag/Alltag.entitlements
+      properties:
+        com.apple.developer.kernel.increased-memory-limit: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: de.everydaygermany.app
